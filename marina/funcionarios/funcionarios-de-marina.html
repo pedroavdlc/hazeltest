@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Funcionarios de Marina - HazelTest</title>
+    <meta name="description" content="Realiza diferentes tests sobre los Funcionarios de la Marina en HazelTest. Identifica por imagen, ordena apellidos, elige cargos y más.">
+    <meta name="keywords" content="test funcionarios de marina, quizzes marina, hazeltest, identificar funcionarios, rangos navales, estructura marina, tests navales, conocimiento naval, tests interactivos marina">
+    <link rel="canonical" href="https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html">
+    <meta property="og:title" content="Test Funcionarios de Marina - HazelTest">
+    <meta property="og:description" content="Realiza diferentes tests sobre los Funcionarios de la Marina. Identifica por imagen, ordena apellidos y más.">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html">
+    <meta property="twitter:title" content="Test Funcionarios de Marina - HazelTest">
+    <meta property="twitter:description" content="Realiza diferentes tests sobre los Funcionarios de la Marina. Identifica por imagen, ordena apellidos y más.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/clock.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/photo.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/identification.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/bars-arrow-down.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/puzzle-piece.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/bars-3-bottom-left.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/academic-cap.svg" rel="preload" as="image">
+
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .quiz-card { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .quiz-card-link { text-decoration: none; color: inherit; }
+        .quiz-card-link:hover { text-decoration: none; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
+                <span class="text-indigo-600 font-semibold">Funcionarios</span> </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="../../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
+             <a href="#" class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Funcionarios</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20 flex-grow">
+        <div class="flex items-center mb-8 border-b pb-4 border-gray-300">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-blue-600 mr-4">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+             </svg>
+             <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Test Funcionarios de Marina</h1>
+        </div>
+
+        <p class="text-lg text-gray-600 mb-6 text-justify">
+            Bienvenido a la sección de tests sobre los Funcionarios de la Marina. Aquí encontrarás una variedad de desafíos diseñados para evaluar y expandir tu conocimiento sobre la estructura, los roles y el personal clave de esta importante institución.
+        </p>
+        <p class="text-gray-600 leading-relaxed text-justify mb-12">
+            Cada test se enfoca en un aspecto diferente, desde la identificación visual de mandos hasta el conocimiento de la jerarquía de cargos y la correcta asignación de nombres y apellidos. Prepárate para una experiencia de aprendizaje interactiva y demuestra tu dominio sobre el tema. ¡Selecciona un test y comienza!
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+            <a href="contra-el-reloj-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+                 <div class="flex items-center mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <h3 class="text-xl font-semibold text-gray-700">Contra Reloj</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Pon a prueba tu rapidez y precisión respondiendo preguntas variadas sobre los funcionarios antes de que el tiempo se agote.</p>
+                <button data-quiz-type="contra-reloj" class="mt-auto w-full bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300 quiz-button">Empezar Test</button>
+            </a>
+
+            <a href="identifica-por-imagen-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+                 <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-indigo-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" /></svg>
+                    <h3 class="text-xl font-semibold text-indigo-700">Identifica por Imagen</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">¿Puedes reconocer a los funcionarios de la Marina solo por su fotografía? Asocia la imagen con el nombre correcto.</p>
+                <button data-quiz-type="imagen" class="mt-auto w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300 quiz-button">Empezar Test</button>
+            </a>
+
+            <a href="elige-el-cargo.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+                 <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-amber-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6A1.5 1.5 0 0 1 15 7.5v1.5a1.5 1.5 0 0 1-1.5 1.5H12v1.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5V10.5a1.5 1.5 0 0 1 1.5-1.5h1.5V7.5A1.5 1.5 0 0 1 12 6h1.5Zm0 0A1.5 1.5 0 0 0 12 4.5v-1.5a1.5 1.5 0 0 0-3 0V6A1.5 1.5 0 0 0 10.5 7.5H12a1.5 1.5 0 0 0 1.5-1.5Z M3.75 13.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Zm16.5 0a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z M6 15a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 6 15Zm12 0a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z M12 12.75a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3Z" /></svg>
+                    <h3 class="text-xl font-semibold text-amber-700">Elige el Cargo</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Dado el nombre de un funcionario, ¿puedes seleccionar el cargo o puesto que ostenta correctamente?</p>
+                <button data-quiz-type="elegir-cargo" class="mt-auto w-full bg-amber-500 text-white py-2 px-4 rounded-md hover:bg-amber-600 transition duration-300 quiz-button">Empezar Test</button>
+            </a>
+
+             <a href="ordena-los-apellidos-de-los-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+                 <div class="flex items-center mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-teal-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
+                    <h3 class="text-xl font-semibold text-teal-700">Selecciona Apellidos</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Se te dará el nombre de pila, grado y cargo. ¿Puedes seleccionar los dos apellidos correctos?</p>
+                <button data-quiz-type="selecciona-apellidos" class="mt-auto w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300 quiz-button">Empezar Test</button>
+            </a>
+
+            <a href="ordena-el-nombre-y-apellidos-de-los-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+                 <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-red-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.39m3.421 1.776a3 3 0 0 0 1.128-5.78l1.128-5.781a1.5 1.5 0 0 1 2.245 2.4l-1.128 5.781a3 3 0 0 0 5.78 1.128 2.25 2.25 0 0 1 2.4 2.245 4.5 4.5 0 0 0-8.4-2.245c0-.399.078-.78.22-1.128Zm0 0-1.128-5.781m5.043.025a15.994 15.994 0 0 0-1.622-3.39m-3.421 1.776a3 3 0 0 0-1.128-5.78l-1.128-5.781a1.5 1.5 0 0 0-2.245 2.4l1.128 5.781a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 0-2.4 2.245 4.5 4.5 0 0 0 8.4 2.245c0-.399-.078-.78-.22-1.128Z" /></svg>
+                    <h3 class="text-xl font-semibold text-red-700">Construye Nombre y Apellidos</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">A partir de una foto, grado y cargo, selecciona las palabras en el orden correcto para formar el nombre y apellidos completos.</p>
+                <button data-quiz-type="construye-nombre" class="mt-auto w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition duration-300 quiz-button">Empezar Test</button>
+            </a>
+
+            <a href="ordena-los-cargos-de-los-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+                 <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-purple-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12" /></svg>
+                    <h3 class="text-xl font-semibold text-purple-700">Ordena por Cargos</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Demuestra tu conocimiento de la jerarquía arrastrando y soltando los cargos en el orden correcto.</p>
+                <button data-quiz-type="ordena-cargos" class="mt-auto w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 transition duration-300 quiz-button">Empezar Test</button>
+            </a>
+
+        </div>
+         <div class="mt-12 text-center">
+             <a href="../index.html" class="text-indigo-600 hover:underline">&larr; Volver a la página de Marina</a>
+         </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="../../contacto.html" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+
+        document.querySelectorAll('.quiz-button').forEach(button => {
+            button.addEventListener('click', (event) => { console.log(`Botón presionado para test tipo: ${button.getAttribute('data-quiz-type')}`); });
+        });
+
+         document.querySelectorAll('a.quiz-card-link').forEach(linkCard => {
+            linkCard.addEventListener('click', (event) => {
+                 const linkHref = linkCard.getAttribute('href');
+                 if (linkHref === '#') {
+                     event.preventDefault(); const quizTitle = linkCard.querySelector('h3').textContent;
+                     alert(`Página para el test "${quizTitle}" aún no creada o enlace no definido.`); console.log(`Clic en tarjeta enlace (href="#" para): ${quizTitle}`);
+                 }
+            });
+         });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

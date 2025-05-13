@@ -1,0 +1,4 @@
+# ads.txt para hazeltest.com
+# ID de publicador de AdSense actualizado.
+
+google.com, pub-8587395236666686, DIRECT, f08c47fec0942fa0

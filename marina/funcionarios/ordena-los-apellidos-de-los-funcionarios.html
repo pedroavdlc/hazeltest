@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Selecciona Apellidos de Funcionarios de Marina - HazelTest</title>
+
+    <meta name="description" content="¿Puedes identificar los apellidos correctos de los Funcionarios de la Marina? Pon a prueba tu conocimiento con este test interactivo en HazelTest.">
+    <meta name="keywords" content="test selecciona apellidos, quiz marina, apellidos funcionarios, hazeltest, conocimiento naval, estructura marina, prueba de nombres marina, funcionarios de marina">
+    <link rel="canonical" href="https://hazeltest.com/marina/funcionarios/ordena-los-apellidos-de-los-funcionarios.html"> <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/marina/funcionarios/ordena-los-apellidos-de-los-funcionarios.html">
+    <meta property="og:title" content="Test Selecciona Apellidos de Funcionarios de Marina - HazelTest">
+    <meta property="og:description" content="¿Puedes identificar los apellidos correctos de los Funcionarios de la Marina? ¡Demuéstralo!">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_SEL_APELLIDOS">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hazeltest.com/marina/funcionarios/ordena-los-apellidos-de-los-funcionarios.html">
+    <meta property="twitter:title" content="Test Selecciona Apellidos de Funcionarios de Marina - HazelTest">
+    <meta property="twitter:description" content="¿Puedes identificar los apellidos correctos de los Funcionarios de la Marina? ¡Demuéstralo!">
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_SEL_APELLIDOS">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .apellido-opcion {
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
+        }
+        .apellido-opcion:hover:not(.disabled):not(.selected) {
+            background-color: #D1D5DB; border-color: #6B7280; transform: translateY(-2px);
+        }
+        .apellido-opcion.selected {
+            background-color: #93C5FD; color: #1E40AF; border-color: #3B82F6; cursor: pointer; opacity: 0.8;
+        }
+         .apellido-opcion.selected:hover {
+             opacity: 1; border-color: #F87171; background-color: #FEE2E2;
+         }
+         .apellido-opcion.disabled { cursor: not-allowed; opacity: 0.6; }
+         .apellido-opcion.correcta.disabled {
+             background-color: #A7F3D0; border-color: #10B981; color: #065F46; opacity: 1; font-weight: 600;
+         }
+         .apellido-opcion.incorrecta-seleccionada.disabled {
+             background-color: #FECACA; border-color: #F87171; color: #991B1B; opacity: 1; text-decoration: line-through;
+         }
+        #apellidos-seleccionados-display { min-height: 2.5rem; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                 <a href="../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                 <a href="funcionarios-de-marina.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Funcionarios</a>
+                 <span class="text-teal-600 font-semibold">Selecciona Apellidos</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="../../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="funcionarios-de-marina.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Funcionarios</a>
+             <a href="#" class="block px-4 py-2 text-teal-600 bg-teal-50 font-semibold">Selecciona Apellidos</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
+
+             <section id="introduccion-quiz" class="mb-8 pb-6 border-b border-gray-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-teal-600 mr-3">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Test Selecciona los Apellidos de los Funcionarios de Marina</h1>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    ¡Bienvenido al test "Selecciona Apellidos"! Conocer los nombres completos, incluyendo los apellidos, de los mandos es una parte importante del conocimiento naval. Este test desafiará tu atención al detalle y tu memoria.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">
+                    Se te presentará la fotografía, el grado y el nombre de pila de un funcionario de la Marina. Tu misión será identificar y seleccionar sus dos apellidos correctos entre un conjunto de opciones.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Este test consta de 6 preguntas. ¡Presta atención y demuestra tu conocimiento!
+                </p>
+                 <div class="mt-6 text-center">
+                    <button id="start-quiz-button" class="bg-teal-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-teal-700 transition duration-300 shadow-md">
+                        Comenzar Test
+                    </button>
+                </div>
+            </section>
+
+            <div id="quiz-activo" class="hidden">
+                <div class="flex justify-between items-center mb-6 text-sm text-gray-600">
+                    <span id="progreso">Pregunta 1 / 6</span>
+                    <span id="puntuacion">Puntuación: 0</span>
+                </div>
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-start mb-6 text-center md:text-left">
+                    <img id="funcionario-imagen" src="" alt="Funcionario" class="w-32 h-32 md:w-40 md:h-40 rounded-lg object-cover border-4 border-gray-300 mb-4 md:mb-0 md:mr-6 flex-shrink-0 bg-gray-200">
+                    <div class="flex-grow">
+                         <p class="text-lg text-gray-700">¿Cuáles son los apellidos del</p>
+                         <h2 id="funcionario-grado" class="text-xl font-bold text-gray-900 mt-1">- - -</h2>
+                         <h3 id="funcionario-nombre-pila" class="text-2xl md:text-3xl font-bold text-gray-800">- - -</h3>
+                         <p class="text-sm text-gray-500 mt-1">quien ocupa el cargo de:</p>
+                         <h4 id="funcionario-puesto" class="text-lg font-semibold text-gray-700">- - -</h4>
+                        <div id="apellidos-seleccionados-display" class="mt-4 text-lg font-semibold text-blue-600 h-10 flex items-center justify-center md:justify-start">
+                           <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                 <p class="text-center text-gray-600 mb-4">Selecciona los dos apellidos correctos:</p>
+                <div id="opciones-apellido" class="flex flex-wrap justify-center gap-3 md:gap-4 mb-6 min-h-[5rem]">
+                    </div>
+                <div id="feedback-container" class="text-center h-8 mb-6">
+                     <p id="feedback" class="text-lg font-semibold"></p>
+                </div>
+                <div class="text-center">
+                    <button id="siguiente-btn" class="bg-teal-600 text-white py-2 px-6 rounded-md hover:bg-teal-700 transition duration-300 hidden">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+
+            <div id="resultado-final" class="hidden text-center">
+                 <h2 class="text-3xl font-bold text-center text-teal-700 mb-6">¡Test de Apellidos Finalizado!</h2>
+                 <p class="text-xl text-center mb-2">Tu puntuación final es:</p>
+                 <p id="puntuacion-final" class="text-6xl font-bold text-center text-gray-800 mb-4">0 / 6</p>
+                 <p id="frase-final" class="text-lg italic text-gray-700 mt-4 mb-8 px-4"></p>
+                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                     <button id="reiniciar-btn" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
+                         Volver a Jugar
+                     </button>
+                     <a href="funcionarios-de-marina.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
+                         Otros Quizzes de Funcionarios
+                     </a>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                 <a href="../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                 <a href="../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                 <a href="../../contacto.html" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Ruta Base para Imágenes ---
+        const basePathImagenes_g = "imgdelos5marinas/";
+
+        // --- Datos Base de Funcionarios ---
+        const funcionariosInfo_g = [
+            { grado: "Almirante", nombrePila: "Raymundo Pedro", apellidos: ["Morales", "Ángeles"], puesto: "Secretario de Marina", archivoBase: "raymundo-pedro-morales-angeles.webp" },
+            { grado: "Almirante", nombrePila: "José", apellidos: ["Barradas", "Cobos"], puesto: "Subsecretario de Marina", archivoBase: "jose-barradas-cobos.webp" },
+            { grado: "Almirante", nombrePila: "Francisco Guillermo", apellidos: ["Escamilla", "Cázares"], puesto: "Oficial Mayor", archivoBase: "francisco-guillermo-escamilla-cazares.webp" },
+            { grado: "Almirante", nombrePila: "Gerardo de Jesús", apellidos: ["Toledo", "Guzmán"], puesto: "Inspector y Contralor General de Marina", archivoBase: "Gerardo-de-Jesús-Toledo-Guzmán.webp" },
+            { grado: "Almirante", nombrePila: "José Manuel", apellidos: ["Salinas", "Pérez"], puesto: "Jefe del Estado Mayor General de la Armada", archivoBase: "José-Manuel-Salinas-Pérez.webp" },
+            { grado: "Capitán de Altura", nombrePila: "Manuel Fernando", apellidos: ["Gutiérrez", "Gallardo"], puesto: "Coordinador General de Puertos y Marina Mercante", archivoBase: "Manuel-Fernando-Gutiérrez-Gallardo.webp" }
+        ];
+
+        // --- Pool de todos los apellidos únicos ---
+        const todosLosApellidosUnicos = [...new Set(funcionariosInfo_g.flatMap(f => f.apellidos))];
+
+        // --- Generar Datos del Quiz ---
+        let quizData = [];
+        try {
+            quizData = funcionariosInfo_g.map((infoCorrecta) => {
+                const apellidosCorrectos = infoCorrecta.apellidos;
+                let apellidosIncorrectosPool = todosLosApellidosUnicos.filter(ap => !apellidosCorrectos.includes(ap));
+                shuffleArray(apellidosIncorrectosPool);
+                const distractores = apellidosIncorrectosPool.slice(0, 6);
+                const poolApellidos = [...apellidosCorrectos, ...distractores];
+                while (poolApellidos.length < 8 && apellidosIncorrectosPool.length > distractores.length) { poolApellidos.push(apellidosIncorrectosPool[distractores.length]); distractores.length++; }
+                shuffleArray(poolApellidos);
+                return {
+                    nombrePila: infoCorrecta.nombrePila, grado: infoCorrecta.grado, puesto: infoCorrecta.puesto,
+                    apellidosCorrectos: apellidosCorrectos, imagen: basePathImagenes_g + infoCorrecta.archivoBase, poolApellidos: poolApellidos
+                };
+            });
+        } catch (error) { console.error("Error generando quizData:", error); }
+
+         // --- Frases de Resultado ---
+        const frasesResultado = {
+            alta: [ "¡Excelente memoria para los apellidos!", "¡Ascenso por reconocimiento facial y nominal!", "¡Como si hubieras pasado lista!" ],
+            media: [ "¡Buen trabajo! Casi todos correctos.", "Reconoces a varios, ¡pero no te confundas!", "Aprobado, pero ojo con los apellidos similares." ],
+            baja: [ "¡Necesitas repasar la jerarquía onomástica!", "Se te escapan algunos apellidos importantes.", "¿Estás seguro de los apellidos? ¡A estudiar!" ]
+        };
+
+        // --- Elementos del DOM ---
+        const introduccionQuizContainer = document.getElementById('introduccion-quiz');
+        const startQuizButton = document.getElementById('start-quiz-button');
+        const quizActivoContainer = document.getElementById('quiz-activo');
+        const resultadoFinalContainer = document.getElementById('resultado-final');
+        const nombrePilaElement = document.getElementById('funcionario-nombre-pila');
+        const gradoElement = document.getElementById('funcionario-grado');
+        const puestoElement = document.getElementById('funcionario-puesto');
+        const imagenElement = document.getElementById('funcionario-imagen');
+        const opcionesContainer = document.getElementById('opciones-apellido');
+        const feedbackElement = document.getElementById('feedback');
+        const feedbackContainer = document.getElementById('feedback-container');
+        const siguienteBtn = document.getElementById('siguiente-btn');
+        const progresoElement = document.getElementById('progreso');
+        const puntuacionElement = document.getElementById('puntuacion');
+        const puntuacionFinalElement = document.getElementById('puntuacion-final');
+        const fraseFinalElement = document.getElementById('frase-final');
+        const reiniciarBtn = document.getElementById('reiniciar-btn');
+        const apellidosSeleccionadosDisplay = document.getElementById('apellidos-seleccionados-display');
+
+        // --- Estado del Quiz ---
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedApellidos = [];
+        let botonesOpciones = [];
+        let respuestaVerificada = false;
+        let randomizedQuizData = [];
+
+        // --- Funciones ---
+        function shuffleArray(array) { /* ... */ }
+        function cargarPregunta() { /* ... */ }
+        function seleccionarApellido(apellidoButton) { /* ... */ }
+        function verificarRespuesta() { /* ... */ }
+        function siguientePregunta() { /* ... */ }
+        function mostrarResultados() { /* ... */ }
+        function iniciarQuiz() { /* ... */ }
+
+        // --- Reasignación de funciones ---
+         function shuffleArray(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
+         function cargarPregunta() {
+            if (!randomizedQuizData || currentQuestionIndex >= randomizedQuizData.length) { mostrarResultados(); return; }
+            respuestaVerificada = false; selectedApellidos = []; const pA = randomizedQuizData[currentQuestionIndex];
+            if (nombrePilaElement) nombrePilaElement.textContent = pA.nombrePila;
+            if (gradoElement) gradoElement.textContent = pA.grado;
+            if (puestoElement) puestoElement.textContent = pA.puesto;
+            if (imagenElement) { imagenElement.src = pA.imagen; imagenElement.alt = `Foto de ${pA.nombrePila}`; imagenElement.onerror = () => { imagenElement.alt = 'Error img'; imagenElement.src='https://placehold.co/160x160/cccccc/ffffff?text=Error'; imagenElement.classList.add('bg-gray-300');}; }
+            if (opcionesContainer) {
+                opcionesContainer.innerHTML = ''; botonesOpciones = [];
+                try { const oB = [...pA.poolApellidos]; shuffleArray(oB);
+                    oB.forEach(a => { const b = document.createElement('button'); b.textContent = a; b.classList.add('apellido-opcion', 'px-4', 'py-2', 'border-2', 'border-gray-400', 'rounded-md', 'bg-white', 'text-gray-700', 'font-medium'); b.dataset.apellido = a; b.addEventListener('click', () => seleccionarApellido(b)); opcionesContainer.appendChild(b); botonesOpciones.push(b); });
+                } catch (e) { console.error("Error creando botones:", e); opcionesContainer.innerHTML = '<p class="text-red-500 p-4">Error al crear opciones</p>'; }
+            }
+            if (feedbackElement) feedbackElement.textContent = ''; if (feedbackContainer) feedbackContainer.className = 'text-center h-8 mb-6';
+            if (siguienteBtn) siguienteBtn.classList.add('hidden'); if (apellidosSeleccionadosDisplay) apellidosSeleccionadosDisplay.innerHTML = '<span>&nbsp;</span>';
+            if (progresoElement) progresoElement.textContent = `Pregunta ${currentQuestionIndex + 1} / ${quizData.length}`; if (puntuacionElement) puntuacionElement.textContent = `Puntuación: ${score}`;
+        }
+        function seleccionarApellido(bS) {
+            if (respuestaVerificada) return; const apellido = bS.dataset.apellido;
+            if (bS.classList.contains('selected')) { selectedApellidos = selectedApellidos.filter(ap => ap !== apellido); bS.classList.remove('selected'); /* Ya no se deshabilita aquí */ }
+            else if (selectedApellidos.length < 2) { selectedApellidos.push(apellido); bS.classList.add('selected'); }
+            else { // Si ya hay 2 seleccionados y se intenta seleccionar un tercero, no hacer nada o dar feedback
+                // alert("Solo puedes seleccionar dos apellidos.");
+                return;
+            }
+            if (apellidosSeleccionadosDisplay) { apellidosSeleccionadosDisplay.textContent = selectedApellidos.join(' '); if (selectedApellidos.length === 0) { apellidosSeleccionadosDisplay.innerHTML = '<span>&nbsp;</span>'; } }
+            if (selectedApellidos.length === 2) { verificarRespuesta(); }
+        }
+        function verificarRespuesta() {
+            if (respuestaVerificada) return; respuestaVerificada = true; const pA = randomizedQuizData[currentQuestionIndex]; if (!pA) return;
+            const sO = [...selectedApellidos].sort(); const cO = [...pA.apellidosCorrectos].sort(); const eC = JSON.stringify(sO) === JSON.stringify(cO);
+            botonesOpciones.forEach(b => { b.classList.add('disabled'); const esApellidoCorrecto = pA.apellidosCorrectos.includes(b.dataset.apellido); const fueSeleccionado = selectedApellidos.includes(b.dataset.apellido); if (esApellidoCorrecto) { b.classList.add('correcta'); } if (fueSeleccionado && !eC) { b.classList.add('incorrecta-seleccionada'); } b.classList.remove('selected'); });
+            if (feedbackElement && feedbackContainer) {
+                if (eC) { feedbackElement.textContent = '¡Correcto!'; feedbackContainer.className = 'text-center h-8 mb-6 text-green-600 font-semibold'; score++; if(puntuacionElement) puntuacionElement.textContent = `Puntuación: ${score}`; }
+                else { feedbackElement.innerHTML = `Incorrecto. Apellidos: <span class="font-bold">${pA.apellidosCorrectos.join(' ')}</span>`; feedbackContainer.className = 'text-center h-8 mb-6 text-red-600 font-semibold'; }
+            }
+            if(siguienteBtn) siguienteBtn.classList.remove('hidden');
+        }
+        function siguientePregunta() { if (!randomizedQuizData) return; currentQuestionIndex++; if (currentQuestionIndex < randomizedQuizData.length) { cargarPregunta(); } else { mostrarResultados(); } }
+        function mostrarResultados() {
+            if(quizActivoContainer) quizActivoContainer.classList.add('hidden'); if(!resultadoFinalContainer) return;
+            let cP; const pM = quizData.length; if (score >= pM * 0.8) { cP = 'alta'; } else if (score >= pM * 0.5) { cP = 'media'; } else { cP = 'baja'; }
+            const fC = frasesResultado[cP]; const fS = fC ? fC[Math.floor(Math.random() * fC.length)] : "¡Gracias por participar!";
+            if(puntuacionFinalElement) puntuacionFinalElement.textContent = `${score} / ${pM}`; if(fraseFinalElement) fraseFinalElement.textContent = fS; resultadoFinalContainer.classList.remove('hidden');
+        }
+        function iniciarQuiz() {
+            if (!quizData || quizData.length === 0) { console.error("Datos del quiz no disponibles."); if(opcionesContainer) opcionesContainer.innerHTML = '<p class="text-red-500 p-4">Error al cargar datos del quiz.</p>'; return; }
+            randomizedQuizData = [...quizData]; shuffleArray(randomizedQuizData); currentQuestionIndex = 0; score = 0;
+            if(introduccionQuizContainer) introduccionQuizContainer.classList.add('hidden');
+            if(quizActivoContainer) quizActivoContainer.classList.remove('hidden');
+            if(resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
+            cargarPregunta();
+        }
+
+        // --- Inicialización y Event Listeners ---
+        if(siguienteBtn) siguienteBtn.addEventListener('click', siguientePregunta);
+        if(reiniciarBtn) reiniciarBtn.addEventListener('click', () => { if(introduccionQuizContainer) introduccionQuizContainer.classList.remove('hidden'); iniciarQuiz(); });
+        if(startQuizButton) startQuizButton.addEventListener('click', iniciarQuiz);
+
+        // --- Funcionalidad Menú Móvil ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+
+    </script>
+
+</body>
+</html>
+

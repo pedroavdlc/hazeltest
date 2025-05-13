@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Identifica Funcionarios de Marina - HazelTest</title>
+
+    <meta name="description" content="Pon a prueba tu capacidad de reconocimiento visual con el Test 'Identifica Funcionarios de Marina' de HazelTest. ¿Puedes asociar el nombre correcto con la foto?">
+    <meta name="keywords" content="test identifica por imagen, quiz marina, funcionarios de marina, hazeltest, reconocimiento facial, conocimiento naval, test visual marina, examen funcionarios marina, test identifica funcionarios de marina">
+    <link rel="canonical" href="https://hazeltest.com/marina/funcionarios/identifica-por-imagen-funcionarios.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/marina/funcionarios/identifica-por-imagen-funcionarios.html">
+    <meta property="og:title" content="Test Identifica Funcionarios de Marina - HazelTest">
+    <meta property="og:description" content="¿Puedes asociar el nombre correcto con la foto del funcionario de Marina? ¡Demuéstralo!">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_IDENTIFICA_IMAGEN"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hazeltest.com/marina/funcionarios/identifica-por-imagen-funcionarios.html">
+    <meta property="twitter:title" content="Test Identifica Funcionarios de Marina - HazelTest">
+    <meta property="twitter:description" content="¿Puedes asociar el nombre correcto con la foto del funcionario de Marina? ¡Demuéstralo!">
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_IDENTIFICA_IMAGEN"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .opcion-imagen_q1 {
+            cursor: pointer; border: 4px solid transparent; transition: transform 0.2s ease, border-color 0.2s ease;
+            overflow: hidden; background-color: #E5E7EB;
+        }
+        .opcion-imagen_q1:hover:not(.disabled) { transform: scale(1.05); }
+        .opcion-imagen_q1.correcta { border-color: #22C55E; }
+        .opcion-imagen_q1.incorrecta { border-color: #EF4444; }
+        .opcion-imagen_q1.disabled { cursor: not-allowed; opacity: 0.7; }
+        .opcion-imagen_q1 img { display: block; width: 100%; height: 100%; object-fit: cover; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="funcionarios-de-marina.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Funcionarios</a>
+                <span class="text-indigo-600 font-semibold">Identifica por Imagen</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="../../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="funcionarios-de-marina.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Funcionarios</a>
+            <span class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Identifica por Imagen</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
+
+            <section id="introduccion-quiz-q1" class="mb-8 pb-6 border-b border-gray-300">
+                <div class="flex items-center justify-center mb-4">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-600 mr-3">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                     </svg>
+                     <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Test Identifica Funcionarios de Marina</h1>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    ¡Bienvenido al test de reconocimiento visual! En el ámbito naval, identificar correctamente a los mandos y funcionarios es una habilidad esencial. Este test pondrá a prueba tu capacidad para asociar nombres con rostros.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">
+                    Se te presentará el nombre completo de un funcionario de la Marina. Tu tarea será seleccionar la fotografía correcta entre varias opciones. Presta atención a los detalles y demuestra tu conocimiento.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Este test consta de 6 preguntas. ¡Mucha suerte!
+                </p>
+                 <div class="mt-6 text-center">
+                    <button id="start-quiz-button-q1" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-indigo-700 transition duration-300 shadow-md">
+                        Comenzar Test
+                    </button>
+                </div>
+            </section>
+
+            <div id="quiz-activo-q1" class="hidden">
+                <div class="flex justify-between items-center mb-6 text-sm text-gray-600">
+                    <span id="progreso_q1">Pregunta 1 / 6</span>
+                    <span id="puntuacion_q1">Puntuación: 0</span>
+                </div>
+                <div class="text-center mb-8">
+                    <p class="text-lg text-gray-700 mb-2">¿Quién es?</p>
+                    <h2 id="funcionario-nombre_q1" class="text-3xl md:text-4xl font-bold text-gray-900">- - -</h2>
+                </div>
+                <div id="opciones-imagen_q1" class="grid grid-cols-3 gap-4 md:gap-6 mb-6">
+                    <div class="text-center text-gray-500 col-span-3">Cargando opciones...</div>
+                </div>
+                <div id="feedback-container_q1" class="text-center h-8 mb-6">
+                     <p id="feedback_q1" class="text-lg font-semibold"></p>
+                </div>
+                <div class="text-center">
+                    <button id="siguiente-btn_q1" class="bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300 hidden">
+                        Siguiente Imagen
+                    </button>
+                </div>
+            </div>
+
+            <div id="resultado-final-q1" class="hidden text-center">
+                 <h2 class="text-3xl font-bold text-center text-indigo-700 mb-6">¡Test de Identificación Finalizado!</h2>
+                 <p class="text-xl text-center mb-2">Tu puntuación final es:</p>
+                 <p id="puntuacion-final_q1" class="text-6xl font-bold text-center text-gray-800 mb-4">0 / 6</p>
+                 <p id="frase-resultado_q1" class="text-lg italic text-gray-700 mt-4 mb-8 px-4"></p>
+                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                     <button id="reiniciar-btn_q1" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
+                         Volver a Jugar
+                     </button>
+                     <a href="funcionarios-de-marina.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
+                         Otros Quizzes de Funcionarios
+                     </a>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="../../contacto.html" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Ruta Base para las Imágenes ---
+        const basePathImagenes_q1 = "imgdelos5marinas/";
+
+        // --- Datos Base de Funcionarios ---
+        const funcionariosInfo_q1 = [
+            { nombre: "Almirante Raymundo Pedro Morales Ángeles", archivoBase: "raymundo-pedro-morales-angeles.webp" },
+            { nombre: "Almirante José Barradas Cobos", archivoBase: "jose-barradas-cobos.webp" },
+            { nombre: "Almirante Francisco Guillermo Escamilla Cázares", archivoBase: "francisco-guillermo-escamilla-cazares.webp" },
+            { nombre: "Almirante Gerardo de Jesús Toledo Guzmán", archivoBase: "Gerardo-de-Jesús-Toledo-Guzmán.webp" },
+            { nombre: "Almirante José Manuel Salinas Pérez", archivoBase: "José-Manuel-Salinas-Pérez.webp" },
+            { nombre: "Capitán de Altura Manuel Fernando Gutiérrez Gallardo", archivoBase: "Manuel-Fernando-Gutiérrez-Gallardo.webp" }
+        ];
+
+        // --- Generar Datos del Quiz ---
+        const quizData_q1 = funcionariosInfo_q1.map((infoCorrecta, indexCorrecto) => {
+            const archivoCorrectoCompleto = basePathImagenes_q1 + infoCorrecta.archivoBase;
+            const opcionesIncorrectas = funcionariosInfo_q1
+                .filter((_, index) => index !== indexCorrecto)
+                .map(info => basePathImagenes_q1 + info.archivoBase);
+            const opciones = [archivoCorrectoCompleto, ...opcionesIncorrectas];
+             while(opciones.length < 6) { opciones.push(opcionesIncorrectas[ (opciones.length - 1) % opcionesIncorrectas.length ]); }
+             const opcionesFinales = opciones.slice(0, 6);
+            return { nombre: infoCorrecta.nombre, imagenCorrecta: archivoCorrectoCompleto, opcionesImagen: opcionesFinales };
+        });
+
+        // --- Frases de Resultado ---
+        const frasesResultado_q1 = {
+            alta: [ "¡Excelente! Ahora sí podrás ir a formar sin ningún miedo.", "¡Dominas el reconocimiento! Ascenso asegurado.", "¡Impecable! Ni el Almirante te reconoce tan rápido.", "¡Memoria fotográfica de primera! Listo para la guardia." ],
+            media: [ "¡Bien hecho! Te salvaste del arresto por poco.", "Aprobado, pero sigue estudiando las caras.", "No está mal, pero no te confíes en la guardia.", "Identificas a algunos, ¡pero necesitas practicar más!" ],
+            baja: [ "¡Al calabozo! Necesitas repasar urgentemente.", "¿Seguro que eres de Marina? ¡A estudiar!", "Vas a tener al oficial castroso encima todo el día.", "¡Pésimo! Más atención a los superiores." ]
+        };
+
+        // --- Elementos del DOM ---
+        const introduccionQuizContainer_q1 = document.getElementById('introduccion-quiz-q1');
+        const startQuizButton_q1 = document.getElementById('start-quiz-button-q1');
+        const quizActivoContainer_q1 = document.getElementById('quiz-activo-q1');
+        const resultadoFinalContainer_q1 = document.getElementById('resultado-final-q1');
+        const nombreElement_q1 = document.getElementById('funcionario-nombre_q1');
+        const opcionesContainer_q1 = document.getElementById('opciones-imagen_q1');
+        const feedbackElement_q1 = document.getElementById('feedback_q1');
+        const feedbackContainer_q1 = document.getElementById('feedback-container_q1');
+        const siguienteBtn_q1 = document.getElementById('siguiente-btn_q1');
+        const progresoElement_q1 = document.getElementById('progreso_q1');
+        const puntuacionElement_q1 = document.getElementById('puntuacion_q1');
+        const puntuacionFinalElement_q1 = document.getElementById('puntuacion-final_q1');
+        const fraseResultadoElement_q1 = document.getElementById('frase-resultado_q1');
+        const reiniciarBtn_q1 = document.getElementById('reiniciar-btn_q1');
+
+        // --- Estado del Quiz ---
+        let currentQuestionIndex_q1 = 0;
+        let score_q1 = 0;
+        let respuestaSeleccionada_q1 = false;
+        let randomizedQuizData_q1 = [];
+
+        // --- Funciones ---
+        function shuffleArray_q1(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
+
+        function cargarPregunta_q1() {
+            if (!randomizedQuizData_q1 || currentQuestionIndex_q1 >= randomizedQuizData_q1.length) { mostrarResultados_q1(); return; }
+            respuestaSeleccionada_q1 = false; const pA = randomizedQuizData_q1[currentQuestionIndex_q1];
+            if(nombreElement_q1) nombreElement_q1.textContent = pA.nombre;
+            if(opcionesContainer_q1) opcionesContainer_q1.innerHTML = '';
+            if(feedbackElement_q1) feedbackElement_q1.textContent = '';
+            if(feedbackContainer_q1) feedbackContainer_q1.className = 'text-center h-8 mb-6';
+            if(siguienteBtn_q1) siguienteBtn_q1.classList.add('hidden');
+            if(progresoElement_q1) progresoElement_q1.textContent = `Pregunta ${currentQuestionIndex_q1 + 1} / ${quizData_q1.length}`;
+            if(puntuacionElement_q1) puntuacionElement_q1.textContent = `Puntuación: ${score_q1}`;
+            const oB = [...pA.opcionesImagen]; shuffleArray_q1(oB);
+            oB.forEach(url => {
+                const oD = document.createElement('div'); oD.classList.add('opcion-imagen_q1', 'rounded-lg', 'aspect-square'); oD.dataset.url = url;
+                const iE = document.createElement('img'); iE.src = url; iE.alt = "Opción"; iE.classList.add('rounded-lg');
+                iE.onerror = () => { oD.innerHTML = `<span class="text-xs text-red-500 p-1">No encontrada:<br>${url.substring(basePathImagenes_q1.length)}</span>`; oD.classList.add('flex', 'items-center', 'justify-center', 'border', 'border-red-300', 'text-center'); };
+                oD.appendChild(iE); oD.addEventListener('click', () => seleccionarRespuesta_q1(oD));
+                if(opcionesContainer_q1) opcionesContainer_q1.appendChild(oD);
+            });
+        }
+        function seleccionarRespuesta_q1(oSD) {
+            if (respuestaSeleccionada_q1) return; respuestaSeleccionada_q1 = true;
+            const uS = oSD.dataset.url; const pA = randomizedQuizData_q1[currentQuestionIndex_q1]; const eC = (uS === pA.imagenCorrecta);
+            if(opcionesContainer_q1) opcionesContainer_q1.querySelectorAll('.opcion-imagen_q1').forEach(oD => { oD.classList.add('disabled'); if (oD.dataset.url === pA.imagenCorrecta) { oD.classList.add('correcta'); } if (oD === oSD && !eC) { oD.classList.add('incorrecta'); } });
+            if (feedbackElement_q1 && feedbackContainer_q1) {
+                if (eC) { feedbackElement_q1.textContent = '¡Correcto!'; feedbackContainer_q1.className = 'text-center h-8 mb-6 text-green-600 font-semibold'; score_q1++; if(puntuacionElement_q1) puntuacionElement_q1.textContent = `Puntuación: ${score_q1}`; }
+                else { feedbackElement_q1.textContent = 'Incorrecto'; feedbackContainer_q1.className = 'text-center h-8 mb-6 text-red-600 font-semibold'; }
+            }
+            if(siguienteBtn_q1) siguienteBtn_q1.classList.remove('hidden');
+        }
+        function siguientePregunta_q1() { currentQuestionIndex_q1++; cargarPregunta_q1(); }
+        function mostrarResultados_q1() {
+            if(quizActivoContainer_q1) quizActivoContainer_q1.classList.add('hidden');
+            if(!resultadoFinalContainer_q1) return;
+            let cP; const pM = quizData_q1.length;
+            if (score_q1 >= pM * 0.8) { cP = 'alta'; } else if (score_q1 >= pM * 0.5) { cP = 'media'; } else { cP = 'baja'; }
+            const fC = frasesResultado_q1[cP]; const fS = fC ? fC[Math.floor(Math.random() * fC.length)] : "¡Gracias por participar!";
+            if(puntuacionFinalElement_q1) puntuacionFinalElement_q1.textContent = `${score_q1} / ${pM}`;
+            if(fraseResultadoElement_q1) fraseResultadoElement_q1.textContent = fS;
+            resultadoFinalContainer_q1.classList.remove('hidden');
+        }
+        function iniciarQuiz_q1() {
+            if (!quizData_q1 || quizData_q1.length === 0) { console.error("Datos del quiz no disponibles."); return; }
+            randomizedQuizData_q1 = [...quizData_q1]; shuffleArray_q1(randomizedQuizData_q1);
+            currentQuestionIndex_q1 = 0; score_q1 = 0;
+            if(introduccionQuizContainer_q1) introduccionQuizContainer_q1.classList.add('hidden');
+            if(quizActivoContainer_q1) quizActivoContainer_q1.classList.remove('hidden');
+            if(resultadoFinalContainer_q1) resultadoFinalContainer_q1.classList.add('hidden');
+            cargarPregunta_q1();
+        }
+
+        // --- Inicialización y Event Listeners ---
+        if(siguienteBtn_q1) siguienteBtn_q1.addEventListener('click', siguientePregunta_q1);
+        if(reiniciarBtn_q1) reiniciarBtn_q1.addEventListener('click', () => {
+            if(introduccionQuizContainer_q1) introduccionQuizContainer_q1.classList.remove('hidden');
+            iniciarQuiz_q1();
+        });
+        if(startQuizButton_q1) startQuizButton_q1.addEventListener('click', iniciarQuiz_q1);
+
+        // --- Funcionalidad Menú Móvil ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+    </script>
+
+</body>
+</html>
+
+
+
+

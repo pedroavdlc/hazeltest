@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ordena los Cargos de Funcionarios de Marina - HazelTest</title>
+
+    <meta name="description" content="Demuestra tu conocimiento de la jerarquía naval con el Test 'Ordena los Cargos de Funcionarios de Marina' en HazelTest. Arrastra y suelta los puestos en el orden correcto.">
+    <meta name="keywords" content="test ordena cargos, quiz marina, funcionarios de marina, hazeltest, jerarquía naval, estructura de mando marina, tests navales, conocimiento naval, Secretaría de Marina">
+    <link rel="canonical" href="https://hazeltest.com/marina/funcionarios/ordena-los-cargos-de-los-funcionarios.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/marina/funcionarios/ordena-los-cargos-de-los-funcionarios.html">
+    <meta property="og:title" content="Test Ordena los Cargos de Funcionarios de Marina - HazelTest">
+    <meta property="og:description" content="Demuestra tu conocimiento de la jerarquía naval arrastrando y soltando los puestos en el orden correcto.">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_ORDENA_CARGOS">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hazeltest.com/marina/funcionarios/ordena-los-cargos-de-los-funcionarios.html">
+    <meta property="twitter:title" content="Test Ordena los Cargos de Funcionarios de Marina - HazelTest">
+    <meta property="twitter:description" content="Demuestra tu conocimiento de la jerarquía naval arrastrando y soltando los puestos en el orden correcto.">
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_ORDENA_CARGOS">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .cargo-item_q6 {
+            cursor: grab;
+            transition: opacity 0.2s ease;
+            user-select: none;
+        }
+        .cargo-item_q6:active { cursor: grabbing; }
+        .dragging_q6 { opacity: 0.5; border-style: dashed; }
+        #orden-cargos_q6 {
+            border: 2px dashed #9CA3AF;
+            min-height: 250px;
+            background-color: #F9FAFB;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+        #orden-cargos_q6.drag-over { border-color: #3B82F6; background-color: #EFF6FF; }
+        #orden-cargos_q6 .cargo-item_q6 { cursor: auto; margin-bottom: 0.5rem; }
+        #drop-placeholder_q6 {
+            display: flex; align-items: center; justify-content: center;
+            height: 100%; min-height: 150px;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="funcionarios-de-marina.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Funcionarios</a>
+                <span class="text-purple-600 font-semibold">Ordena por Cargos</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="../../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="funcionarios-de-marina.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Funcionarios</a>
+            <a href="#" class="block px-4 py-2 text-purple-600 bg-purple-50 font-semibold">Ordena por Cargos</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
+
+            <section id="introduccion-quiz" class="mb-8 pb-6 border-b border-gray-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-purple-600 mr-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12" />
+                    </svg>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Test Ordena los Cargos de Funcionarios de Marina</h1>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    ¡Bienvenido al test "Ordena por Cargos"! Conocer la estructura jerárquica es esencial en cualquier organización, y la Secretaría de Marina no es la excepción. Este desafío pondrá a prueba tu entendimiento del orden de mando.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">
+                    Se te presentarán los seis cargos principales de los funcionarios de la Marina que hemos visto. Tu tarea será arrastrarlos y soltarlos en la lista de la derecha, colocándolos en el orden jerárquico correcto, desde el puesto de mayor rango hasta el de menor rango según la estructura proporcionada.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Demuestra tu conocimiento de la cadena de mando. ¡Mucha suerte!
+                </p>
+                 <div class="mt-6 text-center">
+                    <button id="start-quiz-button" class="bg-purple-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-purple-700 transition duration-300 shadow-md">
+                        Comenzar Test
+                    </button>
+                </div>
+            </section>
+
+
+            <div id="quiz-activo" class="hidden">
+                <p class="text-center text-gray-600 mb-8">Arrastra y suelta los cargos en la lista de la derecha, ordenándolos según la jerarquía correcta (de mayor a menor rango/importancia).</p>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2 border border-gray-300 rounded-lg p-4 bg-gray-50">
+                        <h3 class="text-lg font-semibold mb-4 text-center text-gray-700">Cargos (Arrastra desde aquí):</h3>
+                        <div id="opciones-cargos" class="space-y-2">
+                             <p class="text-gray-500 text-center">Cargando...</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 rounded-lg">
+                         <h3 class="text-lg font-semibold mb-4 text-center text-gray-700">Orden Correcto (Suelta aquí):</h3>
+                         <div id="orden-cargos" class="space-y-2 p-2 rounded">
+                             <p id="drop-placeholder" class="flex items-center justify-center text-gray-400 text-center italic h-full min-h-[150px]">Arrastra los cargos aquí</p>
+                         </div>
+                    </div>
+                </div>
+                <div id="feedback-container" class="text-center h-8 mt-6 mb-6">
+                     <p id="feedback" class="text-lg font-semibold"></p>
+                </div>
+                <div class="text-center">
+                    <button id="verificar-btn" class="bg-purple-600 text-white py-2 px-6 rounded-md hover:bg-purple-700 transition duration-300">
+                        Verificar Orden
+                    </button>
+                </div>
+            </div>
+
+            <div id="resultado-final" class="hidden text-center">
+                 <h2 class="text-3xl font-bold text-center text-purple-700 mb-6">¡Resultado del Ordenamiento!</h2>
+                 <p id="mensaje-final" class="text-xl font-semibold mb-8"></p>
+                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                     <button id="reiniciar-btn" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
+                         Intentar de Nuevo
+                     </button>
+                     <a href="funcionarios-de-marina.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
+                         Otros Quizzes de Funcionarios
+                     </a>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+       <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                 <a href="../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                 <a href="../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                 <a href="../../contacto.html" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Orden Correcto de los Cargos ---
+        const cargosCorrectos_q6 = [
+            "Secretario de Marina", "Subsecretario de Marina", "Oficial Mayor",
+            "Inspector y Contralor General de Marina", "Jefe del Estado Mayor General de la Armada",
+            "Coordinador General de Puertos y Marina Mercante"
+        ];
+
+        // --- Elementos del DOM ---
+        const introduccionQuizContainer_q6 = document.getElementById('introduccion-quiz');
+        const startQuizButton_q6 = document.getElementById('start-quiz-button');
+        const quizActivoContainer_q6 = document.getElementById('quiz-activo');
+        const resultadoFinalContainer_q6 = document.getElementById('resultado-final');
+        const opcionesContainer_q6 = document.getElementById('opciones-cargos');
+        const ordenContainer_q6 = document.getElementById('orden-cargos');
+        const dropPlaceholder_q6 = document.getElementById('drop-placeholder');
+        const verificarBtn_q6 = document.getElementById('verificar-btn');
+        const feedbackElement_q6 = document.getElementById('feedback');
+        const feedbackContainer_q6 = document.getElementById('feedback-container');
+        const mensajeFinalElement_q6 = document.getElementById('mensaje-final');
+        const reiniciarBtn_q6 = document.getElementById('reiniciar-btn');
+
+        // --- Estado ---
+        let quizTerminado_q6 = false;
+        let elementoArrastradoActual_q6 = null;
+
+        // --- Funciones ---
+        function shuffleArray_q6(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
+        function dragStart_q6(event) { if (quizTerminado_q6) return; event.dataTransfer.setData('text/plain', event.target.id); elementoArrastradoActual_q6 = event.target; setTimeout(() => { event.target.classList.add('dragging_q6'); }, 0); }
+        function dragEnd_q6(event) { if(elementoArrastradoActual_q6) { elementoArrastradoActual_q6.classList.remove('dragging_q6'); } elementoArrastradoActual_q6 = null; }
+        function allowDrop_q6(event) { if (quizTerminado_q6) return; event.preventDefault(); ordenContainer_q6.classList.add('drag-over'); if (dropPlaceholder_q6 && !dropPlaceholder_q6.classList.contains('hidden')) { dropPlaceholder_q6.classList.add('hidden'); } }
+        function dragLeave_q6(event) { if (event.currentTarget.contains(event.relatedTarget)) { return; } ordenContainer_q6.classList.remove('drag-over'); if (ordenContainer_q6.children.length === 1 && dropPlaceholder_q6) { dropPlaceholder_q6.classList.remove('hidden'); } }
+        function drop_q6(event) {
+            if (quizTerminado_q6) return; event.preventDefault(); ordenContainer_q6.classList.remove('drag-over');
+            const idElementoArrastrado = event.dataTransfer.getData('text/plain'); const elemento = document.getElementById(idElementoArrastrado);
+            if (elemento) {
+                 const rect = ordenContainer_q6.getBoundingClientRect(); const offsetY = event.clientY - rect.top; let elementoReferencia = null;
+                 for (const hijo of ordenContainer_q6.children) { if (hijo.id === 'drop-placeholder_q6') continue; const hijoRect = hijo.getBoundingClientRect(); if (event.clientY < hijoRect.top + hijoRect.height / 2) { elementoReferencia = hijo; break; } }
+                 ordenContainer_q6.insertBefore(elemento, elementoReferencia); elemento.classList.remove('mb-2'); elemento.classList.add('mb-2', 'cargo-item_q6');
+            }
+             if (dropPlaceholder_q6 && ordenContainer_q6.querySelectorAll('.cargo-item_q6').length > 0) { dropPlaceholder_q6.classList.add('hidden'); }
+        }
+        function verificarOrden_q6() {
+            if (quizTerminado_q6) return;
+            const elementosOrdenados = ordenContainer_q6.querySelectorAll('.cargo-item_q6');
+            if (elementosOrdenados.length !== cargosCorrectos_q6.length) {
+                feedbackElement_q6.textContent = 'Debes ordenar todos los cargos primero.'; feedbackContainer_q6.className = 'text-center h-8 mt-6 mb-6 text-yellow-600 font-semibold'; return;
+            }
+            const ordenUsuario = Array.from(elementosOrdenados).map(el => el.textContent); const esCorrecto = JSON.stringify(ordenUsuario) === JSON.stringify(cargosCorrectos_q6);
+            quizTerminado_q6 = true; feedbackElement_q6.textContent = ''; feedbackContainer_q6.className = 'text-center h-8 mt-6 mb-6';
+            document.querySelectorAll('.cargo-item_q6').forEach(item => { item.setAttribute('draggable', 'false'); item.style.cursor = 'default'; item.classList.remove('dragging_q6'); });
+            if(quizActivoContainer_q6) quizActivoContainer_q6.classList.add('hidden');
+            if (esCorrecto) { mensajeFinalElement_q6.textContent = '¡Orden Correcto! Has dominado la jerarquía.'; mensajeFinalElement_q6.className = 'text-xl font-semibold mb-8 text-green-600'; }
+            else { mensajeFinalElement_q6.textContent = 'Orden Incorrecto. ¡Inténtalo de nuevo!'; mensajeFinalElement_q6.className = 'text-xl font-semibold mb-8 text-red-600'; }
+            if(resultadoFinalContainer_q6) resultadoFinalContainer_q6.classList.remove('hidden');
+        }
+        function iniciarQuiz_q6() {
+            quizTerminado_q6 = false;
+            if(introduccionQuizContainer_q6) introduccionQuizContainer_q6.classList.add('hidden');
+            if(quizActivoContainer_q6) quizActivoContainer_q6.classList.remove('hidden');
+            if(resultadoFinalContainer_q6) resultadoFinalContainer_q6.classList.add('hidden');
+            if(feedbackElement_q6) feedbackElement_q6.textContent = '';
+            if(feedbackContainer_q6) feedbackContainer_q6.className = 'text-center h-8 mt-6 mb-6';
+
+            if(opcionesContainer_q6) opcionesContainer_q6.innerHTML = '';
+            if(ordenContainer_q6) ordenContainer_q6.innerHTML = '';
+             if (dropPlaceholder_q6) { ordenContainer_q6.appendChild(dropPlaceholder_q6); dropPlaceholder_q6.classList.remove('hidden'); }
+
+            const cargosBarajados = [...cargosCorrectos_q6]; shuffleArray_q6(cargosBarajados);
+            cargosBarajados.forEach((cargo, index) => {
+                const div = document.createElement('div'); div.id = `opcion-q6-${index}`; div.textContent = cargo; div.setAttribute('draggable', 'true'); div.classList.add('cargo-item_q6', 'p-3', 'border', 'border-gray-300', 'rounded-md', 'bg-white', 'shadow-sm', 'mb-2');
+                div.addEventListener('dragstart', dragStart_q6); div.addEventListener('dragend', dragEnd_q6);
+                if(opcionesContainer_q6) opcionesContainer_q6.appendChild(div);
+            });
+            if(ordenContainer_q6) {
+                ordenContainer_q6.removeEventListener('dragover', allowDrop_q6); ordenContainer_q6.removeEventListener('dragleave', dragLeave_q6); ordenContainer_q6.removeEventListener('drop', drop_q6);
+                ordenContainer_q6.addEventListener('dragover', allowDrop_q6); ordenContainer_q6.addEventListener('dragleave', dragLeave_q6); ordenContainer_q6.addEventListener('drop', drop_q6);
+            }
+        }
+
+        // --- Inicialización y Event Listeners ---
+        if(verificarBtn_q6) verificarBtn_q6.addEventListener('click', verificarOrden_q6);
+        if(reiniciarBtn_q6) reiniciarBtn_q6.addEventListener('click', () => {
+            if(introduccionQuizContainer_q6) introduccionQuizContainer_q6.classList.remove('hidden');
+            iniciarQuiz_q6();
+        });
+        if(startQuizButton_q6) startQuizButton_q6.addEventListener('click', iniciarQuiz_q6);
+
+        // --- Funcionalidad Menú Móvil ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+
+    </script>
+
+</body>
+</html>
+
+

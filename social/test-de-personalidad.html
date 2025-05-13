@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Personalidad - HazelTest</title>
+
+    <meta name="description" content="Realiza nuestro test de personalidad completo en HazelTest. Descubre tus rasgos dominantes, cómo interactúas con otros y tus preferencias en diversas situaciones. ¡Conócete mejor!">
+    <meta name="keywords" content="test de personalidad, personalidad, quiz, autoconocimiento, psicología, rasgos, introspección, hazeltest, prueba de personalidad, test de personalidad gratis, test de personalidad con resultados, test estilo de personalidad, test de personalidad corto, psicometria, rasgos de caracter, autoconocimiento test, que tipo de personalidad tengo, test psicologico online, evaluacion de personalidad, descubre tu personalidad, tipos de personalidad">
+    <link rel="canonical" href="https://hazeltest.com/social/test-de-personalidad.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/social/test-de-personalidad.html">
+    <meta property="og:title" content="Test de Personalidad - HazelTest">
+    <meta property="og:description" content="Descubre facetas ocultas de tu ser con nuestro Test de Personalidad detallado.">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_PERSONALIDAD"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hazeltest.com/social/test-de-personalidad.html">
+    <meta property="twitter:title" content="Test de Personalidad - HazelTest">
+    <meta property="twitter:description" content="Descubre facetas ocultas de tu ser con nuestro Test de Personalidad detallado.">
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_PERSONALIDAD"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hidden { display: none; }
+        .question-container { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb; }
+        .question-container:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+        .option-label {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid #D1D5DB;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            line-height: 1.5;
+        }
+        .option-label:hover {
+            background-color: #F9FAFB;
+            border-color: #9CA3AF;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        .option-input:checked + .option-label {
+            background-color: #DBEAFE;
+            border-color: #3B82F6;
+            color: #1E3A8A;
+            font-weight: 600;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Social</a>
+                <span class="text-indigo-600 font-semibold">Test Personalidad</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Social</a>
+            <span class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Test Personalidad</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center border-b pb-4">Test de Personalidad</h1>
+
+            <section id="descripcion-test" class="mb-8">
+                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    ¡Bienvenido a nuestro Test de Personalidad! Este test está diseñado para ayudarte a explorar diferentes facetas de tu carácter y entender mejor tus tendencias y preferencias. No hay respuestas correctas o incorrectas, simplemente elige la opción que mejor te represente en cada situación.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify mb-4">
+                    A lo largo de 15 preguntas, te presentaremos diversos escenarios y opciones. Reflexiona sobre cada una y selecciona la que más se alinee con tu forma de ser o actuar habitualmente. Este es un ejercicio de autoconocimiento, así que la honestidad contigo mismo es clave para obtener un resultado más significativo.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Al finalizar, recibirás un resumen basado en tus respuestas. ¡Tómate tu tiempo y diviértete descubriendo más sobre ti!
+                </p>
+            </section>
+
+            <hr class="my-8 border-gray-300">
+
+            <form id="personality-test-form">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Comienza el Test</h2>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">1. Cuando te enfrentas a un nuevo desafío, ¿cómo sueles reaccionar?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta1" id="q1o1" value="a" class="sr-only option-input" required><label for="q1o1" class="option-label">Con entusiasmo y curiosidad.</label></div>
+                        <div><input type="radio" name="pregunta1" id="q1o2" value="b" class="sr-only option-input"><label for="q1o2" class="option-label">Con cautela, analizando los pros y contras.</label></div>
+                        <div><input type="radio" name="pregunta1" id="q1o3" value="c" class="sr-only option-input"><label for="q1o3" class="option-label">Con un poco de nerviosismo, pero dispuesto a intentarlo.</label></div>
+                        <div><input type="radio" name="pregunta1" id="q1o4" value="d" class="sr-only option-input"><label for="q1o4" class="option-label">Prefiero evitarlo si es posible.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">2. En un entorno social, ¿te consideras más?</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta2" id="q2o1" value="a" class="sr-only option-input" required><label for="q2o1" class="option-label">Extrovertido y hablador.</label></div>
+                        <div><input type="radio" name="pregunta2" id="q2o2" value="b" class="sr-only option-input"><label for="q2o2" class="option-label">Introvertido y observador.</label></div>
+                        <div><input type="radio" name="pregunta2" id="q2o3" value="c" class="sr-only option-input"><label for="q2o3" class="option-label">Un poco de ambos, dependiendo de la situación.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">3. Al tomar decisiones importantes, ¿qué valoras más?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta3" id="q3o1" value="a" class="sr-only option-input" required><label for="q3o1" class="option-label">La lógica y los hechos.</label></div>
+                        <div><input type="radio" name="pregunta3" id="q3o2" value="b" class="sr-only option-input"><label for="q3o2" class="option-label">La intuición y los sentimientos.</label></div>
+                        <div><input type="radio" name="pregunta3" id="q3o3" value="c" class="sr-only option-input"><label for="q3o3" class="option-label">Las opiniones de personas de confianza.</label></div>
+                        <div><input type="radio" name="pregunta3" id="q3o4" value="d" class="sr-only option-input"><label for="q3o4" class="option-label">El impacto a largo plazo.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">4. ¿Cómo prefieres pasar tu tiempo libre?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta4" id="q4o1" value="a" class="sr-only option-input" required><label for="q4o1" class="option-label">Con amigos, en actividades grupales.</label></div>
+                        <div><input type="radio" name="pregunta4" id="q4o2" value="b" class="sr-only option-input"><label for="q4o2" class="option-label">Solo, disfrutando de hobbies personales.</label></div>
+                        <div><input type="radio" name="pregunta4" id="q4o3" value="c" class="sr-only option-input"><label for="q4o3" class="option-label">Una mezcla de actividades sociales y tiempo a solas.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">5. Cuando trabajas en un proyecto, ¿tiendes a ser?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta5" id="q5o1" value="a" class="sr-only option-input" required><label for="q5o1" class="option-label">Organizado y planificador.</label></div>
+                        <div><input type="radio" name="pregunta5" id="q5o2" value="b" class="sr-only option-input"><label for="q5o2" class="option-label">Espontáneo y adaptable.</label></div>
+                        <div><input type="radio" name="pregunta5" id="q5o3" value="c" class="sr-only option-input"><label for="q5o3" class="option-label">Perfeccionista, cuidando cada detalle.</label></div>
+                    </div>
+                </div>
+                 <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">6. ¿Qué te motiva más?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta6" id="q6o1" value="a" class="sr-only option-input" required><label for="q6o1" class="option-label">El reconocimiento y los logros.</label></div>
+                        <div><input type="radio" name="pregunta6" id="q6o2" value="b" class="sr-only option-input"><label for="q6o2" class="option-label">Ayudar a los demás y hacer una diferencia.</label></div>
+                        <div><input type="radio" name="pregunta6" id="q6o3" value="c" class="sr-only option-input"><label for="q6o3" class="option-label">El aprendizaje y el crecimiento personal.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">7. Si tienes un desacuerdo con alguien, ¿cómo lo manejas?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta7" id="q7o1" value="a" class="sr-only option-input" required><label for="q7o1" class="option-label">Expreso mi punto de vista directamente.</label></div>
+                        <div><input type="radio" name="pregunta7" id="q7o2" value="b" class="sr-only option-input"><label for="q7o2" class="option-label">Intento encontrar un compromiso.</label></div>
+                        <div><input type="radio" name="pregunta7" id="q7o3" value="c" class="sr-only option-input"><label for="q7o3" class="option-label">Prefiero evitar el conflicto.</label></div>
+                    </div>
+                </div>
+                 <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">8. ¿Te sientes más cómodo con?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta8" id="q8o1" value="a" class="sr-only option-input" required><label for="q8o1" class="option-label">Rutinas y horarios establecidos.</label></div>
+                        <div><input type="radio" name="pregunta8" id="q8o2" value="b" class="sr-only option-input"><label for="q8o2" class="option-label">Flexibilidad y espontaneidad.</label></div>
+                        <div><input type="radio" name="pregunta8" id="q8o3" value="c" class="sr-only option-input"><label for="q8o3" class="option-label">Un balance entre ambos.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">9. ¿Qué tipo de películas o libros prefieres?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta9" id="q9o1" value="a" class="sr-only option-input" required><label for="q9o1" class="option-label">Acción y aventura.</label></div>
+                        <div><input type="radio" name="pregunta9" id="q9o2" value="b" class="sr-only option-input"><label for="q9o2" class="option-label">Drama y romance.</label></div>
+                        <div><input type="radio" name="pregunta9" id="q9o3" value="c" class="sr-only option-input"><label for="q9o3" class="option-label">Ciencia ficción o fantasía.</label></div>
+                        <div><input type="radio" name="pregunta9" id="q9o4" value="d" class="sr-only option-input"><label for="q9o4" class="option-label">Documentales o biografías.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">10. Cuando aprendes algo nuevo, ¿prefieres?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta10" id="q10o1" value="a" class="sr-only option-input" required><label for="q10o1" class="option-label">Experimentar y aprender haciendo.</label></div>
+                        <div><input type="radio" name="pregunta10" id="q10o2" value="b" class="sr-only option-input"><label for="q10o2" class="option-label">Leer y estudiar la teoría primero.</label></div>
+                        <div><input type="radio" name="pregunta10" id="q10o3" value="c" class="sr-only option-input"><label for="q10o3" class="option-label">Observar a otros y luego intentarlo.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">11. ¿Cómo te sientes acerca de los cambios inesperados?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta11" id="q11o1" value="a" class="sr-only option-input" required><label for="q11o1" class="option-label">Me adaptado fácilmente y los veo como oportunidades.</label></div>
+                        <div><input type="radio" name="pregunta11" id="q11o2" value="b" class="sr-only option-input"><label for="q11o2" class="option-label">Me causan estrés, prefiero la estabilidad.</label></div>
+                        <div><input type="radio" name="pregunta11" id="q11o3" value="c" class="sr-only option-input"><label for="q11o3" class="option-label">Depende del cambio, algunos me gustan, otros no.</label></div>
+                    </div>
+                </div>
+                 <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">12. ¿Qué es más importante para ti en un amigo?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta12" id="q12o1" value="a" class="sr-only option-input" required><label for="q12o1" class="option-label">Lealtad y confianza.</label></div>
+                        <div><input type="radio" name="pregunta12" id="q12o2" value="b" class="sr-only option-input"><label for="q12o2" class="option-label">Diversión y buen humor.</label></div>
+                        <div><input type="radio" name="pregunta12" id="q12o3" value="c" class="sr-only option-input"><label for="q12o3" class="option-label">Apoyo y comprensión.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">13. Al planificar unas vacaciones, ¿prefieres?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta13" id="q13o1" value="a" class="sr-only option-input" required><label for="q13o1" class="option-label">Un itinerario detallado y organizado.</label></div>
+                        <div><input type="radio" name="pregunta13" id="q13o2" value="b" class="sr-only option-input"><label for="q13o2" class="option-label">Decidir sobre la marcha y ser espontáneo.</label></div>
+                        <div><input type="radio" name="pregunta13" id="q13o3" value="c" class="sr-only option-input"><label for="q13o3" class="option-label">Un destino relajante sin muchos planes.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">14. ¿Cómo reaccionas ante las críticas?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta14" id="q14o1" value="a" class="sr-only option-input" required><label for="q14o1" class="option-label">Las tomo como una oportunidad para mejorar.</label></div>
+                        <div><input type="radio" name="pregunta14" id="q14o2" value="b" class="sr-only option-input"><label for="q14o2" class="option-label">Me siento un poco a la defensiva al principio.</label></div>
+                        <div><input type="radio" name="pregunta14" id="q14o3" value="c" class="sr-only option-input"><label for="q14o3" class="option-label">Intento entender el punto de vista del otro.</label></div>
+                        <div><input type="radio" name="pregunta14" id="q14o4" value="d" class="sr-only option-input"><label for="q14o4" class="option-label">Me afectan bastante y me cuesta olvidarlas.</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">15. Si pudieras elegir un superpoder, ¿cuál sería?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta15" id="q15o1" value="a" class="sr-only option-input" required><label for="q15o1" class="option-label">Volar.</label></div>
+                        <div><input type="radio" name="pregunta15" id="q15o2" value="b" class="sr-only option-input"><label for="q15o2" class="option-label">Invisibilidad.</label></div>
+                        <div><input type="radio" name="pregunta15" id="q15o3" value="c" class="sr-only option-input"><label for="q15o3" class="option-label">Leer mentes.</label></div>
+                        <div><input type="radio" name="pregunta15" id="q15o4" value="d" class="sr-only option-input"><label for="q15o4" class="option-label">Super fuerza.</label></div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button type="submit" id="ver-resultados-btn" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-indigo-700 transition duration-300 shadow-md">
+                        Ver Mis Resultados
+                    </button>
+                </div>
+            </form>
+
+            <section id="test-resultados" class="hidden mt-10 pt-6 border-t border-gray-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Tus Resultados</h2>
+                <div id="resultado-personalidad" class="bg-indigo-50 p-6 rounded-lg shadow">
+                    <h3 id="tipo-personalidad" class="text-xl font-bold text-indigo-700 mb-3">Calculando...</h3>
+                    <p id="descripcion-personalidad" class="text-gray-700 leading-relaxed text-justify">
+                        Por favor, completa el test para ver tu descripción de personalidad.
+                    </p>
+                </div>
+                 <div class="text-center mt-8">
+                     <button id="reiniciar-test-btn" class="text-indigo-600 hover:underline font-medium">Volver a hacer el test</button>
+                 </div>
+            </section>
+
+             <div class="mt-12 text-center">
+                 <a href="../index.html" class="text-indigo-600 hover:underline">&larr; Volver a la página principal</a>
+             </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="../contacto.html" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Elementos del DOM ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const testForm = document.getElementById('personality-test-form');
+        const reiniciarTestBtn = document.getElementById('reiniciar-test-btn');
+        const descripcionTestSection = document.getElementById('descripcion-test');
+        const resultadosSection = document.getElementById('test-resultados');
+        const tipoPersonalidadElement = document.getElementById('tipo-personalidad');
+        const descripcionPersonalidadElement = document.getElementById('descripcion-personalidad');
+
+        // --- Funcionalidad del Menú Móvil ---
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // --- Lógica del Test de Personalidad ---
+        if (testForm && resultadosSection && tipoPersonalidadElement && descripcionPersonalidadElement && descripcionTestSection) {
+            testForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                let respuestas = {};
+                const totalPreguntas = 15;
+                let preguntasRespondidas = 0;
+                for (let i = 1; i <= totalPreguntas; i++) {
+                    const inputSeleccionado = testForm.querySelector(`input[name="pregunta${i}"]:checked`);
+                    if (inputSeleccionado) {
+                        respuestas[`pregunta${i}`] = inputSeleccionado.value;
+                        preguntasRespondidas++;
+                    }
+                }
+                if (preguntasRespondidas < totalPreguntas) {
+                    alert("Por favor, responde todas las preguntas para ver tus resultados.");
+                    return;
+                }
+
+                let contador = { a: 0, b: 0, c: 0, d: 0 };
+                Object.values(respuestas).forEach(val => { if (contador.hasOwnProperty(val)) { contador[val]++; } });
+
+                let personalidad = "Resultado Personalizado";
+                let descripcion = "Tus respuestas sugieren una combinación única de rasgos. A continuación, un análisis más detallado:";
+
+                // Lógica de resultados mejorada
+                if (contador.a > contador.b && contador.a > contador.c && contador.a > contador.d) {
+                    personalidad = "El Explorador Dinámico";
+                    descripcion = "Eres una persona llena de energía, siempre lista para la aventura y con una curiosidad insaciable. Te encanta experimentar cosas nuevas y no temes a los desafíos. Tu optimismo es contagioso y sueles ser el alma de las reuniones sociales. Valoras la libertad y la acción por encima de todo. Consejo: ¡Sigue canalizando esa energía en proyectos que te apasionen, pero recuerda también tomarte momentos para la reflexión y la planificación!";
+                } else if (contador.b > contador.a && contador.b > contador.c && contador.b > contador.d) {
+                    personalidad = "El Estratega Reflexivo";
+                    descripcion = "Te caracterizas por tu mente analítica y tu enfoque metódico. Antes de actuar, prefieres observar, analizar todos los ángulos y planificar con cuidado. Valoras la lógica, la información precisa y la estabilidad. Aunque puedes ser reservado, tu profundidad de pensamiento es una gran fortaleza. Consejo: No dejes que el análisis te paralice; a veces, ¡un poco de espontaneidad puede abrir nuevas puertas!";
+                } else if (contador.c > contador.a && contador.c > contador.b && contador.c > contador.d) {
+                    personalidad = "El Conector Armonioso";
+                    descripcion = "Tu fortaleza radica en tu empatía y tu habilidad para conectar con los demás. Buscas la armonía en tus relaciones y valoras la comprensión y el apoyo mutuo. Eres un gran oyente y sueles mediar en conflictos, buscando siempre el bienestar del grupo. Consejo: Recuerda también cuidar de tus propias necesidades y establecer límites saludables.";
+                } else if (contador.d > contador.a && contador.d > contador.b && contador.d > contador.c) {
+                     personalidad = "El Realizador Concreto";
+                     descripcion = "Eres una persona práctica, con los pies en la tierra, que valora la eficiencia y los resultados tangibles. Prefieres la estabilidad y las soluciones directas. Aunque puedes ser reacio a los cambios drásticos, tu determinación te ayuda a alcanzar tus metas. Consejo: Permítete explorar nuevas ideas de vez en cuando, ¡podrías descubrir enfoques innovadores!";
+                } else {
+                    // Lógica para combinaciones o si no hay un dominante claro
+                    if (contador.a >= 6 && contador.b >= 6) { // Ejemplo de combinación A y B
+                        personalidad = "El Visionario Pragmático";
+                        descripcion = "Tienes la energía y el entusiasmo para visualizar grandes proyectos (Explorador) y la capacidad de analizar y planificar los pasos para lograrlos (Estratega). Esta combinación te hace muy efectivo para convertir ideas en realidad. Consejo: Asegúrate de comunicar tu visión claramente para inspirar a otros.";
+                    } else if (contador.c >= 6 && contador.a >= 6) {
+                        personalidad = "El Líder Carismático";
+                        descripcion = "Tu empatía y habilidad para conectar (Conector) se combinan con tu energía y entusiasmo (Explorador), lo que te convierte en una persona que puede inspirar y movilizar a otros fácilmente. Disfrutas de las interacciones sociales y de liderar con un enfoque positivo. Consejo: Utiliza tu carisma para fomentar la colaboración y el crecimiento en tus equipos.";
+                    } else {
+                        personalidad = "El Ser Adaptable y Versátil";
+                        descripcion = "Tus respuestas indican una personalidad flexible, capaz de adaptarse a diferentes situaciones y personas. No te defines por un solo rasgo dominante, sino que muestras una rica combinación de características que te permiten desenvolverte en diversos entornos. ¡Esta versatilidad es tu gran fortaleza! Consejo: Aprovecha tu adaptabilidad para aprender de cada experiencia y conectar con una amplia gama de personas.";
+                    }
+                }
+
+                tipoPersonalidadElement.textContent = personalidad;
+                descripcionPersonalidadElement.textContent = descripcion;
+                if(descripcionTestSection) descripcionTestSection.classList.add('hidden');
+                testForm.classList.add('hidden');
+                resultadosSection.classList.remove('hidden');
+                resultadosSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        if (reiniciarTestBtn && testForm && resultadosSection && descripcionTestSection) {
+            reiniciarTestBtn.addEventListener('click', () => {
+                testForm.reset();
+                resultadosSection.classList.add('hidden');
+                if(descripcionTestSection) descripcionTestSection.classList.remove('hidden');
+                testForm.classList.remove('hidden');
+                tipoPersonalidadElement.textContent = "Calculando...";
+                descripcionPersonalidadElement.textContent = "Por favor, completa el test para ver tu descripción de personalidad.";
+                if(descripcionTestSection && !descripcionTestSection.classList.contains('hidden')) {
+                    descripcionTestSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    testForm.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+

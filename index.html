@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HazelTest - Pon a Prueba Tus Conocimientos</title>
+
+    <meta name="description" content="Participa en divertidos tests en HazelTest. Pon a prueba tus conocimientos sobre Marina, temas sociales, cultura general y más categorías. ¡Demuestra cuánto sabes!">
+    <meta name="keywords" content="quiz, test, prueba, conocimientos, marina, social, personalidad, funcionarios, naval, cultura general, trivia, examen, hazeltest">
+    <link rel="canonical" href="https://hazeltest.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/">
+    <meta property="og:title" content="HazelTest - Pon a Prueba Tus Conocimientos">
+    <meta property="og:description" content="Participa en divertidos tests sobre Marina, temas sociales y más. ¡Demuestra cuánto sabes!">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_AQUI">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hazeltest.com/">
+    <meta property="twitter:title" content="HazelTest - Pon a Prueba Tus Conocimientos">
+    <meta property="twitter:description" content="Participa en divertidos tests sobre Marina, temas sociales y más. ¡Demuestra cuánto sabes!">
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_AQUI">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686"
+     crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/magnifying-glass.svg" rel="preload" as="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/users.svg" rel="preload" as="image">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration { -webkit-appearance:none; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-indigo-600 font-semibold transition duration-300">Inicio</a>
+                <a href="categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="contacto.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Inicio</a>
+            <a href="categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="contacto.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Pon a Prueba Tus Conocimientos</h1>
+                <p class="text-lg md:text-xl mb-8 text-indigo-100">Descubre y participa en divertidos tests sobre una gran variedad de temas.</p>
+                <a href="#tests" class="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300 text-lg shadow-lg">Explorar Tests</a>
+            </div>
+        </section>
+
+        <section id="search-section" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-2xl font-semibold text-center mb-6 text-gray-700">Encuentra tu Próximo Desafío</h2>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="search" id="search-input" placeholder="Buscar por tema o nombre del test..." class="flex-grow px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm transition duration-200"/>
+                    <button id="search-button" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300 flex items-center justify-center shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tests" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Categorías Destacadas</h2>
+                 <div id="featured-categories-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                     <div id="marina-card-container" class="w-full">
+                        <a href="marina/index.html" class="block h-full bg-gray-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
+                             <div class="flex justify-center mb-4">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-blue-500">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6A1.5 1.5 0 0 1 15 7.5v1.5a1.5 1.5 0 0 1-1.5 1.5H12v1.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5V10.5a1.5 1.5 0 0 1 1.5-1.5h1.5V7.5A1.5 1.5 0 0 1 12 6h1.5Zm0 0A1.5 1.5 0 0 0 12 4.5v-1.5a1.5 1.5 0 0 0-3 0V6A1.5 1.5 0 0 0 10.5 7.5H12a1.5 1.5 0 0 0 1.5-1.5Z M3.75 13.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Zm16.5 0a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z M6 15a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 6 15Zm12 0a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z M12 12.75a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3Z" />
+                                 </svg>
+                             </div>
+                            <h3 class="text-xl font-semibold mb-2 text-center text-blue-700">Marina</h3>
+                            <p class="text-gray-600 mb-4 text-center text-sm flex-grow">Sumérgete en el mundo naval con tests sobre funcionarios, historia marítima, legislación específica y tácticas.</p>
+                            <div class="flex justify-center items-center text-sm text-gray-500 mb-4">
+                                <span>Varios Tests</span> <span class="mx-2">|</span> <span>Dificultad: Variada</span>
+                            </div>
+                            <button class="mt-auto w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 cursor-pointer">Explorar Categoría</button>
+                        </a>
+                    </div>
+
+                    <div id="social-card-container" class="w-full">
+                        <a href="social/index.html" class="block h-full bg-gray-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
+                             <div class="flex justify-center mb-4">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-green-500">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.94-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.06-3.197M12 12.75a5.995 5.995 0 0 1 5.06 3.197M12 12.75A5.995 5.995 0 0 0 6.94 15.947M12 12.75l-.001-.031c0-.225.012-.447.037-.666A11.944 11.944 0 0 0 12 3c2.17 0 4.207-.576 5.963 1.584A6.062 6.062 0 0 0 18 6.281m0 0V3.031m0 0A5.995 5.995 0 0 0 12 9m6-2.719A5.995 5.995 0 0 1 12 9m0 0A5.995 5.995 0 0 0 6 6.281m0 0V3.031m0 0A5.995 5.995 0 0 1 12 9m-6 2.719A5.995 5.995 0 0 0 12 9" />
+                                 </svg>
+                             </div>
+                            <h3 class="text-xl font-semibold mb-2 text-center text-green-700">Social</h3>
+                            <p class="text-gray-600 mb-4 text-center text-sm flex-grow">Explora tests de personalidad, autoconocimiento y dinámicas interpersonales.</p>
+                            <div class="flex justify-center items-center text-sm text-gray-500 mb-4">
+                                <span>Varios Tests</span> <span class="mx-2">|</span> <span>Dificultad: Reflexiva</span>
+                            </div>
+                            <button class="mt-auto w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 cursor-pointer">Explorar Categoría</button>
+                        </a>
+                    </div>
+                </div>
+                <p id="no-results" class="text-center text-gray-500 mt-8 hidden">No se encontraron categorías que coincidan con tu búsqueda.</p>
+
+                 <div class="text-center mt-16">
+                    <a href="categorias.html" class="text-indigo-600 font-semibold hover:underline">Ver todas las categorías &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-creator" class="py-16 bg-indigo-50">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl font-bold text-indigo-800 mb-6">Conoce al Creador</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Este sitio fue desarrollado con dedicación. Haz clic abajo para saber más sobre el creador.
+                </p>
+                <a href="creador.html" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300 shadow-md">
+                    Conocer más
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="contacto.html" class="hover:text-white">Contacto</a>
+                <a href="mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const marinaCardContainer = document.getElementById('marina-card-container');
+        const socialCardContainer = document.getElementById('social-card-container');
+        const noResultsMessage = document.getElementById('no-results');
+        const featuredGrid = document.getElementById('featured-categories-grid');
+
+        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+
+        const marinaKeywords = ["marina", "funcionarios", "naval", "bim-40", "bim40", "bim", "40"];
+        const socialKeywords = ["social", "personalidad", "autoconocimiento", "psicología", "depresión", "narcisismo"];
+
+        function ejecutarBusqueda() {
+            if (!searchInput || !noResultsMessage || !featuredGrid) return;
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            let foundMarina = false;
+            let foundSocial = false;
+
+            if (searchTerm === "") {
+                if(marinaCardContainer) marinaCardContainer.classList.remove('hidden');
+                if(socialCardContainer) socialCardContainer.classList.remove('hidden');
+                noResultsMessage.classList.add('hidden');
+                featuredGrid.classList.remove('justify-center');
+                featuredGrid.classList.add('md:grid-cols-2');
+                return;
+            }
+
+            if (marinaCardContainer && marinaKeywords.some(keyword => searchTerm.includes(keyword))) {
+                marinaCardContainer.classList.remove('hidden');
+                foundMarina = true;
+            } else if (marinaCardContainer) {
+                marinaCardContainer.classList.add('hidden');
+            }
+
+            if (socialCardContainer && socialKeywords.some(keyword => searchTerm.includes(keyword))) {
+                socialCardContainer.classList.remove('hidden');
+                foundSocial = true;
+            } else if (socialCardContainer) {
+                socialCardContainer.classList.add('hidden');
+            }
+
+            if (foundMarina || foundSocial) {
+                noResultsMessage.classList.add('hidden');
+                if (foundMarina && !foundSocial || !foundMarina && foundSocial) {
+                    featuredGrid.classList.add('justify-center');
+                    featuredGrid.classList.remove('md:grid-cols-2');
+                } else {
+                    featuredGrid.classList.remove('justify-center');
+                    featuredGrid.classList.add('md:grid-cols-2');
+                }
+            } else {
+                noResultsMessage.classList.remove('hidden');
+                featuredGrid.classList.add('justify-center');
+                featuredGrid.classList.remove('md:grid-cols-2');
+            }
+        }
+
+        if (searchButton) { searchButton.addEventListener('click', ejecutarBusqueda); }
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (event) => { if (event.key === 'Enter') { ejecutarBusqueda(); } });
+            searchInput.addEventListener('input', () => { if (searchInput.value.trim() === '') { ejecutarBusqueda(); } });
+            searchInput.addEventListener('search', () => { if (searchInput.value.trim() === '') { ejecutarBusqueda(); } });
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Depresión (Informativo) - HazelTest</title>
+
+    <meta name="description" content="Realiza este test de depresión informativo para reflexionar sobre posibles síntomas. Recuerda que no es un diagnóstico. Consulta a un profesional. HazelTest.">
+    <meta name="keywords" content="test de depresion, depresion test, distimia test, test para saber si tienes depresion, test de la depresion, tengo depresion test, prueba de depresion, examen de depresion, estoy deprimida test, test para depresion, test para la depresion, quiz de depresion, test de depresion online, test para ver si tienes depresion, test de depresion en adolescentes, test sobre depresion, test para ver si tengo depresion, salud mental, autoevaluación, bienestar emocional, hazeltest">
+    <link rel="canonical" href="https://hazeltest.com/social/test-de-depresion.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hazeltest.com/social/test-de-depresion.html">
+    <meta property="og:title" content="Test Depresión (Informativo) - HazelTest">
+    <meta property="og:description" content="Un test para reflexionar sobre posibles síntomas relacionados con la depresión. No es un diagnóstico.">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_DEPRESION"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hazeltest.com/social/test-de-depresion.html">
+    <meta property="twitter:title" content="Test Depresión (Informativo) - HazelTest">
+    <meta property="twitter:description" content="Un test para reflexionar sobre posibles síntomas relacionados con la depresión. No es un diagnóstico.">
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_DEPRESION"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hidden { display: none; }
+        .question-container { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb; }
+        .question-container:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+        .option-label {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid #D1D5DB;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            line-height: 1.5;
+        }
+        .option-label:hover {
+            background-color: #F9FAFB;
+            border-color: #9CA3AF;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        .option-input:checked + .option-label {
+            background-color: #FEF3C7; /* yellow-100 */
+            border-color: #FCD34D; /* yellow-400 */
+            color: #78350F; /* amber-900 */
+            font-weight: 600;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+        .disclaimer-box {
+            background-color: #FFFBEB; /* yellow-50 */
+            border-left-width: 4px;
+            border-color: #FBBF24; /* amber-400 */
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Social</a>
+                 <span class="text-yellow-600 font-semibold">Test Depresión</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Social</a>
+            <span class="block px-4 py-2 text-yellow-600 bg-yellow-50 font-semibold">Test Depresión</span> </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center border-b pb-4">Test Depresión</h1>
+
+            <section id="disclaimer" class="mb-8 disclaimer-box rounded-md">
+                <h2 class="text-xl font-semibold text-yellow-700 mb-3">Aviso Importante</h2>
+                <p class="text-yellow-800 text-sm leading-relaxed text-justify">
+                    Pruebas en línea de salud mental son para la evaluación personal y <strong>no son instrumentos diagnósticos.</strong> Se le recomienda compartir sus resultados con un médico o proveedor de atención médica. HazelTest, sus patrocinadores, socios y anunciantes renuncian a cualquier responsabilidad, pérdida o riesgo incurrido como consecuencia, directa o indirectamente, del uso y aplicación de estos instrumentos.
+                </p>
+                <p class="text-yellow-800 text-sm leading-relaxed text-justify mt-3">
+                    Si te sientes identificado/a con varios de los síntomas descritos o si tu bienestar emocional te preocupa, por favor, <strong>busca ayuda profesional.</strong> Hablar con un experto es el paso más importante para entender lo que te sucede y recibir el apoyo adecuado.
+                </p>
+            </section>
+
+            <section id="descripcion-test" class="mb-8">
+                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    Este test está diseñado para ayudarte a reflexionar sobre algunos síntomas y sentimientos que comúnmente se asocian con la depresión. No hay respuestas "buenas" o "malas". El objetivo es que puedas observar tus propias experiencias recientes.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Por favor, responde cada pregunta pensando en cómo te has sentido durante las <strong>últimas dos semanas</strong>.
+                </p>
+            </section>
+
+            <hr class="my-8 border-gray-300">
+
+            <form id="depression-test-form">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Comienza el Test</h2>
+
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">1. Tener poco interés o placer en hacer las cosas:</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="pregunta1" id="q1o0" value="0" class="sr-only option-input" required><label for="q1o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta1" id="q1o1" value="1" class="sr-only option-input"><label for="q1o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta1" id="q1o2" value="2" class="sr-only option-input"><label for="q1o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta1" id="q1o3" value="3" class="sr-only option-input"><label for="q1o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">2. Sentirse desanimado/a, deprimido/a, o sin esperanza:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta2" id="q2o0" value="0" class="sr-only option-input" required><label for="q2o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta2" id="q2o1" value="1" class="sr-only option-input"><label for="q2o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta2" id="q2o2" value="2" class="sr-only option-input"><label for="q2o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta2" id="q2o3" value="3" class="sr-only option-input"><label for="q2o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">3. Con problemas en dormirse o en mantenerse dormido/a, o en dormir demasiado:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta3" id="q3o0" value="0" class="sr-only option-input" required><label for="q3o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta3" id="q3o1" value="1" class="sr-only option-input"><label for="q3o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta3" id="q3o2" value="2" class="sr-only option-input"><label for="q3o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta3" id="q3o3" value="3" class="sr-only option-input"><label for="q3o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">4. Sentirse cansado/a o tener poca energía:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta4" id="q4o0" value="0" class="sr-only option-input" required><label for="q4o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta4" id="q4o1" value="1" class="sr-only option-input"><label for="q4o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta4" id="q4o2" value="2" class="sr-only option-input"><label for="q4o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta4" id="q4o3" value="3" class="sr-only option-input"><label for="q4o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">5. Tener poco apetito o comer en exceso:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta5" id="q5o0" value="0" class="sr-only option-input" required><label for="q5o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta5" id="q5o1" value="1" class="sr-only option-input"><label for="q5o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta5" id="q5o2" value="2" class="sr-only option-input"><label for="q5o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta5" id="q5o3" value="3" class="sr-only option-input"><label for="q5o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">6. Sentir falta de amor propio - o que sea un fracaso o que decepcionara a si mismo/a su familia:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta6" id="q6o0" value="0" class="sr-only option-input" required><label for="q6o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta6" id="q6o1" value="1" class="sr-only option-input"><label for="q6o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta6" id="q6o2" value="2" class="sr-only option-input"><label for="q6o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta6" id="q6o3" value="3" class="sr-only option-input"><label for="q6o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">7. Tener dificultad para concentrarse en cosas tales como leer el periódico o mirar la televisión:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta7" id="q7o0" value="0" class="sr-only option-input" required><label for="q7o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta7" id="q7o1" value="1" class="sr-only option-input"><label for="q7o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta7" id="q7o2" value="2" class="sr-only option-input"><label for="q7o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta7" id="q7o3" value="3" class="sr-only option-input"><label for="q7o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">8. Se mueve o habla tan lentamente que otra gente se podría dar cuenta o de la contrario, está tan agitado/a o inquieto/a que se mueve mucho más de lo acostumbrado:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta8" id="q8o0" value="0" class="sr-only option-input" required><label for="q8o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta8" id="q8o1" value="1" class="sr-only option-input"><label for="q8o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta8" id="q8o2" value="2" class="sr-only option-input"><label for="q8o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta8" id="q8o3" value="3" class="sr-only option-input"><label for="q8o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">9. Se la han ocurrido pensamientos de que sería mejor estar muerto/a o de que haría daño de alguna manera:</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta9" id="q9o0" value="0" class="sr-only option-input" required><label for="q9o0" class="option-label">Nunca</label></div>
+                        <div><input type="radio" name="pregunta9" id="q9o1" value="1" class="sr-only option-input"><label for="q9o1" class="option-label">Varios días</label></div>
+                        <div><input type="radio" name="pregunta9" id="q9o2" value="2" class="sr-only option-input"><label for="q9o2" class="option-label">Más de la mitad de los días</label></div>
+                        <div><input type="radio" name="pregunta9" id="q9o3" value="3" class="sr-only option-input"><label for="q9o3" class="option-label">Casi todos los días</label></div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">10. Si usted se identificó con cualquier problema en este cuestionario, ¿qué tan difícil se la ha hecho cumplir con su trabajo, atender su casa, o relacionarse con otras personas debido a estos problemas?</p>
+                     <div class="space-y-3">
+                        <div><input type="radio" name="pregunta10" id="q10o0" value="0" class="sr-only option-input" required><label for="q10o0" class="option-label">Nada en absoluto</label></div>
+                        <div><input type="radio" name="pregunta10" id="q10o1" value="1" class="sr-only option-input"><label for="q10o1" class="option-label">Algo difícil</label></div>
+                        <div><input type="radio" name="pregunta10" id="q10o2" value="2" class="sr-only option-input"><label for="q10o2" class="option-label">Muy difícil</label></div>
+                        <div><input type="radio" name="pregunta10" id="q10o3" value="3" class="sr-only option-input"><label for="q10o3" class="option-label">Extremadamente difícil</label></div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button type="submit" id="ver-resultados-btn" class="bg-yellow-500 text-yellow-900 font-semibold px-8 py-3 rounded-md hover:bg-yellow-600 transition duration-300 shadow-md">
+                        Ver Resultados (Informativo)
+                    </button>
+                </div>
+            </form>
+
+            <section id="test-resultados" class="hidden mt-10 pt-6 border-t border-gray-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Resultados del Test (Informativo)</h2>
+                <div id="resultado-depresion" class="bg-yellow-50 p-6 rounded-lg shadow">
+                    <h3 id="nivel-sintomas" class="text-xl font-bold text-yellow-700 mb-3">Interpretación...</h3>
+                    <p id="descripcion-sintomas" class="text-gray-700 leading-relaxed text-justify">
+                        Por favor, completa el test para ver una interpretación general.
+                    </p>
+                    <p class="mt-4 text-sm text-yellow-800 font-semibold text-justify">
+                        Recuerda: Este resultado es solo una guía basada en tus respuestas y no constituye un diagnóstico. Si tienes preocupaciones sobre tu salud mental, es crucial que consultes a un profesional.
+                    </p>
+                </div>
+                 <div class="text-center mt-8">
+                     <button id="reiniciar-test-btn" class="text-indigo-600 hover:underline font-medium">Volver a hacer el test</button>
+                 </div>
+            </section>
+
+             <div class="mt-12 text-center">
+                 <a href="../index.html" class="text-indigo-600 hover:underline">&larr; Volver a la página principal</a>
+             </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="../contacto.html" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Elementos del DOM ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const testForm = document.getElementById('depression-test-form');
+        const reiniciarTestBtn = document.getElementById('reiniciar-test-btn');
+        const descripcionTestSection = document.getElementById('descripcion-test');
+        const disclaimerSection = document.getElementById('disclaimer');
+        const resultadosSection = document.getElementById('test-resultados');
+        const nivelSintomasElement = document.getElementById('nivel-sintomas');
+        const descripcionSintomasElement = document.getElementById('descripcion-sintomas');
+
+        // --- Funcionalidad del Menú Móvil ---
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // --- Lógica del Test de Depresión (Simplificada) ---
+        if (testForm && resultadosSection && nivelSintomasElement && descripcionSintomasElement && descripcionTestSection && disclaimerSection) {
+            testForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                let puntajeTotal = 0;
+                const totalPreguntasDefinidas = 10; // Número de preguntas en el HTML
+                let preguntasRespondidas = 0;
+
+                for (let i = 1; i <= totalPreguntasDefinidas; i++) {
+                    const inputSeleccionado = testForm.querySelector(`input[name="pregunta${i}"]:checked`);
+                    if (inputSeleccionado) {
+                        puntajeTotal += parseInt(inputSeleccionado.value);
+                        preguntasRespondidas++;
+                    }
+                }
+
+                if (preguntasRespondidas < totalPreguntasDefinidas) {
+                    alert("Por favor, responde todas las preguntas para ver una interpretación.");
+                    return;
+                }
+
+                let nivel = "Nivel de Síntomas No Determinado";
+                let descripcion = "Completa todas las preguntas para una interpretación. Recuerda que esto no es un diagnóstico.";
+
+                // Rangos PHQ-9 (ejemplo, consulta fuentes oficiales para interpretación clínica)
+                // La pregunta 10 del PHQ-9 sobre impacto funcional se interpreta por separado, aquí la sumamos para simplicidad.
+                if (puntajeTotal <= 4) {
+                    nivel = "Nivel de Síntomas: Mínimo o Ninguno";
+                    descripcion = "Tus respuestas sugieren pocos o ningún síntoma depresivo significativo en las últimas dos semanas. Esto es positivo. Continúa cuidando tu bienestar emocional.";
+                } else if (puntajeTotal <= 9) {
+                    nivel = "Nivel de Síntomas: Leve";
+                    descripcion = "Tus respuestas sugieren la presencia de algunos síntomas leves que podrían estar afectando tu día a día. Considera observar cómo evolucionan estos sentimientos y si persisten, hablar con alguien de confianza o un profesional podría ser útil.";
+                } else if (puntajeTotal <= 14) {
+                    nivel = "Nivel de Síntomas: Moderado";
+                    descripcion = "Tus respuestas indican síntomas de un nivel moderado que probablemente estén impactando tu funcionamiento y bienestar. Sería recomendable considerar hablar con un profesional de la salud mental para una evaluación más detallada y apoyo.";
+                } else if (puntajeTotal <= 19) {
+                    nivel = "Nivel de Síntomas: Moderadamente Severo";
+                    descripcion = "Los síntomas que reportas sugieren un nivel moderadamente severo de malestar. Es importante que busques apoyo profesional para una evaluación y para explorar opciones de tratamiento o manejo de estos síntomas.";
+                } else { // puntajeTotal >= 20
+                    nivel = "Nivel de Síntomas: Severo";
+                    descripcion = "Tus respuestas indican un nivel severo de síntomas que probablemente estén causando un malestar significativo y afectando tu vida de manera importante. Es crucial que busques ayuda profesional de inmediato. No estás solo/a.";
+                }
+
+                nivelSintomasElement.textContent = nivel;
+                descripcionSintomasElement.textContent = descripcion;
+
+                if(descripcionTestSection) descripcionTestSection.classList.add('hidden');
+                if(disclaimerSection) disclaimerSection.classList.add('hidden');
+                testForm.classList.add('hidden');
+                resultadosSection.classList.remove('hidden');
+                resultadosSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        if (reiniciarTestBtn && testForm && resultadosSection && descripcionTestSection && disclaimerSection) {
+            reiniciarTestBtn.addEventListener('click', () => {
+                testForm.reset();
+                resultadosSection.classList.add('hidden');
+                if(descripcionTestSection) descripcionTestSection.classList.remove('hidden');
+                if(disclaimerSection) disclaimerSection.classList.remove('hidden');
+                testForm.classList.remove('hidden');
+                nivelSintomasElement.textContent = "Interpretación...";
+                descripcionSintomasElement.textContent = "Por favor, completa el test para ver una interpretación general.";
+                if(disclaimerSection && !disclaimerSection.classList.contains('hidden')) {
+                     disclaimerSection.scrollIntoView({ behavior: 'smooth' });
+                } else if (descripcionTestSection && !descripcionTestSection.classList.contains('hidden')) {
+                    descripcionTestSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    testForm.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
