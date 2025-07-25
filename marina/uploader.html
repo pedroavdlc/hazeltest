@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herramienta de Carga de Tests (Admin) - HazelTest</title>
-    <meta name="robots" content="noindex, nofollow"> <!-- Para que no se indexe -->
+    <title>Herramienta de Carga a Colecciones de Firebase</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4TEPLD75E');
+    </script>
+
+    <meta name="robots" content="noindex, nofollow">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,37 +26,32 @@
 <body class="bg-gray-100">
     <div class="container mx-auto p-4 md:p-8 max-w-2xl">
         <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">Herramienta de Carga para Firestore</h1>
-            <p class="text-center text-gray-600 mb-6">Usa esta página para subir tu archivo de preguntas JSON a la colección 'quizzes' en Firestore.</p>
+            <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">Herramienta de Carga a Colecciones</h1>
+            <p class="text-center text-gray-600 mb-6">Sube tus preguntas a una colección específica en Firestore.</p>
 
             <div class="space-y-4">
                 <div>
-                    <label for="doc-id" class="block text-sm font-medium text-gray-700">1. ID del Documento (ej: cultura-naval-sintesis)</label>
-                    <input type="text" id="doc-id" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="cultura-naval-sintesis">
+                    <label for="collection-name" class="block text-sm font-medium text-gray-700">1. Nombre de la Colección (ej: quizzes, doctrina_quizzes)</label>
+                    <input type="text" id="collection-name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="quizzes">
                 </div>
                 <div>
-                    <label for="quiz-title" class="block text-sm font-medium text-gray-700">2. Título del Test</label>
-                    <input type="text" id="quiz-title" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Síntesis de Cultura Naval">
-                </div>
-                <div>
-                    <label for="quiz-desc" class="block text-sm font-medium text-gray-700">3. Descripción del Test</label>
-                    <input type="text" id="quiz-desc" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Un test para probar tus conocimientos...">
-                </div>
-                <div>
-                    <label for="json-data" class="block text-sm font-medium text-gray-700">4. Pega aquí tu array de preguntas JSON</label>
-                    <textarea id="json-data" rows="10" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 font-mono text-sm" placeholder='[ { "pregunta": "...", "opciones": [...], ... }, ... ]'></textarea>
+                    <label for="json-data" class="block text-sm font-medium text-gray-700">2. Pega aquí tu array completo de preguntas JSON</label>
+                    <textarea id="json-data" rows="15" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 font-mono text-sm" placeholder='[ { "id": 1, "pregunta": "...", "tema": "...", ... }, ... ]'></textarea>
                 </div>
                 
-                <button id="upload-button" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
-                    Subir Preguntas a Firestore
-                </button>
+                <!-- Contenedor para los botones -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button id="upload-button" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
+                        Subir y Organizar Temario
+                    </button>
+                    <!-- Botón para limpiar -->
+                    <button type="button" id="clear-button" class="w-full sm:w-auto bg-red-500 text-white font-bold py-3 px-4 rounded-md hover:bg-red-600 transition duration-300">
+                        Limpiar
+                    </button>
+                </div>
 
-                <div id="status-message" class="text-center mt-4 p-3 rounded-md h-12"></div>
+                <div id="status-message" class="text-center mt-4 p-3 rounded-md h-auto"></div>
             </div>
-             <div class="mt-8 text-center">
-                 <!-- Enlace corregido para volver a test.html -->
-                 <a href="test.html" class="text-sm text-indigo-600 hover:underline">&larr; Volver a la página de la categoría Marina</a>
-             </div>
         </div>
     </div>
 
@@ -69,73 +74,97 @@
         try {
             app = initializeApp(firebaseConfig);
             db = getFirestore(app);
-            console.log("Firebase inicializado correctamente.");
         } catch (error) {
             console.error("Error inicializando Firebase:", error);
-            const statusMessage = document.getElementById('status-message');
-            if(statusMessage) {
-                statusMessage.textContent = 'Error: Revisa tus credenciales de Firebase en el código.';
-                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-red-100 text-red-700';
-            }
+            document.getElementById('status-message').textContent = 'Error: Revisa tus credenciales de Firebase.';
         }
 
-        const docIdInput = document.getElementById('doc-id');
-        const titleInput = document.getElementById('quiz-title');
-        const descInput = document.getElementById('quiz-desc');
+        const collectionNameInput = document.getElementById('collection-name');
         const jsonDataTextarea = document.getElementById('json-data');
         const uploadButton = document.getElementById('upload-button');
+        const clearButton = document.getElementById('clear-button'); // Nuevo botón
         const statusMessage = document.getElementById('status-message');
 
+        function createDocId(title) {
+            return title
+                .toLowerCase()
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[^a-z0-9\s-]/g, '')
+                .replace(/\s+/g, '-')
+                .replace(/:/g, '')
+                .slice(0, 50);
+        }
+
         uploadButton.addEventListener('click', async () => {
-            const docId = docIdInput.value.trim();
-            const title = titleInput.value.trim();
-            const description = descInput.value.trim();
+            const collectionName = collectionNameInput.value.trim();
             const jsonString = jsonDataTextarea.value.trim();
 
-            if (!docId || !title || !description || !jsonString) {
+            if (!collectionName || !jsonString) {
                 statusMessage.textContent = 'Por favor, llena todos los campos.';
-                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-yellow-100 text-yellow-700';
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-auto bg-yellow-100 text-yellow-700';
                 return;
             }
 
             let questionsArray;
             try {
                 questionsArray = JSON.parse(jsonString);
-                if (!Array.isArray(questionsArray)) {
-                    throw new Error("El JSON no es un array.");
-                }
+                if (!Array.isArray(questionsArray)) throw new Error("El JSON no es un array.");
+                if (questionsArray.some(q => q.id === undefined || q.tema === undefined)) throw new Error("Cada pregunta debe tener un campo 'id' y 'tema'.");
             } catch (error) {
-                statusMessage.textContent = 'Error: El formato del JSON no es válido. Asegúrate de que empiece con [ y termine con ].';
-                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-red-100 text-red-700';
-                console.error("Error de parseo JSON:", error);
+                statusMessage.textContent = `Error en el JSON: ${error.message}`;
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-auto bg-red-100 text-red-700';
                 return;
             }
 
-            statusMessage.textContent = 'Subiendo...';
-            statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-blue-100 text-blue-700';
+            statusMessage.textContent = 'Procesando y subiendo...';
+            statusMessage.className = 'text-center mt-4 p-3 rounded-md h-auto bg-blue-100 text-blue-700';
             uploadButton.disabled = true;
-
-            const quizDocument = {
-                titulo: title,
-                descripcion: description,
-                preguntas: questionsArray
-            };
+            clearButton.disabled = true;
 
             try {
-                const docRef = doc(db, "quizzes", docId);
-                await setDoc(docRef, quizDocument);
+                const topics = new Map();
+                questionsArray.forEach(q => {
+                    if (!topics.has(q.tema)) {
+                        topics.set(q.tema, []);
+                    }
+                    topics.get(q.tema).push(q);
+                });
+
+                const promises = [];
+                for (const [tema, preguntas] of topics.entries()) {
+                    const docId = createDocId(tema);
+                    
+                    const quizDocument = {
+                        titulo: tema,
+                        descripcion: `Test sobre ${tema}.`,
+                        preguntas: preguntas
+                    };
+
+                    const docRef = doc(db, collectionName, docId);
+                    promises.push(setDoc(docRef, quizDocument));
+                }
+
+                await Promise.all(promises);
                 
-                statusMessage.textContent = `¡Éxito! Se subieron ${questionsArray.length} preguntas al documento '${docId}'.`;
-                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-green-100 text-green-700';
-                console.log("Documento escrito con éxito.");
+                statusMessage.innerHTML = `¡Éxito! Se subieron ${topics.size} temas a la colección '${collectionName}'.`;
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-auto bg-green-100 text-green-700';
 
             } catch (error) {
                 statusMessage.textContent = 'Error al subir los datos. Revisa la consola (F12) para más detalles.';
-                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-red-100 text-red-700';
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-auto bg-red-100 text-red-700';
                 console.error("Error escribiendo en Firestore:", error);
             } finally {
                 uploadButton.disabled = false;
+                clearButton.disabled = false;
             }
+        });
+
+        // Lógica para el botón de limpiar
+        clearButton.addEventListener('click', () => {
+            jsonDataTextarea.value = '';
+            statusMessage.textContent = '';
+            statusMessage.className = 'text-center mt-4 p-3 rounded-md h-auto';
+            jsonDataTextarea.focus();
         });
     </script>
 </body>

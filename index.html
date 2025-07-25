@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HazelTest - Pon a Prueba Tus Conocimientos</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4TEPLD75E');
+    </script>    
+
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Participa en divertidos tests en HazelTest. Pon a prueba tus conocimientos sobre Marina, temas sociales, cultura general y más categorías. ¡Demuestra cuánto sabes!">
     <meta name="keywords" content="quiz, test, prueba, conocimientos, marina, social, personalidad, funcionarios, naval, cultura general, trivia, examen, hazeltest">
     <link rel="canonical" href="https://hazeltest.com/">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/">
     <meta property="og:title" content="HazelTest - Pon a Prueba Tus Conocimientos">
     <meta property="og:description" content="Participa en divertidos tests sobre Marina, temas sociales y más. ¡Demuestra cuánto sabes!">
     <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_AQUI">
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hazeltest.com/">
     <meta property="twitter:title" content="HazelTest - Pon a Prueba Tus Conocimientos">
     <meta property="twitter:description" content="Participa en divertidos tests sobre Marina, temas sociales y más. ¡Demuestra cuánto sabes!">
     <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_AQUI">
 
+    <!-- Favicon -->
+    <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
+
+    <!-- Google AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686"
      crossorigin="anonymous"></script>
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/magnifying-glass.svg" rel="preload" as="image">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/users.svg" rel="preload" as="image">
 
@@ -87,12 +107,32 @@
             </div>
         </section>
 
-        <section id="tests" class="py-16 md:py-24 bg-white">
+        <section id="recientes" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Recién Agregados</h2>
+                <div class="flex justify-center">
+                    <div class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3">
+                        <a href="marina/estudio/test-cultura-naval.html" class="block relative bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out quiz-card cursor-pointer border-2 border-green-400 hover:no-underline">
+                            <span class="absolute top-2 right-2 bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">NUEVO</span>
+                            <div class="flex items-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-indigo-500 mr-3">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                                </svg>
+                                <h3 class="text-xl font-semibold text-indigo-700">Test de Cultura Naval</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">Evalúa tus conocimientos sobre la historia, tradiciones y estructura de la Marina de México.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tests" class="py-16 md:py-24 bg-gray-50 border-t">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Categorías Destacadas</h2>
                  <div id="featured-categories-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                      <div id="marina-card-container" class="w-full">
-                        <a href="marina/index.html" class="block h-full bg-gray-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
+                        <a href="marina/test.html" class="block h-full bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
                              <div class="flex justify-center mb-4">
                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-blue-500">
                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6A1.5 1.5 0 0 1 15 7.5v1.5a1.5 1.5 0 0 1-1.5 1.5H12v1.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5V10.5a1.5 1.5 0 0 1 1.5-1.5h1.5V7.5A1.5 1.5 0 0 1 12 6h1.5Zm0 0A1.5 1.5 0 0 0 12 4.5v-1.5a1.5 1.5 0 0 0-3 0V6A1.5 1.5 0 0 0 10.5 7.5H12a1.5 1.5 0 0 0 1.5-1.5Z M3.75 13.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Zm16.5 0a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z M6 15a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 6 15Zm12 0a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z M12 12.75a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3Z" />
@@ -108,7 +148,8 @@
                     </div>
 
                     <div id="social-card-container" class="w-full">
-                        <a href="social/index.html" class="block h-full bg-gray-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
+                        <!-- Enlace Corregido -->
+                        <a href="social/test.html" class="block h-full bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
                              <div class="flex justify-center mb-4">
                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-green-500">
                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.94-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.06-3.197M12 12.75a5.995 5.995 0 0 1 5.06 3.197M12 12.75A5.995 5.995 0 0 0 6.94 15.947M12 12.75l-.001-.031c0-.225.012-.447.037-.666A11.944 11.944 0 0 0 12 3c2.17 0 4.207-.576 5.963 1.584A6.062 6.062 0 0 0 18 6.281m0 0V3.031m0 0A5.995 5.995 0 0 0 12 9m6-2.719A5.995 5.995 0 0 1 12 9m0 0A5.995 5.995 0 0 0 6 6.281m0 0V3.031m0 0A5.995 5.995 0 0 1 12 9m-6 2.719A5.995 5.995 0 0 0 12 9" />
@@ -226,4 +267,3 @@
 
 </body>
 </html>
-

@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprende de la Secretaría de Marina: Tests y Quizzes - HazelTest</title>
-    <meta name="description" content="Explora y aprende sobre la Secretaría de Marina con quizzes interactivos en HazelTest. Pon a prueba tus conocimientos sobre funcionarios, estructura y más.">
-    <meta name="keywords" content="secretaría de marina, marina, tests marina, quizzes navales, funcionarios de marina, hazeltest, aprender sobre marina, conocimiento naval, test secretaria de marina, examen marina, prueba naval, evaluacion marina, test de conocimientos navales, quizzes secretaria de marina, BIM-40">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4TEPLD75E');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../hazeltest.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../hazeltest.ico" type="image/x-icon">
+    <meta name="description" content="Explora y aprende sobre la Secretaría de Marina con quizzes interactivos en HazelTest. Pon a prueba tus conocimientos sobre funcionarios, cultura naval, y más.">
+    <meta name="keywords" content="secretaría de marina, marina, tests marina, quizzes navales, funcionarios de marina, cultura naval, hazeltest, aprender sobre marina, conocimiento naval">
     <link rel="canonical" href="https://hazeltest.com/marina/test.html">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/marina/test.html">
@@ -39,6 +52,7 @@
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Este enlace sube un nivel (de /marina/ a la raíz) -->
             <a href="../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
@@ -75,49 +89,65 @@
         </p>
 
         <div id="subcategorias-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <a href="funcionarios/funcionarios-de-marina.html" data-quiz-topic="Funcionarios Navales" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 sub-category-card hover:no-underline">
+            <!-- Tarjeta: Funcionarios (Enlace Corregido) -->
+            <!-- Desde /marina/test.html, va a /marina/estudio/funcionarios/ -->
+            <a href="estudio/funcionarios/funcionarios-de-marina.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 sub-category-card hover:no-underline">
                  <div class="flex items-center mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>
                     <h3 class="text-xl font-semibold text-blue-700">Funcionarios</h3>
                 </div>
                 <p class="text-gray-600 text-sm">Quizzes sobre rangos, nombres y cargos de la Secretaría de Marina.</p>
             </a>
+            <!-- Tarjeta: Cultura Naval (Enlace Corregido) -->
+            <!-- Desde /marina/test.html, va a /marina/estudio/ -->
+            <a href="estudio/test-cultura-naval.html" class="relative block bg-white p-6 rounded-lg shadow-md border border-gray-200 sub-category-card hover:no-underline">
+                 <span class="absolute top-2 right-2 bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Recién Agregado</span>
+                 <div class="flex items-center mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-indigo-500 mr-3">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                     </svg>
+                    <h3 class="text-xl font-semibold text-indigo-700">Cultura Naval</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Tests sobre la historia, tradiciones y doctrina de la Marina de México.</p>
+            </a>
         </div>
 
-        <!-- Enlaces Ocultos -->
+        <!-- Enlaces Ocultos y Secciones de Código Secreto -->
         <div id="admin-tool-link-container" class="hidden text-center mt-8">
             <a href="uploader.html" class="text-indigo-600 hover:underline font-semibold">Acceder a Herramienta de Carga de Tests (Admin)</a>
         </div>
         <div id="study-progress-link-container" class="hidden text-center mt-8">
-            <a href="../progreso-estudio.html" class="text-green-600 hover:underline font-semibold">Acceder a mi Progreso de Estudio</a>
+            <!-- Enlace Corregido -->
+            <!-- Desde /marina/test.html, va a /marina/estudio/temario/ -->
+            <a href="estudio/temario/progreso-estudio.html" class="text-green-600 hover:underline font-semibold">Acceder a mi Progreso de Estudio</a>
         </div>
 
-        <!-- Sección Código Secreto Admin -->
-        <section id="codigo-secreto-section" class="mt-16 pt-8 border-t border-gray-300 bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
-            <h2 class="text-xl font-semibold text-center mb-4 text-gray-700">Acceso Especial (Admin)</h2>
-            <p class="text-sm text-center text-gray-500 mb-4">Si tienes un código de administrador, ingrésalo aquí.</p>
-            <div class="flex flex-col sm:flex-row gap-2">
-                <input type="text" id="codigo-input" placeholder="Ingresa el código secreto" class="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm transition duration-200" aria-label="Código secreto"/>
-                <button id="codigo-btn" class="bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition duration-300 flex items-center justify-center shadow-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Desbloquear
-                </button>
-            </div>
-            <p id="codigo-mensaje" class="text-sm mt-3 text-center h-5"></p>
-        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+            <section id="codigo-secreto-section" class="pt-8 border-t border-gray-300 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-center mb-4 text-gray-700">Acceso Especial (Admin)</h2>
+                <p class="text-sm text-center text-gray-500 mb-4">Si tienes un código de administrador, ingrésalo aquí.</p>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <input type="text" id="codigo-input" placeholder="Ingresa el código secreto" class="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Código secreto"/>
+                    <button id="codigo-btn" class="bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition duration-300 flex items-center justify-center shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Desbloquear
+                    </button>
+                </div>
+                <p id="codigo-mensaje" class="text-sm mt-3 text-center h-5"></p>
+            </section>
 
-         <!-- Sección Código Secreto Estudio (NUEVA) -->
-        <section id="codigo-estudio-section" class="mt-8 pt-8 border-t border-gray-200 bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
-            <h2 class="text-xl font-semibold text-center mb-4 text-gray-700">Acceso a Progreso de Estudio</h2>
-            <p class="text-sm text-center text-gray-500 mb-4">Ingresa tu código personal para ver tu progreso.</p>
-            <div class="flex flex-col sm:flex-row gap-2">
-                <input type="text" id="codigo-estudio-input" placeholder="Ingresa el código de estudio" class="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent shadow-sm transition duration-200" aria-label="Código de estudio"/>
-                <button id="codigo-estudio-btn" class="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700 transition duration-300 flex items-center justify-center shadow-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
-                    Acceder
-                </button>
-            </div>
-            <p id="codigo-estudio-mensaje" class="text-sm mt-3 text-center h-5"></p>
-        </section>
+            <section id="codigo-estudio-section" class="pt-8 border-t border-gray-300 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold text-center mb-4 text-gray-700">Acceso a Progreso de Estudio</h2>
+                <p class="text-sm text-center text-gray-500 mb-4">Ingresa tu código personal para ver tu progreso.</p>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <input type="text" id="codigo-estudio-input" placeholder="Ingresa el código de estudio" class="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" aria-label="Código de estudio"/>
+                    <button id="codigo-estudio-btn" class="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700 transition duration-300 flex items-center justify-center shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
+                        Acceder
+                    </button>
+                </div>
+                <p id="codigo-estudio-mensaje" class="text-sm mt-3 text-center h-5"></p>
+            </section>
+        </div>
 
          <div class="mt-16 pt-8 border-t border-gray-300 text-center">
             <a href="../categorias.html" class="text-indigo-600 hover:underline">&larr; Volver a todas las categorías</a>
@@ -138,59 +168,45 @@
     </footer>
 
     <script>
-        // --- Código Secreto Admin ---
-        const codigoSecreto = "DISOOSLITO";
-        const codigoInput = document.getElementById('codigo-input');
-        const codigoBtn = document.getElementById('codigo-btn');
-        const adminToolLinkContainer = document.getElementById('admin-tool-link-container');
-        const codigoMensaje = document.getElementById('codigo-mensaje');
+        // --- Lógica de Códigos Secretos (Refactorizada) ---
+        function setupSecretCode(inputId, buttonId, linkContainerId, messageId, secretCode, successMessage) {
+            const input = document.getElementById(inputId);
+            const button = document.getElementById(buttonId);
+            const linkContainer = document.getElementById(linkContainerId);
+            const message = document.getElementById(messageId);
 
-        if (codigoBtn && codigoInput && adminToolLinkContainer && codigoMensaje) {
+            if (!input || !button || !linkContainer || !message) {
+                console.error(`Faltan elementos para el código secreto: ${secretCode}`);
+                return;
+            }
+
             const checkCode = () => {
-                const codigoIngresado = codigoInput.value.trim();
-                if (codigoIngresado.toUpperCase() === codigoSecreto.toUpperCase()) {
-                    adminToolLinkContainer.classList.remove('hidden');
-                    codigoMensaje.textContent = 'Acceso de administrador concedido.';
-                    codigoMensaje.className = 'text-sm mt-3 text-center h-5 text-green-600 font-semibold';
-                    codigoInput.disabled = true;
-                    codigoBtn.disabled = true;
+                const enteredCode = input.value.trim().toUpperCase();
+                if (enteredCode === secretCode.toUpperCase()) {
+                    linkContainer.classList.remove('hidden');
+                    message.textContent = successMessage;
+                    message.className = 'text-sm mt-3 text-center h-5 text-green-600 font-semibold';
+                    input.disabled = true;
+                    button.disabled = true;
                 } else {
-                    codigoMensaje.textContent = 'Código incorrecto. Intenta de nuevo.';
-                    codigoMensaje.className = 'text-sm mt-3 text-center h-5 text-red-600 font-semibold';
-                    codigoInput.value = '';
-                    adminToolLinkContainer.classList.add('hidden');
+                    message.textContent = 'Código incorrecto. Intenta de nuevo.';
+                    message.className = 'text-sm mt-3 text-center h-5 text-red-600 font-semibold';
+                    input.value = '';
+                    linkContainer.classList.add('hidden');
                 }
             };
-            codigoBtn.addEventListener('click', checkCode);
-            codigoInput.addEventListener('keypress', (event) => { if (event.key === 'Enter') { checkCode(); } });
-        }
 
-        // --- Código Secreto Estudio ---
-        const codigoEstudio = "ESTUDIOOSLITO";
-        const codigoEstudioInput = document.getElementById('codigo-estudio-input');
-        const codigoEstudioBtn = document.getElementById('codigo-estudio-btn');
-        const studyProgressLinkContainer = document.getElementById('study-progress-link-container');
-        const codigoEstudioMensaje = document.getElementById('codigo-estudio-mensaje');
-
-        if (codigoEstudioBtn && codigoEstudioInput && studyProgressLinkContainer && codigoEstudioMensaje) {
-            const checkStudyCode = () => {
-                const codigoIngresado = codigoEstudioInput.value.trim();
-                if (codigoIngresado.toUpperCase() === codigoEstudio.toUpperCase()) {
-                    studyProgressLinkContainer.classList.remove('hidden');
-                    codigoEstudioMensaje.textContent = 'Acceso a progreso concedido.';
-                    codigoEstudioMensaje.className = 'text-sm mt-3 text-center h-5 text-green-600 font-semibold';
-                    codigoEstudioInput.disabled = true;
-                    codigoEstudioBtn.disabled = true;
-                } else {
-                    codigoEstudioMensaje.textContent = 'Código incorrecto. Intenta de nuevo.';
-                    codigoEstudioMensaje.className = 'text-sm mt-3 text-center h-5 text-red-600 font-semibold';
-                    codigoEstudioInput.value = '';
-                    studyProgressLinkContainer.classList.add('hidden');
+            button.addEventListener('click', checkCode);
+            input.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    checkCode();
                 }
-            };
-            codigoEstudioBtn.addEventListener('click', checkStudyCode);
-            codigoEstudioInput.addEventListener('keypress', (event) => { if (event.key === 'Enter') { checkStudyCode(); } });
+            });
         }
+
+        // Inicializar ambos códigos secretos
+        setupSecretCode('codigo-input', 'codigo-btn', 'admin-tool-link-container', 'codigo-mensaje', "DISOOSLITO", "Acceso de administrador concedido.");
+        setupSecretCode('codigo-estudio-input', 'codigo-estudio-btn', 'study-progress-link-container', 'codigo-estudio-mensaje', "ESTUDIOOSLITO", "Acceso a progreso concedido.");
 
         // --- Funcionalidad del Menú Móvil ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -200,3 +216,4 @@
 
 </body>
 </html>
+

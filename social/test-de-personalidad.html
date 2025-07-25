@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test de Personalidad - HazelTest</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4TEPLD75E');
+    </script>    
+
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Realiza nuestro test de personalidad completo en HazelTest. Descubre tus rasgos dominantes, cómo interactúas con otros y tus preferencias en diversas situaciones. ¡Conócete mejor!">
     <meta name="keywords" content="test de personalidad, personalidad, quiz, autoconocimiento, psicología, rasgos, introspección, hazeltest, prueba de personalidad, test de personalidad gratis, test de personalidad con resultados, test estilo de personalidad, test de personalidad corto, psicometria, rasgos de caracter, autoconocimiento test, que tipo de personalidad tengo, test psicologico online, evaluacion de personalidad, descubre tu personalidad, tipos de personalidad">
     <link rel="canonical" href="https://hazeltest.com/social/test-de-personalidad.html">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/social/test-de-personalidad.html">
     <meta property="og:title" content="Test de Personalidad - HazelTest">
     <meta property="og:description" content="Descubre facetas ocultas de tu ser con nuestro Test de Personalidad detallado.">
-    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_PERSONALIDAD"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_PERSONALIDAD"> <!-- Reemplaza con URL a imagen -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hazeltest.com/social/test-de-personalidad.html">
     <meta property="twitter:title" content="Test de Personalidad - HazelTest">
     <meta property="twitter:description" content="Descubre facetas ocultas de tu ser con nuestro Test de Personalidad detallado.">
-    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_PERSONALIDAD"> <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_TEST_PERSONALIDAD"> <!-- Reemplaza con URL a imagen -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -50,13 +65,14 @@
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
+    <!-- Encabezado con navegación actualizada -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
                 <a href="../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
-                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Social</a>
+                <a href="test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Social</a>
                 <span class="text-indigo-600 font-semibold">Test Personalidad</span>
             </div>
             <div class="md:hidden">
@@ -65,10 +81,11 @@
                 </button>
             </div>
         </nav>
+         <!-- Menú Móvil con navegación actualizada -->
          <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
             <a href="../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
             <a href="../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
-            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Social</a>
+            <a href="test.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Social</a>
             <span class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Test Personalidad</span>
         </div>
     </header>
@@ -94,6 +111,8 @@
 
             <form id="personality-test-form">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Comienza el Test</h2>
+                
+                <!-- Pregunta 1 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">1. Cuando te enfrentas a un nuevo desafío, ¿cómo sueles reaccionar?</p>
                     <div class="space-y-3">
@@ -103,6 +122,8 @@
                         <div><input type="radio" name="pregunta1" id="q1o4" value="d" class="sr-only option-input"><label for="q1o4" class="option-label">Prefiero evitarlo si es posible.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 2 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">2. En un entorno social, ¿te consideras más?</p>
                      <div class="space-y-3">
@@ -111,6 +132,8 @@
                         <div><input type="radio" name="pregunta2" id="q2o3" value="c" class="sr-only option-input"><label for="q2o3" class="option-label">Un poco de ambos, dependiendo de la situación.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 3 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">3. Al tomar decisiones importantes, ¿qué valoras más?</p>
                     <div class="space-y-3">
@@ -120,6 +143,8 @@
                         <div><input type="radio" name="pregunta3" id="q3o4" value="d" class="sr-only option-input"><label for="q3o4" class="option-label">El impacto a largo plazo.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 4 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">4. ¿Cómo prefieres pasar tu tiempo libre?</p>
                     <div class="space-y-3">
@@ -128,6 +153,8 @@
                         <div><input type="radio" name="pregunta4" id="q4o3" value="c" class="sr-only option-input"><label for="q4o3" class="option-label">Una mezcla de actividades sociales y tiempo a solas.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 5 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">5. Cuando trabajas en un proyecto, ¿tiendes a ser?</p>
                     <div class="space-y-3">
@@ -136,6 +163,8 @@
                         <div><input type="radio" name="pregunta5" id="q5o3" value="c" class="sr-only option-input"><label for="q5o3" class="option-label">Perfeccionista, cuidando cada detalle.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 6 -->
                  <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">6. ¿Qué te motiva más?</p>
                     <div class="space-y-3">
@@ -144,6 +173,8 @@
                         <div><input type="radio" name="pregunta6" id="q6o3" value="c" class="sr-only option-input"><label for="q6o3" class="option-label">El aprendizaje y el crecimiento personal.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 7 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">7. Si tienes un desacuerdo con alguien, ¿cómo lo manejas?</p>
                     <div class="space-y-3">
@@ -152,6 +183,8 @@
                         <div><input type="radio" name="pregunta7" id="q7o3" value="c" class="sr-only option-input"><label for="q7o3" class="option-label">Prefiero evitar el conflicto.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 8 -->
                  <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">8. ¿Te sientes más cómodo con?</p>
                     <div class="space-y-3">
@@ -160,6 +193,8 @@
                         <div><input type="radio" name="pregunta8" id="q8o3" value="c" class="sr-only option-input"><label for="q8o3" class="option-label">Un balance entre ambos.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 9 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">9. ¿Qué tipo de películas o libros prefieres?</p>
                     <div class="space-y-3">
@@ -169,6 +204,8 @@
                         <div><input type="radio" name="pregunta9" id="q9o4" value="d" class="sr-only option-input"><label for="q9o4" class="option-label">Documentales o biografías.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 10 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">10. Cuando aprendes algo nuevo, ¿prefieres?</p>
                     <div class="space-y-3">
@@ -177,6 +214,8 @@
                         <div><input type="radio" name="pregunta10" id="q10o3" value="c" class="sr-only option-input"><label for="q10o3" class="option-label">Observar a otros y luego intentarlo.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 11 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">11. ¿Cómo te sientes acerca de los cambios inesperados?</p>
                     <div class="space-y-3">
@@ -185,6 +224,8 @@
                         <div><input type="radio" name="pregunta11" id="q11o3" value="c" class="sr-only option-input"><label for="q11o3" class="option-label">Depende del cambio, algunos me gustan, otros no.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 12 -->
                  <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">12. ¿Qué es más importante para ti en un amigo?</p>
                     <div class="space-y-3">
@@ -193,6 +234,8 @@
                         <div><input type="radio" name="pregunta12" id="q12o3" value="c" class="sr-only option-input"><label for="q12o3" class="option-label">Apoyo y comprensión.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 13 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">13. Al planificar unas vacaciones, ¿prefieres?</p>
                     <div class="space-y-3">
@@ -201,6 +244,8 @@
                         <div><input type="radio" name="pregunta13" id="q13o3" value="c" class="sr-only option-input"><label for="q13o3" class="option-label">Un destino relajante sin muchos planes.</label></div>
                     </div>
                 </div>
+
+                <!-- Pregunta 14 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">14. ¿Cómo reaccionas ante las críticas?</p>
                     <div class="space-y-3">
@@ -210,6 +255,8 @@
                         <div><input type="radio" name="pregunta14" id="q14o4" value="d" class="sr-only option-input"><label for="q14o4" class="option-label">Me afectan bastante y me cuesta olvidarlas.</label></div>
                     </div>
                 </div>
+                
+                <!-- Pregunta 15 -->
                 <div class="question-container">
                     <p class="text-lg font-medium text-gray-800 mb-3">15. Si pudieras elegir un superpoder, ¿cuál sería?</p>
                     <div class="space-y-3">
@@ -241,7 +288,8 @@
             </section>
 
              <div class="mt-12 text-center">
-                 <a href="../index.html" class="text-indigo-600 hover:underline">&larr; Volver a la página principal</a>
+                 <!-- Enlace Corregido -->
+                 <a href="test.html" class="text-indigo-600 hover:underline">&larr; Volver a la categoría Social</a>
              </div>
         </div>
     </main>
@@ -253,6 +301,7 @@
                 <a href="../privacidad.html" class="hover:text-white">Política de Privacidad</a>
                 <a href="../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
                 <a href="../contacto.html" class="hover:text-white">Contacto</a>
+                 <a href="../mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
             </div>
         </div>
     </footer>
@@ -300,30 +349,28 @@
                 let personalidad = "Resultado Personalizado";
                 let descripcion = "Tus respuestas sugieren una combinación única de rasgos. A continuación, un análisis más detallado:";
 
-                // Lógica de resultados mejorada
                 if (contador.a > contador.b && contador.a > contador.c && contador.a > contador.d) {
                     personalidad = "El Explorador Dinámico";
-                    descripcion = "Eres una persona llena de energía, siempre lista para la aventura y con una curiosidad insaciable. Te encanta experimentar cosas nuevas y no temes a los desafíos. Tu optimismo es contagioso y sueles ser el alma de las reuniones sociales. Valoras la libertad y la acción por encima de todo. Consejo: ¡Sigue canalizando esa energía en proyectos que te apasionen, pero recuerda también tomarte momentos para la reflexión y la planificación!";
+                    descripcion = "Eres una persona llena de energía, siempre lista para la aventura y con una curiosidad insaciable. Te encanta experimentar cosas nuevas y no temes a los desafíos. Tu optimismo es contagioso y sueles ser el alma de las reuniones sociales. Valoras la libertad y la acción por encima de todo.";
                 } else if (contador.b > contador.a && contador.b > contador.c && contador.b > contador.d) {
                     personalidad = "El Estratega Reflexivo";
-                    descripcion = "Te caracterizas por tu mente analítica y tu enfoque metódico. Antes de actuar, prefieres observar, analizar todos los ángulos y planificar con cuidado. Valoras la lógica, la información precisa y la estabilidad. Aunque puedes ser reservado, tu profundidad de pensamiento es una gran fortaleza. Consejo: No dejes que el análisis te paralice; a veces, ¡un poco de espontaneidad puede abrir nuevas puertas!";
+                    descripcion = "Te caracterizas por tu mente analítica y tu enfoque metódico. Antes de actuar, prefieres observar, analizar todos los ángulos y planificar con cuidado. Valoras la lógica, la información precisa y la estabilidad. Aunque puedes ser reservado, tu profundidad de pensamiento es una gran fortaleza.";
                 } else if (contador.c > contador.a && contador.c > contador.b && contador.c > contador.d) {
                     personalidad = "El Conector Armonioso";
-                    descripcion = "Tu fortaleza radica en tu empatía y tu habilidad para conectar con los demás. Buscas la armonía en tus relaciones y valoras la comprensión y el apoyo mutuo. Eres un gran oyente y sueles mediar en conflictos, buscando siempre el bienestar del grupo. Consejo: Recuerda también cuidar de tus propias necesidades y establecer límites saludables.";
+                    descripcion = "Tu fortaleza radica en tu empatía y tu habilidad para conectar con los demás. Buscas la armonía en tus relaciones y valoras la comprensión y el apoyo mutuo. Eres un gran oyente y sueles mediar en conflictos, buscando siempre el bienestar del grupo.";
                 } else if (contador.d > contador.a && contador.d > contador.b && contador.d > contador.c) {
                      personalidad = "El Realizador Concreto";
-                     descripcion = "Eres una persona práctica, con los pies en la tierra, que valora la eficiencia y los resultados tangibles. Prefieres la estabilidad y las soluciones directas. Aunque puedes ser reacio a los cambios drásticos, tu determinación te ayuda a alcanzar tus metas. Consejo: Permítete explorar nuevas ideas de vez en cuando, ¡podrías descubrir enfoques innovadores!";
+                     descripcion = "Eres una persona práctica, con los pies en la tierra, que valora la eficiencia y los resultados tangibles. Prefieres la estabilidad y las soluciones directas. Aunque puedes ser reacio a los cambios drásticos, tu determinación te ayuda a alcanzar tus metas.";
                 } else {
-                    // Lógica para combinaciones o si no hay un dominante claro
-                    if (contador.a >= 6 && contador.b >= 6) { // Ejemplo de combinación A y B
-                        personalidad = "El Visionario Pragmático";
-                        descripcion = "Tienes la energía y el entusiasmo para visualizar grandes proyectos (Explorador) y la capacidad de analizar y planificar los pasos para lograrlos (Estratega). Esta combinación te hace muy efectivo para convertir ideas en realidad. Consejo: Asegúrate de comunicar tu visión claramente para inspirar a otros.";
-                    } else if (contador.c >= 6 && contador.a >= 6) {
-                        personalidad = "El Líder Carismático";
-                        descripcion = "Tu empatía y habilidad para conectar (Conector) se combinan con tu energía y entusiasmo (Explorador), lo que te convierte en una persona que puede inspirar y movilizar a otros fácilmente. Disfrutas de las interacciones sociales y de liderar con un enfoque positivo. Consejo: Utiliza tu carisma para fomentar la colaboración y el crecimiento en tus equipos.";
+                    if (contador.a >= 7 && contador.b <= 5) {
+                        personalidad = "El Innovador Práctico";
+                        descripcion = "Combinas una mente curiosa y abierta a nuevas ideas con un enfoque práctico para llevarlas a cabo. Te gusta explorar, pero siempre con un objetivo en mente. Eres adaptable y encuentras soluciones creativas a los problemas.";
+                    } else if (contador.b >= 7 && contador.c <=5) {
+                        personalidad = "El Consejero Lógico";
+                        descripcion = "Posees una notable capacidad para analizar situaciones con lógica y, al mismo tiempo, ofrecer un apoyo comprensivo a quienes te rodean. Tus decisiones suelen ser bien pensadas y valoras la honestidad en tus relaciones.";
                     } else {
                         personalidad = "El Ser Adaptable y Versátil";
-                        descripcion = "Tus respuestas indican una personalidad flexible, capaz de adaptarse a diferentes situaciones y personas. No te defines por un solo rasgo dominante, sino que muestras una rica combinación de características que te permiten desenvolverte en diversos entornos. ¡Esta versatilidad es tu gran fortaleza! Consejo: Aprovecha tu adaptabilidad para aprender de cada experiencia y conectar con una amplia gama de personas.";
+                        descripcion = "Tus respuestas indican una personalidad flexible, capaz de adaptarse a diferentes situaciones y personas. No te defines por un solo rasgo dominante, sino que muestras una rica combinación de características que te permiten desenvolverte en diversos entornos. ¡Esta versatilidad es tu gran fortaleza!";
                     }
                 }
 
@@ -355,4 +402,3 @@
 
 </body>
 </html>
-

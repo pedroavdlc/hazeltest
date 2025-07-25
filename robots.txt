@@ -9,8 +9,10 @@ User-agent: *
 # Las siguientes líneas indican a los robots que NO deben rastrear (y por lo tanto, no indexar) estas páginas específicas.
 Disallow: /contacto.html
 Disallow: /creador.html
-Disallow: /privacidad.html # Asegúrate que este sea el nombre exacto de tu archivo de política de privacidad
+Disallow: /privacidad.html
 Disallow: /terminos-y-condiciones.html
+Disallow: /marina/uploader.html
+Disallow: /marina/estudio/temario/progreso-estudio.html
 
 # Allow:
 # Permite el acceso al resto del sitio.
@@ -19,3 +21,4 @@ Allow: /
 # Sitemap:
 # Indica a los buscadores dónde encontrar el mapa del sitio XML.
 Sitemap: https://hazeltest.com/sitemap.xml
+

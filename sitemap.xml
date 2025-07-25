@@ -1,93 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Página Principal -->
   <url>
     <loc>https://hazeltest.com/</loc>
-    <lastmod>2025-04-21</lastmod> <changefreq>weekly</changefreq>
+    <lastmod>2025-07-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Páginas Generales -->
   <url>
     <loc>https://hazeltest.com/categorias.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-   <url>
-    <loc>https://hazeltest.com/mapa-del-sitio.html</loc>
-    <lastmod>2025-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
 
+  <!-- Categoría Marina -->
   <url>
-    <loc>https://hazeltest.com/marina/</loc> <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/test.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Tests dentro de /marina/estudio/ -->
   <url>
-    <loc>https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/test-cultura-naval.html</loc>
+    <lastmod>2025-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Quizzes de Funcionarios -->
   <url>
-    <loc>https://hazeltest.com/marina/funcionarios/contra-el-reloj-funcionarios.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hazeltest.com/marina/funcionarios/identifica-por-imagen-funcionarios.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hazeltest.com/marina/funcionarios/elige-el-cargo.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hazeltest.com/marina/funcionarios/selecciona-apellidos-funcionarios.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-los-apellidos-de-los-funcionarios.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hazeltest.com/marina/funcionarios/ordena-los-apellidos-de-los-funcionarios.html</loc> <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://hazeltest.com/marina/funcionarios/ordena-los-cargos-de-los-funcionarios.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-los-cargos-de-los-funcionarios.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
+  <!-- Categoría Social -->
   <url>
-    <loc>https://hazeltest.com/social/</loc> <lastmod>2025-04-21</lastmod>
+    <loc>https://hazeltest.com/social/test.html</loc>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazeltest.com/social/test-de-personalidad.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hazeltest.com/social/test-de-depresion.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority> </url>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://hazeltest.com/social/test-de-narcisismo.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2025-07-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority> </url>
+    <priority>0.5</priority>
+  </url>
 
-  </urlset>
+</urlset>

@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Funcionarios de Marina - HazelTest</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4TEPLD75E');
+    </script>
+
     <meta name="description" content="Realiza diferentes tests sobre los Funcionarios de la Marina en HazelTest. Identifica por imagen, ordena apellidos, elige cargos y más.">
     <meta name="keywords" content="test funcionarios de marina, quizzes marina, hazeltest, identificar funcionarios, rangos navales, estructura marina, tests navales, conocimiento naval, tests interactivos marina">
-    <link rel="canonical" href="https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html">
+    <!-- Canonical Link Actualizado a la nueva ruta -->
+    <link rel="canonical" href="https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html">
 
+    <!-- Favicon -->
+    <link rel="icon" href="../../../hazeltest.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../hazeltest.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html">
+    <meta property="og:url" content="https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html">
     <meta property="og:title" content="Test Funcionarios de Marina - HazelTest">
     <meta property="og:description" content="Realiza diferentes tests sobre los Funcionarios de la Marina. Identifica por imagen, ordena apellidos y más.">
+    <!-- <meta property="og:image" content="URL_IMAGEN_FUNCIONARIOS_MARINA"> -->
+
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://hazeltest.com/marina/funcionarios/funcionarios-de-marina.html">
+    <meta property="twitter:url" content="https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html">
     <meta property="twitter:title" content="Test Funcionarios de Marina - HazelTest">
     <meta property="twitter:description" content="Realiza diferentes tests sobre los Funcionarios de la Marina. Identifica por imagen, ordena apellidos y más.">
+    <!-- <meta property="twitter:image" content="URL_IMAGEN_FUNCIONARIOS_MARINA"> -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/clock.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/photo.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/identification.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/bars-arrow-down.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/puzzle-piece.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/bars-3-bottom-left.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/academic-cap.svg" rel="preload" as="image">
-
-
     <style>
         body { font-family: 'Inter', sans-serif; }
         .quiz-card { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
@@ -45,12 +57,15 @@
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <!-- Enlace sube 3 niveles a la raíz -->
+            <a href="../../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
-                <a href="../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
-                <a href="../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
-                <span class="text-indigo-600 font-semibold">Funcionarios</span> </div>
+                <a href="../../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="../../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <!-- Enlace sube 2 niveles a la página de Marina -->
+                <a href="../../test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
+                <span class="text-indigo-600 font-semibold">Funcionarios</span> <!-- Activo -->
+            </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -58,9 +73,9 @@
             </div>
         </nav>
          <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="../../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
-            <a href="../../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
-            <a href="../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
+            <a href="../../../index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="../../../categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="../../test.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
              <a href="#" class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Funcionarios</a>
         </div>
     </header>
@@ -80,6 +95,7 @@
             Cada test se enfoca en un aspecto diferente, desde la identificación visual de mandos hasta el conocimiento de la jerarquía de cargos y la correcta asignación de nombres y apellidos. Prepárate para una experiencia de aprendizaje interactiva y demuestra tu dominio sobre el tema. ¡Selecciona un test y comienza!
         </p>
 
+        <!-- Grid de Tipos de Test (Enlaces relativos a la carpeta actual) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
             <a href="contra-el-reloj-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
@@ -109,7 +125,7 @@
                 <button data-quiz-type="elegir-cargo" class="mt-auto w-full bg-amber-500 text-white py-2 px-4 rounded-md hover:bg-amber-600 transition duration-300 quiz-button">Empezar Test</button>
             </a>
 
-             <a href="ordena-los-apellidos-de-los-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
+            <a href="ordena-los-apellidos-de-los-funcionarios.html" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col quiz-card quiz-card-link">
                  <div class="flex items-center mb-3">
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-teal-500 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
                     <h3 class="text-xl font-semibold text-teal-700">Selecciona Apellidos</h3>
@@ -138,7 +154,8 @@
 
         </div>
          <div class="mt-12 text-center">
-             <a href="../index.html" class="text-indigo-600 hover:underline">&larr; Volver a la página de Marina</a>
+             <!-- Enlace a la página principal de Marina (sube DOS niveles) -->
+             <a href="../../test.html" class="text-indigo-600 hover:underline">&larr; Volver a la Categoría Marina</a>
          </div>
     </main>
 
@@ -146,9 +163,11 @@
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
             <div class="mt-4 space-x-4">
-                <a href="../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
-                <a href="../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
-                <a href="../../contacto.html" class="hover:text-white">Contacto</a>
+                <!-- Enlaces suben TRES niveles para llegar a la raíz -->
+                <a href="../../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="../../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="../../../contacto.html" class="hover:text-white">Contacto</a>
+                 <a href="../../../mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
             </div>
         </div>
     </footer>
@@ -175,11 +194,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
