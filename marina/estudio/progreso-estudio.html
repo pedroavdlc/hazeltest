@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progreso de Estudio - HazelTest</title>
+
+    <meta name="description" content="Sigue tu progreso de estudio para el examen de la Secretaría de Marina. Marca los temas completados y organiza tu aprendizaje con HazelTest.">
+    <meta name="keywords" content="progreso de estudio, temario marina, examen semar, hazeltest, cultura naval, doctrina armada, seguridad informática">
+    <meta name="robots" content="noindex, nofollow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hidden { display: none; }
+        
+        .topic-item, .topic-heading-item {
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        /* Estilo para el enlace del tema (sin color azul por defecto) */
+        .topic-link {
+            color: inherit; /* Hereda el color del texto normal */
+            text-decoration: none; /* Sin subrayado por defecto */
+            transition: color 0.2s ease;
+        }
+        .topic-link:hover {
+            color: #4338CA; /* text-indigo-700 */
+            text-decoration: underline;
+        }
+        
+        /* Estilo cuando el tema está completado */
+        .completed .topic-link,
+        .completed .topic-main-heading {
+            color: #9CA3AF; /* gray-400 */
+            text-decoration: line-through;
+        }
+        .completed .topic-link:hover {
+            color: #9CA3AF; /* Mantener color gris en hover */
+        }
+
+        /* Estilo para los encabezados de sección principales */
+        .topic-main-heading {
+            color: #111827; /* gray-900 */
+            font-weight: 700; /* font-bold */
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+        
+        #temario-container ul {
+            padding-left: 1.5rem;
+            border-left: 1px solid #E5E7EB;
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        #temario-container > ul {
+             padding-left: 0;
+             border-left: none;
+             margin-left: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <span class="text-indigo-600 font-semibold">Mi Progreso</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <span class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Mi Progreso</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
+             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Temario y Progreso de Estudio</h1>
+             <p class="text-center text-gray-600 mb-2">Marca la casilla para registrar tu progreso. <strong class="font-medium">Haz clic en el texto de un tema para ir al test correspondiente.</strong></p>
+             <p id="progress-summary" class="text-center font-semibold text-indigo-600 mb-8">Has completado 0 de 0 temas.</p>
+
+            <div id="temario-container" class="space-y-4">
+                <p class="text-center text-gray-500 p-8">Cargando temario y progreso...</p>
+            </div>
+
+             <div class="mt-10 pt-6 border-t border-gray-200 text-center">
+                <button id="reset-progress" class="text-sm text-red-500 hover:text-red-700 hover:underline font-medium">Reiniciar todo el progreso</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                 <a href="privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                 <a href="terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                 <a href="contacto.html" class="hover:text-white">Contacto</a>
+                 <a href="mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, onSnapshot, deleteDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+            apiKey: "TU_API_KEY", authDomain: "TU_AUTH_DOMAIN", projectId: "TU_PROJECT_ID", /* ... */
+        };
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'hazeltest-temario-marina';
+
+        // --- Estructura del Temario con URLs ---
+        const temarioData = [
+            { id: 'cultura-naval', title: 'I. CULTURA NAVAL', isHeading: true, children: [
+                { id: 'sintesis-cultura', title: 'A. SÍNTESIS DE CULTURA NAVAL. (Bibliografía 1)', url: 'marina/cultura-naval/test-cultura-naval.html' }
+            ]},
+            { id: 'doctrina', title: 'II. DOCTRINA DE LA ARMADA DE MÉXICO', isHeading: true, children: [
+                { id: 'dam-rh', title: 'A. DAM. 1.1.1 RECURSOS HUMANOS. (Bibliografía 2)', isHeading: true, children: [
+                    { id: 'rh-contratacion', title: '3. Contratación de personal.', url: '#', children: [
+                        { id: 'rh-contr-req', title: 'a. Requisitos específicos con relación a la jerarquía.', url: '#' },
+                        { id: 'rh-contr-gen', title: 'b. Generalidades de contratación.', url: '#' },
+                        { id: 'rh-contr-ind', title: 'c. Inducción al Medio.', url: '#' }
+                    ]},
+                    { id: 'rh-reenganches', title: '4. Reenganches.', url: '#', children: [
+                        { id: 'rh-reeng-req', title: 'a. Requisitos que debe cubrir el personal de la Milicia Auxiliar.', url: '#'}
+                    ]},
+                    { id: 'rh-permanente', title: '5. Pase a la Milicia Permanente (párrafo I).', url: '#' },
+                    { id: 'rh-adecuacion', title: '6. Adecuación de grado.', url: '#', children: [
+                        { id: 'rh-adec-pers', title: 'a. Personal de la Milicia Permanente y la Milicia Auxiliar.', url: '#'},
+                        { id: 'rh-adec-crit', title: 'b. Criterios a considerarse (incisos f y g).', url: '#'}
+                    ]},
+                    { id: 'rh-cambio', title: '7. Cambio de Cuerpo, Escala o Servicio.', url: '#', children: [
+                        { id: 'rh-cambio-sol', title: 'a. Por solicitud o necesidades del servicio (incisos a, b, c y d).', url: '#'},
+                        { id: 'rh-cambio-med', title: 'b. Por prescripción médica (incisos a, b, c y d).', url: '#'}
+                    ]},
+                    { id: 'rh-movimientos', title: '8. Movimientos de personal.', url: '#', children: [
+                        { id: 'rh-mov-parr', title: 'a. Párrafos del I al IV.', url: '#'},
+                        { id: 'rh-mov-obli', title: 'b. Obligaciones del Militar.', url: '#'}
+                    ]},
+                    { id: 'rh-ascensos', title: '9. Ascensos del personal.', url: '#' },
+                    { id: 'rh-hoja', title: '10. Hoja de actuación (párrafo I).', url: '#' },
+                    { id: 'rh-memorial', title: '11. Memorial de servicios (párrafo I).', url: '#' },
+                    { id: 'rh-entrega', title: '12. Entrega-Recepción del Mando...', url: '#', children: [
+                        { id: 'rh-entrega-proc', title: 'a. Procedimiento.', url: '#'}
+                    ]},
+                    { id: 'rh-relacion', title: '13. Relación nominal (párrafo I).', url: '#' },
+                    { id: 'rh-bajas', title: '14. Bajas.', url: '#', children: [
+                        { id: 'rh-bajas-circ', title: 'a. Circunstancias que motivan la Baja.', url: '#'},
+                        { id: 'rh-bajas-am', title: 'b. Por Acuerdo del Alto Mando.', url: '#'},
+                        { id: 'rh-bajas-ms', title: 'c. Por Acuerdo de los Mandos Superiores.', url: '#'},
+                        { id: 'rh-bajas-negar', title: 'd. Circunstancias para negar la Baja.', url: '#'}
+                    ]}
+                ]},
+                { id: 'dam-incendios', title: 'B. DAM. 1.3.1.3.5 CONTRAINCENDIOS... (Bibliografía 3)', url: '#', children: [ /* ... */ ]},
+                { id: 'dam-adiestramiento', title: 'C. DAM. 1.10 ADIESTRAMIENTO... (Bibliografía 4)', url: '#', children: [ /* ... */ ]},
+                { id: 'dam-seguridad', title: 'D. DAM. 1.3.4.6 SEGURIDAD FÍSICA... (Bibliografía 5)', url: '#', children: [ /* ... */ ]}
+            ]},
+            { id: 'profesional', title: 'III. ÁREA PROFESIONAL', isHeading: true, children: [
+                { id: 'ap-seg-info', title: 'A. FUNDAMENTOS DE SEGURIDAD INFORMÁTICA. (Bibliografía 6)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-so', title: 'B. SISTEMAS OPERATIVOS... (Bibliografía 7)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-bd', title: 'C. BASES DE DATOS. (Bibliografía 8)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-prog', title: 'D. FUNDAMENTOS DE PROGRAMACIÓN... (Bibliografía 9)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-redes', title: 'E. REDES DE COMPUTADORAS. (Bibliografía 10)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-admin-red', title: 'F. MANUAL PARA EL ADMINISTRADOR DE RED... (Bibliografía 11)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-gestion-info', title: 'G. MANUAL DE GESTIÓN DE LA INFORMACIÓN... (Bibliografía 12)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-bovedas', title: 'H. DIRECTIVA DE BOVEDAS DIGITALES SEGURAS. (Bibliografía 13)', url: '#' },
+                { id: 'ap-usb', title: 'I. DIRECTIVA DE DISPOSITIVOS... USB. (Bibliografía 14)', url: '#', children: [ /* ... */ ]},
+                { id: 'ap-antivirus', title: 'J. LINEAMIENTO PARA EL USO DE ANTIVIRUS... (Bibliografía 15)', url: '#', children: [ /* ... */ ]}
+            ]}
+        ];
+
+        // --- Elementos del DOM ---
+        const temarioContainer = document.getElementById('temario-container');
+        const summaryElement = document.getElementById('progress-summary');
+        const resetProgressButton = document.getElementById('reset-progress');
+
+        // --- Inicialización de Firebase ---
+        let app, auth, db, userId;
+        try {
+            app = initializeApp(firebaseConfig);
+            auth = getAuth(app);
+            db = getFirestore(app);
+        } catch (error) {
+            console.error("Error inicializando Firebase:", error);
+            if(temarioContainer) temarioContainer.innerHTML = '<p class="text-red-500 text-center">Error al conectar con el servicio.</p>';
+        }
+
+        // --- Lógica Principal ---
+        let totalCheckableTopics = 0;
+
+        function getLeafIds(topic) {
+            if (!topic.children || topic.children.length === 0) {
+                return [topic.id];
+            }
+            return topic.children.flatMap(child => getLeafIds(child));
+        }
+
+        function renderTemario(topics, container) {
+            const ul = document.createElement('ul');
+            topics.forEach(topic => {
+                const li = document.createElement('li');
+                li.id = `topic-${topic.id}`;
+                li.classList.add('my-2');
+
+                const hasChildren = topic.children && topic.children.length > 0;
+                
+                if (topic.isHeading) {
+                    li.classList.add('topic-heading-item', 'mt-4');
+                    li.innerHTML = `<span class="topic-main-heading text-xl">${topic.title}</span>`;
+                } else {
+                    totalCheckableTopics++;
+                    li.classList.add('topic-item', 'flex', 'items-center');
+                    
+                    const isClickable = topic.url && topic.url !== '#';
+                    const checkboxHTML = `<input type="checkbox" id="check-${topic.id}" data-topic-id="${topic.id}" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mr-3 flex-shrink-0">`;
+                    
+                    let textHTML;
+                    if (isClickable) {
+                        textHTML = `<a href="${topic.url}" target="_blank" rel="noopener noreferrer" class="topic-link text-base">${topic.title}</a>`;
+                    } else {
+                        textHTML = `<a href="#" class="topic-link text-base cursor-default" onclick="event.preventDefault();">${topic.title}</a>`;
+                    }
+                    
+                    li.innerHTML = checkboxHTML + textHTML;
+                }
+
+                if (hasChildren) {
+                    const childContainer = document.createElement('div');
+                    renderTemario(topic.children, childContainer);
+                    li.appendChild(childContainer);
+                }
+                
+                ul.appendChild(li);
+            });
+            container.appendChild(ul);
+        }
+
+        async function handleCheckboxChange(event) {
+            if (!userId || !event.target.matches('input[type="checkbox"]')) return;
+            const checkbox = event.target;
+            const topicId = checkbox.dataset.topicId;
+            const isCompleted = checkbox.checked;
+
+            const docRef = doc(db, `artifacts/${appId}/users/${userId}/study_progress`, 'main');
+            try {
+                await setDoc(docRef, { [topicId]: isCompleted }, { merge: true });
+            } catch (error) {
+                console.error("Error al guardar progreso:", error);
+            }
+        }
+
+        function listenToProgress(uid) {
+            const docRef = doc(db, `artifacts/${appId}/users/${userId}/study_progress`, 'main');
+            onSnapshot(docRef, (docSnap) => {
+                const progress = docSnap.exists() ? docSnap.data() : {};
+                updateUI(progress);
+            });
+        }
+
+        function updateUI(progress) {
+            let completedCount = 0;
+            const checkboxes = document.querySelectorAll('#temario-container input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                const topicId = checkbox.dataset.topicId;
+                const li = document.getElementById(`topic-${topicId}`);
+                if (progress[topicId] === true) {
+                    checkbox.checked = true;
+                    if(li) li.classList.add('completed');
+                    completedCount++;
+                } else {
+                    checkbox.checked = false;
+                    if(li) li.classList.remove('completed');
+                }
+            });
+            
+            function updateParentStatus(topics) {
+                topics.forEach(topic => {
+                    if (topic.children && topic.children.length > 0) {
+                        const allLeafs = getLeafIds(topic);
+                        const allChildrenCompleted = allLeafs.every(leafId => progress[leafId] === true);
+                        const parentLi = document.getElementById(`topic-${topic.id}`);
+                        if (parentLi) {
+                            if (allChildrenCompleted) {
+                                parentLi.classList.add('completed');
+                            } else {
+                                parentLi.classList.remove('completed');
+                            }
+                        }
+                        updateParentStatus(topic.children);
+                    }
+                });
+            }
+            
+            updateParentStatus(temarioData);
+
+            if(summaryElement) summaryElement.textContent = `Has completado ${completedCount} de ${totalCheckableTopics} temas.`;
+        }
+
+        async function resetAllProgress() {
+            if (!userId) return;
+            if (confirm("¿Estás seguro de que quieres reiniciar todo tu progreso? Esta acción no se puede deshacer.")) {
+                const docRef = doc(db, `artifacts/${appId}/users/${userId}/study_progress`, 'main');
+                try {
+                    await deleteDoc(docRef);
+                } catch (error) {
+                    console.error("Error al reiniciar progreso:", error);
+                }
+            }
+        }
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                userId = user.uid;
+                const docRef = doc(db, `artifacts/${appId}/users/${userId}/study_progress`, 'main');
+                const docSnap = await getDoc(docRef);
+                const progress = docSnap.exists() ? docSnap.data() : {};
+                if(temarioContainer) {
+                    temarioContainer.innerHTML = '';
+                    totalCheckableTopics = 0;
+                    renderTemario(temarioData, temarioContainer);
+                    updateUI(progress);
+                }
+                listenToProgress(userId);
+            } else {
+                try {
+                    if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                        await signInWithCustomToken(auth, __initial_auth_token);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+                } catch (error) {
+                    console.error("Error al iniciar sesión:", error);
+                    if(temarioContainer) temarioContainer.innerHTML = '<p class="text-red-500 text-center">No se pudo iniciar sesión para guardar tu progreso.</p>';
+                }
+            }
+        });
+
+        if(temarioContainer) {
+            temarioContainer.addEventListener('change', handleCheckboxChange);
+        }
+        if(resetProgressButton) {
+            resetProgressButton.addEventListener('click', resetAllProgress);
+        }
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta de Carga de Tests (Admin) - HazelTest</title>
+    <meta name="robots" content="noindex, nofollow"> <!-- Para que no se indexe -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 md:p-8 max-w-2xl">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">Herramienta de Carga para Firestore</h1>
+            <p class="text-center text-gray-600 mb-6">Usa esta página para subir tu archivo de preguntas JSON a la colección 'quizzes' en Firestore.</p>
+
+            <div class="space-y-4">
+                <div>
+                    <label for="doc-id" class="block text-sm font-medium text-gray-700">1. ID del Documento (ej: cultura-naval-sintesis)</label>
+                    <input type="text" id="doc-id" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="cultura-naval-sintesis">
+                </div>
+                <div>
+                    <label for="quiz-title" class="block text-sm font-medium text-gray-700">2. Título del Test</label>
+                    <input type="text" id="quiz-title" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Síntesis de Cultura Naval">
+                </div>
+                <div>
+                    <label for="quiz-desc" class="block text-sm font-medium text-gray-700">3. Descripción del Test</label>
+                    <input type="text" id="quiz-desc" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Un test para probar tus conocimientos...">
+                </div>
+                <div>
+                    <label for="json-data" class="block text-sm font-medium text-gray-700">4. Pega aquí tu array de preguntas JSON</label>
+                    <textarea id="json-data" rows="10" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 font-mono text-sm" placeholder='[ { "pregunta": "...", "opciones": [...], ... }, ... ]'></textarea>
+                </div>
+                
+                <button id="upload-button" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
+                    Subir Preguntas a Firestore
+                </button>
+
+                <div id="status-message" class="text-center mt-4 p-3 rounded-md h-12"></div>
+            </div>
+             <div class="mt-8 text-center">
+                 <!-- Enlace corregido para volver a test.html -->
+                 <a href="test.html" class="text-sm text-indigo-600 hover:underline">&larr; Volver a la página de la categoría Marina</a>
+             </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBNL0KOVgYVQV9qrRp2FSilOFXgYUFBlmk",
+            authDomain: "hazeltest-quizzes.firebaseapp.com",
+            projectId: "hazeltest-quizzes",
+            storageBucket: "hazeltest-quizzes.appspot.com",
+            messagingSenderId: "186551921444",
+            appId: "1:186551921444:web:101459aeec2b80dc3721b1",
+            measurementId: "G-K4TEPLD75E"
+        };
+        
+        let app, db;
+        try {
+            app = initializeApp(firebaseConfig);
+            db = getFirestore(app);
+            console.log("Firebase inicializado correctamente.");
+        } catch (error) {
+            console.error("Error inicializando Firebase:", error);
+            const statusMessage = document.getElementById('status-message');
+            if(statusMessage) {
+                statusMessage.textContent = 'Error: Revisa tus credenciales de Firebase en el código.';
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-red-100 text-red-700';
+            }
+        }
+
+        const docIdInput = document.getElementById('doc-id');
+        const titleInput = document.getElementById('quiz-title');
+        const descInput = document.getElementById('quiz-desc');
+        const jsonDataTextarea = document.getElementById('json-data');
+        const uploadButton = document.getElementById('upload-button');
+        const statusMessage = document.getElementById('status-message');
+
+        uploadButton.addEventListener('click', async () => {
+            const docId = docIdInput.value.trim();
+            const title = titleInput.value.trim();
+            const description = descInput.value.trim();
+            const jsonString = jsonDataTextarea.value.trim();
+
+            if (!docId || !title || !description || !jsonString) {
+                statusMessage.textContent = 'Por favor, llena todos los campos.';
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-yellow-100 text-yellow-700';
+                return;
+            }
+
+            let questionsArray;
+            try {
+                questionsArray = JSON.parse(jsonString);
+                if (!Array.isArray(questionsArray)) {
+                    throw new Error("El JSON no es un array.");
+                }
+            } catch (error) {
+                statusMessage.textContent = 'Error: El formato del JSON no es válido. Asegúrate de que empiece con [ y termine con ].';
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-red-100 text-red-700';
+                console.error("Error de parseo JSON:", error);
+                return;
+            }
+
+            statusMessage.textContent = 'Subiendo...';
+            statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-blue-100 text-blue-700';
+            uploadButton.disabled = true;
+
+            const quizDocument = {
+                titulo: title,
+                descripcion: description,
+                preguntas: questionsArray
+            };
+
+            try {
+                const docRef = doc(db, "quizzes", docId);
+                await setDoc(docRef, quizDocument);
+                
+                statusMessage.textContent = `¡Éxito! Se subieron ${questionsArray.length} preguntas al documento '${docId}'.`;
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-green-100 text-green-700';
+                console.log("Documento escrito con éxito.");
+
+            } catch (error) {
+                statusMessage.textContent = 'Error al subir los datos. Revisa la consola (F12) para más detalles.';
+                statusMessage.className = 'text-center mt-4 p-3 rounded-md h-12 bg-red-100 text-red-700';
+                console.error("Error escribiendo en Firestore:", error);
+            } finally {
+                uploadButton.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
