@@ -230,6 +230,8 @@
                         * Referencias psicométricas: Spitzer RL, Kroenke K, Williams JB, Löwe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med. 2006.
                     </p>
                 </div>
+                <!-- Widget Viral de Compartir -->
+                <div id="ht-share-container" class="my-6"></div>
                 <div class="text-center mt-8 space-y-4">
                     <button id="reiniciar-test-btn" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-indigo-700 transition">Repetir el test</button>
                     <div>
@@ -332,6 +334,15 @@
                 if (window.HazelTestApp) {
                     window.HazelTestApp.addXP(30);
                 }
+
+                if (window.HazelTestShare) {
+                    window.HazelTestShare.render('#ht-share-container', {
+                        title: 'Test de Ansiedad GAD-7',
+                        resultText: nivel,
+                        message: `Completé el Test de Ansiedad (Escala GAD-7) en HazelTest y obtuve: ${nivel}. 🧘 Realiza tu evaluación gratuita aquí: https://hazeltest.com/social/test-de-ansiedad.html`
+                    });
+                }
+
                 resultadosSection.scrollIntoView({ behavior: 'smooth' });
             });
         }

@@ -401,6 +401,9 @@
                     </div>
                 </div>
 
+                <!-- Share Box Viral -->
+                <div id="naval-share-container"></div>
+
                 <!-- Actions -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6">
                     <button id="btn-reintentar" class="w-full sm:w-auto px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white font-bold rounded-xl shadow transition">
@@ -809,6 +812,14 @@
             progressBarFill.style.width = '100%';
             progressText.textContent = `Test Finalizado`;
             progressPercentage.textContent = '100%';
+
+            if (window.HazelTestShare) {
+                window.HazelTestShare.render('#naval-share-container', {
+                    title: 'Examen Simulador de Cultura Naval SEMAR',
+                    resultText: `${pct}% de aciertos (${aciertos} de ${total})`,
+                    message: `¡Logré ${pct}% de aciertos (${aciertos}/${total}) en el Simulador de Cultura Naval SEMAR de HazelTest! ⚓ ¿Puedes superarme? Compite gratis aquí: https://hazeltest.com/marina/estudio/test-cultura-naval.html`
+                });
+            }
         }
 
         // Reintentar Test

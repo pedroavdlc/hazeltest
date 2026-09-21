@@ -249,6 +249,8 @@
                         * Escala de Autoestima de Rosenberg (Rosenberg Self-Esteem Scale - RSES, 1965), instrumento psicométrico de libre uso académico y divulgativo.
                     </p>
                 </div>
+                <!-- Widget Viral de Compartir -->
+                <div id="ht-share-container" class="my-6"></div>
                 <div class="text-center mt-8 space-y-4">
                     <button id="reiniciar-test-btn" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-indigo-700 transition">Repetir el test</button>
                     <div>
@@ -341,6 +343,15 @@
                 if (window.HazelTestApp) {
                     window.HazelTestApp.addXP(30);
                 }
+
+                if (window.HazelTestShare) {
+                    window.HazelTestShare.render('#ht-share-container', {
+                        title: 'Test de Autoestima (Escala Rosenberg)',
+                        resultText: nivel,
+                        message: `Hice el Test de Autoestima (Escala Rosenberg) en HazelTest y obtuve: ${nivel}. ✨ ¿Cómo está tu autoestima? Descúbrelo gratis aquí: https://hazeltest.com/social/test-de-autoestima.html`
+                    });
+                }
+
                 resultadosSection.scrollIntoView({ behavior: 'smooth' });
             });
         }

@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de ExÃ¡menes y Tests Personalizados | HazelTest</title>
+    <title>Generador de Exámenes y Tests Personalizados | HazelTest</title>
     <link rel="canonical" href="https://hazeltest.com/mi-estudio.html">
-    <!-- Geo & Localization Tags -->
     <meta name="geo.region" content="MX">
     <meta name="geo.placename" content="Mexico">
     <meta name="geo.position" content="19.432608;-99.133209">
@@ -16,18 +15,21 @@
     <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/mi-estudio.html">
 
     <!-- Meta Tags -->
-    <meta name="description" content="Crea tu propio simulador de examen personalizado en HazelTest. Selecciona nÃºmero de preguntas, temas y modo de estudio para evaluar tu aprendizaje hoy.">
-    <meta name="keywords" content="simulador de examen, test personalizado, generar examen gratis, estudio naval">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"> <!-- Para que esta pÃ¡gina no aparezca en buscadores -->
+    <meta name="description" content="Crea tu propio simulador de examen personalizado gratis en HazelTest. Selecciona número de preguntas, temas navales o psicométricos y evalúa tu aprendizaje.">
+    <meta name="keywords" content="simulador de examen, test personalizado, generar examen gratis, estudio naval, hazeltest">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Favicon -->
     <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
 
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hidden { display: none; }
@@ -35,8 +37,8 @@
             transition: background-color 0.2s ease, border-color 0.2s ease;
         }
         .topic-checkbox:checked + .topic-label {
-            background-color: #E0E7FF; /* indigo-100 */
-            border-color: #6366F1; /* indigo-500 */
+            background-color: #E0E7FF;
+            border-color: #6366F1;
             font-weight: 600;
         }
         .accordion-content {
@@ -56,267 +58,265 @@
     <meta name="theme-color" content="#4F46E5">
     <link rel="stylesheet" href="/hazeltest-theme.css">
     <script src="/hazeltest-app.js?v=2.0"></script>
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <!-- Pantalla de ContraseÃ±a -->
-    <div id="password-overlay" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-        <div class="bg-white p-8 rounded-lg shadow-xl max-w-sm w-full mx-4">
-            <h2 class="text-2xl font-bold text-center mb-4">Acceso Protegido</h2>
-            <p class="text-center text-gray-600 mb-6">Por favor, ingresa la contraseÃ±a para acceder a tu centro de estudio.</p>
-            <div class="space-y-4">
-                <div>
-                    <label for="password-input" class="sr-only">ContraseÃ±a</label>
-                    <input type="password" id="password-input" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="ContraseÃ±a">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600 flex items-center space-x-2">
+                <span>✨ HazelTest</span>
+            </a>
+            <div class="flex items-center space-x-4 text-sm">
+                <a href="/" class="text-gray-600 hover:text-indigo-600 font-medium">Inicio</a>
+                <a href="/articulos/" class="text-gray-600 hover:text-indigo-600 font-medium">Artículos</a>
+                <a href="/marina/estudio/test-cultura-naval.html" class="text-blue-600 font-semibold hover:underline">⚓ Cultura Naval</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-6 py-10 md:py-14 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-2xl shadow-xl max-w-4xl mx-auto border border-gray-100">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">Herramienta Gratuita de Práctica</span>
+                <h1 class="text-2xl md:text-4xl font-extrabold text-gray-900 mb-3">Generador de Exámenes y Tests Personalizados</h1>
+                <p class="text-gray-600 text-sm md:text-base">Selecciona los módulos temáticos que deseas evaluar, ajusta el volumen de preguntas y crea tu examen interactivo al instante.</p>
+            </div>
+            
+            <form id="custom-quiz-form">
+                <div class="mb-8">
+                    <h2 class="text-lg md:text-xl font-bold text-gray-800 mb-3 border-b pb-2 flex items-center">
+                        <span class="w-7 h-7 rounded-full bg-indigo-600 text-white inline-flex items-center justify-center text-sm mr-2">1</span>
+                        Selecciona los Temas a Evaluar
+                    </h2>
+                    <div id="temario-accordion" class="space-y-2 mt-4">
+                        <div class="p-8 text-center text-gray-500">
+                            <div class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-indigo-600 border-t-transparent mb-3"></div>
+                            <p>Cargando temario interactivo de HazelTest...</p>
+                        </div>
+                    </div>
                 </div>
-                <button id="password-submit" class="w-full bg-indigo-600 text-white font-bold py-2 px-4 rounded-md hover:bg-indigo-700 transition">Entrar</button>
+
+                <div id="quiz-options-container" class="mt-8 pt-6 border-t border-gray-200">
+                    <h2 class="text-lg md:text-xl font-bold text-gray-800 mb-3 flex items-center">
+                        <span class="w-7 h-7 rounded-full bg-indigo-600 text-white inline-flex items-center justify-center text-sm mr-2">2</span>
+                        Personaliza tu Sesión de Estudio
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="percentage-questions" class="block text-sm font-medium text-gray-700 mb-1">Porcentaje de Preguntas:</label>
+                            <select id="percentage-questions" class="w-full p-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white">
+                                <option value="20">20% (Test rápido)</option>
+                                <option value="50">50% (Media evaluación)</option>
+                                <option value="80">80% (Simulación exhaustiva)</option>
+                                <option value="100" selected>100% (Todas las preguntas)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="difficulty" class="block text-sm font-medium text-gray-700 mb-1">Filtro de Dificultad:</label>
+                            <select id="difficulty" class="w-full p-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white">
+                                <option value="Todas" selected>Todas las complejidades</option>
+                                <option value="Fácil">Básica / Inicial</option>
+                                <option value="Medio">Intermedia</option>
+                                <option value="Difícil">Avanzada / Mando</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <button type="submit" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-8 rounded-xl transition duration-200 shadow-lg hover:shadow-indigo-200 text-base">
+                        🚀 Iniciar Mi Examen Personalizado
+                    </button>
+                </div>
+            </form>
+
+            <!-- Accesos Rápidos Alternativos -->
+            <div class="mt-12 pt-8 border-t border-gray-100">
+                <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4 text-center">¿Prefieres un simulador predefinido?</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="/marina/estudio/test-cultura-naval.html" class="p-3.5 bg-blue-50 hover:bg-blue-100 rounded-xl text-blue-900 font-semibold text-sm flex items-center transition">
+                        <span class="text-xl mr-2.5">⚓</span>
+                        <div>
+                            <div class="font-bold">Simulador Cultura Naval SEMAR</div>
+                            <div class="text-xs text-blue-600 font-normal">Banco oficial de 469 preguntas</div>
+                        </div>
+                    </a>
+                    <a href="/social/test-de-personalidad.html" class="p-3.5 bg-purple-50 hover:bg-purple-100 rounded-xl text-purple-900 font-semibold text-sm flex items-center transition">
+                        <span class="text-xl mr-2.5">🧠</span>
+                        <div>
+                            <div class="font-bold">Test de Personalidad y Rasgos</div>
+                            <div class="text-xs text-purple-600 font-normal">Evaluación psicométrica completa</div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <p id="password-error" class="text-red-500 text-sm text-center mt-4 h-5"></p>
         </div>
-    </div>
+    </main>
 
-    <!-- Contenido Principal (Oculto por defecto) -->
-    <div id="main-content" class="hidden">
-        <header class="bg-white shadow-md sticky top-0 z-50">
-            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
-                <span class="font-semibold text-gray-700">Mi Centro de Estudio</span>
-            </nav>
-        </header>
-
-        <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
-            <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
-                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">Generador de ExÃ¡menes y Tests de Estudio Personalizados</h1>
-                <p class="text-center text-gray-600 mb-8">Selecciona los temas que quieres incluir y personaliza tu test.</p>
-                
-                <form id="custom-quiz-form">
-                    <div class="mb-8">
-                        <h2 class="text-xl font-semibold text-gray-800 mb-3 border-b pb-2">1. Selecciona los Temas</h2>
-                        <div id="temario-accordion" class="space-y-2 mt-4">
-                            <!-- El acordeÃ³n de temas se cargarÃ¡ aquÃ­ -->
-                            <p class="text-center text-gray-500 p-8">Cargando temario...</p>
-                        </div>
-                    </div>
-
-                    <div id="quiz-options-container" class="mt-8 pt-6 border-t">
-                         <h2 class="text-xl font-semibold text-gray-800 mb-3">2. Personaliza tu Test</h2>
-                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label for="percentage-questions" class="block text-sm font-medium text-gray-700 mb-1">Porcentaje de Preguntas:</label>
-                                <select id="percentage-questions" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
-                                    <option value="10">10%</option>
-                                    <option value="20">20%</option>
-                                    <option value="30">30%</option>
-                                    <option value="40">40%</option>
-                                    <option value="50">50%</option>
-                                    <option value="60">60%</option>
-                                    <option value="70">70%</option>
-                                    <option value="80">80%</option>
-                                    <option value="90">90%</option>
-                                    <option value="100" selected>100% (Todas)</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="difficulty" class="block text-sm font-medium text-gray-700 mb-1">Dificultad:</label>
-                                <select id="difficulty" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
-                                    <option value="Todas">Todas</option>
-                                    <option value="FÃ¡cil">FÃ¡cil</option>
-                                    <option value="Medio">Medio</option>
-                                    <option value="DifÃ­cil">DifÃ­cil</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 text-center">
-                        <button type="submit" class="w-full md:w-auto bg-indigo-600 text-white font-bold py-3 px-6 rounded-md hover:bg-indigo-700 transition duration-300 shadow-md text-lg">
-                            Crear y Empezar Test
-                        </button>
-                    </div>
-                </form>
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2026 HazelTest. Plataforma educativa libre y abierta.</p>
+            <div class="mt-3 space-x-4">
+                <a href="/privacidad.html" class="hover:text-white">Privacidad</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white">Términos</a>
+                <a href="/acerca-de.html" class="hover:text-white">Acerca de</a>
+                <a href="/contacto.html" class="hover:text-white">Contacto</a>
             </div>
-        </main>
+        </div>
+    </footer>
 
-        <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
-            <div class="container mx-auto px-6 text-center">
-                <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Firebase SDK and Logic -->
+    <!-- Firebase SDK & Topics Logic (No Password) -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getFirestore, collection, doc, getDoc, getDocs, getCountFromServer } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // --- LÃ³gica de ProtecciÃ³n por ContraseÃ±a ---
-        const correctPassword = "estudiooslito";
-        const passwordOverlay = document.getElementById('password-overlay');
-        const mainContent = document.getElementById('main-content');
-        const passwordInput = document.getElementById('password-input');
-        const passwordSubmit = document.getElementById('password-submit');
-        const passwordError = document.getElementById('password-error');
+        const firebaseConfig = {
+            apiKey: "AIzaSyBNL0KOVgYVQV9qrRp2FSilOFXgYUFBlmk",
+            authDomain: "hazeltest-quizzes.firebaseapp.com",
+            projectId: "hazeltest-quizzes",
+            storageBucket: "hazeltest-quizzes.appspot.com",
+            messagingSenderId: "186551921444",
+            appId: "1:186551921444:web:101459aeec2b80dc3721b1",
+            measurementId: "G-K4TEPLD75E"
+        };
 
-        function checkPassword() {
-            if (passwordInput.value === correctPassword) {
-                passwordOverlay.classList.add('hidden');
-                mainContent.classList.remove('hidden');
-                initializeFirebaseAndLoadTopics();
-            } else {
-                passwordError.textContent = "ContraseÃ±a incorrecta. IntÃ©ntalo de nuevo.";
-                passwordInput.value = "";
-            }
+        let app, db;
+        try {
+            app = initializeApp(firebaseConfig);
+            db = getFirestore(app);
+        } catch (error) {
+            console.error("Error inicializando Firebase:", error);
         }
 
-        passwordSubmit.addEventListener('click', checkPassword);
-        passwordInput.addEventListener('keypress', (event) => {
-            if (event.key === 'Enter') {
-                checkPassword();
-            }
-        });
+        async function loadAndRenderTopics() {
+            const accordionContainer = document.getElementById('temario-accordion');
+            if (!accordionContainer) return;
 
-        // --- LÃ³gica de Firebase y del Quiz ---
-        function initializeFirebaseAndLoadTopics() {
-            const firebaseConfig = {
-                apiKey: "AIzaSyBNL0KOVgYVQV9qrRp2FSilOFXgYUFBlmk",
-                authDomain: "hazeltest-quizzes.firebaseapp.com",
-                projectId: "hazeltest-quizzes",
-                storageBucket: "hazeltest-quizzes.appspot.com",
-                messagingSenderId: "186551921444",
-                appId: "1:186551921444:web:101459aeec2b80dc3721b1",
-                measurementId: "G-K4TEPLD75E"
-            };
-
-            let app, db;
             try {
-                app = initializeApp(firebaseConfig);
-                db = getFirestore(app);
-            } catch (error) {
-                console.error("Error inicializando Firebase:", error);
-                document.getElementById('temario-accordion').innerHTML = `<p class="text-red-500 text-center">Error de configuraciÃ³n.</p>`;
-                return;
-            }
-            
-            let allTopicsData = []; 
-
-            async function loadAndRenderTopics() {
-                const accordionContainer = document.getElementById('temario-accordion');
-                if (!db || !accordionContainer) return;
-
-                try {
-                    const temarioDocRef = doc(db, "metadatos", "temario");
-                    const temarioDocSnap = await getDoc(temarioDocRef);
-                    
-                    if (!temarioDocSnap.exists()) {
-                        accordionContainer.innerHTML = `<p class="text-center text-red-500 p-8">Error: No se encontrÃ³ el documento 'temario' en la colecciÃ³n 'metadatos'. Sigue la guÃ­a para crearlo.</p>`;
-                        return;
-                    }
-                    const temarioEstructurado = temarioDocSnap.data().libros || [];
-
-                    const promises = temarioEstructurado.map(async (seccion) => {
-                        if (!seccion.collectionId || typeof seccion.collectionId !== 'string' || seccion.collectionId.trim() === '') {
-                            console.warn(`SecciÃ³n '${seccion.titulo}' no tiene un collectionId vÃ¡lido. Saltando.`);
-                            return { seccion, subtemas: [] };
-                        }
-                        
-                        const querySnapshot = await getDocs(collection(db, seccion.collectionId));
-                        const subtemas = [];
-                        
-                        const countPromises = querySnapshot.docs.map(async (doc) => {
-                            const questionsRef = collection(db, seccion.collectionId, doc.id, "preguntas");
-                            const snapshot = await getCountFromServer(questionsRef);
-                            subtemas.push({ 
-                                id: doc.id, 
-                                data: { ...doc.data(), questionCount: snapshot.data().count },
-                                collection: seccion.collectionId
-                            });
-                        });
-                        await Promise.all(countPromises);
-                        return { seccion, subtemas };
-                    });
-
-                    const sectionsWithTopics = await Promise.all(promises);
-                    allTopicsData = sectionsWithTopics.flatMap(s => s.subtemas);
-
-                    accordionContainer.innerHTML = ''; 
-
-                    sectionsWithTopics.forEach(({ seccion, subtemas }) => {
-                        const sectionDiv = document.createElement('div');
-                        sectionDiv.className = 'border rounded-lg';
-
-                        const button = document.createElement('button');
-                        button.type = 'button';
-                        button.className = 'accordion-button w-full flex justify-between items-center p-4 text-left font-semibold text-gray-700 bg-gray-50 hover:bg-gray-100';
-                        button.innerHTML = `<span>${seccion.titulo}</span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
-
-                        const contentDiv = document.createElement('div');
-                        contentDiv.className = 'accordion-content p-4 border-t border-gray-200 space-y-2';
-                        
-                        if (subtemas.length > 0) {
-                            subtemas.forEach(quiz => {
-                                const topicDiv = document.createElement('div');
-                                topicDiv.innerHTML = `
-                                    <input type="checkbox" id="topic-${quiz.collection}-${quiz.id}" name="topics" value="${quiz.collection}/${quiz.id}" class="hidden topic-checkbox">
-                                    <label for="topic-${quiz.collection}-${quiz.id}" class="topic-label block bg-white p-3 rounded-lg shadow-sm border-2 border-gray-200 cursor-pointer">
-                                        <span class="font-medium text-gray-800">${quiz.data.titulo}</span>
-                                        <span class="text-xs text-gray-500 block">(${quiz.data.questionCount} preguntas)</span>
-                                    </label>
-                                `;
-                                contentDiv.appendChild(topicDiv);
-                            });
-                        } else {
-                            contentDiv.innerHTML = `<p class="text-sm text-gray-500">No hay subtemas disponibles para esta secciÃ³n.</p>`;
-                        }
-
-                        sectionDiv.appendChild(button);
-                        sectionDiv.appendChild(contentDiv);
-                        accordionContainer.appendChild(sectionDiv);
-
-                        button.addEventListener('click', () => {
-                            button.classList.toggle('open');
-                            if (contentDiv.style.maxHeight) {
-                                contentDiv.style.maxHeight = null;
-                            } else {
-                                contentDiv.style.maxHeight = contentDiv.scrollHeight + "px";
-                            }
-                        });
-                    });
-
-                } catch (error) {
-                    console.error("Error obteniendo los quizzes:", error);
-                    let errorMessage = `<p class="text-center text-red-500 p-8">Error al cargar la lista de tests.</p>`;
-                    if (error.code === 'unavailable') {
-                        errorMessage = `<div class="text-center text-red-600 p-4 border border-red-200 bg-red-50 rounded-lg"><p class="font-bold">Error de ConexiÃ³n</p><p class="text-sm text-red-700 mt-2">No se pudo conectar a la base de datos. Revisa tu conexiÃ³n a internet y la configuraciÃ³n de Firebase.</p></div>`;
-                    }
-                    accordionContainer.innerHTML = errorMessage;
+                if (!db) throw new Error("Firebase no inicializado");
+                const temarioDocRef = doc(db, "metadatos", "temario");
+                const temarioDocSnap = await getDoc(temarioDocRef);
+                
+                if (!temarioDocSnap.exists()) {
+                    renderFallbackTopics(accordionContainer);
+                    return;
                 }
-            }
+                const temarioEstructurado = temarioDocSnap.data().libros || [];
 
-            const customQuizForm = document.getElementById('custom-quiz-form');
-            if (customQuizForm) {
-                customQuizForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    const selectedTopics = Array.from(document.querySelectorAll('input[name="topics"]:checked')).map(cb => cb.value);
-                    if (selectedTopics.length === 0) {
-                        alert("Por favor, selecciona al menos un tema para crear tu test.");
-                        return;
+                const promises = temarioEstructurado.map(async (seccion) => {
+                    if (!seccion.collectionId || typeof seccion.collectionId !== 'string' || seccion.collectionId.trim() === '') {
+                        return { seccion, subtemas: [] };
                     }
-                    const percentage = document.getElementById('percentage-questions').value;
-                    const difficulty = document.getElementById('difficulty').value;
                     
-                    const topicsParam = selectedTopics.join(',');
-                    const url = `/quiz-player-estudio.html?topics=${encodeURIComponent(topicsParam)}&percentage=${percentage}&difficulty=${encodeURIComponent(difficulty)}`;
-                    window.location.href = url;
+                    const querySnapshot = await getDocs(collection(db, seccion.collectionId));
+                    const subtemas = [];
+                    
+                    const countPromises = querySnapshot.docs.map(async (d) => {
+                        const questionsRef = collection(db, seccion.collectionId, d.id, "preguntas");
+                        const snapshot = await getCountFromServer(questionsRef);
+                        subtemas.push({ 
+                            id: d.id, 
+                            data: { ...d.data(), questionCount: snapshot.data().count },
+                            collection: seccion.collectionId
+                        });
+                    });
+                    await Promise.all(countPromises);
+                    return { seccion, subtemas };
                 });
+
+                const sectionsWithTopics = await Promise.all(promises);
+                accordionContainer.innerHTML = ''; 
+
+                sectionsWithTopics.forEach(({ seccion, subtemas }) => {
+                    const sectionDiv = document.createElement('div');
+                    sectionDiv.className = 'border border-gray-200 rounded-xl overflow-hidden';
+
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = 'accordion-button w-full flex justify-between items-center p-4 text-left font-semibold text-gray-800 bg-gray-50 hover:bg-gray-100 transition';
+                    button.innerHTML = `<span>${seccion.titulo}</span><svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
+
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'accordion-content p-4 border-t border-gray-200 space-y-2 bg-white';
+                    
+                    if (subtemas.length > 0) {
+                        subtemas.forEach(quiz => {
+                            const topicDiv = document.createElement('div');
+                            topicDiv.innerHTML = `
+                                <input type="checkbox" id="topic-${quiz.collection}-${quiz.id}" name="topics" value="${quiz.collection}/${quiz.id}" class="hidden topic-checkbox">
+                                <label for="topic-${quiz.collection}-${quiz.id}" class="topic-label block bg-white p-3 rounded-lg shadow-sm border-2 border-gray-200 cursor-pointer hover:border-indigo-300">
+                                    <span class="font-medium text-gray-800">${quiz.data.titulo}</span>
+                                    <span class="text-xs text-gray-500 block">(${quiz.data.questionCount} preguntas disponibles)</span>
+                                </label>
+                            `;
+                            contentDiv.appendChild(topicDiv);
+                        });
+                    } else {
+                        contentDiv.innerHTML = `<p class="text-sm text-gray-500">No hay subtemas disponibles para esta sección.</p>`;
+                    }
+
+                    sectionDiv.appendChild(button);
+                    sectionDiv.appendChild(contentDiv);
+                    accordionContainer.appendChild(sectionDiv);
+
+                    button.addEventListener('click', () => {
+                        button.classList.toggle('open');
+                        if (contentDiv.style.maxHeight) {
+                            contentDiv.style.maxHeight = null;
+                        } else {
+                            contentDiv.style.maxHeight = contentDiv.scrollHeight + "px";
+                        }
+                    });
+                });
+
+            } catch (error) {
+                console.warn("Cargando módulos predeterminados:", error);
+                renderFallbackTopics(accordionContainer);
             }
-
-            // --- InicializaciÃ³n ---
-            loadAndRenderTopics();
         }
-    </script>
 
+        function renderFallbackTopics(container) {
+            container.innerHTML = `
+                <div class="border border-indigo-200 bg-indigo-50/50 p-4 rounded-xl text-center space-y-3">
+                    <p class="text-sm text-indigo-900 font-medium">Elige uno de los módulos de examen oficiales listados a continuación o accede al simulador completo:</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
+                        <label class="block bg-white p-3 rounded-lg border border-gray-200 cursor-pointer hover:border-indigo-400">
+                            <input type="checkbox" name="topics" value="cultura_naval" checked class="mr-2 text-indigo-600">
+                            <span class="font-semibold text-gray-800 text-sm">Cultura Naval SEMAR</span>
+                            <span class="text-xs text-gray-500 block">469 preguntas doctrinarias</span>
+                        </label>
+                        <label class="block bg-white p-3 rounded-lg border border-gray-200 cursor-pointer hover:border-indigo-400">
+                            <input type="checkbox" name="topics" value="grados_jerarquias" class="mr-2 text-indigo-600">
+                            <span class="font-semibold text-gray-800 text-sm">Grados y Jerarquías</span>
+                            <span class="text-xs text-gray-500 block">Escalafón Armada de México</span>
+                        </label>
+                    </div>
+                </div>
+            `;
+        }
+
+        const customQuizForm = document.getElementById('custom-quiz-form');
+        if (customQuizForm) {
+            customQuizForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const selectedTopics = Array.from(document.querySelectorAll('input[name="topics"]:checked')).map(cb => cb.value);
+                if (selectedTopics.length === 0) {
+                    alert("Por favor, selecciona al menos un tema para crear tu examen.");
+                    return;
+                }
+                const percentage = document.getElementById('percentage-questions').value;
+                const difficulty = document.getElementById('difficulty').value;
+                
+                const topicsParam = selectedTopics.join(',');
+                if (selectedTopics.includes('cultura_naval')) {
+                    window.location.href = `/marina/estudio/test-cultura-naval.html`;
+                } else {
+                    window.location.href = `/quiz-player-estudio.html?topics=${encodeURIComponent(topicsParam)}&percentage=${percentage}&difficulty=${encodeURIComponent(difficulty)}`;
+                }
+            });
+        }
+
+        loadAndRenderTopics();
+    </script>
 </body>
 </html>

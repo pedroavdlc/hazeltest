@@ -349,6 +349,8 @@
                         Por favor, completa el test para ver tu descripción de personalidad.
                     </p>
                 </div>
+                <!-- Widget Viral de Compartir -->
+                <div id="ht-share-container" class="my-6"></div>
                  <div class="text-center mt-8">
                      <button id="reiniciar-test-btn" class="text-indigo-600 hover:underline font-medium">Volver a hacer el test</button>
                  </div>
@@ -446,6 +448,15 @@
                 if(descripcionTestSection) descripcionTestSection.classList.add('hidden');
                 testForm.classList.add('hidden');
                 resultadosSection.classList.remove('hidden');
+
+                if (window.HazelTestShare) {
+                    window.HazelTestShare.render('#ht-share-container', {
+                        title: 'Test de Personalidad',
+                        resultText: personalidad,
+                        message: `¡Hice el Test de Personalidad en HazelTest y mi resultado fue: "${personalidad}"! 🧠 ¿Cuál es el tuyo? Descúbrelo gratis aquí: https://hazeltest.com/social/test-de-personalidad.html`
+                    });
+                }
+
                 resultadosSection.scrollIntoView({ behavior: 'smooth' });
             });
         }
