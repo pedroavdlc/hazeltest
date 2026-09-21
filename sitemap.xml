@@ -4,103 +4,425 @@
   <!-- Página Principal -->
   <url>
     <loc>https://hazeltest.com/</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Páginas Generales -->
   <url>
     <loc>https://hazeltest.com/categorias.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/mi-estudio.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/creador.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/contacto.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/mapa-del-sitio.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Categoría Marina -->
   <url>
     <loc>https://hazeltest.com/marina/test.html</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/test-cultura-naval.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/temario/progreso-estudio.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Tests dentro de /marina/estudio/ -->
-  <url>
-    <loc>https://hazeltest.com/marina/estudio/test-cultura-naval.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
     <loc>https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- Quizzes de Funcionarios -->
   <url>
     <loc>https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazeltest.com/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-los-apellidos-de-los-funcionarios.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-los-cargos-de-los-funcionarios.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Categoría Social -->
-  <url>
-    <loc>https://hazeltest.com/social/test.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hazeltest.com/social/test-de-personalidad.html</loc>
-    <lastmod>2025-07-19</lastmod>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-los-apellidos-de-los-funcionarios.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/funcionarios/ordena-los-cargos-de-los-funcionarios.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://hazeltest.com/marina/estudio/test-grados-jerarquias.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Categoría Social y Psicología -->
+  <url>
+    <loc>https://hazeltest.com/social/test.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/social/test-de-personalidad.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/social/test-de-ansiedad.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/social/test-de-autoestima.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/social/test-de-estres-burnout.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazeltest.com/social/test-de-depresion.html</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazeltest.com/social/test-de-narcisismo.html</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Políticas Legales -->
+  <url>
+    <loc>https://hazeltest.com/privacidad.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/terminos-y-condiciones.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+
+  <!-- Sección Biblioteca de Artículos y Ensayos -->
+  <url>
+    <loc>https://hazeltest.com/articulos/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/acerca-de.html</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/autoeficacia-albert-bandura-exito.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/autoridad-maritima-nacional-unicapam.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/biografia-pedro-sainz-de-baranda.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/buque-escuela-cuauhtemoc-embajador.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/capitulacion-san-juan-de-ulua-1825.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/combate-aeronaval-topolobampo-1914.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/comunicacion-asertiva-tecnicas-limites.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/convemar-espacios-maritimos-mexicanos.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/depresion-vs-tristeza-criterios-dsm5.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/escala-autoestima-rosenberg-psicometria.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/estructura-organica-secretaria-de-marina.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/fobia-social-vs-introversion-diferencias.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/fundacion-heroica-escuela-naval-militar.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/gesta-heroica-veracruz-1914.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/gestion-del-estres-operativo-resiliencia.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/grados-y-escalafon-armada-de-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/guerra-de-los-pasteles-1838.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/guia-examen-ascenso-semar.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/historia-del-sable-naval-armada-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/inteligencia-emocional-modelo-goleman.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/invasion-norteamericana-1846-1847-marina.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/locus-de-control-interno-vs-externo.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/modelo-personalidad-cinco-grandes-ocean.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/plan-marina-auxilio-poblacion-civil.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/plataforma-continental-recursos-marinos.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/procrastinacion-neurobiologia-soluciones.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/pruebas-psicometricas-procesos-seleccion.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/psicologia-del-rendimiento-bajo-presion.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/regimen-paso-inocente-derecho-del-mar.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/regiones-y-zonas-navales-mexico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/respiracion-diafragmatica-ataques-panico.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/simbologia-uniformes-navales-tradiciones.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/sindrome-burnout-agotamiento-laboral.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/sistema-educativo-naval-cesnav.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/teoria-del-apego-relaciones-humanas.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/terapia-cognitivo-conductual-tcc-guia.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/trastorno-ansiedad-generalizada-gad7.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/trastorno-estres-postraumatico-tept.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/trastorno-personalidad-narcisista-rasgos.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazeltest.com/articulos/trastornos-del-sueno-salud-mental.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

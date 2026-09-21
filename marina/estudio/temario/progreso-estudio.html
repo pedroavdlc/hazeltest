@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progreso de Estudio - HazelTest</title>
+    <title>Temario de Estudio SEMAR y Guía de Cultura Naval | HazelTest</title>
+    <link rel="canonical" href="https://hazeltest.com/marina/estudio/temario/progreso-estudio.html">
+    <!-- Geo & Localization Tags -->
+    <meta name="geo.region" content="MX">
+    <meta name="geo.placename" content="Mexico">
+    <meta name="geo.position" content="19.432608;-99.133209">
+    <meta name="ICBM" content="19.432608, -99.133209">
+    <meta name="language" content="Spanish">
+    <link rel="alternate" hreflang="es" href="https://hazeltest.com/marina/estudio/temario/progreso-estudio.html">
+    <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/marina/estudio/temario/progreso-estudio.html">
+    <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/marina/estudio/temario/progreso-estudio.html">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
@@ -14,9 +24,9 @@
     gtag('config', 'G-K4TEPLD75E');
     </script>    
 
-    <meta name="description" content="Sigue tu progreso de estudio para el examen de la Secretaría de Marina. Marca los temas completados y organiza tu aprendizaje con HazelTest.">
-    <meta name="keywords" content="progreso de estudio, temario marina, examen semar, hazeltest, cultura naval, doctrina armada, seguridad informática">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Organiza tu preparación con el temario oficial de Cultura Naval SEMAR. Marca temas completados, mide tu avance y estudia de forma metódica en HazelTest.">
+    <meta name="keywords" content="temario marina semar, guia de estudio armada de mexico, temario cultura naval, progreso de estudio">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,15 +80,23 @@
              margin-left: 0;
         }
     </style>
+    <!-- PWA, Dark Mode & Gamification Core -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    <link rel="stylesheet" href="/hazeltest-theme.css">
+    <script src="/hazeltest-app.js?v=2.0"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
-                <a href="categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="/" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
                 <span class="text-indigo-600 font-semibold">Mi Progreso</span>
             </div>
             <div class="md:hidden">
@@ -88,15 +106,15 @@
             </div>
         </nav>
          <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
-            <a href="categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="/categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
             <span class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Mi Progreso</span>
         </div>
     </header>
 
     <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
         <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
-             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Temario y Progreso de Estudio</h1>
+             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Temario Oficial y Guía de Estudio Naval SEMAR</h1>
              <p class="text-center text-gray-600 mb-2">Marca la casilla para registrar tu progreso. <strong class="font-medium">Haz clic en el texto de un tema para ir al test correspondiente.</strong></p>
              <p id="progress-summary" class="text-center font-semibold text-indigo-600 mb-8">Has completado 0 de 0 temas.</p>
 
@@ -112,12 +130,12 @@
 
     <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
             <div class="mt-4 space-x-4">
-                 <a href="privacidad.html" class="hover:text-white">Política de Privacidad</a>
-                 <a href="terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
-                 <a href="contacto.html" class="hover:text-white">Contacto</a>
-                 <a href="mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+                 <a href="/privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                 <a href="/terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                 <a href="/contacto.html" class="hover:text-white">Contacto</a>
+                 <a href="/mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
             </div>
         </div>
     </footer>

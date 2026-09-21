@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorías de Quizzes y Tests - HazelTest</title>
+    <title>Categorías de Tests y Quizzes Online Gratis | HazelTest</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
@@ -15,9 +16,18 @@
     </script>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Explora diversas categorías de quizzes y tests en HazelTest. Encuentra desafíos sobre Marina, temas sociales, personalidad y mucho más. ¡Pon a prueba tus conocimientos!">
-    <meta name="keywords" content="categorías de quizzes, tests, marina, social, personalidad, hazeltest, conocimiento, trivia">
+    <meta name="description" content="Explora todas las categorías de HazelTest: preparación para la Secretaría de Marina SEMAR, tests de personalidad, salud emocional y quizzes de cultura general.">
+    <meta name="keywords" content="categorias quizzes, tests online gratis, cultura naval, tests psicologicos, hazeltest">
     <link rel="canonical" href="https://hazeltest.com/categorias.html">
+    <!-- Geo & Localization Tags -->
+    <meta name="geo.region" content="MX">
+    <meta name="geo.placename" content="Mexico">
+    <meta name="geo.position" content="19.432608;-99.133209">
+    <meta name="ICBM" content="19.432608, -99.133209">
+    <meta name="language" content="Spanish">
+    <link rel="alternate" hreflang="es" href="https://hazeltest.com/categorias.html">
+    <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/categorias.html">
+    <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/categorias.html">
     
     <!-- Favicon -->
     <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
@@ -25,14 +35,14 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/categorias.html">
-    <meta property="og:title" content="Categorías de Quizzes y Tests - HazelTest">
-    <meta property="og:description" content="Explora diversas categorías de quizzes y tests en HazelTest. Encuentra desafíos sobre Marina, temas sociales, personalidad y mucho más.">
-    <!-- <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_CATEGORIAS"> -->
+    <meta property="og:title" content="Categorías de Tests y Quizzes Online Gratis | HazelTest">
+    <meta property="og:description" content="Explora todas las categorías de HazelTest: preparación para la Secretaría de Marina SEMAR, tests de personalidad, salud emocional y quizzes de cultura general.">
+    <!-- <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp"> -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://hazeltest.com/categorias.html">
     <meta property="twitter:title" content="Categorías de Quizzes y Tests - HazelTest">
     <meta property="twitter:description" content="Explora diversas categorías de quizzes y tests en HazelTest. Encuentra desafíos sobre Marina, temas sociales, personalidad y mucho más.">
-    <!-- <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_CATEGORIAS"> -->
+    <!-- <meta property="twitter:image" content="https://hazeltest.com/hazeltest-og.webp"> -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,16 +62,36 @@
         }
         .hidden { display: none; }
     </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categorías de Quizzes y Tests",
+    "description": "Explora diversas categorías de quizzes y tests en HazelTest. Encuentra desafíos sobre Marina, temas sociales, personalidad y mucho más. ¡Pon a prueba tus conocimientos!",
+    "url": "https://hazeltest.com/categorias.html",
+    "inLanguage": "es-MX"
+}
+    </script>
+    <!-- PWA, Dark Mode & Gamification Core -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    <link rel="stylesheet" href="/hazeltest-theme.css">
+    <script src="/hazeltest-app.js?v=2.0"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="/" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
                 <a href="#" class="text-indigo-600 font-semibold transition duration-300">Categorías</a> <!-- Activo -->
-                <a href="contacto.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
+                <a href="/contacto.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
             </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
@@ -70,15 +100,15 @@
             </div>
         </nav>
          <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
             <a href="#" class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Categorías</a> <!-- Activo -->
-            <a href="contacto.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+            <a href="/contacto.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
         </div>
     </header>
 
     <main class="container mx-auto px-6 py-12 md:py-20 flex-grow">
         <div class="text-center mb-12">
-             <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Explora Nuestras Categorías de Quizzes</h1>
+             <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Categorías de Tests y Quizzes Online: SEMAR y Psicología</h1>
              <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
                 En HazelTest, te ofrecemos una variedad de categorías temáticas para que pongas a prueba tus conocimientos y te diviertas aprendiendo. Cada categoría agrupa diferentes tipos de quizzes, desde desafíos de conocimiento específico hasta tests de personalidad. Navega, elige tu área de interés y ¡comienza la aventura del saber!
              </p>
@@ -88,7 +118,7 @@
         <div id="categorias-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- Tarjeta de Categoría Marina -->
-            <a href="marina/test.html" class="block bg-white p-6 rounded-lg shadow-md border border-transparent transition duration-300 ease-in-out category-card text-center hover:no-underline">
+            <a href="/marina/test.html" class="block bg-white p-6 rounded-lg shadow-md border border-transparent transition duration-300 ease-in-out category-card text-center hover:no-underline">
                  <div class="flex justify-center mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-blue-500">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6A1.5 1.5 0 0 1 15 7.5v1.5a1.5 1.5 0 0 1-1.5 1.5H12v1.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5V10.5a1.5 1.5 0 0 1 1.5-1.5h1.5V7.5A1.5 1.5 0 0 1 12 6h1.5Zm0 0A1.5 1.5 0 0 0 12 4.5v-1.5a1.5 1.5 0 0 0-3 0V6A1.5 1.5 0 0 0 10.5 7.5H12a1.5 1.5 0 0 0 1.5-1.5Z M3.75 13.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Zm16.5 0a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z M6 15a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 6 15Zm12 0a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z M12 12.75a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3Z" />
@@ -99,7 +129,7 @@
             </a>
 
             <!-- Tarjeta de Categoría Social (Enlace Corregido) -->
-            <a href="social/test.html" class="block bg-white p-6 rounded-lg shadow-md border border-transparent transition duration-300 ease-in-out category-card text-center hover:no-underline">
+            <a href="/social/test.html" class="block bg-white p-6 rounded-lg shadow-md border border-transparent transition duration-300 ease-in-out category-card text-center hover:no-underline">
                  <div class="flex justify-center mb-4">
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-green-500">
                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.94-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.06-3.197M12 12.75a5.995 5.995 0 0 1 5.06 3.197M12 12.75A5.995 5.995 0 0 0 6.94 15.947M12 12.75l-.001-.031c0-.225.012-.447.037-.666A11.944 11.944 0 0 0 12 3c2.17 0 4.207-.576 5.963-1.584A6.062 6.062 0 0 0 18 6.281m0 0V3.031m0 0A5.995 5.995 0 0 0 12 9m6-2.719A5.995 5.995 0 0 1 12 9m0 0A5.995 5.995 0 0 0 6 6.281m0 0V3.031m0 0A5.995 5.995 0 0 1 12 9m-6 2.719A5.995 5.995 0 0 0 12 9" />
@@ -115,12 +145,12 @@
 
     <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
             <div class="mt-4 space-x-4">
-                <a href="privacidad.html" class="hover:text-white">Política de Privacidad</a>
-                <a href="terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
-                <a href="contacto.html" class="hover:text-white">Contacto</a>
-                <a href="mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+                <a href="/privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="/contacto.html" class="hover:text-white">Contacto</a>
+                <a href="/mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
             </div>
         </div>
     </footer>

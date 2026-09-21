@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Grados y Jerarquías de Marina SEMAR | HazelTest</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Aprende y pon a prueba tus conocimientos sobre los grados militares y jerarquías de la Secretaría de Marina Armada de México con este quiz interactivo.">
+    <meta name="keywords" content="grados de la marina semar, jerarquias navales semar, escalafon militar marina mexico, insignias navales examen armada">
+    
+    <link rel="canonical" href="https://hazeltest.com/marina/estudio/test-grados-jerarquias.html">
+    <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/marina/estudio/test-grados-jerarquias.html">
+    <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/marina/estudio/test-grados-jerarquias.html">
+    <meta name="geo.region" content="MX">
+    <meta name="geo.position" content="19.4326;-99.1332">
+    <meta name="ICBM" content="19.4326, -99.1332">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Test de Grados y Jerarquías de Marina SEMAR | HazelTest">
+    <meta property="og:description" content="Aprende y pon a prueba tus conocimientos sobre los grados militares y jerarquías de la Secretaría de Marina Armada de México con este quiz interactivo.">
+    <meta property="og:url" content="https://hazeltest.com/marina/estudio/test-grados-jerarquias.html">
+    <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="HazelTest">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Test de Grados y Jerarquías de Marina SEMAR | HazelTest">
+    <meta name="twitter:description" content="Aprende y pon a prueba tus conocimientos sobre los grados militares y jerarquías de la Secretaría de Marina Armada de México con este quiz interactivo.">
+    <meta name="twitter:image" content="https://hazeltest.com/hazeltest-og.webp">
+
+    <link rel="icon" type="image/x-icon" href="/hazeltest.ico">
+    <link rel="apple-touch-icon" href="/hazeltest.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/hazeltest-theme.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .option-label {
+            display: block; padding: 0.75rem 1rem; border: 1px solid #D1D5DB; border-radius: 0.375rem;
+            cursor: pointer; transition: background-color 0.2s, border-color 0.2s;
+        }
+        .option-input:checked + .option-label {
+            background-color: #EFF6FF; border-color: #2563EB; font-weight: 600; color: #1E40AF;
+        }
+        .option-label:hover { background-color: #F9FAFB; }
+        .question-container { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #E5E7EB; }
+        .question-container:last-child { border-bottom: none; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": "Test de Grados y Jerarquías de Marina SEMAR | HazelTest",
+        "description": "Simulador interactivo sobre el escalafón militar, rangos, clases, oficiales y almirantes de la Armada de México.",
+        "inLanguage": "es-MX",
+        "publisher": {
+            "@type": "Organization",
+            "name": "HazelTest",
+            "url": "https://hazeltest.com/"
+        }
+    }
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <span class="text-2xl font-black text-indigo-600 tracking-tight">Hazel<span class="text-gray-800">Test</span></span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="/" class="text-gray-600 hover:text-indigo-600 font-medium">Inicio</a>
+                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 font-medium">Categorías</a>
+                <a href="/marina/test.html" class="text-gray-600 hover:text-indigo-600 font-medium">Marina</a>
+                <span class="text-blue-600 font-semibold">Grados y Jerarquías</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="/categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
+            <a href="/marina/test.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
+            <span class="block px-4 py-2 text-blue-600 bg-blue-50 font-semibold">Grados y Jerarquías</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
+        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center border-b pb-4">Test de Grados y Jerarquías de la Marina Armada de México (SEMAR)</h1>
+
+            <section id="descripcion-test" class="mb-8">
+                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    La escala jerárquica de la <strong>Secretaría de Marina (SEMAR)</strong> clasifica al personal naval en cuatro cuerpos principales: <em>Marinería y Clases, Oficiales, Capitanes y Almirantes</em>.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-justify">
+                    Demuestra tu dominio del escalafón naval respondiendo a este simulador interactivo de 10 preguntas clave:
+                </p>
+            </section>
+
+            <hr class="my-8 border-gray-300">
+
+            <form id="ranks-test-form">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Cuestionario Naval de 10 Preguntas</h2>
+
+                <!-- Pregunta 1 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">1. ¿Cuál es el grado de jerarquía militar inmediato superior al de "Marinero" en la Armada de México?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r1" id="r1_a" value="correct" class="sr-only option-input" required><label for="r1_a" class="option-label">Cabo</label></div>
+                        <div><input type="radio" name="r1" id="r1_b" value="wrong" class="sr-only option-input"><label for="r1_b" class="option-label">Tercer Maestre</label></div>
+                        <div><input type="radio" name="r1" id="r1_c" value="wrong" class="sr-only option-input"><label for="r1_c" class="option-label">Teniente de Corbeta</label></div>
+                        <div><input type="radio" name="r1" id="r1_d" value="wrong" class="sr-only option-input"><label for="r1_d" class="option-label">Segundo Maestre</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">2. En la jerarquía de "Clases", ¿cuál de los siguientes es el rango más alto?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r2" id="r2_a" value="correct" class="sr-only option-input" required><label for="r2_a" class="option-label">Primer Maestre</label></div>
+                        <div><input type="radio" name="r2" id="r2_b" value="wrong" class="sr-only option-input"><label for="r2_b" class="option-label">Segundo Maestre</label></div>
+                        <div><input type="radio" name="r2" id="r2_c" value="wrong" class="sr-only option-input"><label for="r2_c" class="option-label">Tercer Maestre</label></div>
+                        <div><input type="radio" name="r2" id="r2_d" value="wrong" class="sr-only option-input"><label for="r2_d" class="option-label">Cabo</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">3. ¿Cuál es el primer grado con el que egresan los cadetes de la Heroica Escuela Naval Militar como Oficiales?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r3" id="r3_a" value="correct" class="sr-only option-input" required><label for="r3_a" class="option-label">Guardiamarina</label></div>
+                        <div><input type="radio" name="r3" id="r3_b" value="wrong" class="sr-only option-input"><label for="r3_b" class="option-label">Teniente de Fragata</label></div>
+                        <div><input type="radio" name="r3" id="r3_c" value="wrong" class="sr-only option-input"><label for="r3_c" class="option-label">Capitán de Corbeta</label></div>
+                        <div><input type="radio" name="r3" id="r3_d" value="wrong" class="sr-only option-input"><label for="r3_d" class="option-label">Subteniente</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">4. ¿Cuál es el orden correcto ascendente en la categoría de Oficiales de la SEMAR?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r4" id="r4_a" value="correct" class="sr-only option-input" required><label for="r4_a" class="option-label">Teniente de Corbeta → Teniente de Fragata → Teniente de Navío</label></div>
+                        <div><input type="radio" name="r4" id="r4_b" value="wrong" class="sr-only option-input"><label for="r4_b" class="option-label">Teniente de Navío → Teniente de Fragata → Teniente de Corbeta</label></div>
+                        <div><input type="radio" name="r4" id="r4_c" value="wrong" class="sr-only option-input"><label for="r4_c" class="option-label">Teniente de Corbeta → Teniente de Navío → Capitán de Corbeta</label></div>
+                        <div><input type="radio" name="r4" id="r4_d" value="wrong" class="sr-only option-input"><label for="r4_d" class="option-label">Subteniente → Teniente Primero → Teniente Mayor</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">5. ¿Cuál es el rango superior en la jerarquía de Capitanes navales antes de ascender al Almirantazgo?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r5" id="r5_a" value="correct" class="sr-only option-input" required><label for="r5_a" class="option-label">Capitán de Navío</label></div>
+                        <div><input type="radio" name="r5" id="r5_b" value="wrong" class="sr-only option-input"><label for="r5_b" class="option-label">Capitán de Fragata</label></div>
+                        <div><input type="radio" name="r5" id="r5_c" value="wrong" class="sr-only option-input"><label for="r5_c" class="option-label">Capitán de Corbeta</label></div>
+                        <div><input type="radio" name="r5" id="r5_d" value="wrong" class="sr-only option-input"><label for="r5_d" class="option-label">Comodoro</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">6. ¿Cuál es el primer escalafón que se alcanza al ingresar al cuerpo de Almirantes de la Marina?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r6" id="r6_a" value="correct" class="sr-only option-input" required><label for="r6_a" class="option-label">Contralmirante</label></div>
+                        <div><input type="radio" name="r6" id="r6_b" value="wrong" class="sr-only option-input"><label for="r6_b" class="option-label">Vicealmirante</label></div>
+                        <div><input type="radio" name="r6" id="r6_c" value="wrong" class="sr-only option-input"><label for="r6_c" class="option-label">Almirante</label></div>
+                        <div><input type="radio" name="r6" id="r6_d" value="wrong" class="sr-only option-input"><label for="r6_d" class="option-label">General de División</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 7 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">7. ¿Cuál es el grado militar equivalente en la Armada de México al grado de "Coronel" del Ejército y Fuerza Aérea?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r7" id="r7_a" value="correct" class="sr-only option-input" required><label for="r7_a" class="option-label">Capitán de Navío</label></div>
+                        <div><input type="radio" name="r7" id="r7_b" value="wrong" class="sr-only option-input"><label for="r7_b" class="option-label">Capitán de Fragata</label></div>
+                        <div><input type="radio" name="r7" id="r7_c" value="wrong" class="sr-only option-input"><label for="r7_c" class="option-label">Capitán de Corbeta</label></div>
+                        <div><input type="radio" name="r7" id="r7_d" value="wrong" class="sr-only option-input"><label for="r7_d" class="option-label">Teniente de Navío</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 8 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">8. ¿Cuál es el grado militar equivalente en la Marina al grado de "Mayor" del Ejército Mexicano?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r8" id="r8_a" value="correct" class="sr-only option-input" required><label for="r8_a" class="option-label">Capitán de Corbeta</label></div>
+                        <div><input type="radio" name="r8" id="r8_b" value="wrong" class="sr-only option-input"><label for="r8_b" class="option-label">Capitán de Fragata</label></div>
+                        <div><input type="radio" name="r8" id="r8_c" value="wrong" class="sr-only option-input"><label for="r8_c" class="option-label">Teniente de Navío</label></div>
+                        <div><input type="radio" name="r8" id="r8_d" value="wrong" class="sr-only option-input"><label for="r8_d" class="option-label">Primer Maestre</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 9 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">9. ¿Cuál es el orden jerárquico ascendente dentro de los Almirantes?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r9" id="r9_a" value="correct" class="sr-only option-input" required><label for="r9_a" class="option-label">Contralmirante → Vicealmirante → Almirante</label></div>
+                        <div><input type="radio" name="r9" id="r9_b" value="wrong" class="sr-only option-input"><label for="r9_b" class="option-label">Vicealmirante → Contralmirante → Almirante</label></div>
+                        <div><input type="radio" name="r9" id="r9_c" value="wrong" class="sr-only option-input"><label for="r9_c" class="option-label">Almirante → Vicealmirante → Gran Almirante</label></div>
+                        <div><input type="radio" name="r9" id="r9_d" value="wrong" class="sr-only option-input"><label for="r9_d" class="option-label">Contralmirante → Almirante de Flota → Vicealmirante</label></div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 10 -->
+                <div class="question-container">
+                    <p class="text-lg font-medium text-gray-800 mb-3">10. De acuerdo con la Ley Orgánica de la Armada de México, ¿quién ostenta el Mando Supremo de las Fuerzas Armadas?</p>
+                    <div class="space-y-3">
+                        <div><input type="radio" name="r10" id="r10_a" value="correct" class="sr-only option-input" required><label for="r10_a" class="option-label">El/La Presidente/a Constitucional de los Estados Unidos Mexicanos</label></div>
+                        <div><input type="radio" name="r10" id="r10_b" value="wrong" class="sr-only option-input"><label for="r10_b" class="option-label">El Secretario de Marina</label></div>
+                        <div><input type="radio" name="r10" id="r10_c" value="wrong" class="sr-only option-input"><label for="r10_c" class="option-label">El Jefe del Estado Mayor General de la Armada</label></div>
+                        <div><input type="radio" name="r10" id="r10_d" value="wrong" class="sr-only option-input"><label for="r10_d" class="option-label">El Almirante Comandante de la Fuerza Naval del Golfo</label></div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <button type="submit" class="w-full md:w-auto bg-blue-700 text-white font-bold py-3 px-8 rounded-md hover:bg-blue-800 transition duration-300 shadow-md text-lg">
+                        Calificar Mi Examen Naval
+                    </button>
+                </div>
+            </form>
+
+            <section id="test-resultados" class="hidden mt-10 pt-6 border-t border-gray-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Calificación del Test Naval</h2>
+                <div id="resultado-naval" class="bg-blue-50 border border-blue-200 p-6 rounded-lg shadow">
+                    <h3 id="nivel-naval" class="text-2xl font-bold text-blue-900 mb-3">Evaluando...</h3>
+                    <p id="descripcion-naval" class="text-gray-700 leading-relaxed text-justify text-base">
+                        Completa el test para calificar tu nivel de conocimientos navales.
+                    </p>
+                    <div class="mt-6 p-4 bg-white rounded border border-blue-100">
+                        <h4 class="font-semibold text-blue-900 mb-2">Aciertos: <span id="puntaje-numero" class="text-blue-700 font-bold text-lg">0</span> de 10 correctas</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="barra-puntaje" class="bg-blue-600 h-3 rounded-full transition-all duration-700" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8 space-y-4">
+                    <button id="reiniciar-test-btn" class="bg-blue-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-800 transition">Repetir el examen</button>
+                    <div>
+                        <a href="/marina/test.html" class="text-blue-700 hover:underline font-medium">&larr; Volver a Tests de la Secretaría de Marina</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="/privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
+                <a href="/contacto.html" class="hover:text-white">Contacto</a>
+                <a href="/mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/hazeltest-app.js?v=2.0"></script>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const testForm = document.getElementById('ranks-test-form');
+        const reiniciarTestBtn = document.getElementById('reiniciar-test-btn');
+        const descripcionTestSection = document.getElementById('descripcion-test');
+        const resultadosSection = document.getElementById('test-resultados');
+        const nivelNavalElement = document.getElementById('nivel-naval');
+        const descripcionNavalElement = document.getElementById('descripcion-naval');
+        const puntajeNumeroElement = document.getElementById('puntaje-numero');
+        const barraPuntajeElement = document.getElementById('barra-puntaje');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        if (testForm && resultadosSection) {
+            testForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let aciertos = 0;
+                const totalPreguntas = 10;
+                let respondidas = 0;
+
+                for (let i = 1; i <= totalPreguntas; i++) {
+                    const input = testForm.querySelector(`input[name="r${i}"]:checked`);
+                    if (input) {
+                        if (input.value === 'correct') {
+                            aciertos++;
+                        }
+                        respondidas++;
+                    }
+                }
+
+                if (respondidas < totalPreguntas) {
+                    alert("Por favor responde las 10 preguntas para calificar tu examen.");
+                    return;
+                }
+
+                let nivel = "";
+                let desc = "";
+
+                if (aciertos >= 9) {
+                    nivel = `¡Excelente! Dominio Naval Total (${aciertos}/10 aciertos)`;
+                    desc = "¡Felicidades, Comandante! Tienes un conocimiento impecable sobre el escalafón, equivalencias militares y doctrina de jerarquías de la Secretaría de Marina Armada de México.";
+                    barraPuntajeElement.className = "bg-green-600 h-3 rounded-full transition-all duration-700";
+                } else if (aciertos >= 7) {
+                    nivel = `Buen Nivel Naval (${aciertos}/10 aciertos)`;
+                    desc = "Tienes muy claras las bases del escalafón naval de la SEMAR. Repasa las equivalencias entre Capitanes y Oficiales del Ejército para obtener un puntaje perfecto en tu examen oficial.";
+                    barraPuntajeElement.className = "bg-blue-600 h-3 rounded-full transition-all duration-700";
+                } else if (aciertos >= 5) {
+                    nivel = `Nivel Promedio (${aciertos}/10 aciertos)`;
+                    desc = "Conoces la estructura básica de marinería y oficiales, pero te convendría repasar el orden de Maestre (3º, 2º, 1º) y las divisiones de capitanes (Corbeta, Fragata, Navío) y almirantes.";
+                    barraPuntajeElement.className = "bg-amber-500 h-3 rounded-full transition-all duration-700";
+                } else {
+                    nivel = `Necesitas Más Estudio Naval (${aciertos}/10 aciertos)`;
+                    desc = "La jerarquía naval es estricta y fundamental para todo aspirante o interesado en la SEMAR. Te sugerimos revisar el temario de estudio en HazelTest y repetir este simulador para fijar los conceptos.";
+                    barraPuntajeElement.className = "bg-red-500 h-3 rounded-full transition-all duration-700";
+                }
+
+                nivelNavalElement.textContent = nivel;
+                descripcionNavalElement.textContent = desc;
+                puntajeNumeroElement.textContent = aciertos;
+                const porcentaje = Math.round((aciertos / 10) * 100);
+                barraPuntajeElement.style.width = porcentaje + '%';
+
+                if (descripcionTestSection) descripcionTestSection.classList.add('hidden');
+                testForm.classList.add('hidden');
+                resultadosSection.classList.remove('hidden');
+
+                if (window.HazelTestApp) {
+                    window.HazelTestApp.addXP(40);
+                }
+                resultadosSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        if (reiniciarTestBtn) {
+            reiniciarTestBtn.addEventListener('click', () => {
+                testForm.reset();
+                resultadosSection.classList.add('hidden');
+                if (descripcionTestSection) descripcionTestSection.classList.remove('hidden');
+                testForm.classList.remove('hidden');
+                testForm.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

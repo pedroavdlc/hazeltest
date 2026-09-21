@@ -1,0 +1,46 @@
+# HazelTest — Base de Conocimiento y Guía de Contenidos Completa (llms-full.txt)
+
+## Descripción General
+HazelTest (https://hazeltest.com/) es una plataforma educativa interactiva creada en México por Pedro Antonio Velázquez de la Cruz. Su principal objetivo es proporcionar herramientas de autoevaluación dinámicas, quizzes con retroalimentación instantánea y módulos de estudio organizados por categorías temáticas.
+
+---
+
+## 1. Módulo Especializado: Secretaría de Marina (SEMAR) y Cultura Naval
+
+### Contexto
+La Secretaría de Marina es una de las instituciones fundamentales de las Fuerzas Armadas de México. Para el personal naval, aspirantes a ingreso y ciudadanos interesados en la historia patria, el dominio de la cultura naval, tradiciones, grados militares y estructura organizativa es fundamental.
+
+### Pruebas Disponibles en HazelTest:
+1. **Test de Cultura Naval** (`/marina/estudio/test-cultura-naval.html`)
+   - **Temas evaluados**: Historia de la Armada de México (gestas heroicas como el 21 de abril de 1914 en Veracruz), ordenanzas generales de las fuerzas armadas, honores militares, legislación naval, reglamentos de uniformes y divisas, tradiciones a bordo de buques, navegación básica y valores institucionales (Honor, Deber, Lealtad, Patriotismo).
+   - **Formato**: Selección múltiple personalizable por número de preguntas y niveles de dificultad.
+
+2. **Reconocimiento de Funcionarios y Altos Mandos** (`/marina/estudio/funcionarios/`)
+   - **Identifica por Imagen** (`identifica-por-imagen-funcionarios.html`): Asociación visual de fotografías oficiales de los almirantes y titulares de mandos superiores con sus nombres y grados correspondientes.
+   - **Contra el Reloj** (`contra-el-reloj-funcionarios.html`): Cronómetro regresivo para agilizar la memoria y reconocimiento rápido.
+   - **Elige el Cargo** (`elige-el-cargo.html`): Relación entre el mando superior (ej. Secretario de Marina, Subsecretario, Oficial Mayor, Jefe del Estado Mayor General) y sus atribuciones legales.
+   - **Ordena Apellidos y Nombres** (`ordena-los-apellidos-de-los-funcionarios.html` y `ordena-el-nombre-y-apellidos-de-los-funcionarios.html`): Ejercicios de armado de nombres oficiales completos y precedencia jerárquica.
+
+---
+
+## 2. Módulo de Psicología y Autoconocimiento (Social)
+
+### Contexto
+HazelTest ofrece herramientas diseñadas con propósitos formativos, de entretenimiento educativo y fomento de la introspección.
+
+### Pruebas Disponibles:
+1. **Test de Personalidad** (`/social/test-de-personalidad.html`)
+   - Basado en dimensiones de autoconocimiento, estilos de afrontamiento y tendencias de interacción interpersonal.
+2. **Test de Depresión (Informativo)** (`/social/test-de-depresion.html`)
+   - Escala orientativa con fines reflexivos para sensibilizar sobre síntomas de desánimo, tristeza persistente o falta de motivación.
+   - **Aviso ético importante**: No sustituye una consulta clínica, evaluación psiquiátrica o diagnóstico médico formal. Se recomienda siempre acudir a profesionales de la salud.
+3. **Test de Narcisismo** (`/social/test-de-narcisismo.html`)
+   - Exploración de rasgos como autoimagen exagerada, necesidad de validación externa, empatía y relaciones interpersonales.
+
+---
+
+## 3. Autor y Propósito del Proyecto
+- **Creador**: Pedro Antonio Velázquez de la Cruz.
+- **Misión**: Democratizar el acceso a herramientas de estudio interactivas, rápidas y gratuitas, facilitando el aprendizaje activo mediante el juego y la práctica repetida.
+- **Ubicación**: México.
+- **Acceso Web**: Libre, sin muros de pago obligatorios.

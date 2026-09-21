@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HazelTest - Pon a Prueba Tus Conocimientos</title>
+    <title>HazelTest: Tests Online Gratis, Quizzes SEMAR y Personalidad</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
@@ -15,255 +16,907 @@
     </script>    
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Participa en divertidos tests en HazelTest. Pon a prueba tus conocimientos sobre Marina, temas sociales, cultura general y más categorías. ¡Demuestra cuánto sabes!">
-    <meta name="keywords" content="quiz, test, prueba, conocimientos, marina, social, personalidad, funcionarios, naval, cultura general, trivia, examen, hazeltest">
+    <meta name="description" content="Pon a prueba tus conocimientos en HazelTest con quizzes interactivos gratis de Cultura Naval SEMAR, tests de personalidad y exámenes de práctica online.">
+    <meta name="keywords" content="tests online gratis, quizzes interactivos, cultura naval semar, test de personalidad, test de ansiedad gad 7, test de autoestima, examen naval mexico, hazeltest">
     <link rel="canonical" href="https://hazeltest.com/">
+    
+    <!-- Geo & Localization Tags -->
+    <meta name="geo.region" content="MX">
+    <meta name="geo.placename" content="Mexico">
+    <meta name="geo.position" content="19.432608;-99.133209">
+    <meta name="ICBM" content="19.432608, -99.133209">
+    <meta name="language" content="Spanish">
+    <link rel="alternate" hreflang="es" href="https://hazeltest.com/">
+    <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/">
+    <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/">
-    <meta property="og:title" content="HazelTest - Pon a Prueba Tus Conocimientos">
-    <meta property="og:description" content="Participa en divertidos tests sobre Marina, temas sociales y más. ¡Demuestra cuánto sabes!">
-    <meta property="og:image" content="URL_IMAGEN_REPRESENTATIVA_AQUI">
+    <meta property="og:title" content="HazelTest: Tests Online Gratis, Quizzes SEMAR y Personalidad">
+    <meta property="og:description" content="Pon a prueba tus conocimientos en HazelTest con quizzes interactivos gratis de Cultura Naval SEMAR, tests de personalidad y exámenes de práctica online.">
+    <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="HazelTest">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hazeltest.com/">
-    <meta property="twitter:title" content="HazelTest - Pon a Prueba Tus Conocimientos">
-    <meta property="twitter:description" content="Participa en divertidos tests sobre Marina, temas sociales y más. ¡Demuestra cuánto sabes!">
-    <meta property="twitter:image" content="URL_IMAGEN_REPRESENTATIVA_AQUI">
+    <meta property="twitter:title" content="HazelTest: Tests Online Gratis, Quizzes SEMAR y Personalidad">
+    <meta property="twitter:description" content="Participa en divertidos tests sobre Marina SEMAR, bienestar emocional y personalidad. ¡Aprende gratis!">
+    <meta property="twitter:image" content="https://hazeltest.com/hazeltest-og.webp">
 
     <!-- Favicon -->
     <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
 
-    <!-- Google AdSense Script -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686"
-     crossorigin="anonymous"></script>
+    <!-- Google AdSense Script Oficial -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fuentes -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Iconos -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/magnifying-glass.svg" rel="preload" as="image">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/users.svg" rel="preload" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "name": "HazelTest",
+                "url": "https://hazeltest.com/",
+                "description": "Pon a prueba tus conocimientos en HazelTest con quizzes interactivos gratis de Cultura Naval SEMAR, tests de personalidad y exámenes de práctica online.",
+                "inLanguage": "es-MX",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://hazeltest.com/?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "HazelTest",
+                    "url": "https://hazeltest.com/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://hazeltest.com/hazeltest-og.webp"
+                    }
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es HazelTest y qué tipo de tests puedo encontrar?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HazelTest es una plataforma interactiva mexicana de aprendizaje que ofrece quizzes especializados en dos áreas principales: la Secretaría de Marina (SEMAR) con historia naval, doctrina militar, escalafón y funcionarios; y Psicología/Social con tests estandarizados de personalidad, ansiedad GAD-7, autoestima y bienestar emocional."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Los tests y quizzes de HazelTest son gratuitos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí, todos los tests y quizzes en HazelTest son 100% gratuitos y de libre acceso para aspirantes, estudiantes y público general."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Cómo ayuda HazelTest a estudiar para la Secretaría de Marina?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "HazelTest cuenta con simuladores de examen de Cultura Naval, jerarquías navales de la Armada de México y cuestionarios de memorización para identificar altos mandos por fotografía oficial, grado y cargo."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Se puede usar HazelTest sin conexión a internet en el celular?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí, gracias a su tecnología PWA (Progressive Web App), puedes instalar HazelTest en tu teléfono móvil y responder los cuestionarios cacheados incluso cuando no tengas señal o datos móviles."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .quiz-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        .quiz-card {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        input[type="search"]::-webkit-search-decoration,
-        input[type="search"]::-webkit-search-cancel-button,
-        input[type="search"]::-webkit-search-results-button,
-        input[type="search"]::-webkit-search-results-decoration { -webkit-appearance:none; }
-        .hidden { display: none; }
+        .quiz-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -6px rgba(79, 70, 229, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
     </style>
-</head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+    <!-- PWA, Dark Mode & Gamification Core -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    <link rel="stylesheet" href="/hazeltest-theme.css">
+    <script src="/hazeltest-app.js?v=2.0"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar Principal -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-4 md:px-6 py-3.5 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2 group">
+                <span class="text-2xl font-black text-indigo-600 tracking-tight group-hover:text-indigo-700 transition">Hazel<span class="text-gray-900">Test</span></span>
+            </a>
+            
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-indigo-600 font-semibold transition duration-300">Inicio</a>
-                <a href="categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
-                <a href="contacto.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
+                <a href="/" class="text-indigo-600 font-bold text-sm">Inicio</a>
+                <a href="/articulos/" class="text-gray-600 hover:text-indigo-600 font-medium text-sm transition">Artículos</a>
+                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 font-medium text-sm transition">Categorías</a>
+                <a href="/marina/test.html" class="text-gray-600 hover:text-blue-600 font-medium text-sm transition flex items-center">
+                    <span class="mr-1.5">⚓</span> Marina SEMAR
+                </a>
+                <a href="/social/test.html" class="text-gray-600 hover:text-emerald-600 font-medium text-sm transition flex items-center">
+                    <span class="mr-1.5">🧠</span> Psicología & Social
+                </a>
+                <a href="/acerca-de.html" class="text-gray-600 hover:text-indigo-600 font-medium text-sm transition">Acerca de</a>
+                <a href="/contacto.html" class="text-gray-600 hover:text-indigo-600 font-medium text-sm transition">Contacto</a>
             </div>
+
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-gray-600 p-2 rounded-lg hover:bg-gray-100 focus:outline-none" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
-         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="index.html" class="block px-4 py-2 text-indigo-600 bg-indigo-50 font-semibold">Inicio</a>
-            <a href="categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Categorías</a>
-            <a href="contacto.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+        
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 px-4 py-3 space-y-2 shadow-lg">
+            <a href="/" class="block px-3 py-2 text-indigo-600 bg-indigo-50 rounded-md font-bold text-sm">Inicio</a>
+            <a href="/articulos/" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium text-sm">Artículos y Guías</a>
+            <a href="/categorias.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium text-sm">Categorías</a>
+            <a href="/marina/test.html" class="block px-3 py-2 text-blue-700 hover:bg-blue-50 rounded-md font-medium text-sm">⚓ Marina SEMAR</a>
+            <a href="/social/test.html" class="block px-3 py-2 text-emerald-700 hover:bg-emerald-50 rounded-md font-medium text-sm">🧠 Psicología & Social</a>
+            <a href="/acerca-de.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium text-sm">Acerca de</a>
+            <a href="/contacto.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium text-sm">Contacto</a>
         </div>
     </header>
 
     <main class="flex-grow">
-        <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 md:py-32">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Pon a Prueba Tus Conocimientos</h1>
-                <p class="text-lg md:text-xl mb-8 text-indigo-100">Descubre y participa en divertidos tests sobre una gran variedad de temas.</p>
-                <a href="#tests" class="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300 text-lg shadow-lg">Explorar Tests</a>
-            </div>
-        </section>
-
-        <section id="search-section" class="py-12 bg-gray-50">
-            <div class="container mx-auto px-6 max-w-3xl">
-                <h2 class="text-2xl font-semibold text-center mb-6 text-gray-700">Encuentra tu Próximo Desafío</h2>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <input type="search" id="search-input" placeholder="Buscar por tema o nombre del test..." class="flex-grow px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm transition duration-200"/>
-                    <button id="search-button" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300 flex items-center justify-center shadow-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-                        Buscar
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="recientes" class="py-16 md:py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Recién Agregados</h2>
-                <div class="flex justify-center">
-                    <div class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3">
-                        <a href="marina/estudio/test-cultura-naval.html" class="block relative bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out quiz-card cursor-pointer border-2 border-green-400 hover:no-underline">
-                            <span class="absolute top-2 right-2 bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">NUEVO</span>
-                            <div class="flex items-center mb-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-indigo-500 mr-3">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                                </svg>
-                                <h3 class="text-xl font-semibold text-indigo-700">Test de Cultura Naval</h3>
-                            </div>
-                            <p class="text-gray-600 text-sm">Evalúa tus conocimientos sobre la historia, tradiciones y estructura de la Marina de México.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tests" class="py-16 md:py-24 bg-gray-50 border-t">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Categorías Destacadas</h2>
-                 <div id="featured-categories-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                     <div id="marina-card-container" class="w-full">
-                        <a href="marina/test.html" class="block h-full bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
-                             <div class="flex justify-center mb-4">
-                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-blue-500">
-                                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6A1.5 1.5 0 0 1 15 7.5v1.5a1.5 1.5 0 0 1-1.5 1.5H12v1.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5V10.5a1.5 1.5 0 0 1 1.5-1.5h1.5V7.5A1.5 1.5 0 0 1 12 6h1.5Zm0 0A1.5 1.5 0 0 0 12 4.5v-1.5a1.5 1.5 0 0 0-3 0V6A1.5 1.5 0 0 0 10.5 7.5H12a1.5 1.5 0 0 0 1.5-1.5Z M3.75 13.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Zm16.5 0a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z M6 15a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 6 15Zm12 0a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z M12 12.75a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3Z" />
-                                 </svg>
-                             </div>
-                            <h3 class="text-xl font-semibold mb-2 text-center text-blue-700">Marina</h3>
-                            <p class="text-gray-600 mb-4 text-center text-sm flex-grow">Sumérgete en el mundo naval con tests sobre funcionarios, historia marítima, legislación específica y tácticas.</p>
-                            <div class="flex justify-center items-center text-sm text-gray-500 mb-4">
-                                <span>Varios Tests</span> <span class="mx-2">|</span> <span>Dificultad: Variada</span>
-                            </div>
-                            <button class="mt-auto w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 cursor-pointer">Explorar Categoría</button>
-                        </a>
-                    </div>
-
-                    <div id="social-card-container" class="w-full">
-                        <!-- Enlace Corregido -->
-                        <a href="social/test.html" class="block h-full bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out quiz-card cursor-pointer border border-gray-200 hover:no-underline flex flex-col">
-                             <div class="flex justify-center mb-4">
-                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-green-500">
-                                   <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.94-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.06-3.197M12 12.75a5.995 5.995 0 0 1 5.06 3.197M12 12.75A5.995 5.995 0 0 0 6.94 15.947M12 12.75l-.001-.031c0-.225.012-.447.037-.666A11.944 11.944 0 0 0 12 3c2.17 0 4.207-.576 5.963 1.584A6.062 6.062 0 0 0 18 6.281m0 0V3.031m0 0A5.995 5.995 0 0 0 12 9m6-2.719A5.995 5.995 0 0 1 12 9m0 0A5.995 5.995 0 0 0 6 6.281m0 0V3.031m0 0A5.995 5.995 0 0 1 12 9m-6 2.719A5.995 5.995 0 0 0 12 9" />
-                                 </svg>
-                             </div>
-                            <h3 class="text-xl font-semibold mb-2 text-center text-green-700">Social</h3>
-                            <p class="text-gray-600 mb-4 text-center text-sm flex-grow">Explora tests de personalidad, autoconocimiento y dinámicas interpersonales.</p>
-                            <div class="flex justify-center items-center text-sm text-gray-500 mb-4">
-                                <span>Varios Tests</span> <span class="mx-2">|</span> <span>Dificultad: Reflexiva</span>
-                            </div>
-                            <button class="mt-auto w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 cursor-pointer">Explorar Categoría</button>
-                        </a>
-                    </div>
-                </div>
-                <p id="no-results" class="text-center text-gray-500 mt-8 hidden">No se encontraron categorías que coincidan con tu búsqueda.</p>
-
-                 <div class="text-center mt-16">
-                    <a href="categorias.html" class="text-indigo-600 font-semibold hover:underline">Ver todas las categorías &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about-creator" class="py-16 bg-indigo-50">
-            <div class="container mx-auto px-6 text-center max-w-3xl">
-                <h2 class="text-3xl font-bold text-indigo-800 mb-6">Conoce al Creador</h2>
-                <p class="text-lg text-gray-700 mb-6">
-                    Este sitio fue desarrollado con dedicación. Haz clic abajo para saber más sobre el creador.
+        
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-950 text-white py-16 md:py-24 px-6 overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            
+            <div class="container mx-auto text-center relative z-10 max-w-4xl">
+                <span class="inline-flex items-center space-x-2 bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+                    <span>✨ Plataforma Educativa e Interactiva 100% Gratuita</span>
+                </span>
+                
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight tracking-tight">
+                    Tests Online Gratis: <br class="hidden sm:inline"><span class="text-indigo-300">Cultura Naval SEMAR</span> y Psicología
+                </h1>
+                
+                <p class="text-base md:text-xl text-indigo-100/90 mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
+                    Prepárate con simuladores de la Armada de México y evalúa tu bienestar con cuestionarios psicométricos validados de personalidad, ansiedad y autoestima.
                 </p>
-                <a href="creador.html" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300 shadow-md">
-                    Conocer más
-                </a>
+
+                <!-- Buscador Interactivo en Tiempo Real -->
+                <div class="max-w-xl mx-auto relative mb-6">
+                    <div class="relative flex items-center shadow-2xl rounded-xl overflow-hidden bg-white">
+                        <span class="pl-4 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </span>
+                        <input type="text" id="search-input" placeholder="Buscar test... (ej. ansiedad, cultura naval, mandos, autoestima)" 
+                               class="w-full py-4 pl-3 pr-24 text-gray-800 text-sm md:text-base focus:outline-none placeholder-gray-400" autocomplete="off">
+                        <button id="search-button" class="absolute right-2 top-2 bottom-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 rounded-lg font-semibold text-xs md:text-sm transition duration-200">
+                            Buscar
+                        </button>
+                    </div>
+
+                    <!-- Resultados del Buscador Dinámico -->
+                    <div id="search-results-area" class="hidden absolute left-0 right-0 top-full mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 p-4 text-left max-h-96 overflow-y-auto">
+                        <div class="flex justify-between items-center mb-2 pb-2 border-b border-gray-100">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Resultados de Búsqueda</span>
+                            <button id="clear-search" class="text-xs text-indigo-600 hover:underline">Cerrar</button>
+                        </div>
+                        <div id="search-results-grid" class="space-y-2"></div>
+                        <div id="no-search-results" class="hidden py-6 text-center text-gray-500 text-sm">
+                            No se encontraron tests con ese término. Intenta con "naval", "ansiedad" o "personalidad".
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enlaces Rápidos Populares -->
+                <div class="flex flex-wrap justify-center items-center gap-2 text-xs text-indigo-200">
+                    <span class="font-semibold text-white">Popular hoy:</span>
+                    <a href="/social/test-de-ansiedad.html" class="bg-indigo-700/50 hover:bg-indigo-600 px-2.5 py-1 rounded-md transition">Test Ansiedad GAD-7</a>
+                    <a href="/marina/estudio/test-cultura-naval.html" class="bg-indigo-700/50 hover:bg-indigo-600 px-2.5 py-1 rounded-md transition">Cultura Naval</a>
+                    <a href="/social/test-de-autoestima.html" class="bg-indigo-700/50 hover:bg-indigo-600 px-2.5 py-1 rounded-md transition">Test Autoestima</a>
+                    <a href="/marina/estudio/test-grados-jerarquias.html" class="bg-indigo-700/50 hover:bg-indigo-600 px-2.5 py-1 rounded-md transition">Grados SEMAR</a>
+                </div>
             </div>
         </section>
+
+        <!-- Anuncio AdSense Superior (Preparado para aprobación) -->
+        <div class="container mx-auto px-4 my-6 text-center">
+            <div class="bg-gray-100 border border-gray-200 rounded-lg p-2 max-w-4xl mx-auto min-h-[90px] flex items-center justify-center text-xs text-gray-400">
+                <span>Espacio Publicitario Google AdSense</span>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-8587395236666686"
+                     data-ad-slot="auto"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 1: CATEGORÍA MARINA SEMAR -->
+        <!-- ========================================== -->
+        <section id="marina-section" class="py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4 md:px-6 max-w-6xl">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-gray-200">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 text-blue-600 font-bold text-xs uppercase tracking-wider mb-1">
+                            <span>⚓ Categoría Especializada</span>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">
+                            Secretaría de Marina (SEMAR) y Cultura Naval
+                        </h2>
+                        <p class="text-gray-600 text-sm mt-1 max-w-2xl">
+                            Herramientas de preparación militar para aspirantes a la Heroica Escuela Naval, cadetes y personal en proceso de ascenso.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <a href="/marina/test.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-bold text-sm group">
+                            Ver todos los temas navales <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grid de Tests Navales -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Test 1: Cultura Naval -->
+                    <a href="/marina/estudio/test-cultura-naval.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">
+                                🎖️
+                            </div>
+                            <span class="bg-blue-50 text-blue-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Simulador Oficial</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Simulador de Cultura Naval (469 Preguntas)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Banco completo oficial de 469 reactivos con retroalimentación doctrinal inmediata, modos de estudio por módulos, simulacro rápido y maratón para ascensos SEMAR.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-blue-600">
+                            <span>Comenzar práctica</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 2: Grados y Jerarquías -->
+                    <a href="/marina/estudio/test-grados-jerarquias.html" class="block bg-white p-6 rounded-xl border border-blue-200 hover:border-blue-600 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-500 text-white flex items-center justify-center font-bold text-lg">
+                                ⚓
+                            </div>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2.5 py-0.5 rounded-full">+40 XP Nuevo</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Grados y Jerarquías Navales</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Aprende el escalafón militar oficial: Marinería, Clases, Oficiales, Capitanes y Almirantes, con equivalencias del Ejército.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-blue-600">
+                            <span>Examinar rangos</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 3: Identifica por Imagen -->
+                    <a href="/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">
+                                📸
+                            </div>
+                            <span class="bg-gray-100 text-gray-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Reconocimiento</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Identifica Mandos por Fotografía</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Desafío visual: reconoce el rostro oficial de los Almirantes, Secretarios y Directores Generales de la Marina.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-blue-600">
+                            <span>Ver fotos y responder</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 4: Contra el Reloj -->
+                    <a href="/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-lg">
+                                ⏱️
+                            </div>
+                            <span class="bg-red-50 text-red-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Tiempo Límite</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test Contra el Reloj (Mandos)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Prueba tu agilidad mental respondiendo 10 preguntas sobre funcionarios y puestos navales antes de que expire el cronómetro.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-blue-600">
+                            <span>Iniciar contrarreloj</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 5: Elige el Cargo -->
+                    <a href="/marina/estudio/funcionarios/elige-el-cargo.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">
+                                🏛️
+                            </div>
+                            <span class="bg-blue-50 text-blue-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Estructura</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Elige el Cargo del Funcionario</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Demuestra si conoces las responsabilidades y dependencias exactas que lidera cada alto directivo militar.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-blue-600">
+                            <span>Asignar puestos</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 6: Temario y Progreso -->
+                    <a href="/marina/estudio/temario/progreso-estudio.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-lg">
+                                📚
+                            </div>
+                            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Guía Oficial</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Temario Oficial y Progreso</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Revisa los 17 temas completos de Cultura Naval, marca tus lecciones estudiadas y realiza seguimiento de tu aprendizaje.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-blue-600">
+                            <span>Ver temario</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 2: CATEGORÍA PSICOLOGÍA & SOCIAL -->
+        <!-- ========================================== -->
+        <section id="psicologia-section" class="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+            <div class="container mx-auto px-4 md:px-6 max-w-6xl">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-gray-200">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 text-emerald-600 font-bold text-xs uppercase tracking-wider mb-1">
+                            <span>🧠 Bienestar y Salud Emocional</span>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">
+                            Tests de Psicología, Personalidad y Autoconocimiento
+                        </h2>
+                        <p class="text-gray-600 text-sm mt-1 max-w-2xl">
+                            Cuestionarios basados en instrumentos psicométricos internacionales para la autorreflexión y orientación emocional.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <a href="/social/test.html" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-bold text-sm group">
+                            Ver todos los tests psicológicos <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grid de Tests Psicológicos -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Test 1: Ansiedad GAD-7 -->
+                    <a href="/social/test-de-ansiedad.html" class="block bg-white p-6 rounded-xl border border-teal-200 hover:border-teal-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center font-bold text-lg">
+                                🌿
+                            </div>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Escala GAD-7</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test de Ansiedad (GAD-7)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Evalúa tu nivel de tensión, nerviosismo y preocupación constante con el estándar clínico más empleado internacionalmente.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-teal-600">
+                            <span>Medir nivel de ansiedad</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 2: Autoestima Rosenberg -->
+                    <a href="/social/test-de-autoestima.html" class="block bg-white p-6 rounded-xl border border-emerald-200 hover:border-emerald-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">
+                                💖
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Escala RSES</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test de Autoestima (Rosenberg)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Descubre tu grado de aprecio, valía personal y confianza interior con las 10 afirmaciones de la clásica escala de Rosenberg.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-emerald-600">
+                            <span>Calcular autoestima</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 3: Estrés & Burnout -->
+                    <a href="/social/test-de-estres-burnout.html" class="block bg-white p-6 rounded-xl border border-orange-200 hover:border-orange-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-lg">
+                                🔥
+                            </div>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Fatiga Laboral</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test de Estrés y Burnout</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            ¿Agotamiento mental o sobrecarga? Evalúa si experimentas signos tempranos de desgaste profesional o fatiga crónica.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-orange-600">
+                            <span>Evaluar sobrecarga</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 4: Test de Personalidad -->
+                    <a href="/social/test-de-personalidad.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-emerald-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 text-green-700 flex items-center justify-center font-bold text-lg">
+                                🧩
+                            </div>
+                            <span class="bg-green-50 text-green-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Perfil de Rasgos</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test de Personalidad Completo</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Analiza tus preferencias innatas, tu estilo de relacionamiento con los demás y tus principales fortalezas de carácter.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-emerald-600">
+                            <span>Descubrir perfil</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 5: Test de Depresión -->
+                    <a href="/social/test-de-depresion.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-yellow-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-yellow-100 text-yellow-700 flex items-center justify-center font-bold text-lg">
+                                🌧️
+                            </div>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Informativo PHQ-9</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test de Depresión (PHQ-9)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Cuestionario de 10 reactivos para reflexionar sobre el estado de ánimo, apatía y energía en las últimas semanas.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-yellow-700">
+                            <span>Revisar síntomas</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Test 6: Test de Narcisismo -->
+                    <a href="/social/test-de-narcisismo.html" class="block bg-white p-6 rounded-xl border border-gray-200 hover:border-red-500 shadow-sm quiz-card flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-lg">
+                                🪞
+                            </div>
+                            <span class="bg-red-50 text-red-700 text-xs font-bold px-2.5 py-0.5 rounded-full">Inventario NPI</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1.5">Test de Narcisismo (NPI)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-4 flex-grow">
+                            Explora patrones de autoimagen, liderazgo, necesidad de admiración y estilo de empatía en las relaciones interpersonales.
+                        </p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center text-xs font-semibold text-red-600">
+                            <span>Ver cuestionario</span>
+                            <span>&rarr;</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN EDITORIAL: METODOLOGÍA & CALIDAD -->
+        <!-- ========================================== -->
+        <section class="py-16 md:py-20 bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 md:px-6 max-w-5xl">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest bg-indigo-50 px-3 py-1 rounded-full">Metodología y Transparencia</span>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-3 mb-4">¿Por qué estudiar con HazelTest?</h2>
+                    <p class="text-gray-600 text-sm">Contenido verificado, basado en pedagogía activa y escalas psicológicas validadas.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xl mb-4">
+                            🧠
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Recuperación Activa (Active Recall)</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed text-justify">
+                            A diferencia de la lectura pasiva de manuales, resolver preguntas interactivas fortalece las conexiones neuronales, permitiendo memorizar fechas, nombres navales y leyes con un 50% mayor retención a largo plazo.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xl mb-4">
+                            ⚖️
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Doctrina Naval Oficial</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed text-justify">
+                            El banco de preguntas de la Secretaría de Marina se basa en reglamentos militares vigentes, organigramas oficiales de la Armada de México y temarios estándar de la Universidad Naval y centros de formación militar.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xl mb-4">
+                            🩺
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Rigor Psicométrico e Información Ética</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed text-justify">
+                            Nuestros tests psicológicos se fundamentan en instrumentos públicos validados (como el GAD-7, PHQ-9 y la escala de Rosenberg). Se ofrecen como herramientas de orientación y autoconocimiento, promoviendo siempre la consulta con profesionales certificados.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Banner Informativo Sobre Nosotros y Contacto Directo -->
+                <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="max-w-xl">
+                        <h3 class="text-xl font-bold text-indigo-950 mb-2">Compromiso con el Aprendizaje Accesible</h3>
+                        <p class="text-indigo-900/80 text-xs md:text-sm leading-relaxed text-justify">
+                            HazelTest es un proyecto educativo independiente desarrollado por <strong>Pedro Antonio Velázquez de la Cruz</strong> con el objetivo de brindar tecnología de evaluación gratuita a estudiantes de todo México. Si encuentras algún dato por actualizar o deseas sugerir un nuevo tema, nuestro canal de contacto está siempre abierto.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="/contacto.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-6 py-3 rounded-lg shadow-md transition duration-200">
+                            Enviar Sugerencia &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 3: PREGUNTAS FRECUENTES (FAQ) -->
+        <!-- ========================================== -->
+        <section id="faq-section" class="py-16 md:py-20 bg-gray-50 border-t border-gray-200">
+            <div class="container mx-auto px-4 md:px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest bg-indigo-50 px-3 py-1 rounded-full">Preguntas Frecuentes</span>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-3 mb-3">Todo lo que necesitas saber</h2>
+                    <p class="text-gray-600 max-w-xl mx-auto text-sm">Respuestas transparentes sobre el funcionamiento, privacidad y módulos de HazelTest.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 group cursor-pointer" open>
+                        <summary class="font-bold text-gray-900 text-base md:text-lg flex justify-between items-center list-none">
+                            <span>¿Qué es HazelTest y qué tipo de quizzes puedo encontrar?</span>
+                            <span class="text-indigo-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm leading-relaxed text-justify">
+                            HazelTest es una plataforma interactiva mexicana de aprendizaje que ofrece quizzes especializados en dos áreas principales: la <strong>Secretaría de Marina (SEMAR)</strong> —con historia naval, doctrina militar, jerarquías y funcionarios— y <strong>Psicología & Bienestar</strong> —con herramientas de personalidad, escala de ansiedad GAD-7, autoestima de Rosenberg y estrés ocupacional—.
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 group cursor-pointer">
+                        <summary class="font-bold text-gray-900 text-base md:text-lg flex justify-between items-center list-none">
+                            <span>¿Los tests son completamente gratuitos?</span>
+                            <span class="text-indigo-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm leading-relaxed text-justify">
+                            Sí. Todos los cuestionarios, exámenes contra reloj y simuladores temáticos son de libre acceso y 100% gratuitos para marinos, estudiantes y público general, sin suscripciones obligatorias.
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 group cursor-pointer">
+                        <summary class="font-bold text-gray-900 text-base md:text-lg flex justify-between items-center list-none">
+                            <span>¿Puedo estudiar y responder quizzes sin conexión a internet en mi celular?</span>
+                            <span class="text-indigo-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm leading-relaxed text-justify">
+                            ¡Sí! HazelTest está construida como una <strong>PWA (Progressive Web App)</strong>. Puedes agregar la página a la pantalla de inicio de tu teléfono móvil y los tests guardados funcionarán incluso cuando estés en altamar, en guardias o en zonas sin cobertura de red.
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 group cursor-pointer">
+                        <summary class="font-bold text-gray-900 text-base md:text-lg flex justify-between items-center list-none">
+                            <span>¿Cómo funciona el sistema de Rangos Navales y Rachas?</span>
+                            <span class="text-indigo-600 text-xl font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm leading-relaxed text-justify">
+                            Tu navegador registra automáticamente tus días consecutivos de práctica (racha) y acumula puntos de experiencia (XP) por cada acierto. A medida que estudias, asciendes desde el rango de <em>Grumete</em> pasando por <em>Marinero</em>, <em>Cabo</em>, <em>Oficial</em>, <em>Capitán</em> hasta alcanzar el rango de <strong>Almirante</strong>.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
-            <div class="mt-4 space-x-4">
-                <a href="privacidad.html" class="hover:text-white">Política de Privacidad</a>
-                <a href="terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
-                <a href="contacto.html" class="hover:text-white">Contacto</a>
-                <a href="mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+    <!-- Footer Completo (Cumplimiento de Políticas Google AdSense) -->
+    <footer class="bg-gray-900 text-gray-400 py-14 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="text-2xl font-black text-white tracking-tight">Hazel<span class="text-indigo-400">Test</span></span>
+                    <p class="mt-3 text-sm text-gray-400 max-w-sm leading-relaxed">
+                        Plataforma interactiva de cuestionarios y herramientas de estudio para aspirantes de la Marina Armada de México y personas interesadas en el autoconocimiento psicológico.
+                    </p>
+                    <div class="mt-4 flex items-center space-x-3 text-xs text-gray-500">
+                        <span>Hecho con dedicación en México</span>
+                        <span>&bull;</span>
+                        <a href="/ads.txt" class="hover:text-gray-300">ads.txt</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold text-xs mb-4 uppercase tracking-wider">Navegación</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="/categorias.html" class="hover:text-white transition">Todas las Categorías</a></li>
+                        <li><a href="/marina/test.html" class="hover:text-white transition">Área Marina (SEMAR)</a></li>
+                        <li><a href="/social/test.html" class="hover:text-white transition">Área Psicología & Social</a></li>
+                        <li><a href="/mi-estudio.html" class="hover:text-white transition">Generador de Examen</a></li>
+                        <li><a href="/mapa-del-sitio.html" class="hover:text-white transition">Mapa del Sitio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-xs mb-4 uppercase tracking-wider">Políticas Legales</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="/privacidad.html" class="hover:text-white transition">Política de Privacidad</a></li>
+                        <li><a href="/terminos-y-condiciones.html" class="hover:text-white transition">Términos y Condiciones</a></li>
+                        <li><a href="/creador.html" class="hover:text-white transition">Sobre el Creador</a></li>
+                        <li><a href="/contacto.html" class="hover:text-white transition">Contacto y Soporte</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
+                <p class="mt-3 md:mt-0 text-center">Las pruebas psicológicas son informativas y no sustituyen la evaluación de un profesional de la salud mental.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Banner de Consentimiento de Cookies (Requisito Obligatorio Google AdSense / LFPDPPP) -->
+    <div id="cookie-banner" class="hidden fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-md bg-gray-900 text-white p-5 rounded-xl shadow-2xl z-50 border border-gray-800 text-xs">
+        <div class="flex items-start justify-between mb-2">
+            <h4 class="font-bold text-sm text-indigo-400">🍪 Uso de Cookies en HazelTest</h4>
+        </div>
+        <p class="text-gray-300 mb-4 leading-relaxed">
+            Utilizamos cookies propias y de terceros (como Google AdSense y Analytics) para analizar el tráfico, personalizar anuncios y guardar tu progreso de estudio. Al continuar navegando, aceptas nuestra <a href="/privacidad.html" class="text-indigo-400 hover:underline">Política de Privacidad</a>.
+        </p>
+        <div class="flex justify-end space-x-2">
+            <button id="accept-cookies" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+                Aceptar todas
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts de la Portada -->
     <script>
+        // Banner de Cookies
+        if (!localStorage.getItem('ht_cookies_consent')) {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) banner.classList.remove('hidden');
+            document.getElementById('accept-cookies')?.addEventListener('click', () => {
+                localStorage.setItem('ht_cookies_consent', 'accepted');
+                banner.classList.add('hidden');
+            });
+        }
+
+        // Menú Móvil
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Base de Datos de Tests para Búsqueda en Vivo
+        const quizzesData = [
+            {
+                title: "Test de Cultura Naval SEMAR",
+                category: "Marina",
+                color: "blue",
+                desc: "Evalúa tus conocimientos sobre la historia, tradiciones y doctrina naval de México.",
+                url: "/marina/estudio/test-cultura-naval.html",
+                keywords: "cultura naval marina armada historia tradiciones doctrina examen semar"
+            },
+            {
+                title: "Grados y Jerarquías SEMAR",
+                category: "Marina",
+                color: "blue",
+                desc: "Aprende el escalafón militar: Marinería, Clases, Oficiales y Almirantes.",
+                url: "/marina/estudio/test-grados-jerarquias.html",
+                keywords: "grados jerarquias semar almirantes capitanes oficiales marineros rangos divisas insignias"
+            },
+            {
+                title: "Test de Ansiedad (GAD-7)",
+                category: "Social",
+                color: "teal",
+                desc: "Evalúa síntomas de nerviosismo, preocupación incontrolable y tensión con la escala GAD-7.",
+                url: "/social/test-de-ansiedad.html",
+                keywords: "ansiedad gad 7 nerviosismo preocupacion estres panico psicologia salud mental"
+            },
+            {
+                title: "Test de Autoestima (Rosenberg)",
+                category: "Social",
+                color: "emerald",
+                desc: "Mide tu nivel de amor propio y seguridad personal con la escala estándar RSES.",
+                url: "/social/test-de-autoestima.html",
+                keywords: "autoestima rosenberg amor propio valia seguridad autoconfianza psicologia"
+            },
+            {
+                title: "Test de Estrés & Burnout",
+                category: "Social",
+                color: "orange",
+                desc: "Evalúa agotamiento mental, fatiga y sobrecarga ocupacional o académica.",
+                url: "/social/test-de-estres-burnout.html",
+                keywords: "estres burnout agotamiento laboral cansancio trabajo fatiga mental"
+            },
+            {
+                title: "Test de Personalidad",
+                category: "Social",
+                color: "green",
+                desc: "Descubre tus rasgos predominantes y estilo de interacción.",
+                url: "/social/test-de-personalidad.html",
+                keywords: "personalidad rasgos introspeccion psicologia caracter mente"
+            },
+            {
+                title: "Test de Depresión (PHQ-9)",
+                category: "Social",
+                color: "yellow",
+                desc: "Herramienta reflexiva sobre síntomas emocionales y bienestar.",
+                url: "/social/test-de-depresion.html",
+                keywords: "depresion distimia tristeza animo salud mental bienestar"
+            },
+            {
+                title: "Test de Narcisismo (NPI)",
+                category: "Social",
+                color: "red",
+                desc: "Evalúa patrones de autoimagen, empatía y estilo de relación.",
+                url: "/social/test-de-narcisismo.html",
+                keywords: "narcisismo ego autoestima empatia psicologia social"
+            },
+            {
+                title: "Identifica por Imagen (Funcionarios)",
+                category: "Marina",
+                color: "blue",
+                desc: "Asocia la fotografía oficial de cada mando con su nombre y jerarquía.",
+                url: "/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html",
+                keywords: "imagen foto caras reconocimiento visual almirantes funcionarios"
+            },
+            {
+                title: "Contra el Reloj: Funcionarios",
+                category: "Marina",
+                color: "blue",
+                desc: "Desafío contra el tiempo identificando mandos antes de que se acabe el cronómetro.",
+                url: "/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html",
+                keywords: "reloj tiempo agilidad rapidez cronometro velocidad"
+            },
+            {
+                title: "Elige el Cargo del Funcionario",
+                category: "Marina",
+                color: "blue",
+                desc: "Selecciona el cargo oficial que desempeña cada alto mando de Marina.",
+                url: "/marina/estudio/funcionarios/elige-el-cargo.html",
+                keywords: "cargo puesto funciones responsabilidades mandos"
+            },
+            {
+                title: "Temario y Progreso de Estudio",
+                category: "Marina",
+                color: "indigo",
+                desc: "Guía oficial y registro de avance en los 17 temas navales.",
+                url: "/marina/estudio/temario/progreso-estudio.html",
+                keywords: "temario progreso estudio naval guia temas semar"
+            }
+        ];
+
         const searchInput = document.getElementById('search-input');
         const searchButton = document.getElementById('search-button');
-        const marinaCardContainer = document.getElementById('marina-card-container');
-        const socialCardContainer = document.getElementById('social-card-container');
-        const noResultsMessage = document.getElementById('no-results');
-        const featuredGrid = document.getElementById('featured-categories-grid');
+        const searchResultsArea = document.getElementById('search-results-area');
+        const searchResultsGrid = document.getElementById('search-results-grid');
+        const noResultsMsg = document.getElementById('no-search-results');
+        const clearSearchBtn = document.getElementById('clear-search');
 
-        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
-
-        const marinaKeywords = ["marina", "funcionarios", "naval", "bim-40", "bim40", "bim", "40"];
-        const socialKeywords = ["social", "personalidad", "autoconocimiento", "psicología", "depresión", "narcisismo"];
-
-        function ejecutarBusqueda() {
-            if (!searchInput || !noResultsMessage || !featuredGrid) return;
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            let foundMarina = false;
-            let foundSocial = false;
-
-            if (searchTerm === "") {
-                if(marinaCardContainer) marinaCardContainer.classList.remove('hidden');
-                if(socialCardContainer) socialCardContainer.classList.remove('hidden');
-                noResultsMessage.classList.add('hidden');
-                featuredGrid.classList.remove('justify-center');
-                featuredGrid.classList.add('md:grid-cols-2');
+        function realizarBusqueda() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (!query) {
+                searchResultsArea.classList.add('hidden');
                 return;
             }
 
-            if (marinaCardContainer && marinaKeywords.some(keyword => searchTerm.includes(keyword))) {
-                marinaCardContainer.classList.remove('hidden');
-                foundMarina = true;
-            } else if (marinaCardContainer) {
-                marinaCardContainer.classList.add('hidden');
-            }
+            const tokens = query.split(/\s+/).filter(t => t.length > 0);
+            const matches = quizzesData.filter(item => {
+                const combined = (item.title + " " + item.desc + " " + item.category + " " + item.keywords).toLowerCase();
+                return tokens.some(token => combined.includes(token));
+            });
 
-            if (socialCardContainer && socialKeywords.some(keyword => searchTerm.includes(keyword))) {
-                socialCardContainer.classList.remove('hidden');
-                foundSocial = true;
-            } else if (socialCardContainer) {
-                socialCardContainer.classList.add('hidden');
-            }
+            searchResultsGrid.innerHTML = '';
+            searchResultsArea.classList.remove('hidden');
 
-            if (foundMarina || foundSocial) {
-                noResultsMessage.classList.add('hidden');
-                if (foundMarina && !foundSocial || !foundMarina && foundSocial) {
-                    featuredGrid.classList.add('justify-center');
-                    featuredGrid.classList.remove('md:grid-cols-2');
-                } else {
-                    featuredGrid.classList.remove('justify-center');
-                    featuredGrid.classList.add('md:grid-cols-2');
-                }
+            if (matches.length === 0) {
+                noResultsMsg.classList.remove('hidden');
             } else {
-                noResultsMessage.classList.remove('hidden');
-                featuredGrid.classList.add('justify-center');
-                featuredGrid.classList.remove('md:grid-cols-2');
+                noResultsMsg.classList.add('hidden');
+                matches.forEach(item => {
+                    const card = document.createElement('a');
+                    card.href = item.url;
+                    card.className = "block bg-gray-50 hover:bg-indigo-50/50 p-3 rounded-lg border border-gray-200 hover:border-indigo-400 transition quiz-card";
+                    card.innerHTML = `
+                        <div class="flex justify-between items-start mb-1">
+                            <h4 class="font-bold text-gray-900 text-sm">${item.title}</h4>
+                            <span class="text-[10px] px-2 py-0.5 rounded-full font-bold bg-indigo-100 text-indigo-800">${item.category}</span>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-1.5">${item.desc}</p>
+                        <span class="text-xs font-semibold text-indigo-600">Entrar al test &rarr;</span>
+                    `;
+                    searchResultsGrid.appendChild(card);
+                });
             }
         }
 
-        if (searchButton) { searchButton.addEventListener('click', ejecutarBusqueda); }
+        if (searchButton) searchButton.addEventListener('click', realizarBusqueda);
         if (searchInput) {
-            searchInput.addEventListener('keypress', (event) => { if (event.key === 'Enter') { ejecutarBusqueda(); } });
-            searchInput.addEventListener('input', () => { if (searchInput.value.trim() === '') { ejecutarBusqueda(); } });
-            searchInput.addEventListener('search', () => { if (searchInput.value.trim() === '') { ejecutarBusqueda(); } });
+            searchInput.addEventListener('input', () => {
+                if (searchInput.value.trim() === '') {
+                    searchResultsArea.classList.add('hidden');
+                } else {
+                    realizarBusqueda();
+                }
+            });
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') realizarBusqueda();
+            });
+        }
+        if (clearSearchBtn) {
+            clearSearchBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                searchResultsArea.classList.add('hidden');
+            });
         }
     </script>
-
 </body>
 </html>

@@ -1,0 +1,88 @@
+/* HazelTest Theme & Dark Mode Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+html.dark {
+    color-scheme: dark;
+}
+
+html.dark body {
+    background-color: #111827 !important;
+    color: #F3F4F6 !important;
+}
+
+html.dark header {
+    background-color: #1F2937 !important;
+    border-color: #374151 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark header nav a.text-gray-600 {
+    color: #D1D5DB !important;
+}
+
+html.dark header nav a.text-gray-600:hover {
+    color: #818CF8 !important;
+}
+
+html.dark #mobile-menu {
+    background-color: #1F2937 !important;
+    border-color: #374151 !important;
+}
+
+html.dark #mobile-menu a {
+    color: #D1D5DB !important;
+}
+
+html.dark .bg-white {
+    background-color: #1F2937 !important;
+    border-color: #374151 !important;
+    color: #F3F4F6 !important;
+}
+
+html.dark .bg-gray-50, 
+html.dark .bg-gray-100 {
+    background-color: #111827 !important;
+}
+
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-indigo-900,
+html.dark .text-blue-900,
+html.dark .text-green-900 {
+    color: #F9FAFB !important;
+}
+
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+    color: #9CA3AF !important;
+}
+
+html.dark .border-gray-200,
+html.dark .border-gray-300 {
+    border-color: #374151 !important;
+}
+
+html.dark .quiz-card {
+    background-color: #1F2937 !important;
+    border-color: #374151 !important;
+}
+
+html.dark .quiz-card:hover {
+    border-color: #6366F1 !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+    background-color: #374151 !important;
+    color: #F9FAFB !important;
+    border-color: #4B5563 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+    color: #9CA3AF !important;
+}

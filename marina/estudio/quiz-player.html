@@ -16,9 +16,11 @@
 
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- Favicon -->
-    <link rel="icon" href="../../hazeltest.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="../../hazeltest.ico" type="image/x-icon">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
+
+    <!-- Banco Local de Cultura Naval -->
+    <script src="/marina/estudio/data/cultura-naval-banco.js"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,11 +47,11 @@
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../../index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="../../index.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
-                <a href="../../categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
-                <a href="../test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
+                <a href="/" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">CategorÃ­as</a>
+                <a href="/marina/test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
                 <span class="text-indigo-600 font-semibold">Cultura Naval</span>
             </div>
         </nav>
@@ -78,13 +80,13 @@
                     </div>
                 </div>
                 <div id="quiz-content">
-                    <!-- Las preguntas y capítulos se insertarán aquí -->
+                    <!-- Las preguntas y capÃ­tulos se insertarÃ¡n aquÃ­ -->
                 </div>
                 <div id="feedback-container" class="text-center h-auto my-4">
                      <p id="feedback" class="text-lg font-semibold"></p>
                 </div>
                 <div class="text-center flex items-center justify-center space-x-4">
-                    <!-- Botón Posponer -->
+                    <!-- BotÃ³n Posponer -->
                     <button id="postpone-btn" class="bg-gray-500 text-white py-2 px-6 rounded-md hover:bg-gray-600 transition duration-300">
                         Posponer
                     </button>
@@ -96,8 +98,8 @@
 
             <!-- Contenedor de Resultados Finales -->
             <div id="resultado-final" class="hidden text-center">
-                 <h2 class="text-3xl font-bold text-center text-indigo-700 mb-6">¡Test Finalizado!</h2>
-                 <p class="text-xl text-center mb-2">Tu puntuación final es:</p>
+                 <h2 class="text-3xl font-bold text-center text-indigo-700 mb-6">Â¡Test Finalizado!</h2>
+                 <p class="text-xl text-center mb-2">Tu puntuaciÃ³n final es:</p>
                  <p id="puntuacion-final" class="text-6xl font-bold text-center text-gray-800 mb-4">0 / 10</p>
                  <p id="promedio-final" class="text-2xl font-bold text-center text-gray-600 mb-6">Promedio: 0%</p>
                   <div class="text-center mb-6">
@@ -107,14 +109,14 @@
                  <p id="frase-final" class="text-lg italic text-gray-700 mt-4 mb-8 px-4"></p>
                  
                  <div id="retroalimentacion-container" class="mt-10 pt-6 border-t border-gray-300 text-left">
-                     <!-- El contenido de la retroalimentación se insertará aquí -->
+                     <!-- El contenido de la retroalimentaciÃ³n se insertarÃ¡ aquÃ­ -->
                  </div>
 
                  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
                      <button id="reiniciar-btn" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
                          Jugar de Nuevo
                      </button>
-                     <a href="test-cultura-naval.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
+                     <a href="/marina/estudio/test-cultura-naval.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
                          Crear otro test
                      </a>
                  </div>
@@ -124,11 +126,11 @@
 
     <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
             <div class="mt-4 space-x-4">
-                 <a href="../../privacidad.html" class="hover:text-white">Política de Privacidad</a>
-                 <a href="../../terminos-y-condiciones.html" class="hover:text-white">Términos de Servicio</a>
-                 <a href="../../contacto.html" class="hover:text-white">Contacto</a>
+                 <a href="/privacidad.html" class="hover:text-white">PolÃ­tica de Privacidad</a>
+                 <a href="/terminos-y-condiciones.html" class="hover:text-white">TÃ©rminos de Servicio</a>
+                 <a href="/contacto.html" class="hover:text-white">Contacto</a>
             </div>
         </div>
     </footer>
@@ -155,7 +157,7 @@
                 db = getFirestore(app);
             } catch (error) {
                 console.error("Error inicializando Firebase:", error);
-                document.getElementById('loading-state').innerHTML = `<p class="text-red-500 text-center">Error de configuración. No se pudo conectar al servicio de tests.</p>`;
+                document.getElementById('loading-state').innerHTML = `<p class="text-red-500 text-center">Error de configuraciÃ³n. No se pudo conectar al servicio de tests.</p>`;
                 return;
             }
 
@@ -195,15 +197,30 @@
             function shuffleArray(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
 
             async function fetchQuestions(topicIds) {
-                const promises = topicIds.map(id => getDoc(doc(db, "quizzes", id)));
-                const docSnaps = await Promise.all(promises);
                 let allQuestions = [];
-                docSnaps.forEach(docSnap => {
-                    if (docSnap.exists()) {
-                        const questionsFromDoc = docSnap.data().preguntas || [];
-                        allQuestions = allQuestions.concat(questionsFromDoc);
-                    }
-                });
+                try {
+                    const promises = topicIds.map(id => getDoc(doc(db, "quizzes", id)));
+                    const docSnaps = await Promise.all(promises);
+                    docSnaps.forEach(docSnap => {
+                        if (docSnap.exists()) {
+                            const questionsFromDoc = docSnap.data().preguntas || [];
+                            allQuestions = allQuestions.concat(questionsFromDoc);
+                        }
+                    });
+                } catch (err) {
+                    console.warn("Firebase fetch error, falling back to local bank:", err);
+                }
+
+                // Si Firebase no tiene preguntas o falló, usar el banco local de 469 preguntas
+                if (allQuestions.length === 0 && window.BANCO_CULTURA_NAVAL) {
+                    allQuestions = window.BANCO_CULTURA_NAVAL.map(q => ({
+                        pregunta: q.pregunta,
+                        opciones: q.opciones,
+                        respuesta_correcta: q.respuestaTexto,
+                        tema: q.moduloNombre,
+                        dificultad: 'Medio'
+                    }));
+                }
                 return allQuestions;
             }
             
@@ -247,8 +264,8 @@
                 if (respuestaSeleccionada) return; respuestaSeleccionada = true; clearInterval(timerId);
                 const esCorrecta = botonSeleccionado && (botonSeleccionado.dataset.respuesta === respuestaCorrecta);
                 wrapper.querySelectorAll('.opcion-btn').forEach(btn => { btn.classList.add('disabled'); if (btn.dataset.respuesta === respuestaCorrecta) { btn.classList.add('correcta'); } if (btn === botonSeleccionado && !esCorrecta) { btn.classList.add('incorrecta'); } });
-                if (timedOut) { feedbackElement.textContent = `¡Tiempo agotado! La respuesta era: ${respuestaCorrecta}`; feedbackContainer.className = 'text-center h-auto my-4 text-orange-600 font-semibold'; incorrectAnswers++; incorrectQuestions.push(preguntaActual); }
-                else if (esCorrecta) { feedbackElement.textContent = '¡Correcto!'; feedbackContainer.className = 'text-center h-auto my-4 text-green-600 font-semibold'; correctAnswers++; }
+                if (timedOut) { feedbackElement.textContent = `Â¡Tiempo agotado! La respuesta era: ${respuestaCorrecta}`; feedbackContainer.className = 'text-center h-auto my-4 text-orange-600 font-semibold'; incorrectAnswers++; incorrectQuestions.push(preguntaActual); }
+                else if (esCorrecta) { feedbackElement.textContent = 'Â¡Correcto!'; feedbackContainer.className = 'text-center h-auto my-4 text-green-600 font-semibold'; correctAnswers++; }
                 else { feedbackElement.textContent = `Incorrecto. La respuesta era: ${respuestaCorrecta}`; feedbackContainer.className = 'text-center h-auto my-4 text-red-600 font-semibold'; incorrectAnswers++; incorrectQuestions.push(preguntaActual); }
                 correctCountElement.textContent = `Aciertos: ${correctAnswers}`; incorrectCountElement.textContent = `Errores: ${incorrectAnswers}`;
                 siguienteBtn.classList.remove('hidden'); postponeBtn.classList.add('hidden');
@@ -257,15 +274,15 @@
             function mostrarResultados() {
                 quizActivoContainer.classList.add('hidden'); let cP; let promedio = 0;
                 if (totalQuestionsInRound > 0) { promedio = Math.round((correctAnswers / totalQuestionsInRound) * 100); if (promedio >= 80) { cP = 'alta'; } else if (promedio >= 50) { cP = 'media'; } else { cP = 'baja'; } } else { cP = 'baja'; }
-                const frases = { alta: "¡Excelente conocimiento! Dominas la cultura naval.", media: "¡Buen trabajo! Tienes una base sólida, sigue así.", baja: "Un buen comienzo. ¡Sigue estudiando para mejorar!" };
+                const frases = { alta: "Â¡Excelente conocimiento! Dominas la cultura naval.", media: "Â¡Buen trabajo! Tienes una base sÃ³lida, sigue asÃ­.", baja: "Un buen comienzo. Â¡Sigue estudiando para mejorar!" };
                 puntuacionFinalElement.textContent = `${correctAnswers} / ${totalQuestionsInRound}`; promedioFinalElement.textContent = `Promedio: ${promedio}%`;
                 finalCorrectElement.textContent = `Aciertos: ${correctAnswers}`; finalIncorrectElement.textContent = `Errores: ${incorrectAnswers}`;
-                fraseFinalElement.textContent = frases[cP] || "¡Gracias por participar!";
+                fraseFinalElement.textContent = frases[cP] || "Â¡Gracias por participar!";
                 retroalimentacionContainer.innerHTML = '';
                 if (incorrectQuestions.length > 0) {
                     const feedbackTitle = document.createElement('h3'); feedbackTitle.className = 'text-2xl font-bold text-gray-800 mb-4'; feedbackTitle.textContent = 'Preguntas para Repasar'; retroalimentacionContainer.appendChild(feedbackTitle);
                     incorrectQuestions.forEach((q, index) => { const questionDiv = document.createElement('div'); questionDiv.className = 'mb-4 p-4 bg-gray-50 rounded-lg'; questionDiv.innerHTML = `<p class="font-semibold text-gray-700">${index + 1}. ${q.pregunta}</p><p class="mt-2 text-sm text-gray-500"><strong>Tema:</strong> ${q.tema}</p><p class="mt-2 text-green-700"><strong>Respuesta correcta:</strong> ${q.respuesta_correcta}</p>`; retroalimentacionContainer.appendChild(questionDiv); });
-                } else { retroalimentacionContainer.innerHTML = `<p class="text-center text-green-600 font-semibold">¡Felicidades! No tuviste ninguna respuesta incorrecta.</p>`; }
+                } else { retroalimentacionContainer.innerHTML = `<p class="text-center text-green-600 font-semibold">Â¡Felicidades! No tuviste ninguna respuesta incorrecta.</p>`; }
                 resultadoFinalContainer.classList.remove('hidden');
             }
 
@@ -276,7 +293,7 @@
                 const difficulty = params.get('difficulty') || 'Todas';
 
                 if (topicIds.length === 0) {
-                    loadingState.innerHTML = `<p class="text-red-500 text-center">No se seleccionó ningún tema. Vuelve a la página anterior para crear tu test.</p>`;
+                    loadingState.innerHTML = `<p class="text-red-500 text-center">No se seleccionÃ³ ningÃºn tema. Vuelve a la pÃ¡gina anterior para crear tu test.</p>`;
                     return;
                 }
 
@@ -286,7 +303,7 @@
                     totalQuestionsInRound = quizQuestions.length;
 
                     if (quizQuestions.length === 0) {
-                        loadingState.innerHTML = `<p class="text-yellow-700 text-center">No se encontraron preguntas con los filtros seleccionados. Por favor, vuelve e intenta con otra combinación.</p>`;
+                        loadingState.innerHTML = `<p class="text-yellow-700 text-center">No se encontraron preguntas con los filtros seleccionados. Por favor, vuelve e intenta con otra combinaciÃ³n.</p>`;
                         return;
                     }
 
@@ -300,7 +317,7 @@
 
                 } catch (e) {
                     console.error("Error al iniciar el quiz:", e);
-                    loadingState.innerHTML = `<p class="text-red-500 text-center">Ocurrió un error al cargar las preguntas. Intenta de nuevo más tarde.</p>`;
+                    loadingState.innerHTML = `<p class="text-red-500 text-center">OcurriÃ³ un error al cargar las preguntas. Intenta de nuevo mÃ¡s tarde.</p>`;
                 }
             }
 
@@ -317,7 +334,7 @@
                 window.location.reload();
             });
 
-            // --- Inicialización ---
+            // --- InicializaciÃ³n ---
             iniciarQuiz();
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');

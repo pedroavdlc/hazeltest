@@ -1,0 +1,23 @@
+{
+  "name": "HazelTest - Quizzes y Estudio",
+  "short_name": "HazelTest",
+  "description": "Plataforma interactiva de quizzes sobre Marina, Cultura Naval, Psicología y Autoconocimiento.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F3F4F6",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/hazeltest.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/hazeltest-og.webp",
+      "sizes": "1200x630",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

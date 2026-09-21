@@ -1,24 +1,29 @@
 # robots.txt para HazelTest
-# Indica a los robots qué páginas pueden rastrear.
-
-# User-agent: *
-# El asterisco (*) significa que las siguientes reglas se aplican a TODOS los robots (Googlebot, Bingbot, etc.).
 User-agent: *
-
-# Disallow:
-# Las siguientes líneas indican a los robots que NO deben rastrear (y por lo tanto, no indexar) estas páginas específicas.
-Disallow: /contacto.html
-Disallow: /creador.html
-Disallow: /privacidad.html
-Disallow: /terminos-y-condiciones.html
+# Paginas protegidas / administrativas
 Disallow: /marina/uploader.html
 Disallow: /marina/estudio/temario/progreso-estudio.html
-
-# Allow:
-# Permite el acceso al resto del sitio.
+# Permitir acceso al resto del sitio
 Allow: /
 
-# Sitemap:
-# Indica a los buscadores dónde encontrar el mapa del sitio XML.
-Sitemap: https://hazeltest.com/sitemap.xml
+# Directivas para Motores de Inteligencia Artificial (GEO)
+User-agent: GPTBot
+Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap oficial y Documentos para LLMs
+Sitemap: https://hazeltest.com/sitemap.xml
+# Archivos de contexto para IA:
+# https://hazeltest.com/llms.txt
+# https://hazeltest.com/llms-full.txt

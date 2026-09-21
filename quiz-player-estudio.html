@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realizando Examen Personalizado - HazelTest</title>
+    <title>Simulador de Examen de Estudio en Vivo | HazelTest</title>
+    <meta name="description" content="Simulador de preguntas y respuestas en tiempo real para tu sesión de estudio personalizada en HazelTest. Pon a prueba tus conocimientos ahora.">
+    <link rel="canonical" href="https://hazeltest.com/quiz-player-estudio.html">
+    <!-- Geo & Localization Tags -->
+    <meta name="geo.region" content="MX">
+    <meta name="geo.placename" content="Mexico">
+    <meta name="geo.position" content="19.432608;-99.133209">
+    <meta name="ICBM" content="19.432608, -99.133209">
+    <meta name="language" content="Spanish">
+    <link rel="alternate" hreflang="es" href="https://hazeltest.com/quiz-player-estudio.html">
+    <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/quiz-player-estudio.html">
+    <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/quiz-player-estudio.html">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
@@ -14,11 +25,11 @@
     gtag('config', 'G-K4TEPLD75E');
     </script>
 
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, follow">
 
     <!-- Favicon -->
-    <link rel="icon" href="hazeltest.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="hazeltest.ico" type="image/x-icon">
+    <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,12 +51,20 @@
         .opcion-btn.correcta.disabled { background-color: #A7F3D0; border-color: #10B981; color: #065F46; opacity: 1; font-weight: 600; }
         .opcion-btn.incorrecta.disabled { background-color: #FECACA; border-color: #F87171; color: #991B1B; opacity: 1; text-decoration: line-through; }
     </style>
+    <!-- PWA, Dark Mode & Gamification Core -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    <link rel="stylesheet" href="/hazeltest-theme.css">
+    <script src="/hazeltest-app.js?v=2.0"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-indigo-600">HazelTest</a>
+            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
             <span class="font-semibold text-gray-700">Mi Centro de Estudio</span>
         </nav>
     </header>
@@ -54,7 +73,7 @@
         <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
 
             <div id="loading-state" class="">
-                <h1 class="text-2xl font-bold text-center text-gray-700">Preparando tu examen...</h1>
+                <h1 class="text-2xl font-bold text-center text-gray-700">Simulador de Examen Personalizado en Proceso</h1>
                 <p class="text-center text-gray-500 mt-2">Cargando preguntas desde la base de datos.</p>
             </div>
 
@@ -100,7 +119,7 @@
                      <button id="reiniciar-btn" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
                          Jugar de Nuevo
                      </button>
-                     <a href="mi-estudio.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
+                     <a href="/mi-estudio.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
                          Crear otro examen
                      </a>
                  </div>
@@ -110,7 +129,7 @@
 
     <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 HazelTest. Todos los derechos reservados.</p>
+            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
         </div>
     </footer>
 
