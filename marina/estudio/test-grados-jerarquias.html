@@ -54,6 +54,11 @@
     
     <!-- Fonts & Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -61,12 +66,15 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
+        
+        /* Option Cards - Light Mode */
         .opcion-card {
             border: 2px solid #e2e8f0;
             border-radius: 0.85rem;
             cursor: pointer;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             user-select: none;
+            background-color: #ffffff;
         }
         .opcion-card:hover {
             border-color: #3b82f6;
@@ -78,6 +86,30 @@
             background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
             box-shadow: 0 4px 14px -2px rgba(29, 78, 216, 0.25);
         }
+
+        /* Option Cards - Dark Mode */
+        html.dark .opcion-card {
+            background-color: #111c33 !important;
+            border-color: #24355a !important;
+            color: #f1f5f9 !important;
+        }
+        html.dark .opcion-card:hover {
+            border-color: #60a5fa !important;
+            background-color: #1a2a4b !important;
+        }
+        html.dark .opcion-radio:checked + .opcion-card {
+            border-color: #60a5fa !important;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
+            box-shadow: 0 4px 16px -2px rgba(59, 130, 246, 0.45) !important;
+        }
+        html.dark .opcion-card span.text-slate-800 {
+            color: #f8fafc !important;
+        }
+        html.dark .opcion-card span.text-slate-400 {
+            color: #94a3b8 !important;
+        }
+
+        /* Feedback States */
         .retro-correcta {
             background-color: #ecfdf5;
             border: 2px solid #10b981;
