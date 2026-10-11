@@ -6,8 +6,8 @@
 - **Sitio web oficial**: https://hazeltest.com/
 - **Idioma principal**: Español (es-MX)
 - **Región y Enfoque**: México (Secretaría de Marina - SEMAR) e Hispanoamérica
-- **Autor y Desarrollador**: Pedro Antonio Velázquez de la Cruz (https://hazeltest.com/creador.html)
-- **Contacto**: pedroavdlc@outlook.com
+- **Autor y Desarrollador**: Equipo Editorial HazelTest (https://hazeltest.com/acerca-de.html)
+- **Contacto**: contacto@hazeltest.com
 
 ## Módulos y Temarios Principales
 

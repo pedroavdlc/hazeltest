@@ -68,10 +68,10 @@
             "@type": "Organization",
             "name": "HazelTest",
             "url": "https://hazeltest.com",
-            "email": "pedroavdlc@outlook.com",
+            "email": "contacto@hazeltest.com",
             "contactPoint": {
                 "@type": "ContactPoint",
-                "email": "pedroavdlc@outlook.com",
+                "email": "contacto@hazeltest.com",
                 "contactType": "Customer Support",
                 "areaServed": "MX",
                 "availableLanguage": "Spanish"
@@ -134,8 +134,8 @@
                     </div>
                     <h2 class="text-base font-bold text-gray-900 mb-1">Correo Electrónico</h2>
                     <p class="text-xs text-gray-500 mb-3">Escríbenos directamente para cualquier solicitud editorial o técnica.</p>
-                    <a href="mailto:pedroavdlc@outlook.com" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800 break-all">
-                        pedroavdlc@outlook.com
+                    <a href="mailto:contacto@hazeltest.com" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800 break-all">
+                        contacto@hazeltest.com
                     </a>
                 </div>
 
@@ -229,7 +229,7 @@
             <div class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
                 <a href="/privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
                 <a href="/terminos-y-condiciones.html" class="hover:text-white transition">Términos y Condiciones</a>
-                <a href="/creador.html" class="hover:text-white transition">Sobre el Creador</a>
+                <a href="/acerca-de.html" class="hover:text-white transition">Acerca de Nosotros</a>
                 <a href="/contacto.html" class="text-indigo-400 hover:underline">Contacto</a>
                 <a href="/mapa-del-sitio.html" class="hover:text-white transition">Mapa del Sitio</a>
                 <a href="/ads.txt" class="hover:text-white transition">ads.txt</a>
@@ -254,13 +254,13 @@
             const message = document.getElementById('message').value;
 
             // Abrir el cliente de correo del usuario con los campos prellenados
-            const mailtoUrl = `mailto:pedroavdlc@outlook.com?subject=${encodeURIComponent('[HazelTest Contacto] ' + subject)}&body=${encodeURIComponent("Nombre: " + name + "\nCorreo: " + email + "\n\nMensaje:\n" + message)}`;
+            const mailtoUrl = `mailto:contacto@hazeltest.com?subject=${encodeURIComponent('[HazelTest Contacto] ' + subject)}&body=${encodeURIComponent("Nombre: " + name + "\nCorreo: " + email + "\n\nMensaje:\n" + message)}`;
             
             window.location.href = mailtoUrl;
 
             const feedback = document.getElementById('form-feedback');
             feedback.className = 'mt-4 p-4 rounded-xl text-sm font-medium bg-green-50 text-green-800 border border-green-200 block';
-            feedback.innerHTML = `¡Gracias por tu mensaje, <strong>${name}</strong>! Se ha abierto tu cliente de correo para enviar la comunicación a <strong>pedroavdlc@outlook.com</strong>. Te responderemos en un lapso de 24 a 48 horas.`;
+            feedback.innerHTML = `¡Gracias por tu mensaje, <strong>${name}</strong>! Se ha abierto tu cliente de correo para enviar la comunicación a <strong>contacto@hazeltest.com</strong>. Te responderemos en un lapso de 24 a 48 horas.`;
         }
     </script>
 </body>

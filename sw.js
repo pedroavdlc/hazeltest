@@ -8,7 +8,6 @@ const STATIC_ASSETS = [
   '/categorias.html',
   '/mapa-del-sitio.html',
   '/contacto.html',
-  '/creador.html',
   '/marina/test.html',
   '/marina/estudio/test-cultura-naval.html',
   '/marina/estudio/test-grados-jerarquias.html',

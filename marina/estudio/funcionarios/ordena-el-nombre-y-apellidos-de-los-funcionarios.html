@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Nombres y Apellidos: Mandos Navales SEMAR | HazelTest</title>
+    <title>Construye el Nombre de los Mandos de Marina | HazelTest</title>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Google tag (gtag.js) -->
@@ -13,13 +13,13 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-K4TEPLD75E');
-    </script>    
+    </script>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Arma los nombres y apellidos completos de los funcionarios de la SecretarÃ­a de Marina. Pon a prueba tu memoria con este test interactivo en HazelTest.">
-    <meta name="keywords" content="nombres funcionarios marina, memoria mandos navales, test interactivo semar">
-    <!-- Canonical Link Actualizado -->
+    <meta name="description" content="Juego interactivo de memoria y ortografía naval. Selecciona las palabras en orden para construir el nombre y apellidos completos de los almirantes de SEMAR.">
+    <meta name="keywords" content="nombres funcionarios marina, almirantes semar apellidos, juego memoria naval, ortografia militar semar">
     <link rel="canonical" href="https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html">
+
     <!-- Geo & Localization Tags -->
     <meta name="geo.region" content="MX">
     <meta name="geo.placename" content="Mexico">
@@ -29,7 +29,7 @@
     <link rel="alternate" hreflang="es" href="https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html">
     <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html">
     <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
@@ -37,261 +37,333 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html">
-    <meta property="og:title" content="Test Nombres y Apellidos: Mandos Navales SEMAR | HazelTest">
-    <meta property="og:description" content="Arma los nombres y apellidos completos de los funcionarios de la SecretarÃ­a de Marina. Pon a prueba tu memoria con este test interactivo en HazelTest.">
+    <meta property="og:title" content="Construye el Nombre de los Mandos de Marina | HazelTest">
+    <meta property="og:description" content="A partir de la foto y el cargo, ordena las palabras para formar el nombre completo de los mandos de SEMAR.">
     <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html">
-    <meta property="twitter:title" content="Test Construye Nombres y Apellidos de Funcionarios Marina - HazelTest">
-    <meta property="twitter:description" content="Arma el nombre completo de los Funcionarios de Marina a partir de su foto, grado y puesto.">
+    <meta property="twitter:title" content="Construye Nombres Navales - HazelTest">
+    <meta property="twitter:description" content="Desafío interactivo de palabras y nombres oficiales de la Armada de México.">
     <meta property="twitter:image" content="https://hazeltest.com/hazeltest-og.webp">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .palabra-opcion {
-            cursor: pointer;
-            transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
-        }
-        .palabra-opcion:hover:not(.disabled) {
-            background-color: #D1D5DB; border-color: #6B7280; transform: translateY(-2px);
-        }
-        .palabra-opcion.disabled { cursor: pointer; opacity: 0.5; background-color: #E5E7EB; color: #9CA3AF; }
-         .palabra-opcion.disabled:hover { opacity: 0.7; border-color: #FCA5A5; }
-        #nombre-construido-display { min-height: 3rem; border: 2px dashed #D1D5DB; background-color: #F9FAFB; }
-        .hidden { display: none; }
-    </style>
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://hazeltest.com/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Marina",
-                    "item": "https://hazeltest.com/marina/test.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Test Construye Nombres y Apellidos de Funcionarios Marina",
-                    "item": "https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html"
-                }
-            ]
-        },
-        {
-            "@type": "Quiz",
-            "name": "Test Construye Nombres y Apellidos de Funcionarios Marina",
-            "description": "DesafÃ­a tu conocimiento armando el nombre completo de los Funcionarios de Marina en HazelTest. Se muestran la foto, grado y puesto. Intenta este test interactivo.",
-            "inLanguage": "es-MX",
-            "url": "https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html",
-            "educationalLevel": "Intermediate",
-            "about": {
-                "@type": "Thing",
-                "name": "Cultura Naval y SecretarÃ­a de Marina"
-            },
-            "provider": {
-                "@type": "Organization",
-                "name": "HazelTest",
-                "url": "https://hazeltest.com/"
-            }
-        }
-    ]
-}
-    </script>
-    <!-- PWA, Dark Mode & Gamification Core -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#4F46E5">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/hazeltest-theme.css">
     <script src="/hazeltest-app.js?v=2.0"></script>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
-</head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
-            <div class="hidden md:flex space-x-6 items-center">
-                 <a href="/" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
-                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">CategorÃ­as</a>
-                <a href="/marina/test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
-                 <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Funcionarios</a>
-                 <span class="text-cyan-600 font-semibold">Construye Nombre</span>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Outfit', sans-serif; }
+        .palabra-opcion {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+        .palabra-opcion:hover:not(.disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(220, 38, 38, 0.15);
+            border-color: #dc2626 !important;
+            background-color: #fef2f2;
+        }
+        .palabra-opcion.disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+            background-color: #f1f5f9;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://hazeltest.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Marina",
+              "item": "https://hazeltest.com/marina/test.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Altos Mandos",
+              "item": "https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Construye Nombres",
+              "item": "https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html"
+            }
+          ]
+        },
+        {
+          "@type": "Quiz",
+          "name": "Construye el Nombre de los Mandos de Marina",
+          "description": "Juego interactivo para seleccionar palabras en orden y formar los nombres protocolarios de los funcionarios navales.",
+          "inLanguage": "es-MX",
+          "url": "https://hazeltest.com/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html",
+          "educationalLevel": "Intermediate",
+          "provider": {
+            "@type": "Organization",
+            "name": "HazelTest",
+            "url": "https://hazeltest.com/"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2 text-2xl font-extrabold text-blue-900 tracking-tight">
+                <span class="bg-blue-900 text-white px-2.5 py-1 rounded-lg text-xl">⚓</span>
+                <span>HazelTest</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="/" class="text-slate-600 hover:text-blue-900 transition">Inicio</a>
+                <a href="/marina/test.html" class="text-slate-600 hover:text-blue-900 transition">Portal Marina</a>
+                <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="text-slate-600 hover:text-blue-900 transition">Altos Mandos</a>
+                <span class="text-red-700 bg-red-50 px-3 py-1 rounded-full font-semibold border border-red-200">Construye Nombre</span>
             </div>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-slate-600 p-2 rounded-lg hover:bg-slate-100" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
-         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
-            <a href="/categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">CategorÃ­as</a>
-            <a href="/marina/test.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
-            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Funcionarios</a>
-            <a href="#" class="block px-4 py-2 text-cyan-600 bg-cyan-50 font-semibold">Construye Nombre</a>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-200 px-4 py-3 space-y-2 text-sm font-medium">
+            <a href="/" class="block py-2 text-slate-700">Inicio</a>
+            <a href="/marina/test.html" class="block py-2 text-slate-700">Portal Marina</a>
+            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="block py-2 text-slate-700">Altos Mandos</a>
+            <span class="block py-2 text-red-700 font-bold">Construye Nombre</span>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
-        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
+    <main class="container mx-auto px-4 sm:px-6 py-8 md:py-12 flex-grow max-w-4xl">
 
-            <section id="introduccion-quiz" class="mb-8 pb-6 border-b border-gray-300">
-                <div class="flex items-center justify-center mb-4">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-cyan-600 mr-3">
-                       <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.39m3.421 1.776a3 3 0 0 0 1.128-5.78l1.128-5.781a1.5 1.5 0 0 1 2.245 2.4l-1.128 5.781a3 3 0 0 0 5.78 1.128 2.25 2.25 0 0 1 2.4 2.245 4.5 4.5 0 0 0-8.4-2.245c0-.399.078-.78.22-1.128Zm0 0-1.128-5.781m5.043.025a15.994 15.994 0 0 0-1.622-3.39m-3.421 1.776a3 3 0 0 0-1.128-5.78l-1.128-5.781a1.5 1.5 0 0 0-2.245 2.4l1.128 5.781a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 0-2.4 2.245 4.5 4.5 0 0 0 8.4 2.245c0-.399-.078-.78-.22-1.128Z" />
-                     </svg>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Test: Nombres y Apellidos de Funcionarios de Marina SEMAR</h1>
+        <!-- Breadcrumb -->
+        <nav class="text-xs text-slate-500 mb-6 flex items-center space-x-2">
+            <a href="/" class="hover:text-blue-900">Inicio</a>
+            <span>/</span>
+            <a href="/marina/test.html" class="hover:text-blue-900">Marina</a>
+            <span>/</span>
+            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="hover:text-blue-900">Altos Mandos</a>
+            <span>/</span>
+            <span class="text-slate-700 font-semibold">Construye Nombre</span>
+        </nav>
+
+        <!-- Contenedor Principal del Quiz -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-200 mb-10">
+
+            <!-- Pantalla Inicial -->
+            <section id="introduccion-quiz" class="text-center py-4">
+                <span class="inline-flex items-center gap-1.5 bg-red-50 text-red-800 text-xs px-3.5 py-1 rounded-full font-bold border border-red-200 mb-4">
+                    <span>🧩</span> Puzzle Interactivo de Nombres Oficiales
+                </span>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Construye el Nombre y Apellidos de los Mandos
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+                    A partir de la fotografía oficial, grado militar y puesto asignado, selecciona las palabras en el orden exacto para armar el nombre completo de pila y ambos apellidos protocolarios.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto mb-8 text-xs font-semibold text-slate-700">
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-red-700 font-bold text-sm">6 Titulares</span>
+                        Fotos y cargos oficiales
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-emerald-700 font-bold text-sm">Palabras clave</span>
+                        Toca para añadir o quitar
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-indigo-700 font-bold text-sm">+60 XP</span>
+                        Puntaje de gamificación
+                    </div>
                 </div>
-                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
-                    Â¡Pon a prueba tu atenciÃ³n al detalle y conocimiento de los mandos! En este desafÃ­o, se te presentarÃ¡ la fotografÃ­a, el grado y el puesto de un funcionario de la Marina.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify mb-4">
-                    Tu tarea es seleccionar las palabras correctas (nombres y apellidos) de un conjunto de opciones y ordenarlas para formar el nombre completo del funcionario. Â¡No te dejes engaÃ±ar por los distractores!
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify">
-                    Este test consta de 6 preguntas. Â¿EstÃ¡s listo para el reto?
-                </p>
-                 <div class="mt-6 text-center">
-                    <button id="start-quiz-button" class="bg-cyan-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-cyan-700 transition duration-300 shadow-md">
-                        Comenzar Test
-                    </button>
-                </div>
+
+                <button id="start-quiz-button" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                    <span>Comenzar Ejercicio</span>
+                    <span>&rarr;</span>
+                </button>
             </section>
 
+            <!-- Quiz Activo -->
             <div id="quiz-activo" class="hidden">
-                <div class="flex justify-between items-center mb-6 text-sm text-gray-600">
-                    <span id="progreso">Pregunta 1 / 6</span>
-                    <span id="puntuacion">PuntuaciÃ³n: 0</span>
+                <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100 text-xs sm:text-sm font-semibold">
+                    <span id="progreso" class="text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Pregunta 1 de 6</span>
+                    <span id="puntuacion" class="text-red-900 bg-red-50 px-3 py-1 rounded-full border border-red-200">Aciertos: 0</span>
                 </div>
-                <div class="flex flex-col items-center mb-6 text-center">
-                    <img id="funcionario-imagen" src="" alt="Funcionario" class="w-32 h-32 md:w-40 md:h-40 rounded-lg object-cover border-4 border-gray-300 mb-4 bg-gray-200">
-                    <p class="text-lg text-gray-700">Identifica el nombre y apellidos del:</p>
-                     <h2 id="funcionario-grado" class="text-xl md:text-2xl font-bold text-gray-900 mt-1">- - -</h2>
-                    <p class="text-sm text-gray-500">con cargo:</p>
-                    <h3 id="funcionario-puesto" class="text-lg md:text-xl font-semibold text-gray-800 mt-1">- - -</h3>
+
+                <!-- Tarjeta de Identidad del Funcionario -->
+                <div class="flex flex-col sm:flex-row items-center gap-6 p-5 bg-slate-50 rounded-2xl border border-slate-200 mb-6">
+                    <img id="funcionario-imagen" src="" alt="Fotografía" class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover border-4 border-white shadow-md bg-white">
+                    <div class="text-center sm:text-left">
+                        <span id="funcionario-grado" class="text-xs uppercase font-bold tracking-wider text-red-700 bg-red-100/60 px-2.5 py-0.5 rounded-full">-</span>
+                        <h2 id="funcionario-puesto" class="text-lg sm:text-2xl font-bold text-slate-900 mt-1.5">-</h2>
+                        <p class="text-xs text-slate-500 mt-1">Arma su nombre y apellidos tocando las palabras de abajo en orden.</p>
+                    </div>
                 </div>
-                 <p class="text-center text-gray-600 mb-2">Nombre y apellidos construidos (clic en orden):</p>
-                 <div id="nombre-construido-display" class="w-full p-3 rounded-md mb-4 text-center text-xl font-medium text-blue-700 break-words border-2 border-dashed border-gray-300 bg-gray-50 min-h-[3rem]">
-                     <span>&nbsp;</span>
-                 </div>
-                 <div class="text-center mb-6">
-                     <button id="limpiar-btn" class="bg-yellow-500 text-white py-1 px-4 rounded-md hover:bg-yellow-600 transition duration-300 text-sm">Limpiar SelecciÃ³n</button>
-                 </div>
-                <p class="text-center text-gray-600 mb-4">Opciones:</p>
-                <div id="opciones-palabras" class="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 min-h-[6rem]">
-                     <span class="text-gray-500">Cargando...</span>
-                 </div>
-                <div id="feedback-container" class="text-center h-8 mb-6">
-                     <p id="feedback" class="text-lg font-semibold"></p>
+
+                <!-- Display de Nombre Construido -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Nombre que estás armando:</span>
+                        <button id="limpiar-btn" class="text-xs font-bold text-red-600 hover:underline">Borrar selección</button>
+                    </div>
+                    <div id="nombre-construido-display" class="min-h-[52px] p-3 rounded-2xl bg-white border-2 border-dashed border-slate-300 flex items-center justify-center font-bold text-base sm:text-lg text-slate-900 text-center">
+                        <span>&nbsp;</span>
+                    </div>
                 </div>
-                <div class="text-center space-x-4">
-                     <button id="verificar-btn" class="bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-700 transition duration-300">
-                        Verificar
+
+                <!-- Banco de Palabras Disponibles -->
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2 text-center">Banco de palabras disponibles:</span>
+                    <div id="opciones-palabras" class="flex flex-wrap gap-2 justify-center p-4 bg-slate-50 rounded-2xl border border-slate-200">
+                        <!-- Generado dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- Feedback -->
+                <div id="feedback-container" class="text-center min-h-[36px] mb-4 flex items-center justify-center">
+                    <p id="feedback" class="text-sm font-bold"></p>
+                </div>
+
+                <div class="flex justify-center gap-3">
+                    <button id="verificar-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl shadow-md transition disabled:opacity-40 disabled:cursor-not-allowed">
+                        Comprobar Nombre
                     </button>
-                    <button id="siguiente-btn" class="bg-cyan-600 text-white py-2 px-6 rounded-md hover:bg-cyan-700 transition duration-300 hidden">
-                        Siguiente Nombre
+                    <button id="siguiente-btn" class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-xl shadow-md transition hidden">
+                        Siguiente Funcionario &rarr;
                     </button>
                 </div>
             </div>
-            <div id="resultado-final" class="hidden text-center">
-                 <h2 class="text-3xl font-bold text-center text-cyan-700 mb-6">Â¡Quiz Finalizado!</h2>
-                 <p class="text-xl text-center mb-2">Tu puntuaciÃ³n final es:</p>
-                 <p id="puntuacion-final" class="text-6xl font-bold text-center text-gray-800 mb-10">0 / 6</p>
-                 <p id="frase-final" class="text-lg italic text-gray-700 mt-4 mb-8 px-4"></p>
-                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                     <button id="reiniciar-btn" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
-                         Volver a Jugar
-                     </button>
-                     <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
-                         Otros Quizzes de Funcionarios
-                     </a>
-                 </div>
+
+            <!-- Pantalla Final -->
+            <div id="resultado-final" class="hidden text-center py-6">
+                <span class="text-4xl mb-3 block">🎖️</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">¡Ejercicio de Nombres Finalizado!</h2>
+                <p class="text-slate-500 text-sm mb-4">Tu puntuación obtenida:</p>
+
+                <div class="inline-block bg-slate-50 border border-slate-200 rounded-3xl px-8 py-5 mb-4">
+                    <span id="puntuacion-final" class="text-5xl font-black text-red-600">0 / 6</span>
+                </div>
+
+                <p id="frase-final" class="text-base font-medium text-slate-700 italic max-w-md mx-auto mb-8 px-4"></p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+                    <button id="reiniciar-btn" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                        Intentar de Nuevo
+                    </button>
+                    <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                        Otros Tests de Funcionarios &rarr;
+                    </a>
+                </div>
             </div>
+
         </div>
+
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
-            <div class="mt-4 space-x-4">
-                <a href="/privacidad.html" class="hover:text-white">PolÃ­tica de Privacidad</a>
-                <a href="/terminos-y-condiciones.html" class="hover:text-white">TÃ©rminos de Servicio</a>
-                <a href="/contacto.html" class="hover:text-white">Contacto</a>
-                <a href="/mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-auto border-t border-slate-800 text-xs sm:text-sm">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <p class="font-semibold text-white">HazelTest &bull; Plataforma Educativa Interactiva</p>
+            <p class="mt-1 text-slate-400">&copy; 2026 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-slate-400">
+                <a href="/privacidad.html" class="hover:text-white transition">Privacidad y Cookies</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white transition">Términos</a>
+                <a href="/acerca-de.html" class="hover:text-white transition">Acerca de Nosotros</a>
+                <a href="/contacto.html" class="hover:text-white transition">Contacto</a>
+                <a href="/mapa-del-sitio.html" class="hover:text-white transition">Mapa del Sitio</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // --- Ruta Base para ImÃ¡genes ---
         const basePathImagenes = "imgdelos5marinas/";
 
-        // --- Datos Base de Funcionarios ---
         const funcionariosInfo = [
-            { id: 0, grado: "Almirante", nombres: ["Raymundo", "Pedro"], apellidos: ["Morales", "Ãngeles"], nombreCompleto: "Almirante Raymundo Pedro Morales Ãngeles", puesto: "Secretario de Marina", archivoBase: "raymundo-pedro-morales-angeles.webp" },
-            { id: 1, grado: "Almirante", nombres: ["JosÃ©"], apellidos: ["Barradas", "Cobos"], nombreCompleto: "Almirante JosÃ© Barradas Cobos", puesto: "Subsecretario de Marina", archivoBase: "jose-barradas-cobos.webp" },
-            { id: 2, grado: "Almirante", nombres: ["Francisco", "Guillermo"], apellidos: ["Escamilla", "CÃ¡zares"], nombreCompleto: "Almirante Francisco Guillermo Escamilla CÃ¡zares", puesto: "Oficial Mayor", archivoBase: "francisco-guillermo-escamilla-cazares.webp" },
-            { id: 3, grado: "Almirante", nombres: ["Gerardo", "de", "JesÃºs"], apellidos: ["Toledo", "GuzmÃ¡n"], nombreCompleto: "Almirante Gerardo de JesÃºs Toledo GuzmÃ¡n", puesto: "Inspector y Contralor General de Marina", archivoBase: "Gerardo-de-JesÃºs-Toledo-GuzmÃ¡n.webp" },
-            { id: 4, grado: "Almirante", nombres: ["JosÃ©", "Manuel"], apellidos: ["Salinas", "PÃ©rez"], nombreCompleto: "Almirante JosÃ© Manuel Salinas PÃ©rez", puesto: "Jefe del Estado Mayor General de la Armada", archivoBase: "JosÃ©-Manuel-Salinas-PÃ©rez.webp" },
-            { id: 5, grado: "CapitÃ¡n de Altura", nombres: ["Manuel", "Fernando"], apellidos: ["GutiÃ©rrez", "Gallardo"], nombreCompleto: "CapitÃ¡n de Altura Manuel Fernando GutiÃ©rrez Gallardo", puesto: "Coordinador General de Puertos y Marina Mercante", archivoBase: "Manuel-Fernando-GutiÃ©rrez-Gallardo.webp" }
+            { id: 0, grado: "Almirante", nombres: ["Raymundo", "Pedro"], apellidos: ["Morales", "Ángeles"], nombreCompleto: "Almirante Raymundo Pedro Morales Ángeles", puesto: "Secretario de Marina", archivoBase: "raymundo-pedro-morales-angeles.webp" },
+            { id: 1, grado: "Almirante", nombres: ["José"], apellidos: ["Barradas", "Cobos"], nombreCompleto: "Almirante José Barradas Cobos", puesto: "Subsecretario de Marina", archivoBase: "jose-barradas-cobos.webp" },
+            { id: 2, grado: "Almirante", nombres: ["Francisco", "Guillermo"], apellidos: ["Escamilla", "Cázares"], nombreCompleto: "Almirante Francisco Guillermo Escamilla Cázares", puesto: "Oficial Mayor", archivoBase: "francisco-guillermo-escamilla-cazares.webp" },
+            { id: 3, grado: "Almirante", nombres: ["Gerardo", "de", "Jesús"], apellidos: ["Toledo", "Guzmán"], nombreCompleto: "Almirante Gerardo de Jesús Toledo Guzmán", puesto: "Inspector y Contralor General de Marina", archivoBase: "Gerardo-de-Jesús-Toledo-Guzmán.webp" },
+            { id: 4, grado: "Almirante", nombres: ["José", "Manuel"], apellidos: ["Salinas", "Pérez"], nombreCompleto: "Almirante José Manuel Salinas Pérez", puesto: "Jefe del Estado Mayor General de la Armada", archivoBase: "José-Manuel-Salinas-Pérez.webp" },
+            { id: 5, grado: "Capitán de Altura", nombres: ["Manuel", "Fernando"], apellidos: ["Gutiérrez", "Gallardo"], nombreCompleto: "Capitán de Altura Manuel Fernando Gutiérrez Gallardo", puesto: "Coordinador General de Puertos y Marina Mercante", archivoBase: "Manuel-Fernando-Gutiérrez-Gallardo.webp" }
         ];
 
-        // --- Pool de todas las partes vÃ¡lidas ---
-        const todasLasPartesValidas = [...new Set(funcionariosInfo.flatMap(f => [...f.nombres, ...f.apellidos]))];
-        const poolNombresApellidosDe = [...new Set(todasLasPartesValidas)];
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
 
-        // --- Generar Datos del Quiz ---
+        const todasLasPartesValidas = [...new Set(funcionariosInfo.flatMap(f => [...f.nombres, ...f.apellidos]))];
+
         let quizData = [];
         try {
             quizData = funcionariosInfo.map((infoCorrecta) => {
                 const partesCorrectas = [...infoCorrecta.nombres, ...infoCorrecta.apellidos];
                 const nombreCompletoVerificar = partesCorrectas.join(' ');
-                let distractoresPool = poolNombresApellidosDe.filter(p => !partesCorrectas.includes(p));
+                let distractoresPool = todasLasPartesValidas.filter(p => !partesCorrectas.includes(p));
                 shuffleArray(distractoresPool);
-                const numeroDistractores = 16 - partesCorrectas.length;
+                const numeroDistractores = 12 - partesCorrectas.length;
                 const distractoresSeleccionados = distractoresPool.slice(0, numeroDistractores);
                 const poolOpciones = [...partesCorrectas, ...distractoresSeleccionados];
-                while(poolOpciones.length > 16) { poolOpciones.pop(); }
-                let i = 0;
-                while(poolOpciones.length < 16 && i < poolNombresApellidosDe.length) { if(!poolOpciones.includes(poolNombresApellidosDe[i])) { poolOpciones.push(poolNombresApellidosDe[i]); } i++; }
                 shuffleArray(poolOpciones);
 
                 return {
-                    grado: infoCorrecta.grado, puesto: infoCorrecta.puesto,
+                    grado: infoCorrecta.grado,
+                    puesto: infoCorrecta.puesto,
                     partesNombreCorrectas: partesCorrectas,
                     nombreCompletoVerificar: nombreCompletoVerificar,
                     imagen: basePathImagenes + infoCorrecta.archivoBase,
                     poolOpciones: poolOpciones
                 };
             });
-        } catch(error) { console.error("Error generando quizData:", error); }
+        } catch(error) {
+            console.error("Error generando quizData:", error);
+        }
 
-         // --- Frases de Resultado ---
         const frasesResultado = {
-            alta: [ "Â¡Memoria de acero! Reconoces los nombres clave.", "Â¡Excelente! Listo para pasar lista sin errores.", "Â¡Dominio total! Puedes escribir la orden del dÃ­a." ],
-            media: [ "Â¡No estÃ¡ mal! Identificas a la mayorÃ­a, sigue asÃ­.", "Aprobado, pero un repaso a los nombres no vendrÃ­a mal.", "Vas por buen camino, Â¡casi los tienes todos!" ],
-            baja: [ "Â¡Necesitas estudiar mÃ¡s los nombres! A repasar.", "Â¿Confundiendo los apellidos? Â¡MÃ¡s atenciÃ³n!", "Parece que algunos nombres se te escapan. Â¡Ãnimo!" ]
+            alta: [
+                "¡Memoria de acero! Armas los nombres y apellidos sin titubear.",
+                "¡Excelente ortografía naval! Nombres completos y precisos.",
+                "¡Dominio absoluto de la nomenclatura de mandos!"
+            ],
+            media: [
+                "¡Buen trabajo! Cuidado con el orden de los segundos nombres y apellidos.",
+                "Bien armado. Repasa especialmente a los titulares con nombres compuestos.",
+                "Sólido desempeño, ¡casi alcanzas la perfección!"
+            ],
+            baja: [
+                "Te recomendamos estudiar el orden de nombres propios y apellidos paterno/materno.",
+                "Revisa la lista de almirantes en el portal central y vuelve a practicar.",
+                "¡Ánimo! Con una sesión de repaso dominarás los nombres sin dudar."
+            ]
         };
 
-        // --- Elementos del DOM ---
         const introduccionQuizContainer = document.getElementById('introduccion-quiz');
         const startQuizButton = document.getElementById('start-quiz-button');
         const quizActivoContainer = document.getElementById('quiz-activo');
@@ -304,7 +376,6 @@
         const limpiarBtn = document.getElementById('limpiar-btn');
         const verificarBtn = document.getElementById('verificar-btn');
         const feedbackElement = document.getElementById('feedback');
-        const feedbackContainer = document.getElementById('feedback-container');
         const siguienteBtn = document.getElementById('siguiente-btn');
         const progresoElement = document.getElementById('progreso');
         const puntuacionElement = document.getElementById('puntuacion');
@@ -312,7 +383,6 @@
         const fraseFinalElement = document.getElementById('frase-final');
         const reiniciarBtn = document.getElementById('reiniciar-btn');
 
-        // --- Estado del Quiz ---
         let currentQuestionIndex = 0;
         let score = 0;
         let nombreConstruidoArray = [];
@@ -320,130 +390,173 @@
         let respuestaVerificada = false;
         let randomizedQuizData = [];
 
-        // --- Funciones ---
-        function shuffleArray(array) { /* ... */ }
-        function cargarPregunta() { /* ... */ }
-        function toggleSeleccionPalabra(apellidoButton) { /* ... */ }
-        function actualizarNombreConstruidoDisplay() { /* ... */ }
-        function limpiarSeleccion() { /* ... */ }
-        function verificarRespuesta() { /* ... */ }
-        function siguientePregunta() { /* ... */ }
-        function mostrarResultados() { /* ... */ }
-        function iniciarQuiz() { /* ... */ }
-
-        // --- ReasignaciÃ³n de funciones ---
-         function shuffleArray(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
-         function cargarPregunta() {
-            if (!randomizedQuizData || currentQuestionIndex >= randomizedQuizData.length) { mostrarResultados(); return; }
-            respuestaVerificada = false; nombreConstruidoArray = [];
+        function cargarPregunta() {
+            if (!randomizedQuizData || currentQuestionIndex >= randomizedQuizData.length) {
+                mostrarResultados();
+                return;
+            }
+            respuestaVerificada = false;
+            nombreConstruidoArray = [];
             const preguntaActual = randomizedQuizData[currentQuestionIndex];
 
-            if(gradoElement) gradoElement.textContent = preguntaActual.grado;
-            if(puestoElement) puestoElement.textContent = preguntaActual.puesto;
-            if(imagenElement) {
+            if (gradoElement) gradoElement.textContent = preguntaActual.grado;
+            if (puestoElement) puestoElement.textContent = preguntaActual.puesto;
+            if (imagenElement) {
                 imagenElement.src = preguntaActual.imagen;
-                imagenElement.alt = `Funcionario (${preguntaActual.grado})`;
-                imagenElement.onerror = () => { imagenElement.alt = 'Error img'; imagenElement.src='https://placehold.co/160x160/cccccc/ffffff?text=Error'; imagenElement.classList.add('bg-gray-300');};
+                imagenElement.alt = `Foto de ${preguntaActual.grado}`;
             }
 
-            if(opcionesContainer) {
-                opcionesContainer.innerHTML = ''; botonesOpciones = [];
-                try {
-                    const oB = [...preguntaActual.poolOpciones]; shuffleArray(oB);
-                    oB.forEach(p => {
-                        const b = document.createElement('button'); b.textContent = p; b.classList.add('palabra-opcion', 'px-3', 'py-1', 'border-2', 'border-gray-400', 'rounded-md', 'bg-white', 'text-gray-700', 'font-medium', 'text-sm'); b.dataset.palabra = p;
-                        b.addEventListener('click', () => toggleSeleccionPalabra(b)); opcionesContainer.appendChild(b); botonesOpciones.push(b);
-                    });
-                } catch(e) { console.error("Error creando botones:", e); opcionesContainer.innerHTML = '<p class="text-red-500">Error al crear opciones</p>'; }
+            if (opcionesContainer) {
+                opcionesContainer.innerHTML = '';
+                botonesOpciones = [];
+                const oB = [...preguntaActual.poolOpciones];
+                shuffleArray(oB);
+                oB.forEach(p => {
+                    const b = document.createElement('button');
+                    b.textContent = p;
+                    b.classList.add('palabra-opcion', 'px-3.5', 'py-1.5', 'border', 'border-slate-300', 'rounded-xl', 'bg-white', 'text-slate-800', 'font-semibold', 'text-xs', 'sm:text-sm', 'shadow-sm');
+                    b.dataset.palabra = p;
+                    b.addEventListener('click', () => toggleSeleccionPalabra(b));
+                    opcionesContainer.appendChild(b);
+                    botonesOpciones.push(b);
+                });
             }
 
-            if(feedbackElement) feedbackElement.textContent = '';
-            if(feedbackContainer) feedbackContainer.className = 'text-center h-8 mb-4';
-            if(siguienteBtn) siguienteBtn.classList.add('hidden');
-            if(verificarBtn) { verificarBtn.classList.remove('hidden'); verificarBtn.disabled = true; }
-            if(limpiarBtn) limpiarBtn.disabled = false;
+            if (feedbackElement) feedbackElement.textContent = '';
+            if (siguienteBtn) siguienteBtn.classList.add('hidden');
+            if (verificarBtn) {
+                verificarBtn.classList.remove('hidden');
+                verificarBtn.disabled = true;
+            }
+            if (limpiarBtn) limpiarBtn.disabled = false;
             actualizarNombreConstruidoDisplay();
-            if(progresoElement) progresoElement.textContent = `Pregunta ${currentQuestionIndex + 1} / ${quizData.length}`;
-            if(puntuacionElement) puntuacionElement.textContent = `PuntuaciÃ³n: ${score}`;
-            if(nombreConstruidoDisplay) { nombreConstruidoDisplay.classList.remove('border-solid','border-green-500','border-red-500','border-2'); nombreConstruidoDisplay.classList.add('border-dashed','border-gray-300'); }
+            if (progresoElement) progresoElement.textContent = `Pregunta ${currentQuestionIndex + 1} de ${quizData.length}`;
+            if (puntuacionElement) puntuacionElement.textContent = `Aciertos: ${score}`;
+            if (nombreConstruidoDisplay) {
+                nombreConstruidoDisplay.className = 'min-h-[52px] p-3 rounded-2xl bg-white border-2 border-dashed border-slate-300 flex items-center justify-center font-bold text-base sm:text-lg text-slate-900 text-center';
+            }
         }
+
         function toggleSeleccionPalabra(bS) {
-            if (respuestaVerificada) return; const p = bS.dataset.palabra;
+            if (respuestaVerificada) return;
+            const p = bS.dataset.palabra;
             if (bS.classList.contains('disabled')) {
                 const iR = nombreConstruidoArray.lastIndexOf(p);
-                if (iR > -1) { nombreConstruidoArray.splice(iR, 1); bS.classList.remove('disabled'); actualizarNombreConstruidoDisplay(); }
+                if (iR > -1) {
+                    nombreConstruidoArray.splice(iR, 1);
+                    bS.classList.remove('disabled');
+                    actualizarNombreConstruidoDisplay();
+                }
             } else {
-                nombreConstruidoArray.push(p); bS.classList.add('disabled'); actualizarNombreConstruidoDisplay();
+                nombreConstruidoArray.push(p);
+                bS.classList.add('disabled');
+                actualizarNombreConstruidoDisplay();
             }
         }
+
         function actualizarNombreConstruidoDisplay() {
-             if (!nombreConstruidoDisplay) return;
-             if (nombreConstruidoArray.length === 0) { nombreConstruidoDisplay.innerHTML = '<span>&nbsp;</span>'; }
-             else { nombreConstruidoDisplay.textContent = nombreConstruidoArray.join(' '); }
-             if(verificarBtn) verificarBtn.disabled = nombreConstruidoArray.length === 0;
+            if (!nombreConstruidoDisplay) return;
+            if (nombreConstruidoArray.length === 0) {
+                nombreConstruidoDisplay.innerHTML = '<span class="text-slate-400 font-normal text-sm">Toca las palabras para agregarlas aquí</span>';
+            } else {
+                nombreConstruidoDisplay.textContent = nombreConstruidoArray.join(' ');
+            }
+            if (verificarBtn) verificarBtn.disabled = nombreConstruidoArray.length === 0;
         }
+
         function limpiarSeleccion() {
-             if (respuestaVerificada) return; nombreConstruidoArray = []; actualizarNombreConstruidoDisplay();
-             botonesOpciones.forEach(b => b.classList.remove('disabled'));
+            if (respuestaVerificada) return;
+            nombreConstruidoArray = [];
+            actualizarNombreConstruidoDisplay();
+            botonesOpciones.forEach(b => b.classList.remove('disabled'));
         }
+
         function verificarRespuesta() {
-            if (respuestaVerificada || !randomizedQuizData) return; respuestaVerificada = true;
-            const pA = randomizedQuizData[currentQuestionIndex]; if (!pA) return;
-            const nC = nombreConstruidoArray.join(' '); const nCV = pA.nombreCompletoVerificar; const eC = (nC === nCV);
+            if (respuestaVerificada || !randomizedQuizData) return;
+            respuestaVerificada = true;
+            const pA = randomizedQuizData[currentQuestionIndex];
+            const nC = nombreConstruidoArray.join(' ');
+            const nCV = pA.nombreCompletoVerificar;
+            const eC = (nC === nCV);
+
             botonesOpciones.forEach(b => b.classList.add('disabled'));
-            if(limpiarBtn) limpiarBtn.disabled = true;
-            if(verificarBtn) verificarBtn.disabled = true;
+            if (limpiarBtn) limpiarBtn.disabled = true;
+            if (verificarBtn) verificarBtn.disabled = true;
 
-            if(nombreConstruidoDisplay){ nombreConstruidoDisplay.classList.remove('border-dashed','border-gray-300'); nombreConstruidoDisplay.classList.add('border-solid','border-2'); }
-
-            if (feedbackElement && feedbackContainer) {
+            if (feedbackElement) {
                 if (eC) {
-                    feedbackElement.textContent = 'Â¡Correcto!'; feedbackContainer.className = 'text-center h-8 mb-4 text-green-600 font-semibold'; score++;
-                    if(puntuacionElement) puntuacionElement.textContent = `PuntuaciÃ³n: ${score}`;
-                    if(nombreConstruidoDisplay) nombreConstruidoDisplay.classList.add('border-green-500');
+                    feedbackElement.textContent = '¡Correcto! Nombre armado a la perfección.';
+                    feedbackElement.className = 'text-sm font-bold text-emerald-700 bg-emerald-50 px-4 py-1 rounded-full border border-emerald-200 inline-block';
+                    if (nombreConstruidoDisplay) {
+                        nombreConstruidoDisplay.className = 'min-h-[52px] p-3 rounded-2xl bg-emerald-50 border-2 border-emerald-500 text-emerald-950 flex items-center justify-center font-bold text-base sm:text-lg text-center';
+                    }
+                    score++;
+                    if (puntuacionElement) puntuacionElement.textContent = `Aciertos: ${score}`;
                 } else {
-                    feedbackElement.innerHTML = `Incorrecto. El nombre correcto es: <br><span class="font-bold">${nCV}</span>`; feedbackContainer.className = 'text-center h-auto mb-4 text-red-600 font-semibold';
-                    if(nombreConstruidoDisplay) nombreConstruidoDisplay.classList.add('border-red-500');
+                    feedbackElement.innerHTML = `Incorrecto. El nombre correcto es: <span class="font-extrabold">${nCV}</span>`;
+                    feedbackElement.className = 'text-sm font-bold text-red-700 bg-red-50 px-4 py-1 rounded-full border border-red-200 inline-block';
+                    if (nombreConstruidoDisplay) {
+                        nombreConstruidoDisplay.className = 'min-h-[52px] p-3 rounded-2xl bg-red-50 border-2 border-red-500 text-red-950 flex items-center justify-center font-bold text-base sm:text-lg text-center';
+                    }
                 }
             }
-            if(verificarBtn) verificarBtn.classList.add('hidden');
-            if(siguienteBtn) siguienteBtn.classList.remove('hidden');
+
+            if (verificarBtn) verificarBtn.classList.add('hidden');
+            if (siguienteBtn) siguienteBtn.classList.remove('hidden');
         }
-        function siguientePregunta() { currentQuestionIndex++; cargarPregunta(); }
-        function mostrarResultados() {
-            if(quizActivoContainer) quizActivoContainer.classList.add('hidden'); if(!resultadoFinalContainer) return;
-            let cP; const pM = quizData.length;
-             if (score >= pM * 0.8) { cP = 'alta'; } else if (score >= pM * 0.5) { cP = 'media'; } else { cP = 'baja'; }
-            const fC = frasesResultado[cP]; const fS = fC ? fC[Math.floor(Math.random() * fC.length)] : "Â¡Gracias por participar!";
-            if(puntuacionFinalElement) puntuacionFinalElement.textContent = `${score} / ${pM}`;
-            if(fraseFinalElement) fraseFinalElement.textContent = fS;
-            resultadoFinalContainer.classList.remove('hidden');
-        }
-        function iniciarQuiz() {
-             if (!quizData || quizData.length === 0) { console.error("Datos del quiz no disponibles."); return; }
-            randomizedQuizData = [...quizData]; shuffleArray(randomizedQuizData); currentQuestionIndex = 0; score = 0;
-            if(introduccionQuizContainer) introduccionQuizContainer.classList.add('hidden');
-            if(quizActivoContainer) quizActivoContainer.classList.remove('hidden');
-            if(resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
+
+        function siguientePregunta() {
+            currentQuestionIndex++;
             cargarPregunta();
         }
 
-        // --- InicializaciÃ³n y Event Listeners ---
-        if(startQuizButton) startQuizButton.addEventListener('click', iniciarQuiz);
-        if(verificarBtn) verificarBtn.addEventListener('click', verificarRespuesta);
-        if(limpiarBtn) limpiarBtn.addEventListener('click', limpiarSeleccion);
-        if(siguienteBtn) siguienteBtn.addEventListener('click', siguientePregunta);
-        if(reiniciarBtn) reiniciarBtn.addEventListener('click', () => {
-            if(introduccionQuizContainer) introduccionQuizContainer.classList.remove('hidden');
+        function mostrarResultados() {
+            if (quizActivoContainer) quizActivoContainer.classList.add('hidden');
+            const pM = quizData.length;
+            let cP;
+            if (score >= pM * 0.8) { cP = 'alta'; }
+            else if (score >= pM * 0.5) { cP = 'media'; }
+            else { cP = 'baja'; }
+
+            const fC = frasesResultado[cP];
+            const fS = fC ? fC[Math.floor(Math.random() * fC.length)] : "¡Ejercicio finalizado!";
+            if (puntuacionFinalElement) puntuacionFinalElement.textContent = `${score} / ${pM}`;
+            if (fraseFinalElement) fraseFinalElement.textContent = fS;
+            if (resultadoFinalContainer) resultadoFinalContainer.classList.remove('hidden');
+
+            if (window.HazelTestApp) {
+                window.HazelTestApp.addXP(score * 12 + 25);
+            }
+        }
+
+        function iniciarQuiz() {
+            if (!quizData || quizData.length === 0) return;
+            randomizedQuizData = [...quizData];
+            shuffleArray(randomizedQuizData);
+            currentQuestionIndex = 0;
+            score = 0;
+            if (introduccionQuizContainer) introduccionQuizContainer.classList.add('hidden');
+            if (quizActivoContainer) quizActivoContainer.classList.remove('hidden');
+            if (resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
+            cargarPregunta();
+        }
+
+        if (startQuizButton) startQuizButton.addEventListener('click', iniciarQuiz);
+        if (verificarBtn) verificarBtn.addEventListener('click', verificarRespuesta);
+        if (limpiarBtn) limpiarBtn.addEventListener('click', limpiarSeleccion);
+        if (siguienteBtn) siguienteBtn.addEventListener('click', siguientePregunta);
+        if (reiniciarBtn) reiniciarBtn.addEventListener('click', () => {
+            if (introduccionQuizContainer) introduccionQuizContainer.classList.remove('hidden');
             iniciarQuiz();
         });
 
-        // --- Funcionalidad MenÃº MÃ³vil ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
-
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
     </script>
-
 </body>
 </html>

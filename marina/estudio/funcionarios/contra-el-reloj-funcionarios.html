@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Contra Reloj: Funcionarios de Marina SEMAR | HazelTest</title>
+    <title>Test Contra Reloj: Mandos de la Secretaría de Marina | HazelTest</title>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Google tag (gtag.js) -->
@@ -16,10 +16,10 @@
     </script>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Â¿QuÃ© tan rÃ¡pido reconoces a los mandos navales? Responde 10 preguntas contra reloj sobre funcionarios y cargos de la SecretarÃ­a de Marina en HazelTest.">
-    <meta name="keywords" content="test contra reloj marina, funcionarios semar tiempo limite, quiz naval rapido">
-    <!-- Canonical Link Actualizado a la nueva ruta -->
+    <meta name="description" content="¿Qué tan rápido reconoces a los mandos navales? Responde 10 preguntas contra reloj sobre funcionarios y cargos de la Secretaría de Marina en HazelTest.">
+    <meta name="keywords" content="test contra reloj marina semar, juego agilidad mental mandos navales, almirantes armada mexico velocidad">
     <link rel="canonical" href="https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html">
+
     <!-- Geo & Localization Tags -->
     <meta name="geo.region" content="MX">
     <meta name="geo.placename" content="Mexico">
@@ -29,7 +29,7 @@
     <link rel="alternate" hreflang="es" href="https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html">
     <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html">
     <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
@@ -37,246 +37,392 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html">
-    <meta property="og:title" content="Test Contra Reloj: Funcionarios de Marina SEMAR | HazelTest">
-    <meta property="og:description" content="Â¿QuÃ© tan rÃ¡pido reconoces a los mandos navales? Responde 10 preguntas contra reloj sobre funcionarios y cargos de la SecretarÃ­a de Marina en HazelTest.">
+    <meta property="og:title" content="Test Contra Reloj: Mandos de la Secretaría de Marina | HazelTest">
+    <meta property="og:description" content="Desafío cronometrado de 10 preguntas sobre almirantes y cargos de SEMAR. ¿Podrás superar la prueba antes de que se agote el tiempo?">
     <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html">
-    <meta property="twitter:title" content="Test Contra Reloj sobre los Funcionarios de Marina - HazelTest">
-    <meta property="twitter:description" content="Â¿QuÃ© tan rÃ¡pido puedes identificar datos clave de los Funcionarios de Marina? Â¡DescÃºbrelo con este test cronometrado!">
+    <meta property="twitter:title" content="Desafío Contra Reloj SEMAR - HazelTest">
+    <meta property="twitter:description" content="15 segundos por pregunta para poner a prueba tu memoria operativa sobre los mandos navales.">
     <meta property="twitter:image" content="https://hazeltest.com/hazeltest-og.webp">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        #timer-bar-container { height: 10px; background-color: #E5E7EB; border-radius: 5px; overflow: hidden; margin-bottom: 1rem; }
-        #timer-bar { height: 100%; width: 100%; background-color: #22C55E; transition: width 0.1s linear, background-color 0.5s ease; border-radius: 5px; }
-        #timer-bar.low-time { background-color: #FACC15; }
-        #timer-bar.very-low-time { background-color: #EF4444; }
-        .opcion-btn { cursor: pointer; text-align: center; transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease; }
-        .opcion-btn:hover:not(.disabled) { background-color: #D1D5DB; border-color: #6B7280; transform: translateY(-2px); }
-        .opcion-btn.disabled { cursor: not-allowed; opacity: 0.7; }
-        .opcion-btn.correcta.disabled { background-color: #A7F3D0; border-color: #10B981; color: #065F46; opacity: 1; font-weight: 600; }
-        .opcion-btn.incorrecta.disabled { background-color: #FECACA; border-color: #F87171; color: #991B1B; opacity: 1; text-decoration: line-through; }
-        .hidden { display: none; }
-    </style>
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://hazeltest.com/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Marina",
-                    "item": "https://hazeltest.com/marina/test.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Test Contra Reloj sobre los Funcionarios de Marina",
-                    "item": "https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html"
-                }
-            ]
-        },
-        {
-            "@type": "Quiz",
-            "name": "Test Contra Reloj sobre los Funcionarios de Marina",
-            "description": "Pon a prueba tu rapidez y conocimiento sobre los Funcionarios de la Marina con nuestro Test Contra Reloj en HazelTest. Responde 10 preguntas variadas en tiempo lÃ­mite.",
-            "inLanguage": "es-MX",
-            "url": "https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html",
-            "educationalLevel": "Intermediate",
-            "about": {
-                "@type": "Thing",
-                "name": "Cultura Naval y SecretarÃ­a de Marina"
-            },
-            "provider": {
-                "@type": "Organization",
-                "name": "HazelTest",
-                "url": "https://hazeltest.com/"
-            }
-        }
-    ]
-}
-    </script>
-    <!-- PWA, Dark Mode & Gamification Core -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#4F46E5">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/hazeltest-theme.css">
     <script src="/hazeltest-app.js?v=2.0"></script>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
-</head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Enlace sube 3 niveles a la raÃ­z -->
-            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="/" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
-                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">CategorÃ­as</a>
-                <!-- Enlace sube 2 niveles a la pÃ¡gina de Marina -->
-                <a href="/marina/test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
-                <!-- Enlace Corregido (dentro de la misma carpeta) -->
-                <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Funcionarios</a>
-                <span class="text-red-600 font-semibold">Contra Reloj</span>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Outfit', sans-serif; }
+        .opcion-btn {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-align: left;
+        }
+        .opcion-btn:hover:not(.disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px -2px rgba(30, 58, 138, 0.12);
+            border-color: #ef4444 !important;
+            background-color: #fef2f2;
+        }
+        .opcion-btn.disabled {
+            cursor: default;
+            pointer-events: none;
+        }
+        .opcion-btn.correcta {
+            background-color: #ecfdf5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            box-shadow: 0 0 0 2px #10b981 !important;
+        }
+        .opcion-btn.incorrecta {
+            background-color: #fef2f2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            box-shadow: 0 0 0 2px #ef4444 !important;
+        }
+        #timer-bar {
+            transition: width 1s linear, background-color 0.3s ease;
+        }
+        #timer-bar.low-time {
+            background-color: #f59e0b;
+        }
+        #timer-bar.very-low-time {
+            background-color: #ef4444;
+            animation: pulse-timer 0.5s infinite alternate;
+        }
+        @keyframes pulse-timer {
+            from { opacity: 1; }
+            to { opacity: 0.6; }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://hazeltest.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Marina",
+              "item": "https://hazeltest.com/marina/test.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Altos Mandos",
+              "item": "https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Contra el Reloj",
+              "item": "https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html"
+            }
+          ]
+        },
+        {
+          "@type": "Quiz",
+          "name": "Test Contra Reloj: Mandos de la Secretaría de Marina",
+          "description": "Desafío de agilidad y memoria rápida con 15 segundos por pregunta sobre funcionarios y cargos navales.",
+          "inLanguage": "es-MX",
+          "url": "https://hazeltest.com/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html",
+          "educationalLevel": "Intermediate",
+          "about": {
+            "@type": "Thing",
+            "name": "Doctrina y Mandos Navales SEMAR"
+          },
+          "provider": {
+            "@type": "Organization",
+            "name": "HazelTest",
+            "url": "https://hazeltest.com/"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2 text-2xl font-extrabold text-blue-900 tracking-tight">
+                <span class="bg-blue-900 text-white px-2.5 py-1 rounded-lg text-xl">⚓</span>
+                <span>HazelTest</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="/" class="text-slate-600 hover:text-blue-900 transition">Inicio</a>
+                <a href="/marina/test.html" class="text-slate-600 hover:text-blue-900 transition">Portal Marina</a>
+                <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="text-slate-600 hover:text-blue-900 transition">Altos Mandos</a>
+                <span class="text-red-700 bg-red-50 px-3 py-1 rounded-full font-semibold border border-red-200">Contra el Reloj</span>
             </div>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-slate-600 p-2 rounded-lg hover:bg-slate-100" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
-         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
-            <a href="/categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">CategorÃ­as</a>
-            <a href="/marina/test.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
-            <!-- Enlace Corregido -->
-            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Funcionarios</a>
-            <span class="block px-4 py-2 text-red-600 bg-red-50 font-semibold">Contra Reloj</span>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-200 px-4 py-3 space-y-2 text-sm font-medium">
+            <a href="/" class="block py-2 text-slate-700">Inicio</a>
+            <a href="/marina/test.html" class="block py-2 text-slate-700">Portal Marina</a>
+            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="block py-2 text-slate-700">Altos Mandos</a>
+            <span class="block py-2 text-red-700 font-bold">Contra el Reloj</span>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
-        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
+    <main class="container mx-auto px-4 sm:px-6 py-8 md:py-12 flex-grow max-w-4xl">
 
-            <section id="introduccion-quiz" class="mb-8 pb-6 border-b border-gray-300">
-                <div class="flex items-center justify-center mb-4">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-red-600 mr-3">
-                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                     </svg>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Test Contra Reloj: Funcionarios de la SecretarÃ­a de Marina</h1>
+        <!-- Breadcrumb -->
+        <nav class="text-xs text-slate-500 mb-6 flex items-center space-x-2">
+            <a href="/" class="hover:text-blue-900">Inicio</a>
+            <span>/</span>
+            <a href="/marina/test.html" class="hover:text-blue-900">Marina</a>
+            <span>/</span>
+            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="hover:text-blue-900">Altos Mandos</a>
+            <span>/</span>
+            <span class="text-slate-700 font-semibold">Contra el Reloj</span>
+        </nav>
+
+        <!-- Contenedor Principal del Quiz -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-200 mb-10">
+
+            <!-- Pantalla Inicial -->
+            <section id="introduccion-quiz" class="text-center py-4">
+                <span class="inline-flex items-center gap-1.5 bg-red-50 text-red-800 text-xs px-3.5 py-1 rounded-full font-bold border border-red-200 mb-4">
+                    <span>⚡</span> Desafío de Velocidad y Reflejos
+                </span>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Test Contra Reloj: Funcionarios de Marina SEMAR
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+                    En situaciones operativas y evaluaciones militares, la agilidad mental y la toma de decisiones bajo presión son determinantes. Dispondrás de <strong>15 segundos por reactivo</strong> para responder 10 preguntas aleatorias sobre nombres, apellidos y cargos.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto mb-8 text-xs font-semibold text-slate-700">
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-red-700 font-bold text-sm">15 Segundos</span>
+                        Por cada pregunta
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-blue-700 font-bold text-sm">10 Reactivos</span>
+                        Preguntas aleatorias
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-indigo-700 font-bold text-sm">+75 XP</span>
+                        Puntaje de gamificación
+                    </div>
                 </div>
-                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
-                    Â¡Bienvenido al desafÃ­o Contra Reloj! Esta prueba estÃ¡ diseÃ±ada para medir tu rapidez y precisiÃ³n al recordar informaciÃ³n clave sobre los Funcionarios de la Marina. La agilidad mental es crucial, y este test te ayudarÃ¡ a evaluarla.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify mb-4">
-                    Se te presentarÃ¡n 10 preguntas seleccionadas al azar sobre nombres, apellidos y cargos. Para cada pregunta, tendrÃ¡s un lÃ­mite de <strong>15 segundos</strong> para elegir la respuesta correcta entre varias opciones.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify">
-                    Presta atenciÃ³n, concÃ©ntrate y demuestra quÃ© tan "fibra" eres. Â¡Mucha suerte!
-                </p>
-                 <div class="mt-6 text-center">
-                    <button id="start-quiz-button" class="bg-red-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-red-700 transition duration-300 shadow-md">
-                        Comenzar Test
-                    </button>
-                </div>
+
+                <button id="start-quiz-button" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                    <span>¡Iniciar Desafío Cronometrado!</span>
+                    <span>&rarr;</span>
+                </button>
             </section>
 
+            <!-- Quiz Activo -->
             <div id="quiz-activo" class="hidden">
-                <div id="timer-bar-container"><div id="timer-bar"></div></div>
-                <div class="text-center text-sm font-medium text-gray-600 mb-4">Tiempo restante: <span id="timer-text">15</span>s</div>
-                <div class="flex justify-between items-center mb-6 text-sm text-gray-600">
-                    <span id="progreso">Pregunta 1 / 10</span>
-                    <span id="puntuacion">PuntuaciÃ³n: 0</span>
+                <!-- Barra de Progreso y Timer -->
+                <div class="flex justify-between items-center mb-3 text-xs sm:text-sm font-semibold">
+                    <span id="progreso" class="text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Pregunta 1 de 10</span>
+                    <div class="flex items-center gap-2 font-mono font-bold text-slate-700 bg-slate-100 px-3 py-1 rounded-full">
+                        <span>⏱️</span>
+                        <span id="timer-text" class="text-base text-red-600">15</span>
+                        <span class="text-xs text-slate-400">seg</span>
+                    </div>
+                    <span id="puntuacion" class="text-blue-900 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">Aciertos: 0</span>
                 </div>
-                <div class="mb-8 text-center">
-                     <p id="pregunta-texto" class="text-xl md:text-2xl font-semibold text-gray-800">- - -</p>
+
+                <!-- Barra Gráfica de Tiempo -->
+                <div class="w-full bg-slate-100 rounded-full h-2 mb-8 overflow-hidden">
+                    <div id="timer-bar" class="bg-blue-600 h-2 rounded-full w-full"></div>
                 </div>
-                <div id="opciones-respuesta" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <span class="text-gray-500 sm:col-span-2 text-center">Cargando opciones...</span>
+
+                <!-- Pregunta -->
+                <div class="text-center mb-8">
+                    <h2 id="pregunta-texto" class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">- - -</h2>
                 </div>
-                 <div id="feedback-container" class="text-center h-6 mb-4">
-                     <p id="feedback" class="text-base font-semibold"></p>
+
+                <!-- Opciones -->
+                <div id="opciones-respuesta" class="space-y-3 mb-6 max-w-xl mx-auto">
+                    <div class="text-center text-slate-400 py-6">Cargando opciones...</div>
+                </div>
+
+                <!-- Feedback -->
+                <div id="feedback-container" class="text-center min-h-[32px] mb-2 flex items-center justify-center">
+                    <p id="feedback" class="text-sm font-bold"></p>
                 </div>
             </div>
-            <div id="resultado-final" class="hidden text-center">
-                 <h2 class="text-3xl font-bold text-center text-red-700 mb-6">Â¡Tiempo Terminado!</h2>
-                 <p class="text-xl text-center mb-2">Tu puntuaciÃ³n final es:</p>
-                 <p id="puntuacion-final" class="text-6xl font-bold text-center text-gray-800 mb-4">0 / 10</p>
-                 <p id="frase-final" class="text-lg italic text-gray-700 mt-4 mb-8 px-4"></p>
-                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                     <button id="reiniciar-btn" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
-                         Volver a Jugar
-                     </button>
-                     <!-- Enlace Corregido -->
-                     <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
-                         Otros Quizzes de Funcionarios
-                     </a>
-                 </div>
+
+            <!-- Pantalla Final -->
+            <div id="resultado-final" class="hidden text-center py-6">
+                <span class="text-4xl mb-3 block">⏱️</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">¡Desafío Finalizado!</h2>
+                <p class="text-slate-500 text-sm mb-4">Tu puntuación contra reloj:</p>
+
+                <div class="inline-block bg-slate-50 border border-slate-200 rounded-3xl px-8 py-5 mb-4">
+                    <span id="puntuacion-final" class="text-5xl font-black text-red-600">0 / 10</span>
+                </div>
+
+                <p id="frase-final" class="text-base font-medium text-slate-700 italic max-w-md mx-auto mb-8 px-4"></p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+                    <button id="reiniciar-btn" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                        Intentar Otro Desafío
+                    </button>
+                    <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                        Otros Modos de Práctica &rarr;
+                    </a>
+                </div>
             </div>
+
         </div>
+
+        <!-- Guía de Estudio y Estrategia -->
+        <section class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm mb-10">
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-4 flex items-center gap-2">
+                <span>🧠</span> Consejos para Entrenar la Memoria Operativa
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm text-slate-600 leading-relaxed">
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 mb-1">Mnemotecnia de Apellidos</h3>
+                    <p>
+                        Asocia palabras clave con los apellidos de los almirantes: <em>Morales Ángeles</em> (Secretario), <em>Barradas Cobos</em> (Subsecretario), <em>Escamilla Cázares</em> (Oficial Mayor), <em>Toledo Guzmán</em> (Contralor) y <em>Salinas Pérez</em> (Estado Mayor).
+                    </p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 mb-1">Entrenamiento por Fases</h3>
+                    <p>
+                        Primero practica en el modo sin tiempo (<a href="/marina/estudio/funcionarios/elige-el-cargo.html" class="text-blue-700 font-bold hover:underline">Elige el Cargo</a>) para asegurar precisión conceptual, y después usa el modo Contra el Reloj para acelerar tus tiempos de respuesta.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
-            <div class="mt-4 space-x-4">
-                 <!-- Enlaces suben 3 niveles a la raÃ­z -->
-                 <a href="/privacidad.html" class="hover:text-white">PolÃ­tica de Privacidad</a>
-                 <a href="/terminos-y-condiciones.html" class="hover:text-white">TÃ©rminos de Servicio</a>
-                 <a href="/contacto.html" class="hover:text-white">Contacto</a>
-                 <a href="/mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-auto border-t border-slate-800 text-xs sm:text-sm">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <p class="font-semibold text-white">HazelTest &bull; Plataforma Educativa Interactiva</p>
+            <p class="mt-1 text-slate-400">&copy; 2026 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-slate-400">
+                <a href="/privacidad.html" class="hover:text-white transition">Privacidad y Cookies</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white transition">Términos</a>
+                <a href="/acerca-de.html" class="hover:text-white transition">Acerca de Nosotros</a>
+                <a href="/contacto.html" class="hover:text-white transition">Contacto</a>
+                <a href="/mapa-del-sitio.html" class="hover:text-white transition">Mapa del Sitio</a>
             </div>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // --- Datos Base de Funcionarios ---
             const funcionariosInfo = [
-                { id: 0, grado: "Almirante", nombres: ["Raymundo", "Pedro"], apellidos: ["Morales", "Ãngeles"], nombreCompleto: "Almirante Raymundo Pedro Morales Ãngeles", puesto: "Secretario de Marina" },
-                { id: 1, grado: "Almirante", nombres: ["JosÃ©"], apellidos: ["Barradas", "Cobos"], nombreCompleto: "Almirante JosÃ© Barradas Cobos", puesto: "Subsecretario de Marina" },
-                { id: 2, grado: "Almirante", nombres: ["Francisco", "Guillermo"], apellidos: ["Escamilla", "CÃ¡zares"], nombreCompleto: "Almirante Francisco Guillermo Escamilla CÃ¡zares", puesto: "Oficial Mayor" },
-                { id: 3, grado: "Almirante", nombres: ["Gerardo", "de", "JesÃºs"], apellidos: ["Toledo", "GuzmÃ¡n"], nombreCompleto: "Almirante Gerardo de JesÃºs Toledo GuzmÃ¡n", puesto: "Inspector y Contralor General de Marina" },
-                { id: 4, grado: "Almirante", nombres: ["JosÃ©", "Manuel"], apellidos: ["Salinas", "PÃ©rez"], nombreCompleto: "Almirante JosÃ© Manuel Salinas PÃ©rez", puesto: "Jefe del Estado Mayor General de la Armada" },
-                { id: 5, grado: "CapitÃ¡n de Altura", nombres: ["Manuel", "Fernando"], apellidos: ["GutiÃ©rrez", "Gallardo"], nombreCompleto: "CapitÃ¡n de Altura Manuel Fernando GutiÃ©rrez Gallardo", puesto: "Coordinador General de Puertos y Marina Mercante" }
+                { id: 0, grado: "Almirante", nombres: ["Raymundo", "Pedro"], apellidos: ["Morales", "Ángeles"], nombreCompleto: "Almirante Raymundo Pedro Morales Ángeles", puesto: "Secretario de Marina" },
+                { id: 1, grado: "Almirante", nombres: ["José"], apellidos: ["Barradas", "Cobos"], nombreCompleto: "Almirante José Barradas Cobos", puesto: "Subsecretario de Marina" },
+                { id: 2, grado: "Almirante", nombres: ["Francisco", "Guillermo"], apellidos: ["Escamilla", "Cázares"], nombreCompleto: "Almirante Francisco Guillermo Escamilla Cázares", puesto: "Oficial Mayor" },
+                { id: 3, grado: "Almirante", nombres: ["Gerardo", "de", "Jesús"], apellidos: ["Toledo", "Guzmán"], nombreCompleto: "Almirante Gerardo de Jesús Toledo Guzmán", puesto: "Inspector y Contralor General de Marina" },
+                { id: 4, grado: "Almirante", nombres: ["José", "Manuel"], apellidos: ["Salinas", "Pérez"], nombreCompleto: "Almirante José Manuel Salinas Pérez", puesto: "Jefe del Estado Mayor General de la Armada" },
+                { id: 5, grado: "Capitán de Altura", nombres: ["Manuel", "Fernando"], apellidos: ["Gutiérrez", "Gallardo"], nombreCompleto: "Capitán de Altura Manuel Fernando Gutiérrez Gallardo", puesto: "Coordinador General de Puertos y Marina Mercante" }
             ];
+
             const todosNombresPropios = [...new Set(funcionariosInfo.flatMap(f => f.nombres))];
             const todosApellidos = [...new Set(funcionariosInfo.flatMap(f => f.apellidos))];
             const todosPuestos = [...new Set(funcionariosInfo.map(f => f.puesto))];
             const todosNombresCompletos = funcionariosInfo.map(f => f.nombreCompleto);
 
-            // --- FunciÃ³n para barajar ---
-            function shuffleArray(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
 
-            // --- FunciÃ³n para generar el pool completo de preguntas ---
             function generarPoolPreguntas() {
                 const pool = [];
                 funcionariosInfo.forEach(f => {
-                    const nombrePilaStr = f.nombres.join(' '); const apellidosStr = f.apellidos.join(' '); const nombreCompleto = f.nombreCompleto; const idFuncionario = f.id;
-                    if (f.apellidos.length > 0) { pool.push(crearPreguntaOpcionMultiple(`Â¿CuÃ¡l es el primer apellido de ${f.grado} ${nombrePilaStr}?`, f.apellidos[0], todosApellidos, idFuncionario, (item, id) => funcionariosInfo[id].apellidos[0])); }
-                    if (f.apellidos.length > 1) { pool.push(crearPreguntaOpcionMultiple(`Â¿CuÃ¡l es el segundo apellido de ${f.grado} ${nombrePilaStr}?`, f.apellidos[1], todosApellidos, idFuncionario, (item, id) => funcionariosInfo[id].apellidos.length > 1 ? funcionariosInfo[id].apellidos[1] : null)); }
-                    if (f.nombres.length > 0) { pool.push(crearPreguntaOpcionMultiple(`Â¿CuÃ¡l es el primer nombre de ${f.grado} ${apellidosStr}?`, f.nombres[0], todosNombresPropios, idFuncionario, (item, id) => funcionariosInfo[id].nombres[0])); }
-                    if (f.nombres.length > 1 && f.nombres[1] !== 'de') { pool.push(crearPreguntaOpcionMultiple(`Â¿CuÃ¡l es el segundo nombre de ${f.grado} ${apellidosStr}?`, f.nombres[1], todosNombresPropios.filter(n => n !== 'de'), idFuncionario, (item, id) => (funcionariosInfo[id].nombres.length > 1 && funcionariosInfo[id].nombres[1] !== 'de') ? funcionariosInfo[id].nombres[1] : null)); }
-                    pool.push(crearPreguntaOpcionMultiple(`Â¿QuÃ© cargo ostenta ${nombreCompleto}?`, f.puesto, todosPuestos, idFuncionario, (item, id) => funcionariosInfo[id].puesto));
-                    pool.push(crearPreguntaOpcionMultiple(`Â¿QuiÃ©n ostenta el cargo de "${f.puesto}"?`, nombreCompleto, todosNombresCompletos, idFuncionario, (item, id) => funcionariosInfo[id].nombreCompleto));
-                }); return pool;
+                    const nombrePilaStr = f.nombres.join(' ');
+                    const apellidosStr = f.apellidos.join(' ');
+                    const nombreCompleto = f.nombreCompleto;
+                    const idFuncionario = f.id;
+
+                    if (f.apellidos.length > 0) {
+                        pool.push(crearPreguntaOpcionMultiple(`¿Cuál es el primer apellido de ${f.grado} ${nombrePilaStr}?`, f.apellidos[0], todosApellidos, idFuncionario, (item, id) => funcionariosInfo[id].apellidos[0]));
+                    }
+                    if (f.apellidos.length > 1) {
+                        pool.push(crearPreguntaOpcionMultiple(`¿Cuál es el segundo apellido de ${f.grado} ${nombrePilaStr}?`, f.apellidos[1], todosApellidos, idFuncionario, (item, id) => funcionariosInfo[id].apellidos[1]));
+                    }
+                    if (f.nombres.length > 0) {
+                        pool.push(crearPreguntaOpcionMultiple(`¿Cuál es el primer nombre de ${f.grado} ${apellidosStr}?`, f.nombres[0], todosNombresPropios, idFuncionario, (item, id) => funcionariosInfo[id].nombres[0]));
+                    }
+                    if (f.nombres.length > 1 && f.nombres[1] !== 'de') {
+                        pool.push(crearPreguntaOpcionMultiple(`¿Cuál es el segundo nombre de ${f.grado} ${apellidosStr}?`, f.nombres[1], todosNombresPropios.filter(n => n !== 'de'), idFuncionario, (item, id) => funcionariosInfo[id].nombres[1]));
+                    }
+                    pool.push(crearPreguntaOpcionMultiple(`¿Qué cargo ostenta ${nombreCompleto}?`, f.puesto, todosPuestos, idFuncionario, (item, id) => funcionariosInfo[id].puesto));
+                    pool.push(crearPreguntaOpcionMultiple(`¿Quién ostenta el cargo de "${f.puesto}"?`, nombreCompleto, todosNombresCompletos, idFuncionario, (item, id) => funcionariosInfo[id].nombreCompleto));
+                });
+                return pool;
             }
+
             function crearPreguntaOpcionMultiple(textoPregunta, respuestaCorrecta, poolDistractores, idCorrecto, obtenerDistractorFn) {
                 let distractores = poolDistractores.filter(item => item !== respuestaCorrecta);
                 if (obtenerDistractorFn) {
                     const dE = [];
-                    for (let i = 0; i < funcionariosInfo.length; i++) { if (i !== idCorrecto) { const d = obtenerDistractorFn(null, i); if (d && d !== respuestaCorrecta && !dE.includes(d)) { dE.push(d); } } }
+                    for (let i = 0; i < funcionariosInfo.length; i++) {
+                        if (i !== idCorrecto) {
+                            const d = obtenerDistractorFn(null, i);
+                            if (d && d !== respuestaCorrecta && !dE.includes(d)) {
+                                dE.push(d);
+                            }
+                        }
+                    }
                     if (dE.length >= 3) { distractores = dE; }
                 }
-                shuffleArray(distractores); const opciones = [respuestaCorrecta, ...distractores.slice(0, 3)];
-                while (opciones.length < 4 && distractores.length > opciones.length - 1) { opciones.push(distractores[opciones.length - 1]); }
-                shuffleArray(opciones); return { textoPregunta, respuestaCorrecta, opciones };
+                shuffleArray(distractores);
+                const opciones = [respuestaCorrecta, ...distractores.slice(0, 3)];
+                while (opciones.length < 4 && distractores.length > opciones.length - 1) {
+                    opciones.push(distractores[opciones.length - 1]);
+                }
+                shuffleArray(opciones);
+                return { textoPregunta, respuestaCorrecta, opciones };
             }
+
             const frasesResultado = {
-                alta: [ "Â¡Velocidad y precisiÃ³n! Excelente trabajo contra reloj.", "Â¡Impresionante! Dominas los datos bajo presiÃ³n.", "Â¡RÃ¡pido y certero! Listo para cualquier desafÃ­o." ],
-                media: [ "Â¡Buen ritmo! Sigue practicando para mejorar la velocidad.", "Lograste un buen puntaje, Â¡pero el tiempo apremia!", "No estÃ¡ mal, pero cada segundo cuenta." ],
-                baja: [ "Â¡El tiempo vuela! Necesitas mÃ¡s agilidad mental.", "Se acabÃ³ el tiempo... Â¡A practicar la memoria rÃ¡pida!", "Contra reloj es difÃ­cil, Â¡sigue intentÃ¡ndolo!" ]
+                alta: [
+                    "¡Velocidad y precisión militar! Excelente reflejo contra reloj.",
+                    "¡Impresionante agilidad mental! Dominas los datos bajo presión de tiempo.",
+                    "¡Rápido y certero! Estás más que listo para cualquier examen de doctrina."
+                ],
+                media: [
+                    "¡Buen ritmo! Tienes la base; sigue practicando para arañar unos segundos más.",
+                    "Aprobado contra reloj. Cada fracción de segundo cuenta en la memoria rápida.",
+                    "Buen puntaje. Una pasada más consolidará tu velocidad de reflejo."
+                ],
+                baja: [
+                    "El tiempo apremia. Te sugerimos practicar primero sin cronómetro.",
+                    "Se acabó el tiempo en varias preguntas. Entrena primero en 'Elige el Cargo'.",
+                    "No te desanimes: el modo contra reloj exige práctica continua."
+                ]
             };
 
-            // --- Elementos del DOM ---
             const introduccionQuizContainer = document.getElementById('introduccion-quiz');
             const startQuizButton = document.getElementById('start-quiz-button');
             const quizActivoContainer = document.getElementById('quiz-activo');
@@ -293,7 +439,6 @@
             const timerBar = document.getElementById('timer-bar');
             const timerText = document.getElementById('timer-text');
 
-            // --- Estado del Quiz ---
             let currentQuestionIndex = 0;
             let score = 0;
             let timeLeft = 15;
@@ -303,84 +448,165 @@
             let poolCompletoGlobal = [];
 
             function cargarPregunta() {
-                if (currentQuestionIndex >= preguntasDelQuiz.length) { mostrarResultados(); return; }
-                respuestaSeleccionada = false; const pA = preguntasDelQuiz[currentQuestionIndex];
-                if(preguntaTextoElement) preguntaTextoElement.textContent = pA.textoPregunta;
-                if(opcionesContainer) opcionesContainer.innerHTML = '';
-                if(feedbackElement) feedbackElement.textContent = '';
-                if(feedbackContainer) feedbackContainer.className = 'text-center h-6 mb-4';
-                if(progresoElement) progresoElement.textContent = `Pregunta ${currentQuestionIndex + 1} / ${preguntasDelQuiz.length}`;
-                if(puntuacionElement) puntuacionElement.textContent = `PuntuaciÃ³n: ${score}`;
-                const oB = [...pA.opciones]; shuffleArray(oB);
-                oB.forEach(o => { const b = document.createElement('button'); b.textContent = o; b.classList.add('opcion-btn', 'w-full', 'px-4', 'py-3', 'border-2', 'border-gray-400', 'rounded-md', 'bg-white', 'text-gray-700', 'font-medium'); b.dataset.respuesta = o; b.addEventListener('click', () => seleccionarRespuesta(b)); if(opcionesContainer) opcionesContainer.appendChild(b); });
-                timeLeft = 15; actualizarTimerDisplay(); clearInterval(timerId); timerId = setInterval(tickTimer, 1000);
-            }
-            function tickTimer() { timeLeft--; actualizarTimerDisplay(); if (timeLeft <= 0) { manejarTimeout(); } }
-            function actualizarTimerDisplay() {
-                if(timerText) timerText.textContent = timeLeft;
-                const p = (timeLeft / 15) * 100;
-                if(timerBar) timerBar.style.width = `${p}%`;
-                if(timerBar) {
-                    timerBar.classList.remove('low-time', 'very-low-time');
-                    if (timeLeft <= 5) { timerBar.classList.add('very-low-time'); }
-                    else if (timeLeft <= 10) { timerBar.classList.add('low-time'); }
+                if (currentQuestionIndex >= preguntasDelQuiz.length) {
+                    mostrarResultados();
+                    return;
                 }
-            }
-            function seleccionarRespuesta(bS) {
-                if (respuestaSeleccionada) return; respuestaSeleccionada = true; clearInterval(timerId);
-                const r = bS.dataset.respuesta; const pA = preguntasDelQuiz[currentQuestionIndex]; const eC = (r === pA.respuestaCorrecta);
-                if(opcionesContainer) opcionesContainer.querySelectorAll('.opcion-btn').forEach(b => { b.classList.add('disabled'); if (b.dataset.respuesta === pA.respuestaCorrecta) { b.classList.add('correcta'); } if (b === bS && !eC) { b.classList.add('incorrecta'); } });
-                if (eC) {
-                    if(feedbackElement) feedbackElement.textContent = 'Â¡Correcto!';
-                    if(feedbackContainer) feedbackContainer.className = 'text-center h-6 mb-4 text-green-600 font-semibold';
-                    score++;
-                    if(puntuacionElement) puntuacionElement.textContent = `PuntuaciÃ³n: ${score}`;
-                } else {
-                    if(feedbackElement) feedbackElement.textContent = 'Incorrecto';
-                    if(feedbackContainer) feedbackContainer.className = 'text-center h-6 mb-4 text-red-600 font-semibold';
-                }
-                setTimeout(siguientePregunta, 1200);
-            }
-            function manejarTimeout() {
-                if (respuestaSeleccionada) return; respuestaSeleccionada = true; clearInterval(timerId);
-                if(feedbackElement) feedbackElement.textContent = 'Â¡Tiempo agotado!';
-                if(feedbackContainer) feedbackContainer.className = 'text-center h-6 mb-4 text-orange-600 font-semibold';
+                respuestaSeleccionada = false;
                 const pA = preguntasDelQuiz[currentQuestionIndex];
-                if(opcionesContainer) opcionesContainer.querySelectorAll('.opcion-btn').forEach(b => { b.classList.add('disabled'); if (b.dataset.respuesta === pA.respuestaCorrecta) { b.classList.add('correcta'); } });
-                setTimeout(siguientePregunta, 1500);
+                if (preguntaTextoElement) preguntaTextoElement.textContent = pA.textoPregunta;
+                if (opcionesContainer) opcionesContainer.innerHTML = '';
+                if (feedbackElement) feedbackElement.textContent = '';
+                if (progresoElement) progresoElement.textContent = `Pregunta ${currentQuestionIndex + 1} de ${preguntasDelQuiz.length}`;
+                if (puntuacionElement) puntuacionElement.textContent = `Aciertos: ${score}`;
+
+                const oB = [...pA.opciones];
+                shuffleArray(oB);
+
+                oB.forEach(o => {
+                    const b = document.createElement('button');
+                    b.textContent = o;
+                    b.classList.add('opcion-btn', 'w-full', 'p-4', 'border-2', 'border-slate-200', 'rounded-2xl', 'bg-white', 'text-slate-800', 'font-semibold', 'text-sm', 'sm:text-base', 'shadow-sm');
+                    b.dataset.respuesta = o;
+                    b.addEventListener('click', () => seleccionarRespuesta(b));
+                    if (opcionesContainer) opcionesContainer.appendChild(b);
+                });
+
+                timeLeft = 15;
+                actualizarTimerDisplay();
+                clearInterval(timerId);
+                timerId = setInterval(tickTimer, 1000);
             }
-            function siguientePregunta() { currentQuestionIndex++; cargarPregunta(); }
-            function mostrarResultados() {
-                if(quizActivoContainer) quizActivoContainer.classList.add('hidden');
-                let cP; const pM = preguntasDelQuiz.length;
-                if (score >= pM * 0.8) { cP = 'alta'; } else if (score >= pM * 0.6) { cP = 'media'; } else { cP = 'baja'; }
-                const fC = frasesResultado[cP]; const fS = fC[Math.floor(Math.random() * fC.length)];
-                if(puntuacionFinalElement) puntuacionFinalElement.textContent = `${score} / ${pM}`;
-                if(fraseFinalElement) fraseFinalElement.textContent = fS;
-                if(resultadoFinalContainer) resultadoFinalContainer.classList.remove('hidden');
+
+            function tickTimer() {
+                timeLeft--;
+                actualizarTimerDisplay();
+                if (timeLeft <= 0) {
+                    manejarTimeout();
+                }
             }
-            function iniciarQuiz() {
-                if (poolCompletoGlobal.length === 0) { poolCompletoGlobal = generarPoolPreguntas(); }
-                shuffleArray(poolCompletoGlobal); preguntasDelQuiz = poolCompletoGlobal.slice(0, 10);
-                currentQuestionIndex = 0; score = 0;
-                if(introduccionQuizContainer) introduccionQuizContainer.classList.add('hidden');
-                if(quizActivoContainer) quizActivoContainer.classList.remove('hidden');
-                if(resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
+
+            function actualizarTimerDisplay() {
+                if (timerText) timerText.textContent = timeLeft;
+                const p = (timeLeft / 15) * 100;
+                if (timerBar) {
+                    timerBar.style.width = `${p}%`;
+                    timerBar.classList.remove('low-time', 'very-low-time');
+                    if (timeLeft <= 5) {
+                        timerBar.classList.add('very-low-time');
+                    } else if (timeLeft <= 10) {
+                        timerBar.classList.add('low-time');
+                    }
+                }
+            }
+
+            function seleccionarRespuesta(bS) {
+                if (respuestaSeleccionada) return;
+                respuestaSeleccionada = true;
+                clearInterval(timerId);
+                const r = bS.dataset.respuesta;
+                const pA = preguntasDelQuiz[currentQuestionIndex];
+                const eC = (r === pA.respuestaCorrecta);
+
+                if (opcionesContainer) {
+                    opcionesContainer.querySelectorAll('.opcion-btn').forEach(b => {
+                        b.classList.add('disabled');
+                        if (b.dataset.respuesta === pA.respuestaCorrecta) {
+                            b.classList.add('correcta');
+                        }
+                        if (b === bS && !eC) {
+                            b.classList.add('incorrecta');
+                        }
+                    });
+                }
+
+                if (feedbackElement) {
+                    if (eC) {
+                        feedbackElement.textContent = '¡Correcto!';
+                        feedbackElement.className = 'text-sm font-bold text-emerald-700 bg-emerald-50 px-4 py-1 rounded-full border border-emerald-200 inline-block';
+                        score++;
+                        if (puntuacionElement) puntuacionElement.textContent = `Aciertos: ${score}`;
+                    } else {
+                        feedbackElement.textContent = 'Incorrecto';
+                        feedbackElement.className = 'text-sm font-bold text-red-700 bg-red-50 px-4 py-1 rounded-full border border-red-200 inline-block';
+                    }
+                }
+                setTimeout(siguientePregunta, 1100);
+            }
+
+            function manejarTimeout() {
+                if (respuestaSeleccionada) return;
+                respuestaSeleccionada = true;
+                clearInterval(timerId);
+                if (feedbackElement) {
+                    feedbackElement.textContent = '¡Tiempo agotado!';
+                    feedbackElement.className = 'text-sm font-bold text-amber-700 bg-amber-50 px-4 py-1 rounded-full border border-amber-200 inline-block';
+                }
+                const pA = preguntasDelQuiz[currentQuestionIndex];
+                if (opcionesContainer) {
+                    opcionesContainer.querySelectorAll('.opcion-btn').forEach(b => {
+                        b.classList.add('disabled');
+                        if (b.dataset.respuesta === pA.respuestaCorrecta) {
+                            b.classList.add('correcta');
+                        }
+                    });
+                }
+                setTimeout(siguientePregunta, 1400);
+            }
+
+            function siguientePregunta() {
+                currentQuestionIndex++;
                 cargarPregunta();
             }
 
-            if(startQuizButton) startQuizButton.addEventListener('click', iniciarQuiz);
-            if(reiniciarBtn) reiniciarBtn.addEventListener('click', () => {
-                if(introduccionQuizContainer) introduccionQuizContainer.classList.remove('hidden');
-                if(quizActivoContainer) quizActivoContainer.classList.add('hidden');
-                if(resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
+            function mostrarResultados() {
+                if (quizActivoContainer) quizActivoContainer.classList.add('hidden');
+                const pM = preguntasDelQuiz.length;
+                let cP;
+                if (score >= pM * 0.8) { cP = 'alta'; }
+                else if (score >= pM * 0.6) { cP = 'media'; }
+                else { cP = 'baja'; }
+
+                const fC = frasesResultado[cP];
+                const fS = fC[Math.floor(Math.random() * fC.length)];
+                if (puntuacionFinalElement) puntuacionFinalElement.textContent = `${score} / ${pM}`;
+                if (fraseFinalElement) fraseFinalElement.textContent = fS;
+                if (resultadoFinalContainer) resultadoFinalContainer.classList.remove('hidden');
+
+                if (window.HazelTestApp) {
+                    window.HazelTestApp.addXP(score * 10 + 25);
+                }
+            }
+
+            function iniciarQuiz() {
+                if (poolCompletoGlobal.length === 0) {
+                    poolCompletoGlobal = generarPoolPreguntas();
+                }
+                shuffleArray(poolCompletoGlobal);
+                preguntasDelQuiz = poolCompletoGlobal.slice(0, 10);
+                currentQuestionIndex = 0;
+                score = 0;
+                if (introduccionQuizContainer) introduccionQuizContainer.classList.add('hidden');
+                if (quizActivoContainer) quizActivoContainer.classList.remove('hidden');
+                if (resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
+                cargarPregunta();
+            }
+
+            if (startQuizButton) startQuizButton.addEventListener('click', iniciarQuiz);
+            if (reiniciarBtn) reiniciarBtn.addEventListener('click', () => {
+                if (introduccionQuizContainer) introduccionQuizContainer.classList.remove('hidden');
+                if (quizActivoContainer) quizActivoContainer.classList.add('hidden');
+                if (resultadoFinalContainer) resultadoFinalContainer.classList.add('hidden');
             });
 
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
         });
     </script>
-
 </body>
 </html>

@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Elige el Cargo: Mandos de la Marina SEMAR | HazelTest</title>
+    <title>Test de Cargos de Marina: ¿Quién es quién en SEMAR? | HazelTest</title>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Google tag (gtag.js) -->
@@ -16,10 +16,10 @@
     </script>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Demuestra si conoces los puestos oficiales de los funcionarios navales. Selecciona el cargo militar correcto para cada almirante y directivo en HazelTest.">
-    <meta name="keywords" content="cargos secretaria de marina, puestos militares semar, test cargos navales">
-    <!-- Canonical Link Actualizado -->
+    <meta name="description" content="Evalúa tu conocimiento del organigrama de la Secretaría de Marina (SEMAR). Identifica qué cargo y facultades corresponden a cada almirante del Alto Mando.">
+    <meta name="keywords" content="cargos secretaría de marina, puestos semar organigrama, almirante secretario de marina, test cargos armada de mexico">
     <link rel="canonical" href="https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html">
+
     <!-- Geo & Localization Tags -->
     <meta name="geo.region" content="MX">
     <meta name="geo.placename" content="Mexico">
@@ -29,7 +29,7 @@
     <link rel="alternate" hreflang="es" href="https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html">
     <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html">
     <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="/hazeltest.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/hazeltest.ico" type="image/x-icon">
@@ -37,227 +37,368 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html">
-    <meta property="og:title" content="Test Elige el Cargo: Mandos de la Marina SEMAR | HazelTest">
-    <meta property="og:description" content="Demuestra si conoces los puestos oficiales de los funcionarios navales. Selecciona el cargo militar correcto para cada almirante y directivo en HazelTest.">
+    <meta property="og:title" content="Test de Cargos de Marina: ¿Quién es quién en SEMAR? | HazelTest">
+    <meta property="og:description" content="¿Conoces los puestos y atribuciones de los almirantes de la Armada de México? Demuestra tu dominio del organigrama militar.">
     <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html">
-    <meta property="twitter:title" content="Test Elige el Cargo del Funcionario de Marina - HazelTest">
-    <meta property="twitter:description" content="Â¿Conoces los cargos de los Funcionarios de la Marina? Â¡Selecciona el puesto correcto para cada nombre!">
+    <meta property="twitter:title" content="Cargos y Puestos SEMAR - HazelTest">
+    <meta property="twitter:description" content="Test interactivo sobre la estructura y puestos de los almirantes de la Secretaría de Marina.">
     <meta property="twitter:image" content="https://hazeltest.com/hazeltest-og.webp">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .cargo-opcion {
-            cursor: pointer; text-align: center;
-            transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
-        }
-        .cargo-opcion:hover:not(.disabled) { background-color: #D1D5DB; border-color: #6B7280; transform: translateY(-2px); }
-        .cargo-opcion.disabled { cursor: not-allowed; opacity: 0.7; }
-        .cargo-opcion.correcta.disabled { background-color: #A7F3D0; border-color: #10B981; color: #065F46; opacity: 1; font-weight: 600; }
-        .cargo-opcion.incorrecta.disabled { background-color: #FECACA; border-color: #F87171; color: #991B1B; opacity: 1; text-decoration: line-through; }
-        .hidden { display: none; }
-    </style>
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://hazeltest.com/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Marina",
-                    "item": "https://hazeltest.com/marina/test.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Test Elige el Cargo del Funcionario de Marina",
-                    "item": "https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html"
-                }
-            ]
-        },
-        {
-            "@type": "Quiz",
-            "name": "Test Elige el Cargo del Funcionario de Marina",
-            "description": "Â¿Conoces los cargos de los Funcionarios de la Marina? Realiza este test en HazelTest y selecciona el puesto correcto para cada nombre.",
-            "inLanguage": "es-MX",
-            "url": "https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html",
-            "educationalLevel": "Intermediate",
-            "about": {
-                "@type": "Thing",
-                "name": "Cultura Naval y SecretarÃ­a de Marina"
-            },
-            "provider": {
-                "@type": "Organization",
-                "name": "HazelTest",
-                "url": "https://hazeltest.com/"
-            }
-        }
-    ]
-}
-    </script>
-    <!-- PWA, Dark Mode & Gamification Core -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#4F46E5">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/hazeltest-theme.css">
     <script src="/hazeltest-app.js?v=2.0"></script>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
-</head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-indigo-600">HazelTest</a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="/" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
-                <a href="/categorias.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">CategorÃ­as</a>
-                <a href="/marina/test.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Marina</a>
-                <!-- Enlace Corregido -->
-                <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="text-gray-600 hover:text-indigo-600 transition duration-300">Funcionarios</a>
-                <span class="text-amber-600 font-semibold">Elige el Cargo</span>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Outfit', sans-serif; }
+        .cargo-opcion {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-align: left;
+        }
+        .cargo-opcion:hover:not(.disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px -2px rgba(30, 58, 138, 0.12);
+            border-color: #f59e0b !important;
+            background-color: #fffbeb;
+        }
+        .cargo-opcion.disabled {
+            cursor: default;
+            pointer-events: none;
+        }
+        .cargo-opcion.correcta {
+            background-color: #ecfdf5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            box-shadow: 0 0 0 2px #10b981 !important;
+        }
+        .cargo-opcion.incorrecta {
+            background-color: #fef2f2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            box-shadow: 0 0 0 2px #ef4444 !important;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://hazeltest.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Marina",
+              "item": "https://hazeltest.com/marina/test.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Altos Mandos",
+              "item": "https://hazeltest.com/marina/estudio/funcionarios/funcionarios-de-marina.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Elige el Cargo",
+              "item": "https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html"
+            }
+          ]
+        },
+        {
+          "@type": "Quiz",
+          "name": "Test de Cargos de Marina: ¿Quién es quién en SEMAR?",
+          "description": "Cuestionario para asociar a los almirantes y titulares de la Armada de México con sus cargos en la estructura orgánica.",
+          "inLanguage": "es-MX",
+          "url": "https://hazeltest.com/marina/estudio/funcionarios/elige-el-cargo.html",
+          "educationalLevel": "Intermediate",
+          "about": {
+            "@type": "Thing",
+            "name": "Organigrama de la Secretaría de Marina"
+          },
+          "provider": {
+            "@type": "Organization",
+            "name": "HazelTest",
+            "url": "https://hazeltest.com/"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2 text-2xl font-extrabold text-blue-900 tracking-tight">
+                <span class="bg-blue-900 text-white px-2.5 py-1 rounded-lg text-xl">⚓</span>
+                <span>HazelTest</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="/" class="text-slate-600 hover:text-blue-900 transition">Inicio</a>
+                <a href="/marina/test.html" class="text-slate-600 hover:text-blue-900 transition">Portal Marina</a>
+                <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="text-slate-600 hover:text-blue-900 transition">Altos Mandos</a>
+                <span class="text-amber-700 bg-amber-50 px-3 py-1 rounded-full font-semibold border border-amber-200">Elige el Cargo</span>
             </div>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-slate-600 p-2 rounded-lg hover:bg-slate-100" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
-         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
-            <a href="/categorias.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">CategorÃ­as</a>
-            <a href="/marina/test.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marina</a>
-            <!-- Enlace Corregido -->
-            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Funcionarios</a>
-            <span class="block px-4 py-2 text-amber-600 bg-amber-50 font-semibold">Elige el Cargo</span>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-200 px-4 py-3 space-y-2 text-sm font-medium">
+            <a href="/" class="block py-2 text-slate-700">Inicio</a>
+            <a href="/marina/test.html" class="block py-2 text-slate-700">Portal Marina</a>
+            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="block py-2 text-slate-700">Altos Mandos</a>
+            <span class="block py-2 text-amber-700 font-bold">Elige el Cargo</span>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12 md:py-16 flex-grow">
-        <div class="bg-white p-6 md:p-10 rounded-lg shadow-xl max-w-3xl mx-auto">
+    <main class="container mx-auto px-4 sm:px-6 py-8 md:py-12 flex-grow max-w-4xl">
 
-            <section id="introduccion-quiz-q3" class="mb-8 pb-6 border-b border-gray-300">
-                <div class="flex items-center justify-center mb-4">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-amber-600 mr-3">
-                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6A1.5 1.5 0 0 1 15 7.5v1.5a1.5 1.5 0 0 1-1.5 1.5H12v1.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5V10.5a1.5 1.5 0 0 1 1.5-1.5h1.5V7.5A1.5 1.5 0 0 1 12 6h1.5Zm0 0A1.5 1.5 0 0 0 12 4.5v-1.5a1.5 1.5 0 0 0-3 0V6A1.5 1.5 0 0 0 10.5 7.5H12a1.5 1.5 0 0 0 1.5-1.5Z M3.75 13.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Zm16.5 0a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z M6 15a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 6 15Zm12 0a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z M12 12.75a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3Z" />
-                     </svg>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Test de Cargos y Puestos: Funcionarios de Marina SEMAR</h1>
+        <!-- Breadcrumb -->
+        <nav class="text-xs text-slate-500 mb-6 flex items-center space-x-2">
+            <a href="/" class="hover:text-blue-900">Inicio</a>
+            <span>/</span>
+            <a href="/marina/test.html" class="hover:text-blue-900">Marina</a>
+            <span>/</span>
+            <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="hover:text-blue-900">Altos Mandos</a>
+            <span>/</span>
+            <span class="text-slate-700 font-semibold">Elige el Cargo</span>
+        </nav>
+
+        <!-- Contenedor Principal del Quiz -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-slate-200 mb-10">
+
+            <!-- Pantalla Inicial -->
+            <section id="introduccion-quiz-q3" class="text-center py-4">
+                <span class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-800 text-xs px-3.5 py-1 rounded-full font-bold border border-amber-200 mb-4">
+                    <span>🎖️</span> Estructura Jerárquica y Funciones
+                </span>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Test de Cargos y Puestos: Funcionarios de Marina
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+                    Identificar quién ocupa cada jefatura o dirección general en la Secretaría de Marina es una pregunta fija en exámenes de promoción y doctrina militar. Te mostraremos el nombre del funcionario y deberás seleccionar su <strong>puesto oficial vigente</strong>.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto mb-8 text-xs font-semibold text-slate-700">
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-amber-700 font-bold text-sm">6 Preguntas</span>
+                        Cargos de Mando Superior
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-emerald-700 font-bold text-sm">4 Opciones</span>
+                        Selección múltiple directa
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                        <span class="block text-indigo-700 font-bold text-sm">+50 XP</span>
+                        Puntaje de gamificación
+                    </div>
                 </div>
-                <p class="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
-                    Bienvenido al test "Elige el Cargo". Conocer la estructura jerÃ¡rquica y los puestos clave es fundamental en el Ã¡mbito naval. Este test evaluarÃ¡ tu capacidad para identificar correctamente el cargo que corresponde a cada funcionario de la Marina.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify mb-4">
-                    Se te presentarÃ¡ el nombre completo de un funcionario. Tu tarea serÃ¡ seleccionar, entre varias opciones, el cargo o puesto que dicha persona ostenta. Lee con atenciÃ³n y elige la opciÃ³n que consideres correcta.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-justify">
-                    Este test consta de 6 preguntas. Â¡Mucha suerte!
-                </p>
-                 <div class="mt-6 text-center">
-                    <button id="start-quiz-button-q3" class="bg-amber-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-amber-700 transition duration-300 shadow-md">
-                        Comenzar Test
-                    </button>
-                </div>
+
+                <button id="start-quiz-button-q3" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                    <span>Comenzar Test de Cargos</span>
+                    <span>&rarr;</span>
+                </button>
             </section>
 
+            <!-- Quiz Activo -->
             <div id="quiz-activo-q3" class="hidden">
-                <div class="flex justify-between items-center mb-6 text-sm text-gray-600">
-                    <span id="progreso_q3">Pregunta 1 / 6</span>
-                    <span id="puntuacion_q3">PuntuaciÃ³n: 0</span>
+                <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100 text-xs sm:text-sm font-semibold">
+                    <span id="progreso_q3" class="text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Pregunta 1 de 6</span>
+                    <span id="puntuacion_q3" class="text-amber-900 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Aciertos: 0</span>
                 </div>
-                <div class="mb-8 text-center">
-                     <p class="text-lg text-gray-700 mb-2">Â¿QuÃ© cargo ostenta?</p>
-                     <h2 id="funcionario-nombre-completo_q3" class="text-2xl md:text-3xl font-bold text-gray-900">- - -</h2>
+
+                <div class="text-center mb-8">
+                    <span class="text-xs uppercase font-bold tracking-widest text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded-md">¿Qué cargo ostenta?</span>
+                    <h2 id="funcionario-nombre-completo_q3" class="text-xl sm:text-3xl font-extrabold text-slate-900 mt-2 tracking-tight">- - -</h2>
                 </div>
-                <div id="opciones-cargo_q3" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <span class="text-gray-500 sm:col-span-2 text-center">Cargando cargos...</span>
+
+                <!-- Opciones de Cargos -->
+                <div id="opciones-cargo_q3" class="space-y-3 mb-6 max-w-xl mx-auto">
+                    <div class="text-center text-slate-400 py-6">Cargando opciones...</div>
                 </div>
-                 <div id="feedback-container_q3" class="text-center h-8 mb-6">
-                     <p id="feedback_q3" class="text-lg font-semibold"></p>
+
+                <!-- Feedback -->
+                <div id="feedback-container_q3" class="text-center min-h-[36px] mb-4 flex items-center justify-center">
+                    <p id="feedback_q3" class="text-sm sm:text-base font-bold"></p>
                 </div>
+
                 <div class="text-center">
-                    <button id="siguiente-btn_q3" class="bg-amber-600 text-white py-2 px-6 rounded-md hover:bg-amber-700 transition duration-300 hidden">
-                        Siguiente
+                    <button id="siguiente-btn_q3" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 px-8 rounded-xl shadow-md transition hidden">
+                        Siguiente Pregunta &rarr;
                     </button>
                 </div>
             </div>
 
-            <div id="resultado-final-q3" class="hidden text-center">
-                 <h2 class="text-3xl font-bold text-center text-amber-700 mb-6">Â¡Test de Cargos Finalizado!</h2>
-                 <p class="text-xl text-center mb-2">Tu puntuaciÃ³n final es:</p>
-                 <p id="puntuacion-final_q3" class="text-6xl font-bold text-center text-gray-800 mb-4">0 / 6</p>
-                 <p id="frase-final_q3" class="text-lg italic text-gray-700 mt-4 mb-8 px-4"></p>
-                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                     <button id="reiniciar-btn_q3" class="w-full sm:w-auto bg-gray-600 text-white py-2 px-6 rounded-md hover:bg-gray-700 transition duration-300">
-                         Volver a Jugar
-                     </button>
-                     <!-- Enlace Corregido -->
-                     <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="w-full sm:w-auto text-center inline-block bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
-                         Otros Quizzes de Funcionarios
-                     </a>
-                 </div>
+            <!-- Pantalla Final -->
+            <div id="resultado-final-q3" class="hidden text-center py-6">
+                <span class="text-4xl mb-3 block">🎖️</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">¡Test de Cargos Finalizado!</h2>
+                <p class="text-slate-500 text-sm mb-4">Tu puntuación final:</p>
+
+                <div class="inline-block bg-slate-50 border border-slate-200 rounded-3xl px-8 py-5 mb-4">
+                    <span id="puntuacion-final_q3" class="text-5xl font-black text-amber-700">0 / 6</span>
+                </div>
+
+                <p id="frase-final_q3" class="text-base font-medium text-slate-700 italic max-w-md mx-auto mb-8 px-4"></p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+                    <button id="reiniciar-btn_q3" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                        Volver a Intentar
+                    </button>
+                    <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+                        Otros Módulos de Mandos &rarr;
+                    </a>
+                </div>
             </div>
+
         </div>
+
+        <!-- Tabla Resumen de Cargos para Repaso -->
+        <section class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm mb-10">
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-4 flex items-center gap-2">
+                <span>📋</span> Resumen de Puestos del Alto Mando Naval
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200 bg-slate-50 text-slate-700 font-bold">
+                            <th class="p-3">Cargo Institucional</th>
+                            <th class="p-3">Titular Oficial</th>
+                            <th class="p-3">Grado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-600">
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-900">Secretario de Marina</td>
+                            <td class="p-3">Raymundo Pedro Morales Ángeles</td>
+                            <td class="p-3">Almirante</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-900">Subsecretario de Marina</td>
+                            <td class="p-3">José Barradas Cobos</td>
+                            <td class="p-3">Almirante</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-900">Oficial Mayor</td>
+                            <td class="p-3">Francisco Guillermo Escamilla Cázares</td>
+                            <td class="p-3">Almirante</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-900">Inspector y Contralor General</td>
+                            <td class="p-3">Gerardo de Jesús Toledo Guzmán</td>
+                            <td class="p-3">Almirante</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-900">Jefe del Estado Mayor General</td>
+                            <td class="p-3">José Manuel Salinas Pérez</td>
+                            <td class="p-3">Almirante</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-900">Coordinador de Puertos y Marina Mercante</td>
+                            <td class="p-3">Manuel Fernando Gutiérrez Gallardo</td>
+                            <td class="p-3">Capitán de Altura</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Banner Siguiente Desafío -->
+        <div class="bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-2xl p-6 text-center">
+            <h3 class="font-bold text-lg mb-1">Pon a prueba tu agudeza visual</h3>
+            <p class="text-xs sm:text-sm text-amber-100 mb-4">¿Puedes identificar a estos mismos almirantes solo con ver su fotografía oficial?</p>
+            <a href="/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html" class="inline-block bg-white text-amber-900 hover:bg-slate-100 font-bold px-6 py-2.5 rounded-xl transition text-sm shadow">
+                Test de Reconocimiento por Imagen &rarr;
+            </a>
+        </div>
+
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2026 HazelTest. Todos los derechos reservados.</p>
-            <div class="mt-4 space-x-4">
-                 <a href="/privacidad.html" class="hover:text-white">PolÃ­tica de Privacidad</a>
-                 <a href="/terminos-y-condiciones.html" class="hover:text-white">TÃ©rminos de Servicio</a>
-                 <a href="/contacto.html" class="hover:text-white">Contacto</a>
-                 <a href="/mapa-del-sitio.html" class="hover:text-white">Mapa del Sitio</a>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-auto border-t border-slate-800 text-xs sm:text-sm">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <p class="font-semibold text-white">HazelTest &bull; Plataforma Educativa Interactiva</p>
+            <p class="mt-1 text-slate-400">&copy; 2026 HazelTest. Todos los derechos reservados.</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-slate-400">
+                <a href="/privacidad.html" class="hover:text-white transition">Privacidad y Cookies</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white transition">Términos</a>
+                <a href="/acerca-de.html" class="hover:text-white transition">Acerca de Nosotros</a>
+                <a href="/contacto.html" class="hover:text-white transition">Contacto</a>
+                <a href="/mapa-del-sitio.html" class="hover:text-white transition">Mapa del Sitio</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // --- Datos Base de Funcionarios ---
         const funcionariosInfo_q3 = [
-            { nombreCompleto: "Almirante Raymundo Pedro Morales Ãngeles", puesto: "Secretario de Marina" },
-            { nombreCompleto: "Almirante JosÃ© Barradas Cobos", puesto: "Subsecretario de Marina" },
-            { nombreCompleto: "Almirante Francisco Guillermo Escamilla CÃ¡zares", puesto: "Oficial Mayor" },
-            { nombreCompleto: "Almirante Gerardo de JesÃºs Toledo GuzmÃ¡n", puesto: "Inspector y Contralor General de Marina" },
-            { nombreCompleto: "Almirante JosÃ© Manuel Salinas PÃ©rez", puesto: "Jefe del Estado Mayor General de la Armada" },
-            { nombreCompleto: "CapitÃ¡n de Altura Manuel Fernando GutiÃ©rrez Gallardo", puesto: "Coordinador General de Puertos y Marina Mercante" }
+            { nombreCompleto: "Almirante Raymundo Pedro Morales Ángeles", puesto: "Secretario de Marina" },
+            { nombreCompleto: "Almirante José Barradas Cobos", puesto: "Subsecretario de Marina" },
+            { nombreCompleto: "Almirante Francisco Guillermo Escamilla Cázares", puesto: "Oficial Mayor" },
+            { nombreCompleto: "Almirante Gerardo de Jesús Toledo Guzmán", puesto: "Inspector y Contralor General de Marina" },
+            { nombreCompleto: "Almirante José Manuel Salinas Pérez", puesto: "Jefe del Estado Mayor General de la Armada" },
+            { nombreCompleto: "Capitán de Altura Manuel Fernando Gutiérrez Gallardo", puesto: "Coordinador General de Puertos y Marina Mercante" }
         ];
+
         const todosPuestos_q3 = [...new Set(funcionariosInfo_q3.map(f => f.puesto))];
+
+        function shuffleArray_q3(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
         const quizData_q3 = funcionariosInfo_q3.map((infoCorrecta) => {
             const puestoCorrecto = infoCorrecta.puesto;
             let puestosIncorrectosPool = todosPuestos_q3.filter(p => p !== puestoCorrecto);
             shuffleArray_q3(puestosIncorrectosPool);
             const distractores = puestosIncorrectosPool.slice(0, 3);
             const poolOpcionesPuesto = [puestoCorrecto, ...distractores];
-             while (poolOpcionesPuesto.length < 4 && puestosIncorrectosPool.length > distractores.length) { poolOpcionesPuesto.push(puestosIncorrectosPool[distractores.length]); distractores.length++; }
             shuffleArray_q3(poolOpcionesPuesto);
             return { nombreCompleto: infoCorrecta.nombreCompleto, puestoCorrecto: puestoCorrecto, poolOpcionesPuesto: poolOpcionesPuesto };
         });
 
-        // --- Frases de Resultado ---
         const frasesResultado_q3 = {
-            alta: [ "Â¡Excelente! Conoces bien la estructura de mando.", "Â¡Impecable! Sabes quiÃ©n es quiÃ©n.", "Â¡Dominas los cargos! Listo para el organigrama." ],
-            media: [ "Â¡Buen trabajo! Identificas la mayorÃ­a de los cargos.", "No estÃ¡ mal, pero repasa algunos puestos clave.", "Vas por buen camino, Â¡casi aciertas todos!" ],
-            baja: [ "Â¡Necesitas estudiar los cargos! Â¿QuiÃ©n manda aquÃ­?", "Confundiendo los puestos... Â¡MÃ¡s atenciÃ³n a la jerarquÃ­a!", "Parece que los cargos se te escapan. Â¡A repasar!" ]
+            alta: [
+                "¡Excelente! Conoces al dedillo la estructura de mando y funciones en SEMAR.",
+                "¡Impecable! Sabes con precisión qué cargo encabeza cada almirante.",
+                "¡Dominio absoluto del organigrama naval! Puntuación de excelencia."
+            ],
+            media: [
+                "¡Buen trabajo! Identificas la mayoría de los cargos navales.",
+                "Bien resuelto, aunque te sugerimos repasar los puestos de Oficial Mayor y Contraloría.",
+                "Resultado sólido. Con una pasada más dominarás la estructura al 100%."
+            ],
+            baja: [
+                "Te recomendamos estudiar la tabla de mandos superiores para afianzar los cargos.",
+                "Cuidado con confundir las funciones del Estado Mayor con la Subsecretaría.",
+                "Repasa la Ley Orgánica de la Armada y vuelve a intentarlo para mejorar tu marca."
+            ]
         };
 
-        // --- Elementos del DOM ---
         const introduccionQuizContainer_q3 = document.getElementById('introduccion-quiz-q3');
         const startQuizButton_q3 = document.getElementById('start-quiz-button-q3');
         const quizActivoContainer_q3 = document.getElementById('quiz-activo-q3');
@@ -273,72 +414,126 @@
         const fraseFinalElement_q3 = document.getElementById('frase-final_q3');
         const reiniciarBtn_q3 = document.getElementById('reiniciar-btn_q3');
 
-        // --- Estado del Quiz ---
         let currentQuestionIndex_q3 = 0;
         let score_q3 = 0;
         let respuestaVerificada_q3 = false;
         let randomizedQuizData_q3 = [];
         let botonesOpciones_q3 = [];
 
-        // --- Funciones ---
-        function shuffleArray_q3(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]]; } }
         function cargarPregunta_q3() {
-            if (!randomizedQuizData_q3 || currentQuestionIndex_q3 >= randomizedQuizData_q3.length) { mostrarResultados_q3(); return; }
-            respuestaVerificada_q3 = false; const pA = randomizedQuizData_q3[currentQuestionIndex_q3];
-            if(nombreCompletoElement_q3) nombreCompletoElement_q3.textContent = pA.nombreCompleto;
-            if(opcionesContainer_q3) { opcionesContainer_q3.innerHTML = ''; botonesOpciones_q3 = []; }
-            if(feedbackElement_q3) feedbackElement_q3.textContent = '';
-            if(feedbackContainer_q3) feedbackContainer_q3.className = 'text-center h-8 mb-6';
-            if(siguienteBtn_q3) siguienteBtn_q3.classList.add('hidden');
-            if(progresoElement_q3) progresoElement_q3.textContent = `Pregunta ${currentQuestionIndex_q3 + 1} / ${quizData_q3.length}`;
-            if(puntuacionElement_q3) puntuacionElement_q3.textContent = `PuntuaciÃ³n: ${score_q3}`;
-            const oB = [...pA.poolOpcionesPuesto]; shuffleArray_q3(oB);
-            oB.forEach(c => { const b = document.createElement('button'); b.textContent = c; b.classList.add('cargo-opcion', 'w-full', 'px-4', 'py-3', 'border-2', 'border-gray-400', 'rounded-md', 'bg-white', 'text-gray-700', 'font-medium'); b.dataset.cargo = c; b.addEventListener('click', () => seleccionarCargo_q3(b)); if(opcionesContainer_q3) opcionesContainer_q3.appendChild(b); botonesOpciones_q3.push(b); });
-        }
-        function seleccionarCargo_q3(bS) {
-            if (respuestaVerificada_q3) return; respuestaVerificada_q3 = true;
-            const cS = bS.dataset.cargo; const pA = randomizedQuizData_q3[currentQuestionIndex_q3]; const eC = (cS === pA.puestoCorrecto);
-            botonesOpciones_q3.forEach(b => { b.classList.add('disabled'); const esCargoCorrecto = (b.dataset.cargo === pA.puestoCorrecto); if (esCargoCorrecto) { b.classList.add('correcta'); } if (b === bS && !eC) { b.classList.add('incorrecta'); } });
-            if (feedbackElement_q3 && feedbackContainer_q3) {
-                if (eC) { feedbackElement_q3.textContent = 'Â¡Correcto!'; feedbackContainer_q3.className = 'text-center h-8 mb-6 text-green-600 font-semibold'; score_q3++; if(puntuacionElement_q3) puntuacionElement_q3.textContent = `PuntuaciÃ³n: ${score_q3}`; }
-                else { feedbackElement_q3.innerHTML = `Incorrecto. El cargo correcto es: <span class="font-bold">${pA.puestoCorrecto}</span>`; feedbackContainer_q3.className = 'text-center h-8 mb-6 text-red-600 font-semibold'; }
+            if (!randomizedQuizData_q3 || currentQuestionIndex_q3 >= randomizedQuizData_q3.length) {
+                mostrarResultados_q3();
+                return;
             }
-            if(siguienteBtn_q3) siguienteBtn_q3.classList.remove('hidden');
+            respuestaVerificada_q3 = false;
+            const pA = randomizedQuizData_q3[currentQuestionIndex_q3];
+            if (nombreCompletoElement_q3) nombreCompletoElement_q3.textContent = pA.nombreCompleto;
+            if (opcionesContainer_q3) {
+                opcionesContainer_q3.innerHTML = '';
+                botonesOpciones_q3 = [];
+            }
+            if (feedbackElement_q3) feedbackElement_q3.textContent = '';
+            if (siguienteBtn_q3) siguienteBtn_q3.classList.add('hidden');
+            if (progresoElement_q3) progresoElement_q3.textContent = `Pregunta ${currentQuestionIndex_q3 + 1} de ${quizData_q3.length}`;
+            if (puntuacionElement_q3) puntuacionElement_q3.textContent = `Aciertos: ${score_q3}`;
+
+            const oB = [...pA.poolOpcionesPuesto];
+            shuffleArray_q3(oB);
+
+            oB.forEach(c => {
+                const b = document.createElement('button');
+                b.textContent = c;
+                b.classList.add('cargo-opcion', 'w-full', 'p-4', 'border-2', 'border-slate-200', 'rounded-2xl', 'bg-white', 'text-slate-800', 'font-semibold', 'text-sm', 'sm:text-base', 'shadow-sm');
+                b.dataset.cargo = c;
+                b.addEventListener('click', () => seleccionarCargo_q3(b));
+                if (opcionesContainer_q3) opcionesContainer_q3.appendChild(b);
+                botonesOpciones_q3.push(b);
+            });
         }
-        function siguientePregunta_q3() { currentQuestionIndex_q3++; cargarPregunta_q3(); }
-        function mostrarResultados_q3() {
-            if(quizActivoContainer_q3) quizActivoContainer_q3.classList.add('hidden');
-            if(!resultadoFinalContainer_q3) return;
-            let cP; const pM = quizData_q3.length;
-            if (score_q3 >= pM * 0.8) { cP = 'alta'; } else if (score_q3 >= pM * 0.5) { cP = 'media'; } else { cP = 'baja'; }
-            const fC = frasesResultado_q3[cP]; const fS = fC ? fC[Math.floor(Math.random() * fC.length)] : "Â¡Gracias por participar!";
-            if(puntuacionFinalElement_q3) puntuacionFinalElement_q3.textContent = `${score_q3} / ${pM}`;
-            if(fraseFinalElement_q3) fraseFinalElement_q3.textContent = fS;
-            resultadoFinalContainer_q3.classList.remove('hidden');
+
+        function seleccionarCargo_q3(bS) {
+            if (respuestaVerificada_q3) return;
+            respuestaVerificada_q3 = true;
+            const cS = bS.dataset.cargo;
+            const pA = randomizedQuizData_q3[currentQuestionIndex_q3];
+            const eC = (cS === pA.puestoCorrecto);
+
+            botonesOpciones_q3.forEach(b => {
+                b.classList.add('disabled');
+                if (b.dataset.cargo === pA.puestoCorrecto) {
+                    b.classList.add('correcta');
+                }
+                if (b === bS && !eC) {
+                    b.classList.add('incorrecta');
+                }
+            });
+
+            if (feedbackElement_q3) {
+                if (eC) {
+                    feedbackElement_q3.textContent = '¡Correcto! Has seleccionado el cargo exacto.';
+                    feedbackElement_q3.className = 'text-sm sm:text-base font-bold text-emerald-700 bg-emerald-50 px-4 py-1.5 rounded-full border border-emerald-200';
+                    score_q3++;
+                    if (puntuacionElement_q3) puntuacionElement_q3.textContent = `Aciertos: ${score_q3}`;
+                } else {
+                    feedbackElement_q3.innerHTML = `Incorrecto. El cargo correcto es: <span class="font-extrabold">${pA.puestoCorrecto}</span>`;
+                    feedbackElement_q3.className = 'text-sm sm:text-base font-bold text-red-700 bg-red-50 px-4 py-1.5 rounded-full border border-red-200';
+                }
+            }
+
+            if (siguienteBtn_q3) siguienteBtn_q3.classList.remove('hidden');
         }
-        function iniciarQuiz_q3() {
-            if (!quizData_q3 || quizData_q3.length === 0) { console.error("Datos del quiz no disponibles."); return; }
-            randomizedQuizData_q3 = [...quizData_q3]; shuffleArray_q3(randomizedQuizData_q3);
-            currentQuestionIndex_q3 = 0; score_q3 = 0;
-            if(introduccionQuizContainer_q3) introduccionQuizContainer_q3.classList.add('hidden');
-            if(quizActivoContainer_q3) quizActivoContainer_q3.classList.remove('hidden');
-            if(resultadoFinalContainer_q3) resultadoFinalContainer_q3.classList.add('hidden');
+
+        function siguientePregunta_q3() {
+            currentQuestionIndex_q3++;
             cargarPregunta_q3();
         }
 
-        // --- InicializaciÃ³n y Event Listeners ---
-        if(siguienteBtn_q3) siguienteBtn_q3.addEventListener('click', siguientePregunta_q3);
-        if(reiniciarBtn_q3) reiniciarBtn_q3.addEventListener('click', () => {
-            if(introduccionQuizContainer_q3) introduccionQuizContainer_q3.classList.remove('hidden');
+        function mostrarResultados_q3() {
+            if (quizActivoContainer_q3) quizActivoContainer_q3.classList.add('hidden');
+            if (!resultadoFinalContainer_q3) return;
+            const pM = quizData_q3.length;
+            let cP;
+            if (score_q3 >= pM * 0.8) { cP = 'alta'; }
+            else if (score_q3 >= pM * 0.5) { cP = 'media'; }
+            else { cP = 'baja'; }
+
+            const fC = frasesResultado_q3[cP];
+            const fS = fC ? fC[Math.floor(Math.random() * fC.length)] : "¡Test finalizado!";
+            if (puntuacionFinalElement_q3) puntuacionFinalElement_q3.textContent = `${score_q3} / ${pM}`;
+            if (fraseFinalElement_q3) fraseFinalElement_q3.textContent = fS;
+            resultadoFinalContainer_q3.classList.remove('hidden');
+
+            if (window.HazelTestApp) {
+                window.HazelTestApp.addXP(score_q3 * 15 + 20);
+            }
+        }
+
+        function iniciarQuiz_q3() {
+            if (!quizData_q3 || quizData_q3.length === 0) return;
+            randomizedQuizData_q3 = [...quizData_q3];
+            shuffleArray_q3(randomizedQuizData_q3);
+            currentQuestionIndex_q3 = 0;
+            score_q3 = 0;
+            if (introduccionQuizContainer_q3) introduccionQuizContainer_q3.classList.add('hidden');
+            if (quizActivoContainer_q3) quizActivoContainer_q3.classList.remove('hidden');
+            if (resultadoFinalContainer_q3) resultadoFinalContainer_q3.classList.add('hidden');
+            cargarPregunta_q3();
+        }
+
+        if (siguienteBtn_q3) siguienteBtn_q3.addEventListener('click', siguientePregunta_q3);
+        if (reiniciarBtn_q3) reiniciarBtn_q3.addEventListener('click', () => {
+            if (introduccionQuizContainer_q3) introduccionQuizContainer_q3.classList.remove('hidden');
             iniciarQuiz_q3();
         });
-        if(startQuizButton_q3) startQuizButton_q3.addEventListener('click', iniciarQuiz_q3);
+        if (startQuizButton_q3) startQuizButton_q3.addEventListener('click', iniciarQuiz_q3);
 
-        // --- Funcionalidad MenÃº MÃ³vil ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuButton && mobileMenu) { mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
     </script>
-
 </body>
 </html>

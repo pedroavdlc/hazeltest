@@ -1,7 +1,7 @@
 # HazelTest — Base de Conocimiento y Guía de Contenidos Completa (llms-full.txt)
 
 ## Descripción General
-HazelTest (https://hazeltest.com/) es una plataforma educativa interactiva creada en México por Pedro Antonio Velázquez de la Cruz. Su principal objetivo es proporcionar herramientas de autoevaluación dinámicas, quizzes con retroalimentación instantánea y módulos de estudio organizados por categorías temáticas.
+HazelTest (https://hazeltest.com/) es una plataforma educativa interactiva creada en México por el Equipo HazelTest. Su principal objetivo es proporcionar herramientas de autoevaluación dinámicas, quizzes con retroalimentación instantánea y módulos de estudio organizados por categorías temáticas.
 
 ---
 
@@ -40,7 +40,7 @@ HazelTest ofrece herramientas diseñadas con propósitos formativos, de entreten
 ---
 
 ## 3. Autor y Propósito del Proyecto
-- **Creador**: Pedro Antonio Velázquez de la Cruz.
+- **Equipo**: Equipo Editorial HazelTest.
 - **Misión**: Democratizar el acceso a herramientas de estudio interactivas, rápidas y gratuitas, facilitando el aprendizaje activo mediante el juego y la práctica repetida.
 - **Ubicación**: México.
 - **Acceso Web**: Libre, sin muros de pago obligatorios.
