@@ -1,5 +1,5 @@
-// Service Worker para HazelTest (Modo Offline y Cache PWA v6)
-const CACHE_NAME = 'hazeltest-cache-v6';
+// Service Worker para HazelTest (Modo Offline y Cache PWA v7)
+const CACHE_NAME = 'hazeltest-cache-v7';
 
 const STATIC_ASSETS = [
   '/',

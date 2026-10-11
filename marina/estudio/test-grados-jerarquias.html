@@ -50,7 +50,7 @@
     <link rel="apple-touch-icon" href="/hazeltest.ico">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#1e3a8a">
-    <link rel="stylesheet" href="/hazeltest-theme.css">
+    <link rel="stylesheet" href="/hazeltest-theme.css?v=5.0">
     
     <!-- Fonts & Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -87,28 +87,6 @@
             box-shadow: 0 4px 14px -2px rgba(29, 78, 216, 0.25);
         }
 
-        /* Option Cards - Dark Mode */
-        html.dark .opcion-card {
-            background-color: #111c33 !important;
-            border-color: #24355a !important;
-            color: #f1f5f9 !important;
-        }
-        html.dark .opcion-card:hover {
-            border-color: #60a5fa !important;
-            background-color: #1a2a4b !important;
-        }
-        html.dark .opcion-radio:checked + .opcion-card {
-            border-color: #60a5fa !important;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
-            box-shadow: 0 4px 16px -2px rgba(59, 130, 246, 0.45) !important;
-        }
-        html.dark .opcion-card span.text-slate-800 {
-            color: #f8fafc !important;
-        }
-        html.dark .opcion-card span.text-slate-400 {
-            color: #94a3b8 !important;
-        }
-
         /* Feedback States */
         .retro-correcta {
             background-color: #ecfdf5;
@@ -119,6 +97,201 @@
             background-color: #fef2f2;
             border: 2px solid #ef4444;
             color: #991b1b;
+        }
+
+        /* ========================================================
+           MODO OSCURO ULTRA-PULIDO (HIGH CONTRAST & PREMIUM NAVY)
+           ======================================================== */
+        html.dark body {
+            background-color: #0b1120 !important;
+            color: #f8fafc !important;
+        }
+
+        /* Contenedores principales (Artículos, Quizzes, Cards) */
+        html.dark #quiz-wrapper,
+        html.dark article,
+        html.dark #test-resultados,
+        html.dark .bg-white {
+            background-color: #111c33 !important;
+            border-color: #1e293b !important;
+            color: #f8fafc !important;
+        }
+
+        /* Títulos y Encabezados en Modo Oscuro: Blanco Puro de Alto Contraste */
+        html.dark h1,
+        html.dark h2,
+        html.dark h3,
+        html.dark h4,
+        html.dark .text-slate-900,
+        html.dark .text-slate-800,
+        html.dark .text-gray-900,
+        html.dark .text-gray-800 {
+            color: #ffffff !important;
+        }
+
+        /* Párrafos y Textos Secundarios: Gris Plata Suave y Ultra Legible */
+        html.dark p,
+        html.dark .text-slate-700,
+        html.dark .text-gray-700 {
+            color: #e2e8f0 !important;
+        }
+
+        html.dark .text-slate-600,
+        html.dark .text-slate-500,
+        html.dark .text-gray-600,
+        html.dark .text-gray-500 {
+            color: #94a3b8 !important;
+        }
+
+        html.dark strong {
+            color: #ffffff !important;
+        }
+
+        /* Insignias y Pills (Doctrina y Legislación Naval, etc.) */
+        html.dark .bg-blue-50,
+        html.dark .bg-blue-100 {
+            background-color: #1e3a8a !important;
+            border-color: #3b82f6 !important;
+            color: #bfdbfe !important;
+        }
+
+        /* Bloques de Preguntas */
+        html.dark .question-block {
+            background-color: #16223b !important;
+            border-color: #24355a !important;
+            color: #f8fafc !important;
+        }
+
+        /* Tarjetas de Opciones (A, B, C, D) */
+        html.dark .opcion-card {
+            background-color: #0d1527 !important;
+            border-color: #24355a !important;
+            color: #f1f5f9 !important;
+        }
+
+        html.dark .opcion-card:hover {
+            border-color: #60a5fa !important;
+            background-color: #1a2a4b !important;
+        }
+
+        html.dark .opcion-radio:checked + .opcion-card {
+            border-color: #60a5fa !important;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%) !important;
+            box-shadow: 0 4px 16px -2px rgba(59, 130, 246, 0.45) !important;
+        }
+
+        html.dark .opcion-card span {
+            color: #f8fafc !important;
+        }
+
+        html.dark .opcion-card span.text-slate-400 {
+            color: #94a3b8 !important;
+        }
+
+        /* Barra de Progreso Sticky */
+        html.dark #progress-container {
+            background-color: #111c33 !important;
+            border-color: #24355a !important;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        html.dark #progress-container span.text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+
+        html.dark #progress-container #progress-text {
+            color: #60a5fa !important;
+        }
+
+        html.dark #progress-pct {
+            background-color: #16223b !important;
+            border-color: #3b82f6 !important;
+            color: #93c5fd !important;
+        }
+
+        html.dark #progress-container .bg-slate-100 {
+            background-color: #1e293b !important;
+        }
+
+        /* Tabla de Equivalencias Militares en Modo Oscuro */
+        html.dark table {
+            border-color: #24355a !important;
+        }
+
+        html.dark table thead th {
+            background-color: #090e1a !important;
+            color: #ffffff !important;
+            border-bottom: 2px solid #24355a !important;
+        }
+
+        html.dark table thead th.bg-blue-900 {
+            background-color: #1e3a8a !important;
+            color: #bfdbfe !important;
+        }
+
+        html.dark table thead th.bg-emerald-900 {
+            background-color: #064e3b !important;
+            color: #a7f3d0 !important;
+        }
+
+        html.dark table tbody tr {
+            background-color: #0d1527 !important;
+            border-color: #1e293b !important;
+        }
+
+        html.dark table tbody tr.bg-blue-50\/40,
+        html.dark table tbody tr.bg-slate-50,
+        html.dark table tbody tr:nth-child(even) {
+            background-color: #142038 !important;
+        }
+
+        html.dark table tbody td {
+            border-color: #1e293b !important;
+            color: #e2e8f0 !important;
+        }
+
+        html.dark table tbody td.text-blue-900,
+        html.dark table tbody td.text-blue-950 {
+            color: #93c5fd !important;
+        }
+
+        html.dark table tbody td.text-emerald-950,
+        html.dark table tbody td.text-emerald-900 {
+            color: #6ee7b7 !important;
+        }
+
+        /* Tarjetas Informativas & Cajas de Texto */
+        html.dark .bg-slate-50,
+        html.dark .bg-blue-50\/50,
+        html.dark .bg-blue-50\/40 {
+            background-color: #16223b !important;
+            border-color: #24355a !important;
+            color: #e2e8f0 !important;
+        }
+
+        html.dark .text-blue-950 {
+            color: #93c5fd !important;
+        }
+
+        /* Acordeones y FAQ */
+        html.dark details {
+            background-color: #16223b !important;
+            border-color: #24355a !important;
+        }
+
+        html.dark details summary {
+            color: #ffffff !important;
+        }
+
+        html.dark details p {
+            color: #cbd5e1 !important;
+        }
+
+        /* Líneas divisorias y bordes */
+        html.dark .border-slate-100,
+        html.dark .border-slate-200,
+        html.dark .border-slate-300 {
+            border-color: #1e293b !important;
         }
     </style>
 

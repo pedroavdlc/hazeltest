@@ -11,7 +11,7 @@
             if ('caches' in window) {
                 caches.keys().then(keys => {
                     keys.forEach(key => {
-                        if (key.startsWith('hazeltest-cache-') && key !== 'hazeltest-cache-v4') {
+                        if (key.startsWith('hazeltest-cache-') && key !== 'hazeltest-cache-v7') {
                             console.log('Limpiando caché antigua del navegador:', key);
                             caches.delete(key);
                         }
@@ -19,7 +19,7 @@
                 });
             }
 
-            navigator.serviceWorker.register('/sw.js?v=4.2')
+            navigator.serviceWorker.register('/sw.js?v=4.3')
                 .then(reg => {
                     console.log('✓ Service Worker v4.2 registrado:', reg.scope);
                     reg.update(); // Forzar verificación de actualización
