@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Examen Psicométrico SEMAR Online: Admisión y Ascensos | HazelTest</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Practica gratis con el simulador de examen psicométrico para la Secretaría de Marina (SEMAR). 25 preguntas de razonamiento abstracto, series numéricas, juicio situacional y perfil psicológico militar.">
+    <meta name="keywords" content="examen psicometrico semar preguntas, simulador psicometrico marina armada de mexico, examen de admision escuela naval psicometrico, pruebas psicologicas semar">
+    
+    <link rel="canonical" href="https://hazeltest.com/marina/estudio/test-psicometrico-semar.html">
+    <link rel="alternate" hreflang="es-MX" href="https://hazeltest.com/marina/estudio/test-psicometrico-semar.html">
+    <link rel="alternate" hreflang="x-default" href="https://hazeltest.com/marina/estudio/test-psicometrico-semar.html">
+    <meta name="geo.region" content="MX">
+    <meta name="geo.position" content="19.4326;-99.1332">
+    <meta name="ICBM" content="19.4326, -99.1332">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Simulador Examen Psicométrico SEMAR Online: Admisión y Ascensos | HazelTest">
+    <meta property="og:description" content="Prepárate para la evaluación psicológica y de aptitud mental de la Armada de México con retroalimentación inmediata y calificación diagnóstica.">
+    <meta property="og:url" content="https://hazeltest.com/marina/estudio/test-psicometrico-semar.html">
+    <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="HazelTest">
+
+    <link rel="icon" type="image/x-icon" href="/hazeltest.ico">
+    <link rel="apple-touch-icon" href="/hazeltest.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/hazeltest-theme.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .question-card {
+            background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 0.75rem;
+            padding: 1.5rem; margin-bottom: 1.5rem; transition: border-color 0.2s ease;
+        }
+        .option-btn {
+            display: flex; align-items: flex-start; width: 100%; text-align: left;
+            padding: 0.85rem 1rem; border: 1.5px solid #E2E8F0; border-radius: 0.5rem;
+            background: #FFFFFF; transition: all 0.2s ease; cursor: pointer; margin-bottom: 0.5rem;
+        }
+        .option-btn:hover:not(:disabled) { border-color: #0284c7; background-color: #F0F9FF; }
+        .option-btn.selected { border-color: #0284c7; background-color: #E0F2FE; font-weight: 600; }
+        .option-btn.correct { border-color: #16a34a !important; background-color: #DCFCE7 !important; color: #14532d !important; }
+        .option-btn.incorrect { border-color: #dc2626 !important; background-color: #FEE2E2 !important; color: #7f1d1d !important; }
+
+        /* DARK MODE */
+        html.dark body { background-color: #0b1120 !important; color: #e2e8f0 !important; }
+        html.dark .question-card { background-color: #1e293b !important; border-color: #334155 !important; }
+        html.dark .question-title { color: #f8fafc !important; }
+        html.dark .option-btn { background-color: #0f172a !important; border-color: #334155 !important; color: #cbd5e1 !important; }
+        html.dark .option-btn:hover:not(:disabled) { background-color: #1e293b !important; border-color: #38bdf8 !important; }
+        html.dark .option-btn.selected { background-color: #075985 !important; border-color: #38bdf8 !important; color: #ffffff !important; }
+        html.dark .option-btn.correct { background-color: #14532d !important; border-color: #22c55e !important; color: #f0fdf4 !important; }
+        html.dark .option-btn.incorrect { background-color: #7f1d1d !important; border-color: #ef4444 !important; color: #fef2f2 !important; }
+        html.dark .info-panel { background-color: #1e293b !important; border-color: #334155 !important; color: #cbd5e1 !important; }
+        html.dark header, html.dark footer { background-color: #0f172a !important; border-color: #1e293b !important; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": "Simulador Examen Psicométrico SEMAR Online | HazelTest",
+        "description": "Simulador de evaluación psicométrica y aptitud lógica para aspirantes y personal naval de la Secretaría de Marina Armada de México.",
+        "inLanguage": "es-MX",
+        "educationalAlignment": {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalSubject",
+            "targetName": "Psicometría y Selección Militar SEMAR"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "HazelTest",
+            "url": "https://hazeltest.com/"
+        }
+    }
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 flex flex-col min-h-screen text-slate-800">
+
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <span class="text-2xl font-black text-sky-700 tracking-tight">Hazel<span class="text-slate-800">Test</span></span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="/" class="text-slate-600 hover:text-sky-700 transition">Inicio</a>
+                <a href="/marina/test.html" class="text-slate-600 hover:text-sky-700 transition">Portal Naval</a>
+                <a href="/articulos/examen-psicometrico-semar-guia-consejos.html" class="text-slate-600 hover:text-sky-700 transition">Guía Psicométrica</a>
+                <span class="text-sky-700 font-bold bg-sky-50 px-3 py-1 rounded-full">Simulador SEMAR</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-600 focus:outline-none" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-200 px-6 py-3 space-y-2">
+            <a href="/" class="block text-slate-600">Inicio</a>
+            <a href="/marina/test.html" class="block text-slate-600">Portal Naval</a>
+            <a href="/articulos/examen-psicometrico-semar-guia-consejos.html" class="block text-slate-600">Guía Psicométrica</a>
+        </div>
+    </header>
+
+    <!-- Barra de Progreso Fija -->
+    <div class="sticky top-[69px] z-30 bg-slate-200 h-2 w-full">
+        <div id="progress-bar" class="bg-sky-600 h-2 transition-all duration-300 w-0"></div>
+    </div>
+
+    <main class="container mx-auto px-4 sm:px-6 py-8 max-w-3xl flex-grow">
+        
+        <div class="text-center mb-8">
+            <span class="inline-block bg-sky-100 text-sky-800 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+                Batería de Aptitud • Admisión y Ascensos SEMAR
+            </span>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+                Simulador de Examen Psicométrico SEMAR
+            </h1>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+                Batería de <strong>25 reactivos de alta precisión</strong> que evalúa razonamiento abstracto, series lógicas, analogías, juicio situacional bajo mando naval y control de estrés operativo.
+            </p>
+        </div>
+
+        <!-- Módulo de Preguntas -->
+        <div id="quiz-container" class="space-y-4"></div>
+
+        <!-- Botón para finalizar -->
+        <div class="pt-6 text-center">
+            <button id="btn-finish" onclick="finishQuiz()" class="w-full sm:w-auto px-8 py-3.5 bg-sky-700 hover:bg-sky-800 text-white font-bold rounded-xl shadow-lg transition transform active:scale-95 text-base">
+                Finalizar Evaluación y Ver Dictamen Psicométrico
+            </button>
+            <p id="alert-unanswered" class="text-red-500 text-xs mt-3 hidden font-semibold">
+                Hay reactivos sin responder. Te sugerimos completarlos todos para obtener una calificación diagnóstica precisa.
+            </p>
+        </div>
+
+        <!-- Resultados -->
+        <div id="results-card" class="hidden mt-10 p-6 sm:p-8 bg-white border border-slate-200 rounded-2xl shadow-xl question-card">
+            <div class="text-center mb-6">
+                <span id="badge-score" class="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2"></span>
+                <h2 id="title-score" class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2"></h2>
+                <p id="desc-score" class="text-sm sm:text-base text-slate-600 leading-relaxed"></p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 info-panel text-center">
+                    <span class="text-xs text-slate-500 font-semibold uppercase block">Aciertos</span>
+                    <span id="correct-count" class="text-2xl sm:text-3xl font-extrabold text-sky-700">0 / 25</span>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 info-panel text-center">
+                    <span class="text-xs text-slate-500 font-semibold uppercase block">Calificación</span>
+                    <span id="pct-score" class="text-2xl sm:text-3xl font-extrabold text-slate-900">0%</span>
+                </div>
+                <div class="col-span-2 sm:col-span-1 p-4 bg-slate-50 rounded-xl border border-slate-200 info-panel text-center">
+                    <span class="text-xs text-slate-500 font-semibold uppercase block">Dictamen</span>
+                    <span id="status-verdict" class="text-lg sm:text-xl font-bold mt-1 block"></span>
+                </div>
+            </div>
+
+            <div class="p-5 bg-sky-50 border border-sky-200 rounded-xl mb-6 info-panel">
+                <h3 class="text-sm font-bold text-sky-900 mb-2">Recomendaciones de Preparación Psicológica Naval:</h3>
+                <ul id="advice-list" class="space-y-2 text-xs sm:text-sm text-sky-950 list-disc list-inside"></ul>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <a href="/articulos/examen-psicometrico-semar-guia-consejos.html" class="w-full sm:w-auto text-center px-6 py-2.5 bg-sky-700 text-white rounded-lg text-sm font-semibold hover:bg-sky-800 transition">
+                    Leer Consejos para Aprobar el Psicométrico
+                </a>
+                <button type="button" onclick="location.reload();" class="w-full sm:w-auto text-center px-6 py-2.5 bg-slate-200 text-slate-700 rounded-lg text-sm font-semibold hover:bg-slate-300 transition">
+                    Repetir Simulador
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
+        <div class="container mx-auto px-4 space-y-2">
+            <p>© 2026 HazelTest. Simulador académico independiente para aspirantes a la Secretaría de Marina. Desarrollado por el Equipo Editorial HazelTest.</p>
+            <div class="space-x-4">
+                <a href="/privacidad.html" class="hover:underline">Privacidad</a>
+                <a href="/terminos-y-condiciones.html" class="hover:underline">Términos</a>
+                <a href="/contacto.html" class="hover:underline">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const PSYCHO_QUESTIONS = [
+        // 1. Razonamiento Lógico-Numérico
+        {
+            q: "Completa la serie numérica: 3, 7, 15, 31, 63, ...",
+            options: ["127", "126", "125", "128"],
+            correct: 0,
+            cat: "Lógica Numérica",
+            exp: "El patrón es duplicar el número anterior y sumar 1: (63 × 2) + 1 = 126 + 1 = 127 (o sumar potencias de 2: +4, +8, +16, +32, +64)."
+        },
+        {
+            q: "Un buque patrullero navega a 18 nudos. Si debe cubrir una distancia de 108 millas náuticas, ¿cuántas horas tardará?",
+            options: ["5 horas", "6 horas", "7 horas", "8 horas"],
+            correct: 1,
+            cat: "Cálculo Naval",
+            exp: "Tiempo = Distancia / Velocidad. 108 millas náuticas / 18 nudos = 6 horas exactas."
+        },
+        {
+            q: "¿Qué número continúa la secuencia? 2, 5, 11, 23, 47, ...",
+            options: ["94", "95", "96", "91"],
+            correct: 1,
+            cat: "Lógica Numérica",
+            exp: "Cada término se multiplica por 2 y se suma 1: (47 × 2) + 1 = 94 + 1 = 95."
+        },
+        {
+            q: "Si en una dotación de 120 elementos el 35% son especialistas de Infantería de Marina, ¿cuántos infantes hay en total?",
+            options: ["40", "42", "45", "48"],
+            correct: 1,
+            cat: "Cálculo Numérico",
+            exp: "120 × 0.35 = 42 elementos de Infantería de Marina."
+        },
+        {
+            q: "Completa la serie alternada: 4, 20, 8, 16, 12, 12, 16, ...",
+            options: ["8", "10", "14", "18"],
+            correct: 0,
+            cat: "Series Alternadas",
+            exp: "Hay dos series entrelazadas: los términos impares suman 4 (4, 8, 12, 16...) y los pares restan 4 (20, 16, 12, 8...). El siguiente término corresponde a los pares: 12 - 4 = 8."
+        },
+
+        // 2. Analogías y Aptitud Verbal
+        {
+            q: "TIMÓN es a DIRECCIÓN como PROPULSOR es a:",
+            options: ["Flotabilidad", "Avance / Empuje", "Frenado", "Lastre"],
+            correct: 1,
+            cat: "Analogías Verbales",
+            exp: "El timón gobierna el rumbo o dirección, mientras que el propulsor (hélice) proporciona la fuerza de avance o empuje del buque."
+        },
+        {
+            q: "PROA es a PROEL como POPA es a:",
+            options: ["Estribor", "Babor", "Popel", "Crujía"],
+            correct: 2,
+            cat: "Terminología Naval",
+            exp: "Lo relativo o perteneciente a la proa se denomina proel; lo relativo a la popa se denomina popel."
+        },
+        {
+            q: "Elige el antónimo directo de la palabra 'EFÍMERO':",
+            options: ["Fugaz", "Perdurable", "Frágil", "Temporal"],
+            correct: 1,
+            cat: "Aptitud Verbal",
+            exp: "Efímero significa pasajero o de corta duración. Su antónimo exacto es perdurable o permanente."
+        },
+        {
+            q: "BRÚJULA es a ORIENTACIÓN como RADAR es a:",
+            options: ["Navegación aérea", "Detección", "Profundidad", "Comunicación"],
+            correct: 1,
+            cat: "Analogías",
+            exp: "La brújula cumple la función esencial de orientación; el radar cumple la función de detección de ecos u objetos distantes."
+        },
+        {
+            q: "Identifica el término que NO pertenece al grupo semántico:",
+            options: ["Quilla", "Baos", "Vagras", "Brújula"],
+            correct: 3,
+            cat: "Clasificación Conceptual",
+            exp: "Quilla, baos y vagras son elementos estructurales del armazón del casco; la brújula es un instrumento de navegación."
+        },
+
+        // 3. Razonamiento Abstracto y Espacial
+        {
+            q: "Si un reloj marca las 03:00 hrs y se rota mentalmente 90° en sentido horario, ¿en qué dirección apuntará la manecilla de las horas?",
+            options: ["Al 12 (Arriba)", "Al 6 (Abajo)", "Al 9 (Izquierda)", "Al 3 (Derecha)"],
+            correct: 1,
+            cat: "Orientación Espacial",
+            exp: "A las 03:00 la manecilla de las horas apunta al 3 (derecha / este). Al girar 90° en sentido de las manecillas del reloj, apuntará hacia abajo (al 6 / sur)."
+        },
+        {
+            q: "Un buque navega al rumbo verdadero Norte (000°). Si se le ordena caer 135° a estribor, ¿cuál será su nuevo rumbo?",
+            options: ["135° (Sureste)", "225° (Suroeste)", "045° (Noreste)", "315° (Noroeste)"],
+            correct: 0,
+            cat: "Rosa de los Vientos",
+            exp: "Norte es 000°. Estribor es hacia la derecha (+). 000° + 135° = 135° (rumbo Sureste)."
+        },
+        {
+            q: "¿Cuántas caras tiene un cubo sólido una vez que se le ha realizado un corte transversal de esquina a esquina eliminando un vértice?",
+            options: ["6", "7", "8", "9"],
+            correct: 1,
+            cat: "Visión Espacial",
+            exp: "Un cubo regular tiene 6 caras. Al rebanar una de sus esquinas rectas se genera una nueva cara triangular plana, resultando en 7 caras en total."
+        },
+        {
+            q: "Si la palabra SEGURO se codifica como TFI VSP (cada letra se desplaza +1 en el abecedario), ¿cómo se codifica la palabra NAVAL?",
+            options: ["OBWBM", "OAVBM", "MCUZK", "OBWBN"],
+            correct: 0,
+            cat: "Criptografía Lógica",
+            exp: "N(+1)=O, A(+1)=B, V(+1)=W, A(+1)=B, L(+1)=M. La palabra resultante es OBWBM."
+        },
+        {
+            q: "En un dado convencional, las caras opuestas siempre suman 7. Si la cara superior muestra el 5 y se rota una vez hacia el frente, ¿qué número quedará arriba?",
+            options: ["No puede determinarse sin saber las caras laterales", "1 o 6 o 3 o 4 dependiendo de la posición previa", "Depende de la orientación del dado", "El número que estaba en la cara posterior"],
+            correct: 3,
+            cat: "Lógica de Rotación",
+            exp: "Al rodar el dado un giro hacia el frente, la cara que previamente estaba en la parte trasera o posterior asciende a la posición superior."
+        },
+
+        // 4. Juicio Situacional y Doctrina de Mando
+        {
+            q: "Durante una guardia nocturna en el puente de navegación, notas que tu compañero superior inmediato muestra signos de fatiga extrema y microsueños. ¿Cuál es el procedimiento más correcto?",
+            options: [
+                "Dejar que duerma discretamente para no causarle problemas disciplinarios.",
+                "Llamar su atención con respeto, ofrecerle relevo momentáneo de vigilancia e informar de inmediato al Oficial de Guardia para salvaguardar la seguridad de la navegación.",
+                "Abandonar el puesto para buscar al Capitán del buque sin avisar.",
+                "Ignorar la situación mientras tu propio sector esté despejado."
+            ],
+            correct: 1,
+            cat: "Juicio Situacional Militar",
+            exp: "En la doctrina naval, la seguridad de la unidad y la tripulación prevalece sobre consideraciones personales. La acción correcta es asegurar la vigilancia y dar cuenta inmediata al Oficial de Guardia por conducto regular."
+        },
+        {
+            q: "Recibes una orden operativa de un superior que no comprendes con absoluta claridad. ¿Cómo debes actuar?",
+            options: [
+                "Ejecutar lo que tú supongas que quiso decir para no parecer incompetente.",
+                "Solicitar respetuosamente la confirmación y aclaración de la orden antes de iniciar su ejecución.",
+                "Consultar con tus compañeros de menor jerarquía para que ellos decidan.",
+                "Esperar a que el superior vuelva a preguntar por los resultados."
+            ],
+            correct: 1,
+            cat: "Disciplina y Mando",
+            exp: "Una orden mal comprendida acarrea errores fatales en el ámbito naval. La norma de disciplina exige solicitar la repetición o aclaración respetuosa de la orden."
+        },
+        {
+            q: "En una situación de emergencia por vía de agua, observas que un compañero entra en pánico y bloquea el paso hacia los mamparos estancos. ¿Qué conducta demuestra liderazgo y templanza?",
+            options: [
+                "Gritarle con insultos para sacarlo del shock emocional.",
+                "Darle una instrucción clara y firme con contacto visual, asignándole una tarea física inmediata y concreta para enfocarlo.",
+                "Empujarlo y dejarlo atrás para salvarte primero.",
+                "Esperar a que intervenga un oficial superior."
+            ],
+            correct: 1,
+            cat: "Gestión de Crisis",
+            exp: "En psicología de emergencias tácticas, asignar una orden motora concreta ('toma esta llave y abre aquí') rompe el ciclo de congelamiento por pánico sin comprometer la misión."
+        },
+        {
+            q: "El principio naval de 'Subordinación' establece que:",
+            options: [
+                "El subordinado debe obedecer ciegamente cualquier acto delictivo.",
+                "El respeto y obediencia a la jerarquía legítima garantizan la cohesión y efectividad operativa de las fuerzas armadas dentro del marco legal.",
+                "Los oficiales nunca deben escuchar sugerencias de sus clases y marinería.",
+                "La jerarquía solo se aplica en tiempo de guerra."
+            ],
+            correct: 1,
+            cat: "Doctrina Naval",
+            exp: "La subordinación es la piedra angular de la disciplina militar, fundamentada en la legalidad y el cumplimiento del deber para mantener la cohesión de la Armada."
+        },
+        {
+            q: "Si detectas que una herramienta de seguridad crítica para zafarranchos se encuentra defectuosa en tu pañol, ¿cuál es el deber formal?",
+            options: [
+                "Guardarla al fondo para que no la revisen en la próxima inspección.",
+                "Reportarla de inmediato en el libro de bitácora o al Contramaestre para su reparación o baja formal del inventario.",
+                "Esperar a que alguien más note la falla durante una práctica.",
+                "Repararla de forma improvisada con alambre sin dar parte a nadie."
+            ],
+            correct: 1,
+            cat: "Responsabilidad Profesional",
+            exp: "Ocultar o descuidar equipo de averías pone en riesgo la vida de la tripulación entera. Es deber ineludible dar parte inmediato a la autoridad del departamento."
+        },
+
+        // 5. Perfil Psicométrico y Control Emocional
+        {
+            q: "Ante situaciones de alta presión donde los planes iniciales fracasan debido a contingencias imprevistas, tu tendencia es:",
+            options: [
+                "Buscar inmediatamente culpables entre los demás integrantes del equipo.",
+                "Mantener la calma, evaluar los recursos disponibles y adaptarse con flexibilidad para alcanzar el objetivo prioritario.",
+                "Sentir una frustración paralizante y desentenderse de la tarea.",
+                "Quejarse formalmente de la mala planeación de los mandos."
+            ],
+            correct: 1,
+            cat: "Resiliencia Operativa",
+            exp: "El perfil militar evalúa la capacidad adaptativa y el locus de control interno ante la incertidumbre y la fricción del combate o la navegación."
+        },
+        {
+            q: "¿Cómo manejas las críticas o correcciones severas recibidas de un instructor o mando?",
+            options: [
+                "Como un ataque personal que guardo con resentimiento.",
+                "Analizando el fondo del aprendizaje para corregir mi técnica y elevar mi estándar profesional sin perder el entusiasmo.",
+                "Justificándome inmediatamente para demostrar que la culpa fue externa.",
+                "Rindiéndome porque siento que no soy apto para el servicio."
+            ],
+            correct: 1,
+            cat: "Tolerancia a la Frustración",
+            exp: "La disciplina militar requiere asimilar la retroalimentación correctiva constructivamente, separando el rigor pedagógico del valor personal."
+        },
+        {
+            q: "En el trabajo colaborativo a bordo de un buque, consideras que el éxito de la misión depende de:",
+            options: [
+                "El lucimiento personal de quien lidera para obtener ascenso individual.",
+                "La coordinación sincrónica, la lealtad mutua y el compromiso de cada integrante de la dotación en su puesto asignado.",
+                "Hacer únicamente lo mínimo indispensable que exige el reglamento.",
+                "La suerte y que no se presenten situaciones difíciles."
+            ],
+            correct: 1,
+            cat: "Espíritu de Cuerpo",
+            exp: "El 'espíritu de cuerpo' es uno de los valores fundamentales de la Armada de México: la unidad opera como un solo organismo coordinado."
+        },
+        {
+            q: "Cuando estás físicamente agotado tras largas horas de faena y surge una tarea imprevista:",
+            options: [
+                "Te concentras en tu sentido del deber, recurriendo a tu fortaleza mental para cumplir el compromiso con la misma calidad.",
+                "Finges una indisposición médica para retirarte a tu camarote.",
+                "Realizas la tarea de forma descuidada para terminar rápido.",
+                "Discutir abiertamente con los compañeros para evitar que te toque a ti."
+            ],
+            correct: 0,
+            cat: "Tenacidad y Fortaleza",
+            exp: "La tenacidad y el espíritu de sacrificio son rasgos primordiales evaluados en las pruebas de selección de personal naval."
+        },
+        {
+            q: "El valor del 'Honor' en el personal de la Armada de México se define como:",
+            options: [
+                "Tener condecoraciones y reconocimiento social superior.",
+                "La cualidad moral que lleva al más severo cumplimiento de los deberes respecto al prójimo y a uno mismo, actuando con rectitud aún cuando nadie está mirando.",
+                "Imponer la propia voluntad por encima de las leyes civiles.",
+                "Defender a los compañeros incluso cuando cometen delitos graves."
+            ],
+            correct: 1,
+            cat: "Valores Navales Fundamentales",
+            exp: "El Honor es la virtud militar suprema: la coherencia ética y rectitud inquebrantable de cumplir con el deber por convicción íntima."
+        }
+    ];
+
+    let userAnswers = {};
+
+    const container = document.getElementById('quiz-container');
+    PSYCHO_QUESTIONS.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.id = `qcard-${idx}`;
+
+        card.innerHTML = `
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-sky-700 uppercase">Reactivo ${idx + 1} de 25</span>
+                <span class="text-[11px] font-semibold text-slate-400 bg-slate-100 dark:bg-slate-800 px-2.5 py-0.5 rounded-full">${item.cat}</span>
+            </div>
+            <h3 class="question-title text-sm sm:text-base font-bold text-slate-900 mb-4">${item.q}</h3>
+            <div class="space-y-2">
+                ${item.options.map((opt, oIdx) => `
+                    <button type="button" class="option-btn" id="opt-${idx}-${oIdx}" onclick="selectAnswer(${idx}, ${oIdx})">
+                        <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold mr-3 shrink-0">${String.fromCharCode(65 + oIdx)}</span>
+                        <span class="text-xs sm:text-sm">${opt}</span>
+                    </button>
+                `).join('')}
+            </div>
+            <div id="exp-${idx}" class="hidden mt-3 p-3 bg-slate-50 border-l-4 border-sky-600 rounded-r text-xs text-slate-700 leading-relaxed info-panel">
+                <strong>Justificación Técnica:</strong> ${item.exp}
+            </div>
+        `;
+        container.appendChild(card);
+    });
+
+    function selectAnswer(qIdx, optIdx) {
+        if (userAnswers[qIdx] !== undefined) return; // ya respondida
+
+        userAnswers[qIdx] = optIdx;
+        const qData = PSYCHO_QUESTIONS[qIdx];
+
+        // Marcar botones
+        qData.options.forEach((_, i) => {
+            const btn = document.getElementById(`opt-${qIdx}-${i}`);
+            btn.disabled = true;
+            if (i === qData.correct) {
+                btn.classList.add('correct');
+            } else if (i === optIdx) {
+                btn.classList.add('incorrect');
+            }
+        });
+
+        // Mostrar explicación pedagógica
+        document.getElementById(`exp-${qIdx}`).classList.remove('hidden');
+
+        // Actualizar barra de progreso
+        const answeredCount = Object.keys(userAnswers).length;
+        const pct = (answeredCount / PSYCHO_QUESTIONS.length) * 100;
+        document.getElementById('progress-bar').style.width = pct + '%';
+    }
+
+    function finishQuiz() {
+        const answeredCount = Object.keys(userAnswers).length;
+        const total = PSYCHO_QUESTIONS.length;
+
+        if (answeredCount < total) {
+            document.getElementById('alert-unanswered').classList.remove('hidden');
+        } else {
+            document.getElementById('alert-unanswered').classList.add('hidden');
+        }
+
+        let correct = 0;
+        PSYCHO_QUESTIONS.forEach((q, idx) => {
+            if (userAnswers[idx] === q.correct) correct++;
+        });
+
+        const pct = Math.round((correct / total) * 100);
+
+        document.getElementById('correct-count').textContent = `${correct} / ${total}`;
+        document.getElementById('pct-score').textContent = `${pct}%`;
+
+        const badge = document.getElementById('badge-score');
+        const title = document.getElementById('title-score');
+        const desc = document.getElementById('desc-score');
+        const verdict = document.getElementById('status-verdict');
+        const advice = document.getElementById('advice-list');
+        advice.innerHTML = '';
+
+        if (pct >= 85) {
+            badge.className = 'inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2 bg-emerald-100 text-emerald-800';
+            badge.textContent = 'Perfil Altamente Recomendado • Sobresaliente';
+            title.textContent = 'Excelente Capacidad Psicométrica y Criterio Táctico';
+            desc.textContent = `Has obtenido ${correct} aciertos (${pct}%). Tu perfil demuestra un pensamiento lógico estructurado, agilidad numérica y un sólido alineamiento con los principios de disciplina y resiliencia naval.`;
+            verdict.textContent = 'APTO SOBRESALIENTE';
+            verdict.className = 'text-lg sm:text-xl font-bold text-emerald-600 mt-1 block';
+
+            advice.innerHTML = `
+                <li><strong>Mantén la velocidad de respuesta:</strong> En el examen real de la SEMAR, el tiempo por reactivo suele ser de 45 a 60 segundos.</li>
+                <li><strong>Entrenamiento físico complementario:</strong> Recuerda que la prueba psicométrica se promedia con las pruebas de capacidad física y el examen médico militar.</li>
+                <li><strong>Lectura de legislación naval:</strong> Repasa la Ley de Disciplina del Ejército y Fuerza Aérea Mexicanos y la Ley Orgánica de la Armada de México.</li>
+            `;
+        } else if (pct >= 70) {
+            badge.className = 'inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2 bg-sky-100 text-sky-800';
+            badge.textContent = 'Perfil Apto para el Servicio Naval';
+            title.textContent = 'Resultado Aprobatorio Satisfactorio';
+            desc.textContent = `Has obtenido ${correct} aciertos (${pct}%). Superas el umbral estándar de selección de la Armada. Tienes buen juicio, aunque conviene reforzar la rapidez en series numéricas y visión espacial.`;
+            verdict.textContent = 'APTO REGULAR';
+            verdict.className = 'text-lg sm:text-xl font-bold text-sky-600 mt-1 block';
+
+            advice.innerHTML = `
+                <li><strong>Práctica de matrices de figuras:</strong> Dedica tiempo a resolver ejercicios de matrices de Raven y rotaciones espaciales.</li>
+                <li><strong>Manejo del tiempo:</strong> No te detengas demasiado en un solo reactivo matemático durante la prueba oficial; responde primero lo seguro.</li>
+            `;
+        } else {
+            badge.className = 'inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2 bg-amber-100 text-amber-800';
+            badge.textContent = 'Requiere Fortalecimiento de Aptitudes';
+            title.textContent = 'Calificación por Debajo del Estándar Competitivo';
+            desc.textContent = `Has obtenido ${correct} aciertos (${pct}%). Te recomendamos repasar los reactivos erróneos revisando sus justificaciones técnicas para familiarizarte con la lógica militar de selección.`;
+            verdict.textContent = 'NO APTO / OBSERVACIONES';
+            verdict.className = 'text-lg sm:text-xl font-bold text-amber-600 mt-1 block';
+
+            advice.innerHTML = `
+                <li><strong>Lee la justificación de cada reactivo:</strong> Identifica si tus fallas fueron por cálculo numérico o por interpretación de doctrinas de mando.</li>
+                <li><strong>Repite el simulador:</strong> La práctica deliberada eleva la puntuación psicométrica hasta en un 35% en intentos posteriores.</li>
+            `;
+        }
+
+        if (window.HazelTestApp && typeof HazelTestApp.addXP === 'function') {
+            HazelTestApp.addXP(50);
+        }
+
+        const card = document.getElementById('results-card');
+        card.classList.remove('hidden');
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    </script>
+</body>
+</html>

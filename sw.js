@@ -1,10 +1,13 @@
-// Service Worker para HazelTest (Modo Offline y Cache PWA v8)
-const CACHE_NAME = 'hazeltest-cache-v8';
+// Service Worker para HazelTest (Modo Offline y Cache PWA v9)
+const CACHE_NAME = 'hazeltest-cache-v9';
 
 const STATIC_ASSETS = [
   '/',
   '/articulos/',
   '/articulos/estructura-del-buque-conocimientos-marineros.html',
+  '/articulos/tdah-en-adultos-sintomas-diagnostico-asrs.html',
+  '/articulos/estilos-de-apego-ansioso-evitativo-seguro.html',
+  '/articulos/examen-psicometrico-semar-guia-consejos.html',
   '/acerca-de.html',
   '/categorias.html',
   '/mapa-del-sitio.html',
@@ -13,6 +16,7 @@ const STATIC_ASSETS = [
   '/marina/estudio/test-cultura-naval.html',
   '/marina/estudio/test-grados-jerarquias.html',
   '/marina/estudio/test-estructura-del-buque.html',
+  '/marina/estudio/test-psicometrico-semar.html',
   '/marina/estudio/data/cultura-naval-banco.js',
   '/marina/estudio/data/cultura-naval-banco.json',
   '/marina/estudio/temario/progreso-estudio.html',
@@ -24,6 +28,8 @@ const STATIC_ASSETS = [
   '/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html',
   '/marina/estudio/funcionarios/ordena-los-cargos-de-los-funcionarios.html',
   '/social/test.html',
+  '/social/test-de-tdah.html',
+  '/social/test-de-apego.html',
   '/social/test-de-personalidad.html',
   '/social/test-de-ansiedad.html',
   '/social/test-de-autoestima.html',
