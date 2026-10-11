@@ -1,9 +1,10 @@
-// Service Worker para HazelTest (Modo Offline y Cache PWA v7)
-const CACHE_NAME = 'hazeltest-cache-v7';
+// Service Worker para HazelTest (Modo Offline y Cache PWA v8)
+const CACHE_NAME = 'hazeltest-cache-v8';
 
 const STATIC_ASSETS = [
   '/',
   '/articulos/',
+  '/articulos/estructura-del-buque-conocimientos-marineros.html',
   '/acerca-de.html',
   '/categorias.html',
   '/mapa-del-sitio.html',
@@ -11,6 +12,7 @@ const STATIC_ASSETS = [
   '/marina/test.html',
   '/marina/estudio/test-cultura-naval.html',
   '/marina/estudio/test-grados-jerarquias.html',
+  '/marina/estudio/test-estructura-del-buque.html',
   '/marina/estudio/data/cultura-naval-banco.js',
   '/marina/estudio/data/cultura-naval-banco.json',
   '/marina/estudio/temario/progreso-estudio.html',

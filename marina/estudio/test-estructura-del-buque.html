@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Estructura del Buque: Conocimientos Marineros SEMAR | HazelTest</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4TEPLD75E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4TEPLD75E');
+    </script>    
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Simulador oficial de examen de Conocimientos Marineros: 25 preguntas sobre la Estructura del Buque, quilla, cuadernas, baos, mamparos, proas y codaste para ascensos SEMAR.">
+    <meta name="keywords" content="test estructura del buque, examen conocimientos marineros semar, quiz partes del barco armada, simulador ascenso semar marinero cabo maestre">
+    <link rel="canonical" href="https://hazeltest.com/marina/estudio/test-estructura-del-buque.html">
+
+    <!-- Open Graph & Social -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Test de Estructura del Buque: Conocimientos Marineros SEMAR | HazelTest">
+    <meta property="og:description" content="Pon a prueba tus conocimientos sobre la arquitectura naval militar: 25 preguntas clave con retroalimentación inmediata.">
+    <meta property="og:url" content="https://hazeltest.com/marina/estudio/test-estructura-del-buque.html">
+    <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
+    <meta property="og:site_name" content="HazelTest">
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/x-icon" href="/hazeltest.ico">
+    <link rel="apple-touch-icon" href="/hazeltest.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1e3a8a">
+    <link rel="stylesheet" href="/hazeltest-theme.css?v=5.0">
+
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded High-Contrast Dark Mode & Layout Styling -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
+
+        /* Option Cards - Light Mode */
+        .opcion-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+            background-color: #ffffff;
+        }
+        .opcion-card:hover {
+            border-color: #3b82f6;
+            background-color: #f8fafc;
+            transform: translateY(-1px);
+        }
+        .opcion-radio:checked + .opcion-card {
+            border-color: #1d4ed8;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            box-shadow: 0 4px 14px -2px rgba(29, 78, 216, 0.25);
+        }
+
+        /* ========================================================
+           MODO OSCURO ULTRA-PULIDO (HIGH CONTRAST & PREMIUM NAVY)
+           ======================================================== */
+        html.dark body {
+            background-color: #0b1120 !important;
+            color: #f8fafc !important;
+        }
+        html.dark #quiz-wrapper,
+        html.dark #test-resultados,
+        html.dark article,
+        html.dark .bg-white {
+            background-color: #111c33 !important;
+            border-color: #1e293b !important;
+            color: #f8fafc !important;
+        }
+        html.dark h1, html.dark h2, html.dark h3, html.dark h4,
+        html.dark .text-slate-900, html.dark .text-slate-800 {
+            color: #ffffff !important;
+        }
+        html.dark p, html.dark .text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+        html.dark .text-slate-600, html.dark .text-slate-500 {
+            color: #94a3b8 !important;
+        }
+        html.dark strong {
+            color: #ffffff !important;
+        }
+        html.dark .question-block {
+            background-color: #16223b !important;
+            border-color: #24355a !important;
+            color: #f8fafc !important;
+        }
+        html.dark .opcion-card {
+            background-color: #0d1527 !important;
+            border-color: #24355a !important;
+            color: #f1f5f9 !important;
+        }
+        html.dark .opcion-card:hover {
+            border-color: #60a5fa !important;
+            background-color: #1a2a4b !important;
+        }
+        html.dark .opcion-radio:checked + .opcion-card {
+            border-color: #60a5fa !important;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%) !important;
+            box-shadow: 0 4px 16px -2px rgba(59, 130, 246, 0.45) !important;
+        }
+        html.dark .opcion-card span {
+            color: #f8fafc !important;
+        }
+        html.dark .opcion-card span.text-slate-400 {
+            color: #94a3b8 !important;
+        }
+        html.dark #progress-container {
+            background-color: #111c33 !important;
+            border-color: #24355a !important;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5) !important;
+        }
+        html.dark #progress-container span.text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+        html.dark #progress-pct {
+            background-color: #16223b !important;
+            border-color: #3b82f6 !important;
+            color: #93c5fd !important;
+        }
+        html.dark #progress-container .bg-slate-100 {
+            background-color: #1e293b !important;
+        }
+        html.dark .bg-slate-50, html.dark .bg-blue-50\/40 {
+            background-color: #16223b !important;
+            border-color: #24355a !important;
+            color: #e2e8f0 !important;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD Quiz -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": "Test de Estructura del Buque (Conocimientos Marineros)",
+        "description": "Simulador de evaluación naval sobre la estructura del buque, quilla, cuadernas, baos, mamparos y superestructuras según el temario oficial SEMAR.",
+        "inLanguage": "es-MX",
+        "educationalLevel": "Intermediate",
+        "about": {
+            "@type": "Thing",
+            "name": "Conocimientos Marineros y Arquitectura Naval"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "HazelTest",
+            "url": "https://hazeltest.com/"
+        }
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen selection:bg-blue-600 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 md:px-6 py-3.5 flex justify-between items-center">
+            <a href="/" class="text-2xl font-black text-blue-900 tracking-tight flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-blue-900 text-amber-400 flex items-center justify-center font-bold text-lg shadow-md shadow-blue-200">⚓</span>
+                <span>Hazel<span class="text-blue-600">Test</span></span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="/" class="text-slate-600 hover:text-blue-700 transition">Inicio</a>
+                <a href="/categorias.html" class="text-slate-600 hover:text-blue-700 transition">Categorías</a>
+                <a href="/marina/test.html" class="text-slate-600 hover:text-blue-700 transition">Módulo Marina</a>
+                <a href="/articulos/estructura-del-buque-conocimientos-marineros.html" class="text-slate-600 hover:text-blue-700 transition">Manual Teórico</a>
+                <span class="px-3 py-1 bg-blue-50 text-blue-800 font-semibold rounded-full border border-blue-200 text-xs">Simulador Oficial</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" aria-label="Abrir menú" class="p-2 text-slate-600 focus:outline-none hover:bg-slate-100 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-200 px-4 py-3 space-y-2 text-sm">
+            <a href="/" class="block px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-50">Inicio</a>
+            <a href="/categorias.html" class="block px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-50">Categorías</a>
+            <a href="/marina/test.html" class="block px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-50">Módulo Marina</a>
+            <a href="/articulos/estructura-del-buque-conocimientos-marineros.html" class="block px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-50">Manual Teórico</a>
+            <span class="block px-3 py-2 text-blue-800 bg-blue-50 font-semibold rounded-lg">Simulador Oficial</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12 flex-grow max-w-4xl">
+
+        <!-- Breadcrumb -->
+        <nav class="flex items-center text-xs md:text-sm text-slate-500 mb-6 gap-2" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-blue-600">Inicio</a>
+            <span>/</span>
+            <a href="/marina/test.html" class="hover:text-blue-600">Marina</a>
+            <span>/</span>
+            <span class="text-slate-800 font-medium truncate">Test de Estructura del Buque</span>
+        </nav>
+
+        <!-- Hero Card -->
+        <div class="bg-gradient-to-br from-slate-900 via-blue-950 to-blue-900 rounded-3xl p-6 md:p-10 text-white shadow-xl mb-8 relative overflow-hidden border border-blue-900/60">
+            <div class="absolute -right-8 -bottom-8 w-60 h-60 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-400/20 text-amber-300 rounded-full text-xs font-bold mb-4 border border-amber-400/30">
+                    <span>🛳️</span> Conocimientos Marineros | Capítulo I Oficial
+                </div>
+                <h1 class="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight mb-4">
+                    Test de Estructura del Buque y Conocimientos Marineros
+                </h1>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mb-6">
+                    Evalúa tus conocimientos sobre la arquitectura naval, cualidades esenciales, quilla, cuadernas, baos, tracas, mamparos y superestructuras con este simulador pedagógico de 25 preguntas.
+                </p>
+
+                <!-- Stats Badges -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-white/10 text-xs md:text-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">📋</span>
+                        <div><strong class="block text-white">25 Preguntas</strong><span class="text-slate-300 text-xs">Temario completo</span></div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">⏱️</span>
+                        <div><strong class="block text-white">10 Minutos</strong><span class="text-slate-300 text-xs">Duración sugerida</span></div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">💡</span>
+                        <div><strong class="block text-white">Explicaciones</strong><span class="text-slate-300 text-xs">Doctrina oficial</span></div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">🏆</span>
+                        <div><strong class="block text-white">+50 Puntos XP</strong><span class="text-slate-300 text-xs">Gamificación</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticky Live Progress Bar -->
+        <div id="progress-container" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm mb-6 sticky top-20 z-40">
+            <div class="flex justify-between items-center text-xs md:text-sm font-semibold mb-2">
+                <span class="text-slate-700 flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                    Progreso: <span id="progress-text" class="text-blue-700 font-bold">0 / 25 respondidas</span>
+                </span>
+                <span id="progress-pct" class="text-blue-700 font-bold bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-100">0%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                <div id="progress-bar-fill" class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2.5 rounded-full transition-all duration-300 ease-out w-0"></div>
+            </div>
+        </div>
+
+        <!-- Form Quiz Container -->
+        <section class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-sm mb-12" id="quiz-wrapper">
+            <div class="border-b border-slate-100 pb-5 mb-8">
+                <h2 class="text-xl md:text-2xl font-bold text-slate-900 tracking-tight">
+                    Cuestionario Oficial de Estructura del Buque (25 Reactivos)
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">
+                    Selecciona la opción correcta en cada pregunta. Al enviar, recibirás tu diagnóstico y la retroalimentación doctrinaria.
+                </p>
+            </div>
+
+            <form id="ship-test-form" class="space-y-8">
+
+                <!-- Q1 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q1">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denomina al plano vertical dirigido en el sentido de la longitud que divide al buque en dos partes simétricas cuando está adrizado?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p1" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Plano diametral o longitudinal</span></div></label>
+                        <label><input type="radio" name="p1" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Plano transversal o de deriva</span></div></label>
+                        <label><input type="radio" name="p1" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Plano de flotación neutro</span></div></label>
+                        <label><input type="radio" name="p1" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Línea de crujía horizontal</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q2">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué cualidad esencial permite al buque mantenerse a flote a pesar de que alguna de sus partes se encuentre inundada?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p2" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Flotabilidad</span></div></label>
+                        <label><input type="radio" name="p2" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Estabilidad</span></div></label>
+                        <label><input type="radio" name="p2" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Solidez</span></div></label>
+                        <label><input type="radio" name="p2" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Estanqueidad dinámica</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q3">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se define la cualidad esencial de "Estabilidad" en un buque?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p3" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) La facultad de volver a su posición de equilibrio por sí mismo al ser desplazado por un agente externo</span></div></label>
+                        <label><input type="radio" name="p3" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) La capacidad del propulsor de mantener la velocidad constante contra la corriente</span></div></label>
+                        <label><input type="radio" name="p3" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) La resistencia estructural del casco a deformarse por la acción del oleaje</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q4">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">4</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué es el "Casco" de un buque según las generalidades marineras?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p4" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) El cuerpo del buque en rosca (sin contar arboladura)</span></div></label>
+                        <label><input type="radio" name="p4" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) La parte sumergida por debajo de la flotación</span></div></label>
+                        <label><input type="radio" name="p4" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) El conjunto de cubiertas y superestructuras</span></div></label>
+                        <label><input type="radio" name="p4" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) La estructura estanca del doble fondo</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q5">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">5</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cuáles son los dos efectos positivos directos que produce la "Proa de Bulbo"?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p5" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Aumento de velocidad y mejora del comportamiento del buque en la mar</span></div></label>
+                        <label><input type="radio" name="p5" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Mayor facilidad para fondear y aumento del espacio en bodegas 1 y 2</span></div></label>
+                        <label><input type="radio" name="p5" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Reducción del calado máximo y eliminación del efecto de guiñada</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q6">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">6</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué tipo de proa se conoce también con el nombre de "proa de cuchara", caracterizada por formas en V muy abiertas?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p6" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Proa Maier</span></div></label>
+                        <label><input type="radio" name="p6" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Proa Trawler</span></div></label>
+                        <label><input type="radio" name="p6" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Proa de Violín</span></div></label>
+                        <label><input type="radio" name="p6" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Proa de Cablero</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q7">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">7</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué nombre recibe la parte del casco sumergida por debajo de la línea de flotación?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p7" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Obra viva o carena</span></div></label>
+                        <label><input type="radio" name="p7" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Obra muerta</span></div></label>
+                        <label><input type="radio" name="p7" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Pantoque superior</span></div></label>
+                        <label><input type="radio" name="p7" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Rasel estanco</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q8">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">8</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cuál de los tres tipos básicos de estructuras es el más empleado en la construcción de buques de guerra?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p8" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Estructura mixta</span></div></label>
+                        <label><input type="radio" name="p8" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Estructura transversal pura</span></div></label>
+                        <label><input type="radio" name="p8" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Estructura longitudinal simple</span></div></label>
+                        <label><input type="radio" name="p8" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Estructura tubular monocoque</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q9">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">9</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            En buques de madera, ¿cómo se llamaba la ranura o cavidad longitudinal practicada en la quilla maciza donde encastraban los tablones del forro?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p9" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Alefriz</span></div></label>
+                        <label><input type="radio" name="p9" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Zapata</span></div></label>
+                        <label><input type="radio" name="p9" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Trancanil</span></div></label>
+                        <label><input type="radio" name="p9" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Caperol</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q10 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q10">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">10</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué piezas horizontales se colocan por la parte interior de la roda para consolidarla y reforzarla?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p10" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Buzardas</span></div></label>
+                        <label><input type="radio" name="p10" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Barraganetes</span></div></label>
+                        <label><input type="radio" name="p10" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Palmejares</span></div></label>
+                        <label><input type="radio" name="p10" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Cintones</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q11 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q11">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">11</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denomina la abertura practicada en la bovedilla sobre el codaste para el paso de la cabeza del timón?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p11" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Limera</span></div></label>
+                        <label><input type="radio" name="p11" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Gatera</span></div></label>
+                        <label><input type="radio" name="p11" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Fogonadura</span></div></label>
+                        <label><input type="radio" name="p11" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Faluchera</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q12 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q12">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">12</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué es la "Cuaderna Maestra"?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p12" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) La sección transversal de mayor superficie, situada en el centro del buque</span></div></label>
+                        <label><input type="radio" name="p12" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) La última cuaderna que remata en el espejo de popa</span></div></label>
+                        <label><input type="radio" name="p12" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) La primera cuaderna unida directamente al branque de la roda</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q13 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q13">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">13</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué son las "Bulárcamas"?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p13" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Cuadernas reforzadas de mayor canto que las ordinarias</span></div></label>
+                        <label><input type="radio" name="p13" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Planchas horizontales que forman el doble fondo</span></div></label>
+                        <label><input type="radio" name="p13" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Refuerzos verticales que sostienen los palos</span></div></label>
+                        <label><input type="radio" name="p13" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Defensas móviles de caucho en los costados</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q14 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q14">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">14</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denomina la curvatura hacia los costados que tienen los baos y las cubiertas para facilitar el desalojo del agua?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p14" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Brusca o vuelta</span></div></label>
+                        <label><input type="radio" name="p14" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Astilla muerta</span></div></label>
+                        <label><input type="radio" name="p14" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Arrufo longitudinal</span></div></label>
+                        <label><input type="radio" name="p14" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Alabeo estático</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q15 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q15">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">15</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Qué piezas longitudinales refuerzan los costados por su interior para proteger al casco de los esfuerzos de los "machetazos"?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p15" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Palmejares</span></div></label>
+                        <label><input type="radio" name="p15" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Puntales</span></div></label>
+                        <label><input type="radio" name="p15" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Varengas</span></div></label>
+                        <label><input type="radio" name="p15" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Barraganetes</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q16 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q16">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">16</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cuál es la "Traca de Aparadura"?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p16" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) La hilada de planchas que se coloca inmediata a la quilla (la primera traca)</span></div></label>
+                        <label><input type="radio" name="p16" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) La hilada de mayor espesor colocada a la altura de la cubierta principal</span></div></label>
+                        <label><input type="radio" name="p16" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) La hilada situada sobre el curvatón de mayor curvatura de la cuaderna</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q17 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q17">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">17</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cuál es la finalidad de colocar carenotes laterales (quillas de balance) a la altura de la traca de pantoque?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p17" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Disminuir la amplitud de los balances originados por la marejada</span></div></label>
+                        <label><input type="radio" name="p17" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Proteger el forro durante el atraque contra muelles</span></div></label>
+                        <label><input type="radio" name="p17" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Facilitar el remolque de buques de gran porte</span></div></label>
+                        <label><input type="radio" name="p17" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Aumentar la velocidad en marcha avante</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q18 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q18">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">18</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cuál es el mamparo estanco obligatorio por SOLAS situado a proa para limitar una vía de agua por choque?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p18" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Mamparo de colisión</span></div></label>
+                        <label><input type="radio" name="p18" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Mamparo del pique de popa</span></div></label>
+                        <label><input type="radio" name="p18" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Mamparo de la ciudadela</span></div></label>
+                        <label><input type="radio" name="p18" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Mamparo de calderas</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q19 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q19">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">19</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denomina la traca de planchas de las cubiertas contigua a los costados, que es de mayor espesor por soportar grandes esfuerzos de balance?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p19" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Trancanil</span></div></label>
+                        <label><input type="radio" name="p19" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Traca de cinta</span></div></label>
+                        <label><input type="radio" name="p19" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Tapa de regala</span></div></label>
+                        <label><input type="radio" name="p19" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Sobrequilla</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q20 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q20">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">20</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denominan las tres superestructuras según su posición a proa, centro y popa respectivamente?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p20" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Castillo (proa), Ciudadela (centro) y Toldilla o Alcázar (popa)</span></div></label>
+                        <label><input type="radio" name="p20" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Puente alto (proa), Caseta (centro) y Bovedilla (popa)</span></div></label>
+                        <label><input type="radio" name="p20" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Alcázar (proa), Pozo (centro) y Castillo (popa)</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q21 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q21">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">21</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se llaman los marcos verticales que guarnecen las escotillas para protegerlas del agua de mar con mal tiempo?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p21" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Brazolas</span></div></label>
+                        <label><input type="radio" name="p21" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Galeotas</span></div></label>
+                        <label><input type="radio" name="p21" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Cuarteles</span></div></label>
+                        <label><input type="radio" name="p21" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Falucheras</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q22 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q22">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">22</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denominan las aberturas en la amurada cuya finalidad es el desagüe rápido de la cubierta inundada por golpes de mar?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p22" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Falucheras (portas de desagüe)</span></div></label>
+                        <label><input type="radio" name="p22" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Gateras</span></div></label>
+                        <label><input type="radio" name="p22" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Portalones</span></div></label>
+                        <label><input type="radio" name="p22" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Fogonaduras</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q23 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q23">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">23</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cuál es la diferencia entre "Fogonadura" y "Carlinga"?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p23" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) La fogonadura es la abertura en la cubierta; la carlinga es el armazón donde descansa la mecha del palo</span></div></label>
+                        <label><input type="radio" name="p23" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) La carlinga es el orificio en cubierta; la fogonadura es el refuerzo inferior de la quilla</span></div></label>
+                        <label><input type="radio" name="p23" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Son sinónimos que designan los tubos de amarre de remolcadores</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q24 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q24">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">24</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            ¿Cómo se denominan las zonas más curvas del casco en las proximidades de la proa y de la popa respectivamente?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label><input type="radio" name="p24" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) Amura (proa) y Aleta (popa)</span></div></label>
+                        <label><input type="radio" name="p24" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) Aleta (proa) y Amura (popa)</span></div></label>
+                        <label><input type="radio" name="p24" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Pantoque (proa) y Coronamiento (popa)</span></div></label>
+                        <label><input type="radio" name="p24" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">D) Rasel (proa) y Saltillo (popa)</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Q25 -->
+                <div class="question-block p-4 md:p-6 rounded-2xl bg-slate-50/70 border border-slate-100 transition" id="q25">
+                    <div class="flex items-start gap-3 mb-4">
+                        <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 font-bold flex items-center justify-center shrink-0 text-sm">25</span>
+                        <p class="font-semibold text-slate-900 text-base md:text-lg">
+                            En los buques mercantes, ¿cómo se numeran las bodegas de carga?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label><input type="radio" name="p25" value="correct" class="sr-only opcion-radio" required><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">A) A partir de proa hacia popa; la número 1 comienza en el mamparo de colisión</span></div></label>
+                        <label><input type="radio" name="p25" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">B) A partir de popa hacia proa; la número 1 se ubica junto a la cámara de máquinas</span></div></label>
+                        <label><input type="radio" name="p25" value="wrong" class="sr-only opcion-radio"><div class="opcion-card p-3.5"><span class="font-semibold text-slate-800 text-sm block">C) Con números pares a babor e impares a estribor desde crujía</span></div></label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-4 text-center">
+                    <button type="submit" id="calificar-btn" class="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-800 hover:to-indigo-900 text-white font-bold rounded-2xl shadow-lg shadow-blue-200 hover:shadow-blue-300 transition-all transform hover:-translate-y-0.5 text-base md:text-lg cursor-pointer">
+                        ⚓ Calificar Mi Examen de Estructura Naval
+                    </button>
+                    <p class="text-xs text-slate-400 mt-2">Evaluación instantánea con retroalimentación completa.</p>
+                </div>
+            </form>
+        </section>
+
+        <!-- Dynamic Results Section (Hidden until submitted) -->
+        <section id="test-resultados" class="hidden mb-12">
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-xl overflow-hidden relative">
+                
+                <div class="text-center mb-8">
+                    <span class="inline-block px-3 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-full uppercase tracking-wider mb-2 border border-blue-100">Evaluación Finalizada</span>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900">Resultado Oficial de Estructura del Buque</h2>
+                    <p class="text-slate-500 text-sm mt-1">Calificación doctrinaria basada en el Capítulo I de Conocimientos Marineros</p>
+                </div>
+
+                <!-- Hero Result Card -->
+                <div id="resultado-card-header" class="rounded-2xl p-6 md:p-8 text-white mb-8 transition-colors duration-300 bg-blue-900">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-center md:text-left">
+                            <span class="text-xs uppercase font-bold tracking-widest text-blue-200">Aciertos Obtenidos</span>
+                            <div class="flex items-baseline justify-center md:justify-start gap-2 mt-1">
+                                <span id="score-number" class="text-5xl md:text-6xl font-black">0</span>
+                                <span class="text-xl md:text-2xl font-medium text-white/80">/ 25 correctas</span>
+                            </div>
+                            <h3 id="nivel-naval" class="text-xl md:text-2xl font-bold mt-2">Calificando...</h3>
+                        </div>
+                        <div class="w-full md:w-64 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 text-xs">
+                            <div class="font-bold mb-1 text-white flex items-center justify-between">
+                                <span>Efectividad:</span>
+                                <span id="rango-etiqueta" class="font-black">0%</span>
+                            </div>
+                            <div class="w-full bg-white/20 rounded-full h-2.5 mt-2 overflow-hidden">
+                                <div id="rango-gauge" class="h-2.5 bg-amber-400 rounded-full transition-all duration-700" style="width: 0%;"></div>
+                            </div>
+                            <p class="text-white/80 mt-2 text-[11px]" id="rango-subtexto">Mínimo aprobatorio SEMAR: 80%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Diagnostic -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 mb-8">
+                    <h4 class="font-bold text-slate-900 text-lg mb-2 flex items-center gap-2">
+                        <span>🧭</span> Diagnóstico Profesional:
+                    </h4>
+                    <p id="descripcion-naval" class="text-slate-700 text-sm md:text-base leading-relaxed">
+                        Cargando diagnóstico...
+                    </p>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex flex-wrap items-center justify-center gap-4 pt-4 border-t border-slate-100">
+                    <button id="reiniciar-test-btn" class="px-6 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-xl text-sm transition">
+                        🔄 Repetir el examen
+                    </button>
+                    <a href="/articulos/estructura-del-buque-conocimientos-marineros.html" class="px-6 py-2.5 bg-blue-50 hover:bg-blue-100 text-blue-800 font-semibold rounded-xl text-sm transition">
+                        📖 Estudiar el Manual Teórico
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-auto border-t border-slate-800 text-xs md:text-sm">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="w-6 h-6 rounded bg-blue-700 text-amber-400 flex items-center justify-center font-bold text-xs">⚓</span>
+                <span class="text-white font-bold text-base">HazelTest Marina</span>
+            </div>
+            <p class="max-w-xl mx-auto text-slate-400 mb-6 leading-relaxed">
+                Plataforma interactiva de entrenamiento doctrinario naval. Contenido revisado por el Equipo Editorial HazelTest.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mb-6 font-medium">
+                <a href="/privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="/terminos-y-condiciones.html" class="hover:text-white transition">Términos de Servicio</a>
+                <a href="/acerca-de.html" class="hover:text-white transition">Acerca de Nosotros</a>
+                <a href="/contacto.html" class="hover:text-white transition">Contacto</a>
+                <a href="/mapa-del-sitio.html" class="hover:text-white transition">Mapa del Sitio</a>
+            </div>
+            <p class="text-slate-500 text-xs">&copy; 2026 HazelTest. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script src="/hazeltest-app.js?v=2.0"></script>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const testForm = document.getElementById('ship-test-form');
+        const quizWrapper = document.getElementById('quiz-wrapper');
+        const progressContainer = document.getElementById('progress-container');
+        const progressBarFill = document.getElementById('progress-bar-fill');
+        const progressText = document.getElementById('progress-text');
+        const progressPct = document.getElementById('progress-pct');
+        const resultadosSection = document.getElementById('test-resultados');
+        const scoreNumber = document.getElementById('score-number');
+        const nivelNaval = document.getElementById('nivel-naval');
+        const descripcionNaval = document.getElementById('descripcion-naval');
+        const cardHeader = document.getElementById('resultado-card-header');
+        const rangoEtiqueta = document.getElementById('rango-etiqueta');
+        const rangoGauge = document.getElementById('rango-gauge');
+        const rangoSubtexto = document.getElementById('rango-subtexto');
+        const reiniciarTestBtn = document.getElementById('reiniciar-test-btn');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Update progress tracker
+        function updateProgress() {
+            let answered = 0;
+            const total = 25;
+            for (let i = 1; i <= total; i++) {
+                if (testForm.querySelector(`input[name="p${i}"]:checked`)) {
+                    answered++;
+                }
+            }
+            const pct = Math.round((answered / total) * 100);
+            if (progressBarFill) progressBarFill.style.width = pct + '%';
+            if (progressText) progressText.textContent = `${answered} / ${total} respondidas`;
+            if (progressPct) progressPct.textContent = `${pct}%`;
+        }
+
+        testForm.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', updateProgress);
+        });
+
+        testForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let aciertos = 0;
+            const total = 25;
+            let answered = 0;
+
+            for (let i = 1; i <= total; i++) {
+                const checked = testForm.querySelector(`input[name="p${i}"]:checked`);
+                if (checked) {
+                    answered++;
+                    if (checked.value === 'correct') {
+                        aciertos++;
+                    }
+                }
+            }
+
+            if (answered < total) {
+                alert(`Has respondido ${answered} de ${total} preguntas. Por favor responde todo el cuestionario.`);
+                return;
+            }
+
+            const pct = Math.round((aciertos / total) * 100);
+            let nivel = "";
+            let desc = "";
+            let bgClass = "bg-blue-900";
+            let subtexto = "";
+
+            if (pct >= 90) {
+                nivel = `¡Excelente! Nivel Ingeniero Naval (${aciertos}/25 aciertos)`;
+                bgClass = "bg-emerald-700";
+                subtexto = "¡Aprobado con Calificación Sobresaliente!";
+                desc = "¡Felicidades, Marino! Posees un dominio magistral y riguroso de la estructura del buque, esqueleto longitudinal/transversal, compartimentaje estanco y piezas de construcción naval militar según el manual de Conocimientos Marineros.";
+            } else if (pct >= 75) {
+                nivel = `Aprobado - Buen Nivel Doctrinal (${aciertos}/25 aciertos)`;
+                bgClass = "bg-blue-800";
+                subtexto = "Aprobado dentro del estándar oficial de ascenso.";
+                desc = "Tienes muy claras las bases del casco, quilla, cuadernas y mamparos. Repasa los detalles específicos de codastes (abierto vs falso codaste) y accesorios de maniobra (galeotas, falucheras, carlinga) para asegurar el 100%.";
+            } else if (pct >= 60) {
+                nivel = `Nivel Regular (${aciertos}/25 aciertos)`;
+                bgClass = "bg-amber-600";
+                subtexto = "Zona de riesgo en examen oficial.";
+                desc = "Aprobaste con el mínimo justo. Se detectaron confusiones entre elementos longitudinales (vagras, palmejares) y transversales (varengas, baos). Te recomendamos leer el manual teórico antes de tu examen de ascenso.";
+            } else {
+                nivel = `No Aprobatorio - Requiere Estudio (${aciertos}/25 aciertos)`;
+                bgClass = "bg-red-700";
+                subtexto = "Calificación por debajo del umbral mínimo.";
+                desc = "La arquitectura naval y la estructura del buque son fundamentales para la seguridad de la vida en la mar. Lee con detenimiento el capítulo teórico completo en HazelTest y repite este simulador.";
+            }
+
+            scoreNumber.textContent = aciertos;
+            nivelNaval.textContent = nivel;
+            descripcionNaval.textContent = desc;
+            rangoEtiqueta.textContent = pct + '%';
+            rangoSubtexto.textContent = subtexto;
+            rangoGauge.style.width = pct + '%';
+            cardHeader.className = `rounded-2xl p-6 md:p-8 text-white mb-8 transition-colors duration-300 ${bgClass}`;
+
+            quizWrapper.classList.add('hidden');
+            progressContainer.classList.add('hidden');
+            resultadosSection.classList.remove('hidden');
+
+            if (window.HazelTestApp && typeof window.HazelTestApp.addXP === 'function') {
+                window.HazelTestApp.addXP(50);
+            }
+
+            resultadosSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        if (reiniciarTestBtn) {
+            reiniciarTestBtn.addEventListener('click', () => {
+                testForm.reset();
+                updateProgress();
+                resultadosSection.classList.add('hidden');
+                quizWrapper.classList.remove('hidden');
+                progressContainer.classList.remove('hidden');
+                quizWrapper.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>
