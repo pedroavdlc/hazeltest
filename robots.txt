@@ -2,7 +2,6 @@
 User-agent: *
 # Paginas protegidas / administrativas
 Disallow: /marina/uploader.html
-Disallow: /marina/estudio/temario/progreso-estudio.html
 # Permitir acceso al resto del sitio
 Allow: /
 
