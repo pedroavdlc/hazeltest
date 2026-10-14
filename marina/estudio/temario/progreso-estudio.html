@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temario de Estudio Oficial SEMAR: Guía y Control de Progreso Naval | HazelTest</title>
+    <title>Temario de Estudio Oficial SEMAR: Guía, Quizzes y Control de Progreso | HazelTest</title>
     <link rel="canonical" href="https://hazeltest.com/marina/estudio/temario/progreso-estudio.html">
     
     <!-- Geo & Localization Tags -->
@@ -29,20 +29,20 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587395236666686" crossorigin="anonymous"></script>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Temario oficial de estudio para exámenes de ascenso y admisión SEMAR (Armada de México). Controla tu avance tema por tema, accede a simuladores interactivos y organiza tu estudio de Cultura Naval y Doctrina.">
-    <meta name="keywords" content="temario marina semar, temario oficial armada de mexico, guia de estudio semar, temario cultura naval, examen ascenso marina, doctrina naval semar, progreso estudio naval">
+    <meta name="description" content="Temario oficial de la Secretaría de Marina (SEMAR) con acceso directo a todos los quizzes y simuladores: Cultura Naval (469 reactivos), Grados y Jerarquías, Estructura del Buque, Test Psicométrico y Altos Mandos.">
+    <meta name="keywords" content="temario marina semar, quizzes marina semar, simulador examen ascenso armada, test cultura naval, grados navales examen, test psicometrico semar, funcionarios semar test">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph & Social -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Temario de Estudio Oficial SEMAR: Guía y Control de Progreso Naval | HazelTest">
-    <meta property="og:description" content="Guía interactiva y temario completo de Cultura Naval, Doctrina DAM y Área Profesional para exámenes de la Secretaría de Marina (SEMAR).">
+    <meta property="og:title" content="Temario Oficial SEMAR con Todos los Quizzes y Simuladores | HazelTest">
+    <meta property="og:description" content="Prepara tu examen de ascenso o admisión con todos los quizzes interactivos de la Secretaría de Marina Armada de México.">
     <meta property="og:url" content="https://hazeltest.com/marina/estudio/temario/progreso-estudio.html">
     <meta property="og:image" content="https://hazeltest.com/hazeltest-og.webp">
     <meta property="og:site_name" content="HazelTest">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Temario de Estudio Oficial SEMAR y Control de Progreso | HazelTest">
-    <meta name="twitter:description" content="Organiza tu preparación con el temario oficial de la Armada de México. Marca temas completados y pon a prueba tus conocimientos.">
+    <meta name="twitter:title" content="Temario Oficial SEMAR y Hub de Quizzes Navales | HazelTest">
+    <meta name="twitter:description" content="Accede a todos los simuladores navales de SEMAR en un solo lugar y lleva el control tema por tema.">
     <meta name="twitter:image" content="https://hazeltest.com/hazeltest-og.webp">
 
     <!-- Favicon -->
@@ -65,17 +65,15 @@
         body { font-family: 'Inter', sans-serif; }
         .font-heading { font-family: 'Outfit', sans-serif; }
         
-        /* Enlaces a simuladores */
-        .topic-link {
-            color: #1e3a8a;
-            transition: color 0.15s ease, text-decoration 0.15s ease;
+        .quiz-card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
         }
-        .topic-link:hover {
-            color: #2563eb;
-            text-decoration: underline;
+        .quiz-card-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.12), 0 8px 10px -6px rgba(30, 58, 138, 0.08);
+            border-color: #3b82f6;
         }
 
-        /* Estado tachado al completar */
         .topic-row.completed span.topic-title,
         .topic-row.completed a.topic-link {
             color: #9ca3af;
@@ -86,9 +84,6 @@
             border-left: 2px solid #e2e8f0;
             margin-left: 0.75rem;
             padding-left: 1rem;
-        }
-        .dark .topic-sublist {
-            border-left-color: #334155;
         }
 
         @media print {
@@ -122,15 +117,15 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Temario y Progreso",
+              "name": "Temario y Quizzes",
               "item": "https://hazeltest.com/marina/estudio/temario/progreso-estudio.html"
             }
           ]
         },
         {
           "@type": "Course",
-          "name": "Temario Oficial de Estudio Naval SEMAR",
-          "description": "Temario y guía pedagógica estructurada con las áreas de Cultura Naval, Doctrina de la Armada de México y Especialidad Profesional.",
+          "name": "Temario Oficial y Simuladores Navales SEMAR",
+          "description": "Temario estructurado con acceso directo a todos los simuladores de Cultura Naval, Grados, Buques, Psicométrico y Altos Mandos.",
           "provider": {
             "@type": "Organization",
             "name": "HazelTest",
@@ -142,26 +137,26 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "¿Cómo se guarda mi progreso en este temario?",
+              "name": "¿Cuántos quizzes y simuladores de Marina están disponibles?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Tu progreso se guarda de forma automática en el almacenamiento local (localStorage) de tu navegador. Cada vez que marques o desmarques un tema, se mantendrá guardado en tu dispositivo."
+                "text": "Dispones de más de 10 simuladores interactivos: el banco completo de Cultura Naval con 469 preguntas, Grados y Jerarquías, Estructura del Buque, Test Psicométrico SEMAR y los 6 modos de estudio para los Altos Mandos Navales."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué temas incluye el examen de ascenso o admisión de la SEMAR?",
+              "name": "¿Al hacer clic en un simulador se abre directamente el test?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Comprende principalmente tres núcleos: 1) Cultura Naval (historia, símbolos, legislación, CONVEMAR), 2) Doctrina Militar Naval (Recursos Humanos DAM 1.1.1, Contraincendios, Adiestramiento, Seguridad Física) y 3) Área Profesional y Técnica."
+                "text": "Sí, cada botón y tarjeta te redirige directamente al simulador interactivo para que puedas resolver los reactivos con retroalimentación inmediata y temporizador."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Los temas cuentan con exámenes de prueba interactivos?",
+              "name": "¿Se guarda mi progreso al marcar los temas estudiados?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí, los temas clave cuentan con enlaces directos a simuladores interactivos en HazelTest con bancos oficiales de preguntas y retroalimentación inmediata."
+                "text": "Sí, el avance se guarda automáticamente en tu navegador (localStorage), permitiéndote llevar el conteo de temas completados sin necesidad de crear cuenta."
               }
             }
           ]
@@ -183,7 +178,7 @@
                 <a href="/" class="text-slate-600 hover:text-blue-700 transition">Inicio</a>
                 <a href="/marina/test.html" class="text-slate-600 hover:text-blue-700 transition">Simuladores SEMAR</a>
                 <a href="/categorias.html" class="text-slate-600 hover:text-blue-700 transition">Categorías</a>
-                <span class="text-blue-700 font-semibold bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Mi Progreso Naval</span>
+                <span class="text-blue-700 font-semibold bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Temario & Quizzes</span>
             </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" aria-label="Abrir menú" class="text-slate-600 focus:outline-none p-2">
@@ -195,7 +190,7 @@
             <a href="/" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Inicio</a>
             <a href="/marina/test.html" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Simuladores SEMAR</a>
             <a href="/categorias.html" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Categorías</a>
-            <span class="block px-3 py-2 rounded text-blue-700 bg-blue-50 font-semibold">Mi Progreso Naval</span>
+            <span class="block px-3 py-2 rounded text-blue-700 bg-blue-50 font-semibold">Temario & Quizzes</span>
         </div>
     </header>
 
@@ -207,7 +202,7 @@
                 <span>/</span>
                 <a href="/marina/test.html" class="hover:text-blue-700 transition">Marina SEMAR</a>
                 <span>/</span>
-                <span class="text-slate-800 font-medium truncate">Temario Oficial y Progreso</span>
+                <span class="text-slate-800 font-medium truncate">Temario Oficial y Quizzes</span>
             </nav>
         </div>
     </div>
@@ -219,35 +214,36 @@
         <article class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-10 mb-8">
             <div class="max-w-3xl mx-auto text-center">
                 <span class="inline-block bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
-                    SEMAR • Guía de Estudio 2026
+                    SEMAR • Simuladores & Guía 2026
                 </span>
                 <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-heading mb-4 leading-tight">
-                    Temario de Estudio Oficial SEMAR: Guía y Control de Progreso Naval
+                    Temario de Estudio Oficial SEMAR: Guía y Quizzes Navales
                 </h1>
                 <p class="text-base sm:text-lg text-slate-600 mb-6 leading-relaxed">
-                    Estructura integral para la preparación de exámenes de admisión, cursos y promociones de ascenso en la 
-                    <strong>Secretaría de Marina - Armada de México</strong>. Marca cada tema a medida que lo estudies y accede directamente a los simuladores interactivos de reactivos.
+                    Accede directamente a todos los <strong>quizzes interactivos</strong> de la Armada de México para poner a prueba tus conocimientos en tiempo real, mientras llevas el control tema por tema de tu avance.
                 </p>
                 <div class="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-slate-500 font-medium">
-                    <span class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Guardado automático</span>
+                    <a href="#hub-quizzes" class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 font-bold rounded-lg border border-blue-200 hover:bg-blue-100 transition">
+                        ⚡ Ir directo a los Quizzes
+                    </a>
                     <span class="text-slate-300">•</span>
-                    <span class="flex items-center gap-1.5"><span class="text-blue-600 font-bold">📚</span> 3 Módulos Doctrinales</span>
-                    <span class="text-slate-300">•</span>
-                    <span class="flex items-center gap-1.5"><span class="text-indigo-600 font-bold">🎯</span> Simuladores con banco oficial</span>
+                    <a href="#temario-detallado" class="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 font-bold rounded-lg border border-slate-200 hover:bg-slate-200 transition">
+                        📖 Ver Temario Completo
+                    </a>
                 </div>
             </div>
 
             <!-- Panel de Control de Progreso -->
-            <section id="progress-banner" aria-label="Progreso del temario" class="mt-8 bg-gradient-to-br from-slate-900 to-blue-950 text-white rounded-xl p-5 sm:p-7 shadow-lg">
+            <section id="progress-banner" aria-label="Progreso del temario" class="mt-8 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-white rounded-xl p-5 sm:p-7 shadow-lg">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
                     <div>
-                        <p class="text-xs uppercase tracking-wider text-blue-300 font-semibold mb-1">Tu Nivel de Preparación</p>
+                        <p class="text-xs uppercase tracking-wider text-blue-300 font-semibold mb-1">Control de tu Preparación Naval</p>
                         <p id="progress-summary" class="text-xl sm:text-2xl font-bold font-heading">Has completado 0 de 30 temas (0%)</p>
                     </div>
                     <div class="flex items-center gap-2 self-start sm:self-auto">
                         <button id="btn-print" class="px-3.5 py-1.5 bg-white/10 hover:bg-white/20 text-white text-xs font-semibold rounded-lg transition border border-white/20 flex items-center gap-1.5">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-                            Imprimir Temario
+                            Imprimir
                         </button>
                         <button id="reset-progress" class="px-3.5 py-1.5 bg-rose-500/20 hover:bg-rose-500/30 text-rose-200 hover:text-white text-xs font-semibold rounded-lg transition border border-rose-400/30">
                             Reiniciar
@@ -263,62 +259,274 @@
             </section>
         </article>
 
-        <!-- Listado Semántico del Temario Oficial (HTML 100% Indexable) -->
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-10 mb-8 space-y-10">
+        <!-- SECCIÓN 1: HUB DIRECTO CON TODOS LOS QUIZZES DE MARINA -->
+        <section id="hub-quizzes" class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Práctica Inmediata</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
+                        🎯 Quizzes y Simuladores de la Marina Listos para Resolver
+                    </h2>
+                </div>
+                <span class="hidden sm:inline-block text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full">
+                    Redirección directa a cada examen
+                </span>
+            </div>
+
+            <!-- Grid de Tarjetas de Quizzes Principales -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+                
+                <!-- 1. Cultura Naval (Simulador Estrella) -->
+                <div class="quiz-card-hover bg-white p-6 rounded-2xl border-2 border-indigo-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl font-bold">⚓</span>
+                            <span class="bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">469 Reactivos</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Simulador Oficial de Cultura Naval</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            El banco completo con todas las preguntas oficiales para exámenes de ascenso y admisión: historia patria, héroes de Veracruz 1914, San Juan de Ulúa, valores navales y CONVEMAR.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-500">Modo examen & retroalimentación</span>
+                        <a href="/marina/estudio/test-cultura-naval.html" class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold rounded-xl shadow-md transition">
+                            <span>Hacer este Quiz</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Grados y Jerarquías Navales -->
+                <div class="quiz-card-hover bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-bold">🎖️</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-full">Escalafón SEMAR</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Quiz de Grados y Jerarquías</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Pon a prueba tu conocimiento del escalafón militar naval: palas, insignias y jerarquías de Marinería, Clases, Oficiales, Capitanes y Almirantes de la Armada de México.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-500">Identificación visual & doctrina</span>
+                        <a href="/marina/estudio/test-grados-jerarquias.html" class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl shadow-md transition">
+                            <span>Hacer este Quiz</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Estructura del Buque -->
+                <div class="quiz-card-hover bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-bold">🚢</span>
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">Conocimientos Marineros</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Simulador de Estructura del Buque</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            25 preguntas clave de marinería: quilla, cuadernas, baos, mamparos, calado, eslora, roda y compartimentación estanca en unidades de superficie.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-500">25 reactivos técnicos</span>
+                        <a href="/marina/estudio/test-estructura-del-buque.html" class="inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-sm font-bold rounded-xl shadow-md transition">
+                            <span>Hacer este Quiz</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Simulador Psicométrico SEMAR -->
+                <div class="quiz-card-hover bg-white p-6 rounded-2xl border-2 border-sky-300 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl font-bold">🧠</span>
+                            <span class="bg-sky-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">Admisión & Ascenso</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Simulador Psicométrico SEMAR</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Entrena razonamiento abstracto, series lógicas numéricas y espaciales, analogías y juicio situacional requeridos en los filtros oficiales de la Marina.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-500">25 preguntas con temporizador</span>
+                        <a href="/marina/estudio/test-psicometrico-semar.html" class="inline-flex items-center gap-2 px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-sm font-bold rounded-xl shadow-md transition">
+                            <span>Hacer este Quiz</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Quizzes de Altos Mandos y Funcionarios SEMAR -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
+                    <div>
+                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Doctrina de Mando</span>
+                        <h3 class="text-xl font-bold text-slate-900 font-heading">
+                            🇲🇽 Quizzes de Altos Mandos y Funcionarios Navales
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-1">Memoriza y domina los titulares, cargos oficiales y rostros del Alto Mando de la Armada de México.</p>
+                    </div>
+                    <a href="/marina/estudio/funcionarios/funcionarios-de-marina.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-lg transition self-start sm:self-auto">
+                        <span>Ver Hub de Mandos</span> &rarr;
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                    
+                    <a href="/marina/estudio/funcionarios/contra-el-reloj-funcionarios.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-red-500 hover:bg-red-50/40 transition flex items-center justify-between group">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl group-hover:scale-110 transition">⚡</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-red-700">Contra el Reloj</h4>
+                                <span class="text-[11px] text-slate-500">15 seg por reactivo</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-red-600 group-hover:translate-x-1 transition">&rarr;</span>
+                    </a>
+
+                    <a href="/marina/estudio/funcionarios/identifica-por-imagen-funcionarios.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/40 transition flex items-center justify-between group">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl group-hover:scale-110 transition">🖼️</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Identifica por Imagen</h4>
+                                <span class="text-[11px] text-slate-500">Reconocimiento fotográfico</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-blue-600 group-hover:translate-x-1 transition">&rarr;</span>
+                    </a>
+
+                    <a href="/marina/estudio/funcionarios/elige-el-cargo.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-indigo-500 hover:bg-indigo-50/40 transition flex items-center justify-between group">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl group-hover:scale-110 transition">🎯</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-indigo-700">Elige el Cargo</h4>
+                                <span class="text-[11px] text-slate-500">Asocia titular con su puesto</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-indigo-600 group-hover:translate-x-1 transition">&rarr;</span>
+                    </a>
+
+                    <a href="/marina/estudio/funcionarios/ordena-los-cargos-de-los-funcionarios.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 transition flex items-center justify-between group">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl group-hover:scale-110 transition">📊</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-emerald-700">Ordena los Cargos</h4>
+                                <span class="text-[11px] text-slate-500">Secuencia jerárquica oficial</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 group-hover:translate-x-1 transition">&rarr;</span>
+                    </a>
+
+                    <a href="/marina/estudio/funcionarios/ordena-los-apellidos-de-los-funcionarios.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-amber-500 hover:bg-amber-50/40 transition flex items-center justify-between group">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl group-hover:scale-110 transition">✍️</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-700">Ordena los Apellidos</h4>
+                                <span class="text-[11px] text-slate-500">Memoria de titulares</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-amber-600 group-hover:translate-x-1 transition">&rarr;</span>
+                    </a>
+
+                    <a href="/marina/estudio/funcionarios/ordena-el-nombre-y-apellidos-de-los-funcionarios.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-purple-500 hover:bg-purple-50/40 transition flex items-center justify-between group">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl group-hover:scale-110 transition">🧩</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-purple-700">Nombres Completos</h4>
+                                <span class="text-[11px] text-slate-500">Arma el nombre oficial</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-purple-600 group-hover:translate-x-1 transition">&rarr;</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: TEMARIO OFICIAL COMPLETO (CONTROL DE PROGRESO CON CASILLAS) -->
+        <article id="temario-detallado" class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-10 mb-8 space-y-10">
+
+            <div class="border-b border-slate-200 pb-4">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Estructura Curricular</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
+                    📋 Temario Completo Tema por Tema (Marca tu Avance)
+                </h2>
+                <p class="text-sm text-slate-600 mt-1">
+                    Marca cada casilla a medida que estudies. Cada tema incluye enlaces de práctica o profundización.
+                </p>
+            </div>
 
             <!-- MÓDULO I: CULTURA NAVAL -->
             <section class="border-b border-slate-200 pb-8 last:border-b-0">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-blue-100 text-blue-900 font-bold text-sm">I</span>
-                    <h2 class="text-2xl font-bold text-slate-900 font-heading">Cultura Naval de la Armada de México</h2>
+                    <h3 class="text-2xl font-bold text-slate-900 font-heading">Cultura Naval de la Armada de México</h3>
                 </div>
                 <p class="text-sm text-slate-600 mb-6">
                     Abarca los antecedentes históricos, gestas heroicas navales, valores institucionales, legislación marítima, la Ley de Recompensas de la Armada de México y la Convención de las Naciones Unidas sobre el Derecho del Mar (CONVEMAR).
                 </p>
 
                 <div class="space-y-3">
-                    <!-- Tema 1 con Simulador -->
-                    <div class="topic-row p-3.5 bg-slate-50 hover:bg-blue-50/50 rounded-xl border border-slate-200/70 transition flex items-start gap-3.5" data-topic-id="sintesis-cultura">
-                        <input type="checkbox" id="check-sintesis-cultura" data-topic-id="sintesis-cultura" class="topic-checkbox mt-1 h-5 w-5 rounded border-slate-300 text-blue-600 focus:ring-blue-500 flex-shrink-0 cursor-pointer">
-                        <label for="check-sintesis-cultura" class="flex-grow cursor-pointer">
-                            <span class="topic-title block font-semibold text-slate-900 text-base">
-                                A. Síntesis de Cultura Naval (Bibliografía 1)
-                            </span>
-                            <span class="text-xs text-slate-500 block mt-0.5">
-                                Historia naval de México, Toma de San Juan de Ulúa (1825), Gesta Heroica de Veracruz (1914), deberes militares y valores navales.
-                            </span>
-                            <div class="mt-2.5 flex flex-wrap gap-2">
-                                <a href="/marina/estudio/test-cultura-naval.html" class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-md shadow-sm transition">
-                                    <span>Practicar Simulador Completo (469 Preguntas)</span>
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <!-- Tema 1 con Redirección a Simulador -->
+                    <div class="topic-row p-4 bg-indigo-50/40 hover:bg-indigo-50/80 rounded-xl border border-indigo-200/70 transition flex items-start gap-3.5" data-topic-id="sintesis-cultura">
+                        <input type="checkbox" id="check-sintesis-cultura" data-topic-id="sintesis-cultura" class="topic-checkbox mt-1 h-5 w-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 flex-shrink-0 cursor-pointer">
+                        <div class="flex-grow">
+                            <label for="check-sintesis-cultura" class="cursor-pointer">
+                                <span class="topic-title block font-bold text-slate-900 text-base">
+                                    A. Síntesis de Cultura Naval (Bibliografía 1)
+                                </span>
+                                <span class="text-xs text-slate-600 block mt-0.5">
+                                    Historia naval de México, Toma de San Juan de Ulúa (1825), Gesta Heroica de Veracruz (1914), deberes militares y valores navales.
+                                </span>
+                            </label>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <a href="/marina/estudio/test-cultura-naval.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-lg shadow-sm transition">
+                                    <span>Ir a Resolver este Quiz (469 Preguntas)</span>
+                                    <span>&rarr;</span>
                                 </a>
                             </div>
-                        </label>
+                        </div>
                     </div>
 
                     <!-- Subtemas complementarios de Cultura Naval -->
-                    <div class="topic-sublist space-y-2 mt-3">
-                        <div class="topic-row p-2.5 rounded-lg hover:bg-slate-50 transition flex items-start gap-3" data-topic-id="cultura-historia-gestas">
+                    <div class="topic-sublist space-y-2.5 mt-3">
+                        <div class="topic-row p-3 rounded-lg hover:bg-slate-50 transition flex items-start gap-3" data-topic-id="cultura-historia-gestas">
                             <input type="checkbox" id="check-cultura-historia-gestas" data-topic-id="cultura-historia-gestas" class="topic-checkbox mt-0.5 h-4 w-4 rounded border-slate-300 text-blue-600 cursor-pointer">
-                            <label for="check-cultura-historia-gestas" class="text-sm cursor-pointer flex-grow">
-                                <span class="topic-title font-medium text-slate-800">1. Héroes y Gestas Navales de México</span>
-                                <span class="text-xs text-slate-500 block">Capitán Pedro Sainz de Baranda, Cadete Virgilio Uribe, Teniente José Azueta y Escuadrón Aeronaval.</span>
-                            </label>
+                            <div class="text-sm flex-grow">
+                                <label for="check-cultura-historia-gestas" class="cursor-pointer block">
+                                    <span class="topic-title font-medium text-slate-800">1. Héroes y Gestas Navales de México</span>
+                                    <span class="text-xs text-slate-500 block">Capitán Pedro Sainz de Baranda, Cadete Virgilio Uribe, Teniente José Azueta y Escuadrón Aeronaval.</span>
+                                </label>
+                                <a href="/marina/estudio/test-cultura-naval.html" class="inline-block mt-1 text-xs text-blue-700 hover:underline font-semibold">→ Resolver reactivos de Historia Naval</a>
+                            </div>
                         </div>
-                        <div class="topic-row p-2.5 rounded-lg hover:bg-slate-50 transition flex items-start gap-3" data-topic-id="cultura-legislacion-convemar">
+                        <div class="topic-row p-3 rounded-lg hover:bg-slate-50 transition flex items-start gap-3" data-topic-id="cultura-legislacion-convemar">
                             <input type="checkbox" id="check-cultura-legislacion-convemar" data-topic-id="cultura-legislacion-convemar" class="topic-checkbox mt-0.5 h-4 w-4 rounded border-slate-300 text-blue-600 cursor-pointer">
-                            <label for="check-cultura-legislacion-convemar" class="text-sm cursor-pointer flex-grow">
-                                <span class="topic-title font-medium text-slate-800">2. Legislación Naval y CONVEMAR</span>
-                                <span class="text-xs text-slate-500 block">Mar Territorial, Zona Contigua, Zona Económica Exclusiva (ZEE) y Alta Mar.</span>
-                            </label>
+                            <div class="text-sm flex-grow">
+                                <label for="check-cultura-legislacion-convemar" class="cursor-pointer block">
+                                    <span class="topic-title font-medium text-slate-800">2. Legislación Naval y CONVEMAR</span>
+                                    <span class="text-xs text-slate-500 block">Mar Territorial, Zona Contigua, Zona Económica Exclusiva (ZEE) y Alta Mar.</span>
+                                </label>
+                                <a href="/marina/estudio/test-cultura-naval.html" class="inline-block mt-1 text-xs text-blue-700 hover:underline font-semibold">→ Resolver reactivos de Derecho Marítimo y CONVEMAR</a>
+                            </div>
                         </div>
-                        <div class="topic-row p-2.5 rounded-lg hover:bg-slate-50 transition flex items-start gap-3" data-topic-id="cultura-grados-jerarquias">
+                        <div class="topic-row p-3 rounded-lg hover:bg-slate-50 transition flex items-start gap-3" data-topic-id="cultura-grados-jerarquias">
                             <input type="checkbox" id="check-cultura-grados-jerarquias" data-topic-id="cultura-grados-jerarquias" class="topic-checkbox mt-0.5 h-4 w-4 rounded border-slate-300 text-blue-600 cursor-pointer">
-                            <label for="check-cultura-grados-jerarquias" class="text-sm cursor-pointer flex-grow">
-                                <span class="topic-title font-medium text-slate-800">3. Grados, Distintivos y Jerarquías de la Armada</span>
-                                <span class="text-xs text-slate-500 block">Identificación de palas, insignias de almirantes, capitanes, oficiales y marinería.</span>
-                                <a href="/marina/estudio/test-grados-jerarquias.html" class="inline-block mt-1 text-xs text-blue-700 hover:underline font-semibold">→ Ir al Test de Grados y Jerarquías</a>
-                            </label>
+                            <div class="text-sm flex-grow">
+                                <label for="check-cultura-grados-jerarquias" class="cursor-pointer block">
+                                    <span class="topic-title font-medium text-slate-800">3. Grados, Distintivos y Jerarquías de la Armada</span>
+                                    <span class="text-xs text-slate-500 block">Identificación de palas, insignias de almirantes, capitanes, oficiales y marinería.</span>
+                                </label>
+                                <a href="/marina/estudio/test-grados-jerarquias.html" class="inline-flex items-center gap-1 mt-1 text-xs text-blue-700 hover:underline font-bold">
+                                    <span>→ Hacer el Quiz de Grados y Jerarquías</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -328,7 +536,7 @@
             <section class="border-b border-slate-200 pb-8 last:border-b-0">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-indigo-100 text-indigo-900 font-bold text-sm">II</span>
-                    <h2 class="text-2xl font-bold text-slate-900 font-heading">Doctrina de la Armada de México (DAM)</h2>
+                    <h3 class="text-2xl font-bold text-slate-900 font-heading">Doctrina de la Armada de México (DAM)</h3>
                 </div>
                 <p class="text-sm text-slate-600 mb-6">
                     Compilación de manuales técnicos doctrinales: administración de personal militar, seguridad física de instalaciones, adiestramiento naval táctico y contraincendios a bordo de unidades de superficie.
@@ -336,10 +544,10 @@
 
                 <!-- Subsección A: Recursos Humanos DAM 1.1.1 -->
                 <div class="bg-slate-50/70 rounded-xl p-4 sm:p-5 border border-slate-200/80 mb-5">
-                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center justify-between">
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 flex items-center justify-between">
                         <span>A. DAM 1.1.1 Recursos Humanos (Bibliografía 2)</span>
                         <span class="text-xs bg-indigo-100 text-indigo-800 font-semibold px-2.5 py-0.5 rounded-full">Manual Clave</span>
-                    </h3>
+                    </h4>
                     <p class="text-xs text-slate-600 mb-4">Normatividad vigente para contrataciones, ascensos, bajas, licencias y movimientos de personal militar naval.</p>
 
                     <div class="space-y-2.5 topic-sublist">
@@ -418,17 +626,22 @@
 
                 <!-- Subsecciones B, C y D de Doctrina -->
                 <div class="space-y-3">
-                    <div class="topic-row p-3.5 bg-slate-50 hover:bg-blue-50/50 rounded-xl border border-slate-200/70 transition flex items-start gap-3.5" data-topic-id="dam-incendios">
-                        <input type="checkbox" id="check-dam-incendios" data-topic-id="dam-incendios" class="topic-checkbox mt-1 h-5 w-5 rounded border-slate-300 text-blue-600 cursor-pointer">
-                        <label for="check-dam-incendios" class="flex-grow cursor-pointer">
-                            <span class="topic-title block font-semibold text-slate-900 text-base">
-                                B. DAM 1.3.1.3.5 Contraincendios en Unidades Navales (Bibliografía 3)
-                            </span>
-                            <span class="text-xs text-slate-500 block mt-0.5">
-                                Tetraedro del fuego, clases de incendios (A, B, C, D), agentes extinguidores, equipos de respiración autónoma (ERA) y zafarranchos de control de averías.
-                            </span>
-                            <a href="/marina/estudio/test-estructura-del-buque.html" class="inline-block mt-2 text-xs text-blue-700 hover:underline font-semibold">→ Estudiar Estructura del Buque y Seguridad</a>
-                        </label>
+                    <div class="topic-row p-4 bg-amber-50/40 hover:bg-amber-50/70 rounded-xl border border-amber-200/70 transition flex items-start gap-3.5" data-topic-id="dam-incendios">
+                        <input type="checkbox" id="check-dam-incendios" data-topic-id="dam-incendios" class="topic-checkbox mt-1 h-5 w-5 rounded border-slate-300 text-amber-600 cursor-pointer">
+                        <div class="flex-grow">
+                            <label for="check-dam-incendios" class="cursor-pointer">
+                                <span class="topic-title block font-bold text-slate-900 text-base">
+                                    B. DAM 1.3.1.3.5 Contraincendios y Seguridad en Buques (Bibliografía 3)
+                                </span>
+                                <span class="text-xs text-slate-600 block mt-0.5">
+                                    Tetraedro del fuego, clases de incendios (A, B, C, D), agentes extinguidores, equipos de respiración autónoma (ERA) y zafarranchos de control de averías.
+                                </span>
+                            </label>
+                            <a href="/marina/estudio/test-estructura-del-buque.html" class="inline-flex items-center gap-1.5 mt-2 px-3 py-1 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-lg shadow-sm transition">
+                                <span>Ir a Resolver el Quiz de Buques</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="topic-row p-3.5 bg-slate-50 hover:bg-blue-50/50 rounded-xl border border-slate-200/70 transition flex items-start gap-3.5" data-topic-id="dam-adiestramiento">
@@ -461,7 +674,7 @@
             <section class="pb-4">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-100 text-emerald-900 font-bold text-sm">III</span>
-                    <h2 class="text-2xl font-bold text-slate-900 font-heading">Área Profesional y Especialidades Técnicas</h2>
+                    <h3 class="text-2xl font-bold text-slate-900 font-heading">Área Profesional y Especialidades Técnicas</h3>
                 </div>
                 <p class="text-sm text-slate-600 mb-6">
                     Directivas, normatividad técnica e informática requerida para el personal de los cuerpos y servicios de comunicaciones, informática, electrónica y administración.
@@ -535,88 +748,47 @@
             </section>
         </article>
 
-        <!-- Sección de Guía Metodológica de Estudio -->
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-10 mb-8">
-            <h2 class="text-2xl font-bold text-slate-900 font-heading mb-4">¿Cómo Estudiar Eficientemente el Temario de la Marina?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-slate-600">
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/70">
-                    <p class="font-bold text-slate-900 text-base mb-1.5 flex items-center gap-2">
-                        <span class="text-blue-600">1.</span> Repetición Espaciada
-                    </p>
-                    <p>Dedica 45 minutos diarios a repasar las fechas históricas (21 de abril de 1914, 23 de noviembre de 1825) y los artículos del DAM Recursos Humanos para fijar la información en la memoria a largo plazo.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/70">
-                    <p class="font-bold text-slate-900 text-base mb-1.5 flex items-center gap-2">
-                        <span class="text-blue-600">2.</span> Práctica con Simulador
-                    </p>
-                    <p>Tras completar cada sección teórica, realiza exámenes de prueba en nuestro simulador de Cultura Naval con 469 preguntas para habituarte al formato de opción múltiple.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/70">
-                    <p class="font-bold text-slate-900 text-base mb-1.5 flex items-center gap-2">
-                        <span class="text-blue-600">3.</span> Análisis de Errores
-                    </p>
-                    <p>Identifica cuáles reactivos fallas habitualmente (ej. millas náuticas en la ZEE o plazos de reenganche) y regresa a marcar y desmarcar las casillas para reevaluarte.</p>
-                </div>
-            </div>
-        </article>
-
         <!-- Preguntas Frecuentes (FAQ) Indexables -->
         <article class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-10 mb-8">
-            <h2 class="text-2xl font-bold text-slate-900 font-heading mb-6">Preguntas Frecuentes sobre el Temario Naval</h2>
+            <h2 class="text-2xl font-bold text-slate-900 font-heading mb-6">Preguntas Frecuentes sobre los Quizzes y el Temario</h2>
             <div class="space-y-4">
                 <details class="group border border-slate-200 rounded-xl p-4 [&_summary::-webkit-details-marker]:hidden" open>
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-slate-900">
-                        <span>¿Mi avance se pierde si cierro la ventana o salgo de la página?</span>
+                        <span>¿Los simuladores tienen costo o requieren registro?</span>
                         <span class="transition group-open:rotate-180">
                             <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
                     </summary>
                     <p class="mt-3 text-sm text-slate-600 leading-relaxed">
-                        No. Todo tu progreso se almacena de forma segura en la memoria de tu dispositivo mediante <code>localStorage</code>. Puedes volver días o semanas después desde este mismo navegador y tus casillas marcadas permanecerán exactamente como las dejaste.
+                        No. Todos los simuladores en HazelTest son 100% gratuitos y de acceso libre. Puedes realizarlos cuantas veces lo necesites para medir tu rendimiento.
                     </p>
                 </details>
 
                 <details class="group border border-slate-200 rounded-xl p-4 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-slate-900">
-                        <span>¿Para qué convocatorias sirve este temario?</span>
+                        <span>¿Cómo se guarda mi progreso en este temario?</span>
                         <span class="transition group-open:rotate-180">
                             <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
                     </summary>
                     <p class="mt-3 text-sm text-slate-600 leading-relaxed">
-                        Es de utilidad primordial para: personal activo en procesos de <strong>Promoción y Ascenso SEMAR</strong>, aspirantes a los <strong>Establecimientos Educativos Navales</strong> (Heroica Escuela Naval Militar, Escuela Médico Naval, Escuela de Enfermería) y personal civil que ingresa a la Milicia Auxiliar.
+                        Se guarda automáticamente en tu navegador (en <code>localStorage</code>). Al volver desde tu computadora o teléfono, las casillas que hayas marcado seguirán registradas.
                     </p>
                 </details>
 
                 <details class="group border border-slate-200 rounded-xl p-4 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-semibold text-slate-900">
-                        <span>¿Puedo imprimir el temario para llevarlo en papel?</span>
+                        <span>¿Cuál es el mejor orden para resolver los quizzes?</span>
                         <span class="transition group-open:rotate-180">
                             <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
                     </summary>
                     <p class="mt-3 text-sm text-slate-600 leading-relaxed">
-                        Sí, haz clic en el botón <strong>"Imprimir Temario"</strong> ubicado en el panel superior. La página cuenta con una hoja de estilo optimizada para impresión que elimina encabezados y fondos innecesarios para ahorrar tinta y papel.
+                        Te sugerimos comenzar con <strong>Grados y Jerarquías</strong> y <strong>Altos Mandos</strong> para afianzar doctrina básica. Después, practica <strong>Estructura del Buque</strong> y culmina con el simulador completo de <strong>Cultura Naval (469 preguntas)</strong> y el <strong>Test Psicométrico</strong>.
                     </p>
                 </details>
             </div>
         </article>
-
-        <!-- Llamado a la Acción / Otros Tests -->
-        <aside class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white rounded-2xl p-6 sm:p-8 text-center">
-            <h2 class="text-xl sm:text-2xl font-bold font-heading mb-2">¿Listo para medir tus conocimientos navales?</h2>
-            <p class="text-sm sm:text-base text-blue-200 mb-6 max-w-2xl mx-auto">
-                Accede a nuestro simulador con temporizador, calificación al instante y análisis detallado de respuestas correctas e incorrectas.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="/marina/estudio/test-cultura-naval.html" class="px-5 py-2.5 bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold rounded-xl shadow-lg transition">
-                    Simulador Cultura Naval
-                </a>
-                <a href="/marina/test.html" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white text-sm font-semibold rounded-xl border border-white/20 transition">
-                    Ver Todos los Simuladores SEMAR
-                </a>
-            </div>
-        </aside>
 
     </main>
 
@@ -643,7 +815,7 @@
         </div>
     </footer>
 
-    <!-- Lógica de Guardado Local y Contador de Progreso (Sin dependencias externas ni Firebase) -->
+    <!-- Lógica de Guardado Local y Contador de Progreso -->
     <script>
     (function() {
         'use strict';
